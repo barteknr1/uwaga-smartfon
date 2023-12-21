@@ -1,3 +1,5 @@
+@import '../../node_modules/modern-normalize/modern-normalize.css';
+
 *,
 *::before,
 *::after {
@@ -13,7 +15,7 @@
 }
 
 :root {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   margin: 0;
   line-height: 1.5;
   font-weight: 400;
