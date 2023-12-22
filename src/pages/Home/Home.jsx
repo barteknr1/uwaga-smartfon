@@ -1,7 +1,12 @@
+import LastEditions from '../../components/LastEditions/LastEditions'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <>
+      <div>Home</div>
+
+      <LastEditions />
+    </>
   )
 }
 
