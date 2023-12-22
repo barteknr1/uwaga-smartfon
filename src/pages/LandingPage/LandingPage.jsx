@@ -1,7 +1,10 @@
-
+import HeroBanner from '../../components/Banners/HeroBanner'
 const LandingPage = () => {
   return (
-    <div>LandingPage</div>
+    <div>
+      LandingPage
+      <HeroBanner></HeroBanner>
+    </div>
   )
 }
 

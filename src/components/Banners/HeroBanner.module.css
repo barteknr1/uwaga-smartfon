@@ -1,0 +1,19 @@
+.HeroBanner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.HeroBanner_img {
+  background-image: url(../Images/heroBanner.png);
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+
+.HeroBanner_info {
+  position: absolute;
+  color: var(--light-text-color);
+}
