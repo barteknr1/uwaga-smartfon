@@ -1,11 +1,11 @@
-import LastEditions from '../../components/LastEditions/LastEditions'
+import PreviousEdition from '../../components/PreviousEdition/PreviousEdition'
 
 const Home = () => {
   return (
     <>
       <div>Home</div>
 
-      <LastEditions />
+      <PreviousEdition />
     </>
   )
 }
