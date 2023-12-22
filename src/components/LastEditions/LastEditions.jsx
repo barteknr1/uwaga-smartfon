@@ -3,6 +3,17 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import css from './LastEditions.module.css'
 import slider1 from '../../assets/images/slider/slider1.jpg'
+import slider2 from '../../assets/images/slider/slider2.jpg'
+import slider3 from '../../assets/images/slider/slider3.jpg'
+import slider4 from '../../assets/images/slider/slider4.jpg'
+import slider5 from '../../assets/images/slider/slider5.jpg'
+import slider6 from '../../assets/images/slider/slider6.jpg'
+import slider7 from '../../assets/images/slider/slider7.jpg'
+import slider8 from '../../assets/images/slider/slider8.jpg'
+import slider9 from '../../assets/images/slider/slider9.jpg'
+import slider10 from '../../assets/images/slider/slider10.jpg'
+import slider11 from '../../assets/images/slider/slider11.jpg'
+import slider12 from '../../assets/images/slider/slider12.jpg'
 import Section from '../Section/Section'
 
 const LastEditions = () => {
@@ -23,6 +34,7 @@ const LastEditions = () => {
     touchMove: false,
     centerMode: true,
     variableWidth: true,
+    lazyLoad: true,
   }
   const settingsTwo = {
     arrows: false,
@@ -41,6 +53,7 @@ const LastEditions = () => {
     touchMove: false,
     centerMode: true,
     variableWidth: true,
+    lazyLoad: true,
     rtl: true,
   }
   return (
@@ -62,35 +75,35 @@ const LastEditions = () => {
             <div className={css.slideBox}>
               <img
                 className={css.slideImg}
-                src={slider1}
+                src={slider2}
                 alt="Opis zdjęcia 1"
               />
             </div>
             <div className={css.slideBox}>
               <img
                 className={css.slideImg}
-                src={slider1}
+                src={slider3}
                 alt="Opis zdjęcia 1"
               />
             </div>
             <div className={css.slideBox}>
               <img
                 className={css.slideImg}
-                src={slider1}
+                src={slider4}
                 alt="Opis zdjęcia 1"
               />
             </div>
             <div className={css.slideBox}>
               <img
                 className={css.slideImg}
-                src={slider1}
+                src={slider5}
                 alt="Opis zdjęcia 1"
               />
             </div>
             <div className={css.slideBox}>
               <img
                 className={css.slideImg}
-                src={slider1}
+                src={slider6}
                 alt="Opis zdjęcia 1"
               />
             </div>
@@ -101,42 +114,42 @@ const LastEditions = () => {
             <div className={css.slideBox}>
               <img
                 className={css.slideImg}
-                src={slider1}
+                src={slider12}
                 alt="Opis zdjęcia 1"
               />
             </div>
             <div className={css.slideBox}>
               <img
                 className={css.slideImg}
-                src={slider1}
+                src={slider11}
                 alt="Opis zdjęcia 1"
               />
             </div>
             <div className={css.slideBox}>
               <img
                 className={css.slideImg}
-                src={slider1}
+                src={slider10}
                 alt="Opis zdjęcia 1"
               />
             </div>
             <div className={css.slideBox}>
               <img
                 className={css.slideImg}
-                src={slider1}
+                src={slider9}
                 alt="Opis zdjęcia 1"
               />
             </div>
             <div className={css.slideBox}>
               <img
                 className={css.slideImg}
-                src={slider1}
+                src={slider8}
                 alt="Opis zdjęcia 1"
               />
             </div>
             <div className={css.slideBox}>
               <img
                 className={css.slideImg}
-                src={slider1}
+                src={slider7}
                 alt="Opis zdjęcia 1"
               />
             </div>

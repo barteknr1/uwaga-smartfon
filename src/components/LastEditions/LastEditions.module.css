@@ -12,14 +12,15 @@
 @media screen and (min-width: 765px) {
   .slider {
     padding-top: 64px;
+    width: 1440px;
     margin: 0;
     height: 831px;
     background-image: url(../../assets/bgImages/GALLERY_BG.png);
+    object-fit: contain;
   }
   .container {
     overflow: hidden;
     display: flex;
-    align-items: center;
     justify-content: space-between;
     flex-direction: column;
     gap: 64px;
