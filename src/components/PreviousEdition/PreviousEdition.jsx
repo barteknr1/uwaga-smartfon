@@ -29,65 +29,62 @@ const PreviousEdition = () => {
       title="Poprzednie Edycje"
     >
       <div className={css.container}>
-        <div>
-          <Swiper
-            spaceBetween={16}
-            slidesPerView={4}
-            loop={true}
-            autoplay={{
-              delay: 0,
-              disableOnInteraction: false,
-            }}
-            speed={4000}
-            pagination={{
-              clickable: false,
-            }}
-            navigation={false}
-            modules={[Autoplay]}
-            allowTouchMove={false}
-            className="mySwiper"
-          >
-            {sliderOne.map((slider, index) => (
-              <SwiperSlide key={index}>
-                <img
-                  className={css.slideImg}
-                  src={slider}
-                  alt={`Slider photo ${index + 1}`}
-                />
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
-        <div>
-          <Swiper
-            spaceBetween={16}
-            slidesPerView={4}
-            loop={true}
-            autoplay={{
-              delay: 0,
-              reverseDirection: true,
-              disableOnInteraction: false,
-            }}
-            speed={4000}
-            pagination={{
-              clickable: false,
-            }}
-            navigation={false}
-            modules={[Autoplay]}
-            allowTouchMove={false}
-            className="mySwiper"
-          >
-            {sliderTwo.map((slider, index) => (
-              <SwiperSlide key={index}>
-                <img
-                  className={css.slideImg}
-                  src={slider}
-                  alt={`Slider photo ${index + 1}`}
-                />
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
+        <Swiper
+          spaceBetween={16}
+          slidesPerView={4}
+          loop={true}
+          autoplay={{
+            delay: 0,
+            disableOnInteraction: false,
+          }}
+          speed={4000}
+          pagination={{
+            clickable: false,
+          }}
+          navigation={false}
+          modules={[Autoplay]}
+          allowTouchMove={false}
+          className="mySwiper"
+        >
+          {sliderOne.map((slider, index) => (
+            <SwiperSlide key={index}>
+              <img
+                className={css.slideImg}
+                src={slider}
+                alt={`Slider photo ${index + 1}`}
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+
+        <Swiper
+          spaceBetween={16}
+          slidesPerView={4}
+          loop={true}
+          autoplay={{
+            delay: 0,
+            reverseDirection: true,
+            disableOnInteraction: false,
+          }}
+          speed={4000}
+          pagination={{
+            clickable: false,
+          }}
+          navigation={false}
+          modules={[Autoplay]}
+          allowTouchMove={false}
+          className="mySwiper"
+        >
+          {sliderTwo.map((slider, index) => (
+            <SwiperSlide key={index}>
+              <img
+                className={css.slideImg}
+                src={slider}
+                alt={`Slider photo ${index + 1}`}
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </Section>
   )
