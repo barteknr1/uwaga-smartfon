@@ -19,7 +19,3 @@ Button.propTypes = {
 }
 
 export default Button
-
-
-// example of usage
-{/* <Button content="Zapisz się na konferencję" variant="primary"/> */}
