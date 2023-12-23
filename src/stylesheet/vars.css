@@ -16,10 +16,11 @@
 
   /*colors*/
   --red-color: #e30613;
+  --magenta-color: #ca0c7a;
 
   /*fonts*/
-  --main-font: "Raleway", sans-serif;
-  --decoraction-font: "STIX Two Text", serif;
-  --placeholder-font: "Montserrat", sans-serif;
-  --form-font: "Roboto", sans-serif;
+  --main-font: 'Raleway', sans-serif;
+  --decoraction-font: 'STIX Two Text', serif;
+  --placeholder-font: 'Montserrat', sans-serif;
+  --form-font: 'Roboto', sans-serif;
 }
