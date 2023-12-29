@@ -1,10 +1,26 @@
 .Nav {
   background-color: var(--primary-background-color);
   display: flex;
-  gap: 16px;
   width: 100%;
-  justify-content: center;
+  max-width: 1440px;
+  justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
+  padding: 0 81px;
+}
+
+.Nav__Logo {
+  width: 215px;
+  height: 85px;
+  margin-top: 27px;
+  margin-bottom: 27px;
+  cursor: pointer;
+}
+
+.Nav__List {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 .Nav__Item {
