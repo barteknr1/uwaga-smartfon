@@ -19,6 +19,7 @@
   width: 129px;
   height: 156px;
   border-radius: 12px;
+  object-fit: cover;
 }
 
 .slider {
@@ -39,7 +40,6 @@
     width: 419px;
     height: 242px;
     border-radius: 16px;
-    object-fit: cover;
   }
   .sliderTitle {
     color: var(--light-text-color);
