@@ -7,12 +7,22 @@ import css from './Navigation.module.css'
 
 const Navigation = () => {
   return (
-    <nav className={css.nav}>
-      <Link to="/">O konferencji</Link>
-      <Link to="/">Edycje</Link>
-      <Link to="volunteering">Wolontariat</Link>
-      <Link to="/">Newsletter</Link>
-      <Link to="/">Partnerzy i Patroni</Link>
+    <nav className={css.Nav}>
+      <Link className={css.Nav__Item} to="/">
+        O konferencji
+      </Link>
+      <Link className={css.Nav__Item} to="/">
+        Edycje
+      </Link>
+      <Link className={css.Nav__Item} to="volunteering">
+        Wolontariat
+      </Link>
+      <Link className={css.Nav__Item} to="/">
+        Newsletter
+      </Link>
+      <Link className={css.Nav__Item} to="/">
+        Partnerzy i Patroni
+      </Link>
       <Button variant="support" content="Wesprzyj"></Button>
     </nav>
   )
