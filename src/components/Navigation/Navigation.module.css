@@ -9,6 +9,15 @@
 
 .Nav__Item {
   color: var(--dark-text-color);
+  background-color: var(--primary-background-color);
+  text-decoration: inherit;
   font-weight: 400;
   padding: 8px 16px;
+}
+
+.Nav__Item:hover,
+.Nav__Item:focus {
+  border-radius: 12px;
+  background-color: var(--magenta-color);
+  color: var(--light-text-color);
 }
