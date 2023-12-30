@@ -31,8 +31,14 @@ const PreviousEdition = () => {
       <div className={css.container}>
         <div>
           <Swiper
-            spaceBetween={16}
-            slidesPerView={4}
+            spaceBetween={20}
+            slidesPerView={2.75}
+            breakpoints={{
+              394: {
+                slidesPerView: 4,
+                spaceBetween: 16,
+              },
+            }}
             loop={true}
             autoplay={{
               delay: 0,
@@ -60,8 +66,14 @@ const PreviousEdition = () => {
         </div>
         <div>
           <Swiper
-            spaceBetween={16}
-            slidesPerView={4}
+            spaceBetween={20}
+            slidesPerView={2.75}
+            breakpoints={{
+              394: {
+                slidesPerView: 4,
+                spaceBetween: 16,
+              },
+            }}
             loop={true}
             autoplay={{
               delay: 0,
