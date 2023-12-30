@@ -1,0 +1,112 @@
+.comments {
+  padding-top: 32px;
+  padding-bottom: 64px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: var(--third-background-color);
+}
+.commentsTitle {
+  font-family: var(--decoraction-font);
+  color: var(--light-text-color);
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 25px;
+}
+.commentsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+.commentsBox {
+  background-color: var(--primary-background-color);
+  border-radius: 0px 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 27px;
+  padding-bottom: 37px;
+  padding-left: 37px;
+  padding-right: 31px;
+}
+.commentsText {
+  font-family: var(--main-font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.019px;
+}
+
+@media screen and (min-width: 394px) {
+  .comments {
+    max-width: 1440px;
+    padding-top: 164px;
+    padding-bottom: 64px;
+    padding-left: 81px;
+    padding-right: 94px;
+    background-color: var(--primary-background-color);
+  }
+  .commentsTitle {
+    font-family: var(--decoraction-font);
+    color: var(--dark-text-color);
+    font-size: 49px;
+    margin-bottom: 64px;
+  }
+  .commentsContainer {
+    position: relative;
+    padding-bottom: 64px;
+    padding-left: 15px;
+    gap: 40px;
+    flex-direction: row;
+  }
+
+  .commentsBox {
+    background-color: var(--secondary-background-color);
+    border-radius: 0px 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    padding-left: 62px;
+    padding-right: 62px;
+  }
+  .commentsBox:nth-child(odd):before {
+    content: '“';
+    position: absolute;
+    font-family: Lateef;
+    font-size: 200px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.3;
+    color: var(--DEEP-PURPLE, #521b9a);
+    top: 139px;
+    left: -25px;
+  }
+  .commentsBox:nth-child(even):after {
+    content: '“';
+    transform: matrix(-1, 0, 0, -1, 0, 0);
+    position: absolute;
+    font-family: Lateef;
+    font-size: 200px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.3;
+    color: var(--DEEP-PURPLE, #521b9a);
+    top: -198px;
+    right: -25px;
+  }
+
+  .commentsText {
+    color: var(--light-text-color);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.024px;
+  }
+}
