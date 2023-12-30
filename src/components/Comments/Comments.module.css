@@ -69,10 +69,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 26px;
-    padding-bottom: 26px;
-    padding-left: 62px;
-    padding-right: 62px;
+    padding: 26px 62px;
   }
   .commentsBox:nth-child(odd):before {
     content: '“';
@@ -83,8 +80,8 @@
     font-weight: 400;
     line-height: normal;
     opacity: 0.3;
-    color: var(--DEEP-PURPLE, #521b9a);
-    top: 139px;
+    color: var(--dark-brand-color);
+    top: 150px;
     left: -6px;
   }
   .commentsBox:nth-child(even):after {
@@ -97,7 +94,7 @@
     font-weight: 400;
     line-height: normal;
     opacity: 0.3;
-    color: var(--DEEP-PURPLE, #521b9a);
+    color: var(--dark-brand-color);
     top: -198px;
     right: -25px;
   }
