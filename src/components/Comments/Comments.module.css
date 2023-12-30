@@ -85,7 +85,7 @@
     opacity: 0.3;
     color: var(--DEEP-PURPLE, #521b9a);
     top: 139px;
-    left: -25px;
+    left: -6px;
   }
   .commentsBox:nth-child(even):after {
     content: '“';
