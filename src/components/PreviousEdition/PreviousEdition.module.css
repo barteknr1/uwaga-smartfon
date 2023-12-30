@@ -1,3 +1,9 @@
+.slider {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  width: 393px;
+  margin: 0;
+}
 .container {
   overflow: hidden;
   display: flex;
@@ -22,19 +28,13 @@
   object-fit: cover;
 }
 
-.slider {
-  padding-top: 64px;
-  width: 393px;
-  margin: 0;
-}
-
 @media screen and (min-width: 394px) {
   .slider {
     width: 1440px;
     margin: 0;
-    height: 831px;
     background-image: url(../../assets/bgImages/bgImageSlider.png);
     object-fit: contain;
+    padding-bottom: 94px;
   }
   .slideImg {
     width: 419px;
