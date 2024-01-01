@@ -1,8 +1,13 @@
 .slider {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
   padding-top: 64px;
   padding-bottom: 64px;
-  width: 393px;
   margin: 0;
+  background-image: url(../../assets/bgImages/bgImageSlider.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .container {
   overflow: hidden;
@@ -14,6 +19,7 @@
 .sliderTitle {
   color: var(--dark-text-color);
   font-family: var(--decoraction-font);
+  align-self: flex-start;
   font-size: 31px;
   font-style: normal;
   font-weight: 400;
@@ -30,10 +36,9 @@
 
 @media screen and (min-width: 394px) {
   .slider {
-    width: 1440px;
     margin: 0;
+    flex-direction: column;
     background-image: url(../../assets/bgImages/bgImageSlider.png);
-    object-fit: contain;
     padding-bottom: 94px;
   }
   .slideImg {
