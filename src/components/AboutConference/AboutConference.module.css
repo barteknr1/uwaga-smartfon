@@ -1,14 +1,11 @@
 .container {
   display: flex;
   flex-direction: column;
-
   width: 363px;
-  height: 1943px;
 }
 @media screen and (min-width: 765px) {
   .container {
     width: 1064px;
-    height: 1100px;
     margin: 0 auto;
   }
 }
@@ -19,53 +16,46 @@
   justify-content: space-between;
   position: relative;
   max-width: 376px;
+  margin-left: 20px;
 }
 @media screen and (min-width: 765px) {
   .AboutConference {
     flex-direction: row;
     max-width: 1105px;
-    max-height: 365px;
-    flex-wrap: nowrap;
   }
 }
 
 .AboutConferenceTitle {
   font-family: var(--decoraction-font);
   font-size: 31px;
-  color: #000000;
-  font-weight: 400;
-  line-height: auto;
+  color: var(--dark-text-color);
+  line-height: 38.75px;
   letter-spacing: 0px;
-  margin-left: 20px;
-  padding-bottom: 16px;
 }
 @media screen and (min-width: 765px) {
   .AboutConferenceTitle {
-    padding-bottom: 28px;
     margin-left: 0px;
     margin-top: 23px;
-    margin-bottom: 28px;
+    line-height: 48.75px;
     padding-bottom: 0px;
     font-size: 39px;
-    width: 324px;
-    height: 49px;
   }
 }
 
 .AboutConferenceText {
   font-family: var(--main-font);
   font-size: 16px;
-  color: #000000;
+  color: var(--dark-text-color);
   line-height: 24px;
   letter-spacing: 0.12px;
-  font-weight: 400;
-  margin-left: 20px;
+
   margin-bottom: 40px;
+  margin-top: 16px;
 }
 @media screen and (min-width: 765px) {
   .AboutConferenceText {
     margin-left: 0px;
-
+    margin-top: 28px;
     margin-bottom: 32px;
   }
 }
@@ -100,71 +90,38 @@
   position: absolute;
   bottom: 30px;
   left: 0;
-  right: 0;
 }
 @media screen and (min-width: 765px) {
   .AboutConferenceVector {
-    width: 468px;
-    height: 317px;
     bottom: 0px;
     right: 0px;
     left: auto;
   }
 }
 
-.AboutConference2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  position: relative;
-  max-width: 352px;
-}
 @media screen and (min-width: 765px) {
   .AboutConference2 {
     flex-direction: row-reverse;
     max-width: 1129px;
-    max-height: 370px;
     flex-wrap: nowrap;
   }
 }
 @media screen and (min-width: 765px) {
   .AboutConferenceWraper2 {
-    display: flex;
-    flex-direction: column;
-    max-width: 554px;
     margin-left: 96px;
   }
 }
-.AboutConferenceTitle2 {
-  font-family: var(--decoraction-font);
-  font-size: 31px;
-  color: #000000;
-  font-weight: 400;
-  line-height: auto;
-  letter-spacing: 0px;
-  margin-left: 20px;
-  margin-bottom: 16px;
-}
+
 @media screen and (min-width: 765px) {
   .AboutConferenceTitle2 {
     margin-left: 0px;
     margin-bottom: 20px;
     font-size: 39px;
     width: 443px;
-    height: 49px;
     margin-top: 69px;
   }
 }
-.AboutConferenceText2 {
-  font-family: var(--main-font);
-  font-size: 16px;
-  color: #000000;
-  line-height: 24px;
-  letter-spacing: 0.12px;
-  font-weight: 400;
-  margin-left: 20px;
-  padding-bottom: 40px;
-}
+
 @media screen and (min-width: 765px) {
   .AboutConferenceText2 {
     margin-bottom: 66px;
@@ -174,30 +131,20 @@
   }
 }
 .AboutConferenceImg2 {
-  width: 240px;
-  height: 217px;
-  border-radius: 10px;
-  align-self: center;
   margin-bottom: 16px;
-  object-fit: cover;
 }
 @media screen and (min-width: 765px) {
   .AboutConferenceImg2 {
-    width: 414px;
-    height: 324px;
     margin-bottom: 20px;
     margin-left: 0px;
-    object-fit: contain;
     margin-top: 26px;
   }
 }
 .AboutConferenceVector2 {
-  z-index: -1;
-  position: absolute;
-  bottom: 0px;
-  margin-left: 35px;
   width: 254px;
   height: 250px;
+  bottom: 0px;
+  margin-left: 35px;
 }
 @media screen and (min-width: 765px) {
   .AboutConferenceVector2 {
@@ -207,12 +154,60 @@
     margin-right: 754px;
   }
 }
+.AboutConference3 {
+  max-width: 365px;
+}
+@media screen and (min-width: 765px) {
+  .AboutConference3 {
+    max-width: 1092px;
+  }
+}
+@media screen and (min-width: 765px) {
+  .AboutConferenceTitle3 {
+    margin-left: 0px;
+    margin-top: 55px;
+    padding-bottom: 0px;
+    font-size: 39px;
+    width: 497px;
+  }
+}
 
-.AboutConferenceButton {
-  width: 32px;
-  height: 16px;
-  border-radius: 16px;
-  background-color: var(--primary-background-color);
-  border-color: var(--dark-text-color);
-  color: var(--dark-text-color);
+@media screen and (min-width: 765px) {
+  .AboutConferenceText3 {
+    margin-bottom: 56px;
+  }
+}
+@media screen and (min-width: 765px) {
+  .AboutConferenceImg3 {
+    margin-bottom: 23px;
+    margin-right: 28px;
+    margin-top: 23px;
+  }
+}
+.AboutConferenceVector3 {
+  bottom: 0px;
+  margin-left: 35px;
+}
+@media screen and (min-width: 765px) {
+  .AboutConferenceVector3 {
+    width: 346px;
+    height: 370px;
+    bottom: 0px;
+    margin-left: 746px;
+  }
+}
+@media screen and (max-width: 765px) {
+  .Visibility {
+    display: none;
+  }
+}
+@media screen and (min-width: 765px) {
+  .VisibilityMobile {
+    display: none;
+  }
+}
+.AboutConferenceBtn {
+  width: 129px;
+  height: 55px;
+  margin: 0 auto;
 }
