@@ -1,7 +1,6 @@
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 
   width: 363px;
   height: 1943px;
@@ -10,6 +9,7 @@
   .container {
     width: 1064px;
     height: 1100px;
+    margin: 0 auto;
   }
 }
 
@@ -60,19 +60,21 @@
   letter-spacing: 0.12px;
   font-weight: 400;
   margin-left: 20px;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 @media screen and (min-width: 765px) {
   .AboutConferenceText {
-    padding-bottom: 69px;
     margin-left: 0px;
-    margin-right: 96px;
+
+    margin-bottom: 32px;
   }
 }
 @media screen and (min-width: 765px) {
   .AboutConferenceWraper {
+    display: flex;
     flex-direction: column;
     max-width: 554px;
+    margin-right: 96px;
   }
 }
 .AboutConferenceImg {
@@ -107,6 +109,102 @@
     bottom: 0px;
     right: 0px;
     left: auto;
+  }
+}
+
+.AboutConference2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  max-width: 352px;
+}
+@media screen and (min-width: 765px) {
+  .AboutConference2 {
+    flex-direction: row-reverse;
+    max-width: 1129px;
+    max-height: 370px;
+    flex-wrap: nowrap;
+  }
+}
+@media screen and (min-width: 765px) {
+  .AboutConferenceWraper2 {
+    display: flex;
+    flex-direction: column;
+    max-width: 554px;
+    margin-left: 96px;
+  }
+}
+.AboutConferenceTitle2 {
+  font-family: var(--decoraction-font);
+  font-size: 31px;
+  color: #000000;
+  font-weight: 400;
+  line-height: auto;
+  letter-spacing: 0px;
+  margin-left: 20px;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 765px) {
+  .AboutConferenceTitle2 {
+    margin-left: 0px;
+    margin-bottom: 20px;
+    font-size: 39px;
+    width: 443px;
+    height: 49px;
+    margin-top: 69px;
+  }
+}
+.AboutConferenceText2 {
+  font-family: var(--main-font);
+  font-size: 16px;
+  color: #000000;
+  line-height: 24px;
+  letter-spacing: 0.12px;
+  font-weight: 400;
+  margin-left: 20px;
+  padding-bottom: 40px;
+}
+@media screen and (min-width: 765px) {
+  .AboutConferenceText2 {
+    margin-bottom: 66px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-bottom: 0px;
+  }
+}
+.AboutConferenceImg2 {
+  width: 240px;
+  height: 217px;
+  border-radius: 10px;
+  align-self: center;
+  margin-bottom: 16px;
+  object-fit: cover;
+}
+@media screen and (min-width: 765px) {
+  .AboutConferenceImg2 {
+    width: 414px;
+    height: 324px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    object-fit: contain;
+    margin-top: 26px;
+  }
+}
+.AboutConferenceVector2 {
+  z-index: -1;
+  position: absolute;
+  bottom: 0px;
+  margin-left: 35px;
+  width: 254px;
+  height: 250px;
+}
+@media screen and (min-width: 765px) {
+  .AboutConferenceVector2 {
+    width: 375px;
+    height: 370px;
+    bottom: 0px;
+    margin-right: 754px;
   }
 }
 
