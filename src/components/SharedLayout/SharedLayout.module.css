@@ -1,12 +1,19 @@
 .header {
-  width: 100%;
-  background-color: var(--primary-background-color);
-  position: fixed;
-  z-index: 999;
-  overflow: hidden;
-  top: 0;
+  display: none;
 }
 
-.main {
-  margin-top: 150px;
+@media screen and (min-width: 480px) {
+  .header {
+    display: block;
+    width: 100%;
+    background-color: var(--primary-background-color);
+    position: fixed;
+    z-index: 999;
+    overflow: hidden;
+    top: 0;
+  }
+
+  .main {
+    margin-top: 150px;
+  }
 }
