@@ -32,6 +32,9 @@ const Navigation = () => {
         </Link>
         <Button variant="support" content="Wesprzyj"></Button>
       </nav>
+      <div className={css.Nav__Lang}>
+        <button >PL</button> | <button>ENG</button>
+      </div>
     </div>
   )
 }

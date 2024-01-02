@@ -6,7 +6,7 @@
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  padding: 0 81px;
+  padding: 0 81px 0 71px;
 }
 
 .Nav__Logo {
@@ -36,4 +36,15 @@
   border-radius: 12px;
   background-color: var(--magenta-color);
   color: var(--light-text-color);
+}
+
+.Nav__Lang {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 0;
+  margin-top: 4px;
+  margin-right: 8px;
 }
