@@ -1,4 +1,4 @@
-.Nav {
+.nav {
   background-color: var(--primary-background-color);
   display: flex;
   width: 100%;
@@ -10,7 +10,7 @@
   font-size: 1rem;
 }
 
-.Nav__Logo {
+.navLogo {
   width: 215px;
   height: 85px;
   margin-top: 27px;
@@ -18,13 +18,13 @@
   cursor: pointer;
 }
 
-.Nav__List {
+.navList {
   display: flex;
   align-items: center;
   gap: 16px;
 }
 
-.Nav__Item {
+.navItem {
   display: flex;
   align-items: center;
   color: var(--dark-text-color);
@@ -34,7 +34,7 @@
   padding: 8px 16px;
 }
 
-.Nav__Item__Icon {
+.navItemIcon {
   width: 11px;
   height: 5.5px;
   fill: var(--light-text-color);
@@ -43,20 +43,20 @@
   margin-left: 8px;
 }
 
-.Nav__Item:hover,
-.Nav__Item:focus {
+.navItem:hover,
+.navItem:focus {
   border-radius: 12px;
   background-color: var(--magenta-color);
   color: var(--light-text-color);
 }
 
-.Nav__Item:hover .Nav__Item__Icon,
-.Nav__Item:focus .Nav__Item__Icon {
+.navItem:hover .navItemIcon,
+.navItem:focus .navItemIcon {
   fill: var(--magenta-color);
   stroke: var(--light-text-color);
 }
 
-.Nav__Lang {
+.navLang {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -69,16 +69,16 @@
   opacity: 0.7;
 }
 
-.Nav__Lang__Btn {
+.navLangBtn {
   color: var(--dark-text-color);
   opacity: 0.7;
   font-weight: 400;
 }
 
-.Nav__Lang__Btn:hover {
+.navLangBtn:hover {
   opacity: 1;
   font-weight: 600;
 }
-.Nav__Lang__Span {
+.navLangSpan {
   margin: 0 4px;
 }
