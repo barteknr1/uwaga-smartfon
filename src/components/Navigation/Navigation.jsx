@@ -8,37 +8,37 @@ import css from './Navigation.module.css'
 
 const Navigation = () => {
   return (
-    <div className={css.Nav}>
+    <div className={css.nav}>
       <Link to="/">
-        <svg className={css.Nav__Logo}>
+        <svg className={css.navLogo}>
           <use href={`${icon}#logo`}></use>
         </svg>
       </Link>
-      <nav className={css.Nav__List}>
-        <Link className={css.Nav__Item} to="/">
+      <nav className={css.navList}>
+        <Link className={css.navItem} to="/">
           O konferencji
         </Link>
-        <Link className={css.Nav__Item} to="/">
+        <Link className={css.navItem} to="/">
           Edycje
-          <svg className={css.Nav__Item__Icon}>
+          <svg className={css.navItemIcon}>
             <use href={`${icon}#dropdown`}></use>
           </svg>
         </Link>
-        <Link className={css.Nav__Item} to="volunteering">
+        <Link className={css.navItem} to="volunteering">
           Wolontariat
         </Link>
-        <Link className={css.Nav__Item} to="/">
+        <Link className={css.navItem} to="/">
           Newsletter
         </Link>
-        <Link className={css.Nav__Item} to="/">
+        <Link className={css.navItem} to="/">
           Partnerzy i Patroni
         </Link>
         <Button variant="support" content="Wesprzyj"></Button>
       </nav>
-      <div className={css.Nav__Lang}>
-        <button className={css.Nav__Lang__Btn}>PL</button>
-        <span className={css.Nav__Lang__Span}>|</span>{' '}
-        <button className={css.Nav__Lang__Btn}>ENG</button>
+      <div className={css.navLang}>
+        <button className={css.navLangBtn}>PL</button>
+        <span className={css.navLangSpan}>|</span>{' '}
+        <button className={css.navLangBtn}>ENG</button>
       </div>
     </div>
   )

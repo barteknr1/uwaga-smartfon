@@ -1,7 +1,12 @@
 .header {
   width: 100%;
-  position: fixed;
-  top: 0;
-  z-index: 999;
   background-color: var(--primary-background-color);
+  position: fixed;
+  z-index: 999;
+  overflow: hidden;
+  top: 0;
+}
+
+.main {
+  margin-top: 150px;
 }
