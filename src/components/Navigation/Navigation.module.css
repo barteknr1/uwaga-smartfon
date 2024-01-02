@@ -5,9 +5,9 @@
   max-width: 1440px;
   justify-content: space-between;
   align-items: center;
-  padding: 0 0 0 71px;
+  margin: 0 auto;
+  padding: 0 81px 0 71px;
   font-size: 1rem;
-
 }
 
 .navLogo {
