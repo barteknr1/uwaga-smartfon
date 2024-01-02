@@ -7,6 +7,7 @@
   align-items: center;
   margin: 0 auto;
   padding: 0 81px 0 71px;
+  font-size: 1rem;
 }
 
 .Nav__Logo {
@@ -47,4 +48,20 @@
   right: 0;
   margin-top: 4px;
   margin-right: 8px;
+  color: var(--dark-text-color);
+  opacity: 0.7;
+}
+
+.Nav__Lang__Btn {
+  color: var(--dark-text-color);
+  opacity: 0.7;
+  font-weight: 400;
+}
+
+.Nav__Lang__Btn:hover {
+  opacity: 1;
+  font-weight: 600;
+}
+.Nav__Lang__Span {
+  margin: 0 4px;
 }
