@@ -20,6 +20,9 @@ const Navigation = () => {
         </Link>
         <Link className={css.Nav__Item} to="/">
           Edycje
+          <svg className={css.Nav__Item__Icon}>
+            <use href={`${icon}#dropdown`}></use>
+          </svg>
         </Link>
         <Link className={css.Nav__Item} to="volunteering">
           Wolontariat

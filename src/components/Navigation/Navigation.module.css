@@ -25,6 +25,8 @@
 }
 
 .Nav__Item {
+  display: flex;
+  align-items: center;
   color: var(--dark-text-color);
   background-color: var(--primary-background-color);
   text-decoration: inherit;
@@ -32,11 +34,26 @@
   padding: 8px 16px;
 }
 
+.Nav__Item__Icon {
+  width: 11px;
+  height: 5.5px;
+  fill: var(--light-text-color);
+  stroke-width: 1px;
+  stroke: var(--dark-text-color);
+  margin-left: 8px;
+}
+
 .Nav__Item:hover,
 .Nav__Item:focus {
   border-radius: 12px;
   background-color: var(--magenta-color);
   color: var(--light-text-color);
+}
+
+.Nav__Item:hover .Nav__Item__Icon,
+.Nav__Item:focus .Nav__Item__Icon {
+  fill: var(--magenta-color);
+  stroke: var(--light-text-color);
 }
 
 .Nav__Lang {
