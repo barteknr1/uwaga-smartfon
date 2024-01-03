@@ -1,10 +1,10 @@
-import { Routes, Route } from "react-router-dom"
-import SharedLayout from "./components/SharedLayout/SharedLayout"
-import Home from "./pages/Home/Home"
-import Volunteering from "./pages/Volunteering/Volunteering"
+import {Routes, Route} from 'react-router-dom'
+import 'modern-normalize/modern-normalize.css'
+import SharedLayout from './components/SharedLayout/SharedLayout'
+import Home from './pages/Home/Home'
+import Volunteering from './pages/Volunteering/Volunteering'
 
 function App() {
-
   return (
     <>
       <Routes>

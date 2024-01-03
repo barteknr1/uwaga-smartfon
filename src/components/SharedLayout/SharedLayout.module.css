@@ -1,7 +1,12 @@
 .header {
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	width: 100%;
-	background-color: darkgray;
+  width: 100%;
+  background-color: var(--primary-background-color);
+  position: fixed;
+  z-index: 999;
+  overflow: hidden;
+  top: 0;
+}
+
+.main {
+  margin-top: 150px;
 }

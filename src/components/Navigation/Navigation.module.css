@@ -1,5 +1,84 @@
 .nav {
-	display: flex;
-	gap: 40px;
-	padding: 25px;
+  background-color: var(--primary-background-color);
+  display: flex;
+  width: 100%;
+  max-width: 1440px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 81px 0 71px;
+  font-size: 1rem;
+}
+
+.navLogo {
+  width: 215px;
+  height: 85px;
+  margin-top: 27px;
+  margin-bottom: 27px;
+  cursor: pointer;
+}
+
+.navList {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  color: var(--dark-text-color);
+  background-color: var(--primary-background-color);
+  text-decoration: inherit;
+  font-weight: 400;
+  padding: 8px 16px;
+}
+
+.navItemIcon {
+  width: 11px;
+  height: 5.5px;
+  fill: var(--light-text-color);
+  stroke-width: 1px;
+  stroke: var(--dark-text-color);
+  margin-left: 8px;
+}
+
+.navItem:hover,
+.navItem:focus {
+  border-radius: 12px;
+  background-color: var(--magenta-color);
+  color: var(--light-text-color);
+}
+
+.navItem:hover .navItemIcon,
+.navItem:focus .navItemIcon {
+  fill: var(--magenta-color);
+  stroke: var(--light-text-color);
+}
+
+.navLang {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 0;
+  margin-top: 4px;
+  margin-right: 8px;
+  color: var(--dark-text-color);
+  opacity: 0.7;
+}
+
+.navLangBtn {
+  color: var(--dark-text-color);
+  opacity: 0.7;
+  font-weight: 400;
+}
+
+.navLangBtn:hover {
+  opacity: 1;
+  font-weight: 600;
+}
+.navLangSpan {
+  margin: 0 4px;
 }
