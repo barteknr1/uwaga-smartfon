@@ -5,7 +5,6 @@ import PreviousEdition from '../../components/PreviousEdition/PreviousEdition'
 const Home = () => {
   return (
     <>
-      <div>Home</div>
       <PreviousEdition />
       <Comments />
       <Patrons />
