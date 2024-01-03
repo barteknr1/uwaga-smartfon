@@ -1,12 +1,13 @@
 import Comments from '../../components/Comments/Comments'
 import PreviousEdition from '../../components/PreviousEdition/PreviousEdition'
+import Modal from '../../components/Modal/Modal'
 
 const Home = () => {
   return (
     <>
-      <div>Home</div>
       <PreviousEdition />
       <Comments />
+      <Modal />
     </>
   )
 }

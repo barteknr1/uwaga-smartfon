@@ -1,0 +1,10 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 68px;
+  z-index: 3;
+  border: 3px solid var(--light-brand-color);
+  border-radius: 16px;
+  background-color: var(--primary-background-color);
+}
