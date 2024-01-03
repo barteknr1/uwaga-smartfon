@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 
 import Button from '../Button/Button'
 
@@ -9,30 +9,30 @@ import css from './Navigation.module.css'
 const Navigation = () => {
   return (
     <div className={css.nav}>
-      <Link to="/">
+      <NavLink to="/">
         <svg className={css.navLogo}>
           <use href={`${icon}#logo`}></use>
         </svg>
-      </Link>
+      </NavLink>
       <nav className={css.navList}>
-        <Link className={css.navItem} to="/">
+        <NavLink className={css.navItem} to="/">
           O konferencji
-        </Link>
-        <Link className={css.navItem} to="/">
+        </NavLink>
+        <NavLink className={css.navItem} to="/">
           Edycje
           <svg className={css.navItemIcon}>
             <use href={`${icon}#dropdown`}></use>
           </svg>
-        </Link>
-        <Link className={css.navItem} to="volunteering">
+        </NavLink>
+        <NavLink className={css.navItem} to="volunteering">
           Wolontariat
-        </Link>
-        <Link className={css.navItem} to="/">
+        </NavLink>
+        <NavLink className={css.navItem} to="/">
           Newsletter
-        </Link>
-        <Link className={css.navItem} to="/">
+        </NavLink>
+        <NavLink className={css.navItem} to="/">
           Partnerzy i Patroni
-        </Link>
+        </NavLink>
         <Button variant="support" content="Wesprzyj"></Button>
       </nav>
       <div className={css.navLang}>
