@@ -2,46 +2,55 @@ import Section from '../Section/Section'
 import {Swiper, SwiperSlide} from 'swiper/react'
 import {Autoplay} from 'swiper/modules'
 import 'swiper/css/bundle'
-import css from './PreviousEdition.module.css'
-import './styles.css'
-import {
-  slider1,
-  slider2,
-  slider3,
-  slider4,
-  slider5,
-  slider6,
-  slider7,
-  slider8,
-  slider9,
-  slider10,
-  slider11,
-  slider12,
-} from '../../assets/images/slider'
+import css from './Patrons.module.css'
+import {bgk, nask, pokolenia} from '../../assets/images/patrons'
+import Button from '../Button/Button'
 
-const PreviousEdition = () => {
-  const sliderOne = [slider1, slider2, slider3, slider4, slider5, slider6]
-  const sliderTwo = [slider7, slider8, slider9, slider10, slider11, slider12]
+const Patrons = () => {
+  const patronOne = [
+    bgk,
+    nask,
+    pokolenia,
+    bgk,
+    nask,
+    pokolenia,
+    bgk,
+    nask,
+    pokolenia,
+  ]
+  const patronTwo = [
+    bgk,
+    nask,
+    pokolenia,
+    bgk,
+    nask,
+    pokolenia,
+    bgk,
+    nask,
+    pokolenia,
+  ]
+
   return (
     <Section
-      sectionClass={css.slider}
-      titleClass={css.sliderTitle}
-      title="Poprzednie Edycje"
+      sectionClass={css.patrons}
+      titleClass={css.patronsTitle}
+      title="Partnerzy & Patroni"
     >
-      <div className={css.container}>
-        <div>
+      <div className={css.patronsContainer}>
+        <div className={css.patronsBox}>
           <Swiper
             spaceBetween={20}
-            slidesPerView={2.75}
+            slidesPerView={2}
             breakpoints={{
               394: {
-                slidesPerView: 4,
-                spaceBetween: 16,
+                slidesPerView: 6,
+                spaceBetween: 20,
               },
             }}
             loop={true}
             autoplay={{
               delay: 0,
+              pauseOnMouseEnter: true,
               disableOnInteraction: false,
             }}
             speed={4000}
@@ -51,27 +60,27 @@ const PreviousEdition = () => {
             navigation={false}
             modules={[Autoplay]}
             allowTouchMove={false}
-            className="mySwiper"
+            className="patronsSwiper"
           >
-            {sliderOne.map((slider, index) => (
+            {patronTwo.map((slider, index) => (
               <SwiperSlide key={index}>
                 <img
-                  className={css.slideImg}
+                  className={css.patronsImg}
                   src={slider}
-                  alt={`Slider photo ${index + 1}`}
+                  alt={`patron logo ${index + 1}`}
                 />
               </SwiperSlide>
             ))}
           </Swiper>
         </div>
-        <div>
+        <div className={css.patronsBox}>
           <Swiper
-            spaceBetween={20}
-            slidesPerView={2.75}
+            spaceBetween={19}
+            slidesPerView={2}
             breakpoints={{
               394: {
-                slidesPerView: 4,
-                spaceBetween: 16,
+                slidesPerView: 6,
+                spaceBetween: 20,
               },
             }}
             loop={true}
@@ -79,6 +88,7 @@ const PreviousEdition = () => {
               delay: 0,
               reverseDirection: true,
               disableOnInteraction: false,
+              pauseOnMouseEnter: true,
             }}
             speed={4000}
             pagination={{
@@ -87,22 +97,22 @@ const PreviousEdition = () => {
             navigation={false}
             modules={[Autoplay]}
             allowTouchMove={false}
-            className="mySwiper"
+            className="patronsSwiper"
           >
-            {sliderTwo.map((slider, index) => (
+            {patronOne.map((slider, index) => (
               <SwiperSlide key={index}>
                 <img
-                  className={css.slideImg}
+                  className={css.patronsImg}
                   src={slider}
-                  alt={`Slider photo ${index + 1}`}
+                  alt={`patron logo ${index + 1}`}
                 />
               </SwiperSlide>
             ))}
           </Swiper>
         </div>
+        <Button variant="support" content="Wesprzyj"></Button>
       </div>
     </Section>
   )
 }
-
-export default PreviousEdition
+export default Patrons
