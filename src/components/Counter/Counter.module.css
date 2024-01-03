@@ -7,7 +7,7 @@
   color: var(--light-text-color);
   font-family: var(--placeholder-font);
   height: 106px;
-  width: 522px;
+  max-width: 522px;
   border-top-right-radius: 50px;
   border-bottom-left-radius: 50px;
 }

@@ -14,6 +14,7 @@ const CountdownTimer = ({eventDate}) => {
 
     return {days, hours, minutes}
   }
+  const formatTime = (time) => (time < 10 ? `0${time}` : time)
 
   const [timeRemaining, setTimeRemaining] = useState(
     calculateTimeRemaining(eventDate)
@@ -30,14 +31,18 @@ const CountdownTimer = ({eventDate}) => {
   return (
     <div className={css.TimeRemaining_Box}>
       <div className={css.TimeRemaining_InfoBox}>
-        <h2 className={css.TimeRemaining_Info}>Dni</h2>
-        <h2 className={css.TimeRemaining_Info}>Godzin</h2>
-        <h2 className={css.TimeRemaining_Info}>Minut</h2>
+        <span className={css.TimeRemaining_Info}>Dni</span>
+        <span className={css.TimeRemaining_Info}>Godzin</span>
+        <span className={css.TimeRemaining_Info}>Minut</span>
       </div>
       <div className={css.TimeRemaining_NumBox}>
-        <p className={css.TimeRemaining_Num}>{timeRemaining.days} :</p>
-        <p className={css.TimeRemaining_Num}>{timeRemaining.hours} :</p>
-        <p className={css.TimeRemaining_Num}>{timeRemaining.minutes}</p>
+        <span className={css.TimeRemaining_Num}>{timeRemaining.days} :</span>
+        <span className={css.TimeRemaining_Num}>
+          {formatTime(timeRemaining.hours)} :
+        </span>
+        <span className={css.TimeRemaining_Num}>
+          {formatTime(timeRemaining.minutes)}
+        </span>
       </div>
     </div>
   )
