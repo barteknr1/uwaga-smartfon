@@ -1,10 +1,39 @@
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  max-width: 768px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
   padding: 68px;
   z-index: 3;
   border: 3px solid var(--light-brand-color);
   border-radius: 16px;
   background-color: var(--primary-background-color);
+}
+.close {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  width: 24px;
+  height: 24px;
+}
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.15s ease-in-out, opacity 0.15s ease-in-out;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: 1000;
+}
+.isHidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(1.5);
 }
