@@ -102,9 +102,7 @@ const AboutConference = () => {
             alt=""
           />
         </div>
-        <Button variant="secondary" content="Więcej">
-          Więcej
-        </Button>
+        <Button variant="secondary" content="Więcej"></Button>
       </div>
     </Section>
   )
