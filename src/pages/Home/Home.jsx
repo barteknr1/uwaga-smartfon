@@ -16,7 +16,7 @@ const Home = () => {
         addLine1="4 kwietnia 2024"
         addLine2="ICE Kraków"
       />
-      <CountdownTimer eventDate={eventDate}/>
+      <CountdownTimer eventDate={eventDate} />
       <PreviousEdition />
       <Comments />
       <Patrons />
