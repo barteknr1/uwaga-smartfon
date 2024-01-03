@@ -1,5 +1,6 @@
 import Section from '../Section/Section'
 import css from './AboutConference.module.css'
+import Button from '../Button/Button'
 
 const AboutConference = () => {
   return (
@@ -101,9 +102,9 @@ const AboutConference = () => {
             alt=""
           />
         </div>
-        <button className={`${css.button}  ${css.AboutConferenceBtn}`}>
+        <Button variant="secondary" content="Więcej">
           Więcej
-        </button>
+        </Button>
       </div>
     </Section>
   )
