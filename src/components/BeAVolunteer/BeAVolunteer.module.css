@@ -1,0 +1,41 @@
+.BeAVolunteer {
+  background-color: var(--third-background-color);
+  padding-top: 25px;
+  padding-left: 20px;
+  padding-right: 21px;
+  padding-bottom: 55px;
+}
+.BeAVolunteerTitle {
+  font: var(--decoraction-font);
+  font-size: 31px;
+  line-height: 39px;
+  font-weight: 400;
+  color: var(--light-text-color);
+}
+.BeAVolunteerContainer {
+  display: flex;
+  align-content: space-between;
+  justify-content: center;
+  flex-direction: column;
+  gap: 64px;
+
+  align-items: center;
+  margin-top: 64px;
+}
+.BeAVolunteerImg {
+  width: 211px;
+  height: 226px;
+}
+.BeAVolunteerTextContainer {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.BeAVolunteerText {
+  font: var(--main-font);
+  color: var(--light-text-color);
+  size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.12%;
+}
