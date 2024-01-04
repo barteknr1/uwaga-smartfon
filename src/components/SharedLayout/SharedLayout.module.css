@@ -2,6 +2,21 @@
   display: none;
 }
 
+.is-open {
+  display: block;
+}
+
+.mobileMenuTrigger {
+  position: fixed;
+  z-index: 999;
+  overflow: hidden;
+  width: 33px;
+  height: 31px;
+  cursor: pointer;
+  right: 14px;
+  top: 12px;
+}
+
 @media screen and (min-width: 480px) {
   .header {
     display: block;
@@ -15,5 +30,8 @@
 
   .main {
     margin-top: 150px;
+  }
+  .mobileMenuTrigger {
+    display: none;
   }
 }
