@@ -5,6 +5,7 @@ const Section = ({title, children, sectionClass, titleClass}) => {
     <section className={`${sectionClass}`}>
       <h2 className={`${titleClass}`}>{title}</h2>
       <div>{children}</div>
+      
     </section>
   )
 }
