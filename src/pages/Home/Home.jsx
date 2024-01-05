@@ -15,8 +15,8 @@ const Home = () => {
         main="UWAGA! SMARTFON"
         addLine1="4 kwietnia 2024"
         addLine2="ICE Kraków"
-      ></Banner>
-      <CountdownTimer eventDate={eventDate}></CountdownTimer>
+      />
+      <CountdownTimer eventDate={eventDate}/>
       <PreviousEdition />
       <Comments isLandingPage={false} />
       <Patrons />
