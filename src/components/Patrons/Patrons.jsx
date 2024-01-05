@@ -10,16 +10,15 @@ import {useRef} from 'react'
 
 const Patrons = () => {
   const swiperRef = useRef(null)
+  const swiperRefTwo = useRef(null)
 
-  const handleMouseEnter = () => {
+  const handleMouseEnter = (swiperRef) => {
     if (swiperRef.current) {
-      console.log(swiperRef.current?.swiper)
       swiperRef.current.swiper.autoplay.stop()
-      swiperRef.current.swiper.autoplay.pause()
     }
   }
 
-  const handleMouseLeave = () => {
+  const handleMouseLeave = (swiperRef) => {
     if (swiperRef.current) {
       swiperRef.current.swiper.autoplay.start()
     }
@@ -56,8 +55,8 @@ const Patrons = () => {
       <div className={css.patronsContainer}>
         <div
           className={css.patronsBox}
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
+          onMouseEnter={() => handleMouseEnter(swiperRef)}
+          onMouseLeave={() => handleMouseLeave(swiperRef)}
         >
           <Swiper
             ref={swiperRef}
@@ -94,8 +93,13 @@ const Patrons = () => {
             ))}
           </Swiper>
         </div>
-        <div className={css.patronsBox}>
+        <div
+          className={css.patronsBox}
+          onMouseEnter={() => handleMouseEnter(swiperRefTwo)}
+          onMouseLeave={() => handleMouseLeave(swiperRefTwo)}
+        >
           <Swiper
+            ref={swiperRefTwo}
             spaceBetween={19}
             slidesPerView={2}
             breakpoints={{
@@ -109,7 +113,6 @@ const Patrons = () => {
               delay: 0,
               reverseDirection: true,
               disableOnInteraction: false,
-              pauseOnMouseEnter: true,
             }}
             speed={4000}
             pagination={{
