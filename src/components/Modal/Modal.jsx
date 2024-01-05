@@ -1,16 +1,31 @@
 import css from './Modal.module.css'
 import sprite from '../../assets/svg/sprite.svg'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import PropTypes from 'prop-types'
 
 const Modal = ({ children }) => {
-  const [isModalVisible, setIsModalVisible] = useState(false)
+  const [isModalVisible, setIsModalVisible] = useState(true)
 
   const close = () => {
-    setIsModalVisible(!isModalVisible)
-    console.log(isModalVisible);
+    setIsModalVisible(false)
   }
+  const closeOnBackdrop = (e) => {
+    if (e.currentTarget === e.target) {
+      setIsModalVisible(false)
+    }
+  }
+  useEffect(() => {
+    const closeOnEscape = (e) => {
+      if (e.key === 'Escape' && isModalVisible) {
+        setIsModalVisible(false)
+      }
+    }
+    window.addEventListener('keydown', closeOnEscape);
+    return () => window.removeEventListener('keydown', closeOnEscape);
+  }, [isModalVisible])
+
   return (
-    <div className={isModalVisible ? css.backdrop : `${css.backdrop} ${css.isHidden}`}>
+    <div className={isModalVisible ? css.backdrop : `${css.backdrop} ${css.isHidden}`} onClick={closeOnBackdrop}>
       <div className={css.modal}>
         <button onClick={close}>
           <svg className={css.close}>
@@ -22,5 +37,9 @@ const Modal = ({ children }) => {
     </div>
   )
 };
+
+Modal.propTypes = {
+  children: PropTypes.node.isRequired,
+}
 
 export default Modal
