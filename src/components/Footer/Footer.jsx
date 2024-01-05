@@ -6,7 +6,7 @@ const Footer = ({text}) => {
   return (
     <footer className={css.footer}>
       <h2 className={css.footerHeading}>{text}</h2>
-      <div className={css.footerContact}>
+      <address className={css.footerContact}>
         <h2 className={css.footerContactHeading}>
           Masz pytania? <br />
           Zapraszamy do kontaktu
@@ -19,7 +19,7 @@ const Footer = ({text}) => {
             konferencja@uwagasmartfon.pl
           </a>
         </div>
-      </div>
+      </address>
     </footer>
   )
 }
