@@ -10,6 +10,7 @@ const Home = () => {
       <div>Home</div>
 
       <CountdownTimer eventDate={eventDate}></CountdownTimer>
+
       <PreviousEdition />
       <Comments />
       <Patrons />
