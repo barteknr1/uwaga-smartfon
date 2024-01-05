@@ -1,0 +1,8 @@
+.footerHeading {
+  background-color: var(--secondary-background-color);
+  color: var(--light-text-color);
+  font-family: var(--decoraction-font);
+  font-size: 1.3rem;
+  padding: 20px;
+  text-align: center;
+}

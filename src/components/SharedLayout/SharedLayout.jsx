@@ -3,6 +3,7 @@ import {Suspense, useState} from 'react'
 import css from './SharedLayout.module.css'
 import icon from '../../assets/images/vectors/icons.svg'
 import Navigation from '../Navigation/Navigation'
+import Footer from '../Footer/Footer'
 
 const SharedLayout = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -24,6 +25,7 @@ const SharedLayout = () => {
           <Outlet />
         </Suspense>
       </main>
+      <Footer></Footer>
     </>
   )
 }
