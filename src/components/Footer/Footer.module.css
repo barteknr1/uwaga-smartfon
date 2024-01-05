@@ -2,7 +2,7 @@
   background-color: var(--primary-background-color);
 }
 
-.footerHeading {
+.heading {
   background-color: var(--secondary-background-color);
   color: var(--light-text-color);
   font-family: var(--decoraction-font);
@@ -11,24 +11,44 @@
   padding: 20px;
   text-align: center;
 }
-.footerContact {
+.contact {
   font-size: 1.25rem;
   padding: 32px 24px;
 }
-.footerContactHeading {
+.contactHeading {
   font-family: var(--decoraction-font);
   font-size: 1.9rem;
 }
 
-.footerContactMail {
+.contactMail {
   color: var(--brand-text-color);
   cursor: pointer;
   font-weight: 600;
   margin-top: 32px;
+  margin-bottom: 59px;
   transition: 500ms;
 }
 
-.footerContactMail:hover,
-.footerContactMailfocus {
+.contactMail:hover,
+.contactMail:focus {
   color: var(--light-brand-color);
+}
+
+.adress {
+  font-size: 1.25rem;
+}
+
+.adressHeading {
+  font-weight: 700;
+}
+
+.adressText {
+  margin-top: 12px;
+  font-weight: 500;
+}
+
+.adressLine {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #1d1d1d;
 }
