@@ -1,13 +1,25 @@
 import Comments from '../../components/Comments/Comments'
+import Patrons from '../../components/Patrons/Patrons'
 import PreviousEdition from '../../components/PreviousEdition/PreviousEdition'
-import Modal from '../../components/Modal/Modal'
+import Banner from '../../components/Banner/Banner'
+import Image1 from '../../assets/banner/heroBanner.png'
+import CountdownTimer from '../../components/Counter/Counter'
 
 const Home = () => {
+  const eventDate = new Date('April 4, 2024')
   return (
     <>
+      <Banner
+        url={Image1}
+        title="KONFERENCJA"
+        main="UWAGA! SMARTFON"
+        addLine1="4 kwietnia 2024"
+        addLine2="ICE Kraków"
+      ></Banner>
+      <CountdownTimer eventDate={eventDate}></CountdownTimer>
       <PreviousEdition />
       <Comments />
-      <Modal />
+      <Patrons />
     </>
   )
 }
