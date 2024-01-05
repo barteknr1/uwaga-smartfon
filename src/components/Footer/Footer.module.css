@@ -3,6 +3,7 @@
   color: var(--light-text-color);
   font-family: var(--decoraction-font);
   font-size: 1.3rem;
+  font-weight: 500;
   padding: 20px;
   text-align: center;
 }
