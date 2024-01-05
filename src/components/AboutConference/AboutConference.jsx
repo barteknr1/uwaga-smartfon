@@ -1,12 +1,26 @@
 import Section from '../Section/Section'
 import css from './AboutConference.module.css'
 import Button from '../Button/Button'
+import {
+  about_Vector1,
+  about_Vector1_mobile,
+  about_Vector2,
+  about_Vector2_mobile,
+  about_Vector3,
+  about_Vector3_mobile,
+  about_foto1,
+  about_foto1_mobile,
+  about_foto2,
+  about_foto2_mobile,
+  about_foto3,
+  about_foto3_mobile,
+} from '../../assets/images/AboutConference'
 
 const AboutConference = () => {
   return (
-    <Section>
-      <div className={css.container}>
-        <div className={css.AboutConference}>
+    <Section sectionClass={css.AboutConference}>
+      <div className={css.AboutConferenceBox}>
+        <div className={css.AboutConferenceContainer}>
           <div className={css.AboutConferenceWraper}>
             <h3 className={css.AboutConferenceTitle}>O konferencji</h3>
             <p className={css.AboutConferenceText}>
@@ -21,23 +35,33 @@ const AboutConference = () => {
               nowoczesnych technologii w życiu społecznym.
             </p>
           </div>
+
           <img
-            className={css.AboutConferenceImg}
-            src="src\assets\images\about_foto1.png"
+            className={`${css.AboutConferenceImg} ${css.VisibilityMobile}`}
+            src={about_foto1_mobile}
             alt="prelegenci konferencji"
           />
           <img
-            className={`${css.AboutConferenceVector} ${css.VisibilityMobile}`}
-            src="src\assets\images\about_Vector1.png"
+            className={`${css.AboutConferenceVector} ${css.AboutConferenceVector1} ${css.VisibilityMobile} `}
+            src={about_Vector1_mobile}
             alt=""
           />
+
           <img
-            className={`${css.AboutConferenceVector} ${css.Visibility}`}
-            src="src\assets\images\about_Vector1_765.png"
+            className={`${css.AboutConferenceImg} ${css.Visibility}`}
+            src={about_foto1}
+            alt="prelegenci konferencji"
+          />
+
+          <img
+            className={`${css.AboutConferenceVector} ${css.AboutConferenceVector1} ${css.Visibility}`}
+            src={about_Vector1}
             alt=""
           />
         </div>
-        <div className={`${css.AboutConference} ${css.AboutConference2}`}>
+        <div
+          className={`${css.AboutConferenceContainer} ${css.AboutConferenceContainer2}`}
+        >
           <div
             className={`${css.AboutConferenceWraper} ${css.AboutConferenceWraper2}`}
           >
@@ -57,17 +81,30 @@ const AboutConference = () => {
             </p>
           </div>
           <img
-            className={`${css.AboutConferenceImg} ${css.AboutConferenceImg2}`}
-            src="src\assets\images\about_foto2.png"
+            className={`${css.AboutConferenceImg} ${css.AboutConferenceImg2} ${css.VisibilityMobile}`}
+            src={about_foto2_mobile}
             alt="widownia"
           />
           <img
-            className={`${css.AboutConferenceVector} ${css.AboutConferenceVector2}`}
-            src="src\assets\images\about_Vector2.png"
+            className={`${css.AboutConferenceVector} ${css.AboutConferenceVector2}  ${css.VisibilityMobile} `}
+            src={about_Vector2_mobile}
+            alt=""
+          />
+          <img
+            className={`${css.AboutConferenceImg} ${css.AboutConferenceImg2} ${css.Visibility}`}
+            src={about_foto2}
+            alt="prelegenci konferencji"
+          />
+
+          <img
+            className={`${css.AboutConferenceVector} ${css.AboutConferenceVector2} ${css.Visibility}`}
+            src={about_Vector2}
             alt=""
           />
         </div>
-        <div className={`${css.AboutConference} ${css.AboutConference3}`}>
+        <div
+          className={`${css.AboutConferenceContainer} ${css.AboutConferenceContainer3}`}
+        >
           <div className={css.AboutConferenceWraper}>
             <h3
               className={`${css.AboutConferenceTitle} ${css.AboutConferenceTitle3}`}
@@ -87,18 +124,23 @@ const AboutConference = () => {
             </p>
           </div>
           <img
-            className={`${css.AboutConferenceImg} ${css.AboutConferenceImg3}`}
-            src="src\assets\images\about_foto3.png"
-            alt="scena"
+            className={`${css.AboutConferenceImg} ${css.AboutConferenceImg3} ${css.VisibilityMobile}`}
+            src={about_foto3_mobile}
+            alt="prelegenci konferencji"
           />
           <img
-            className={`${css.AboutConferenceVector} ${css.AboutConferenceVector3} ${css.VisibilityMobile}`}
-            src="src\assets\images\about_Vector3.png"
+            className={`${css.AboutConferenceVector} ${css.AboutConferenceVector3} ${css.VisibilityMobile} `}
+            src={about_Vector3_mobile}
             alt=""
           />
           <img
-            className={`${css.AboutConferenceVector} ${css.Visibility} ${css.AboutConferenceVector3}`}
-            src="src\assets\images\about_Vector3_765.png"
+            className={`${css.AboutConferenceImg} ${css.AboutConferenceImg3} ${css.Visibility}`}
+            src={about_foto3}
+            alt="prelegenci konferencji"
+          />
+          <img
+            className={`${css.AboutConferenceVector} ${css.AboutConferenceVector3} ${css.Visibility}`}
+            src={about_Vector3}
             alt=""
           />
         </div>
