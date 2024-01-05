@@ -9,6 +9,7 @@ const Home = () => {
   const eventDate = new Date('April 4, 2024')
   return (
     <>
+      <div>Home</div>
       <Banner
         url={Image1}
         title="KONFERENCJA"
