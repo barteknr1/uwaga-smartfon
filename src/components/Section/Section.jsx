@@ -3,9 +3,8 @@ import PropTypes from 'prop-types'
 const Section = ({title, children, sectionClass, titleClass}) => {
   return (
     <section className={`${sectionClass}`}>
-      <h2 className={`${titleClass}`}>{title}</h2>
-      <div>{children}</div>
-      
+      {title ? <h2 className={`${titleClass}`}>{title}</h2> : null}
+      {children}
     </section>
   )
 }
