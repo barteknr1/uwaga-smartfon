@@ -18,7 +18,7 @@ const Home = () => {
       />
       <CountdownTimer eventDate={eventDate}/>
       <PreviousEdition />
-      <Comments />
+      <Comments isLandingPage={false} />
       <Patrons />
     </>
   )
