@@ -1,0 +1,20 @@
+.VolunteeringAreas {
+  display: flex;
+  gap: 24px;
+  background-color: var(--third-background-color);
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.VolunteeringAreas_Title {
+  color: var(--light-text-color);
+  font-size: 49px;
+  font-family: var(--decoraction-font);
+  padding: 64px;
+}
+.VolunteeringAreas_Text {
+  font-family: var(--main-font);
+  font-size: 39px;
+  text-align: center;
+  color: var(--light-text-color);
+}

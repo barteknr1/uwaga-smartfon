@@ -1,0 +1,17 @@
+.VolunteeringAreasItem {
+  height: auto;
+  max-width: 230px;
+  background-color: var(--third-background-color);
+}
+
+.VolunteeringAreasItem_Item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 24px;
+}
+
+.VolunteeringAreasItem_ItemDescription {
+  font-family: var(--main-font);
+  color: var(--light-text-color);
+}
