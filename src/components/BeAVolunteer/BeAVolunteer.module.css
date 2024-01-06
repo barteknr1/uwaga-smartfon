@@ -6,7 +6,7 @@
   padding-bottom: 55px;
 }
 .BeAVolunteerTitle {
-  font: var(--decoraction-font);
+  font-family: var(--decoraction-font);
   font-size: 31px;
   line-height: 39px;
   font-weight: 400;
@@ -18,9 +18,15 @@
   justify-content: center;
   flex-direction: column;
   gap: 64px;
-
   align-items: center;
   margin-top: 64px;
+}
+
+.BeAVolunteerContainerBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
 }
 .BeAVolunteerImg {
   width: 211px;
@@ -38,4 +44,28 @@
   size: 16px;
   line-height: 24px;
   letter-spacing: 0.12%;
+}
+
+@media screen and (min-width: 765px) {
+  .BeAVolunteerContainerBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 145px;
+    padding-left: 145px;
+    padding-right: 165px;
+    padding-top: 27px;
+  }
+
+  .BeAVolunteerTitle {
+    font-size: 49px;
+    line-height: 61px;
+    color: var(--light-text-color);
+    padding-left: 80px;
+    padding-top: 64px;
+  }
+  .BeAVolunteerImg {
+    width: 346px;
+    height: 370px;
+  }
 }
