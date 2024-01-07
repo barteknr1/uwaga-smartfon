@@ -4,7 +4,6 @@ import PreviousEdition from '../../components/PreviousEdition/PreviousEdition'
 import Banner from '../../components/Banner/Banner'
 import Image1 from '../../assets/banner/heroBanner.png'
 import CountdownTimer from '../../components/Counter/Counter'
-import Footer from '../../components/Footer/Footer'
 
 const Home = () => {
   const eventDate = new Date('April 4, 2024')
@@ -21,7 +20,6 @@ const Home = () => {
       <PreviousEdition />
       <Comments />
       <Patrons />
-      <Footer text="Strona została stworzona dzięki pracy Wolontariuszy." />
     </>
   )
 }

@@ -1,8 +1,11 @@
 import {Outlet} from 'react-router-dom'
 import {Suspense, useState} from 'react'
+
+import Navigation from '../Navigation/Navigation'
+import Footer from '../Footer/Footer'
+
 import css from './SharedLayout.module.css'
 import icon from '../../assets/images/vectors/icons.svg'
-import Navigation from '../Navigation/Navigation'
 
 const SharedLayout = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -24,6 +27,7 @@ const SharedLayout = () => {
           <Outlet />
         </Suspense>
       </main>
+      <Footer />
     </>
   )
 }

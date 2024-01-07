@@ -1,6 +1,6 @@
 import Banner from '../../components/Banner/Banner'
 import Image2 from '../../assets/banner/heroBanner2.png'
-import Footer from '../../components/Footer/Footer'
+
 const Volunteering = () => {
   return (
     <>
@@ -10,7 +10,6 @@ const Volunteering = () => {
         main="UWAGA! SMARTFON"
       ></Banner>
       Volunteering
-      <Footer text="Z głębi serca dziękujemy !" />
     </>
   )
 }
