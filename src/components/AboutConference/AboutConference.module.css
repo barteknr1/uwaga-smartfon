@@ -1,0 +1,54 @@
+.AboutConference {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--primary-background-color);
+  padding-bottom: 64px;
+  padding-top: 64px;
+}
+.AboutConferenceBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 26px;
+}
+.AboutConferenceContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 20px;
+  position: relative;
+}
+
+.AboutConferenceTitle {
+  font-family: var(--decoraction-font);
+  font-size: 31px;
+  color: var(--dark-text-color);
+  line-height: 38.75px;
+  letter-spacing: 0px;
+}
+
+.AboutConferenceText {
+  font-family: var(--main-font);
+  font-size: 16px;
+  color: var(--dark-text-color);
+  line-height: 24px;
+  letter-spacing: 0.12px;
+  margin-bottom: 40px;
+  margin-top: 16px;
+}
+
+.AboutConferenceImg {
+  width: 240px;
+  height: 217px;
+  position: relative;
+  z-index: 2;
+  object-fit: fill;
+}
+
+.AboutConferenceSvg {
+  width: 331px;
+  height: 227px;
+  position: absolute;
+  z-index: -1;
+}
