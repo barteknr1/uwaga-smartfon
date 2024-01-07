@@ -63,3 +63,22 @@
   width: 48%;
   margin-top: 36px;
 }
+
+.socialList {
+  display: flex;
+  margin-top: 32px;
+  gap: 32px;
+}
+.socialListItem {
+  cursor: pointer;
+}
+
+.socialListItemIcon {
+  width: 30px;
+  height: 30px;
+  fill: var(--dark-brand-color);
+}
+
+.socialListItemIcon:hover {
+  fill: var(--light-brand-color);
+}

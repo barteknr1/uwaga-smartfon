@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
 
+import icon from '../../assets/images/vectors/icons.svg'
 import css from './Footer.module.css'
 
 const Footer = ({text}) => {
@@ -51,6 +52,41 @@ const Footer = ({text}) => {
             className={css.logo}
           />
         </a>
+        <ul className={css.socialList}>
+          <li className={css.socialListItem}>
+            <a
+              href="https://www.facebook.com/ProjektPL.org"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg className={css.socialListItemIcon}>
+                <use href={`${icon}#facebook`}></use>
+              </svg>
+            </a>
+          </li>
+          <li className={css.socialListItem}>
+            <a
+              href="https://www.youtube.com/@fundacjaprojektpl2306"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg className={css.socialListItemIcon}>
+                <use href={`${icon}#youtube`}></use>
+              </svg>
+            </a>
+          </li>
+          <li className={css.socialListItem}>
+            <a
+              href="https://www.linkedin.com/company/projekt-pl-foundation/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg className={css.socialListItemIcon}>
+                <use href={`${icon}#linkedin`}></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </address>
       <script
         type="text/javascript"
