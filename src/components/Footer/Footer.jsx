@@ -44,6 +44,13 @@ const Footer = ({text}) => {
           id="gmap_canvas"
           src="https://maps.google.com/maps?width=550&amp;height=413&amp;hl=en&amp;q=ICE%20Krak%C3%B3w%20%20Krak%C3%B3w+(ICE%20Krak%C3%B3w%20)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
         ></iframe>
+        <a href="https://projektpl.org/">
+          <img
+            src="./src/assets/images/footer/projektpl.png"
+            alt="logo firmy fundacja projektpl"
+            className={css.logo}
+          />
+        </a>
       </address>
       <script
         type="text/javascript"
