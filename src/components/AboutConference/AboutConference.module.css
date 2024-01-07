@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--primary-background-color);
   padding-bottom: 64px;
   padding-top: 64px;
 }
@@ -15,9 +14,9 @@
 .AboutConferenceContainer {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: flex-end;
   margin-left: 20px;
-  position: relative;
 }
 
 .AboutConferenceTitle {
@@ -41,14 +40,10 @@
 .AboutConferenceImg {
   width: 240px;
   height: 217px;
-  position: relative;
-  z-index: 2;
   object-fit: fill;
 }
 
 .AboutConferenceSvg {
-  width: 331px;
-  height: 227px;
   position: absolute;
-  z-index: -1;
+  z-index: -100;
 }

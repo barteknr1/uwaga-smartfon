@@ -31,7 +31,7 @@ const AboutConference = () => {
             src={about_foto1}
             alt="prelegenci konferencji"
           />
-          <svg className={css.AboutConferenceSvg}>
+          <svg className={css.AboutConferenceSvg} width="331" height="227">
             <use href={index + '#vector1'} />
           </svg>
         </div>
@@ -51,8 +51,8 @@ const AboutConference = () => {
             src={about_foto2}
             alt="widownia"
           />
-          <svg className={css.AboutConferenceSvg}>
-            <use href={index + '#vector2'} />
+          <svg className={css.AboutConferenceSvg} width="254" height="250">
+            <use href={index + '#vector3'} />
           </svg>
         </div>
         <div className={css.AboutConferenceContainer}>
@@ -75,8 +75,8 @@ const AboutConference = () => {
             src={about_foto3}
             alt="widownia"
           />
-          <svg className={css.AboutConferenceSvg}>
-            <use href={index + '#vector3'} />
+          <svg className={css.AboutConferenceSvg} width="285" height="288">
+            <use href={index + '#vector2'} />
           </svg>
         </div>
         <Button variant="secondary" content="Więcej" />
