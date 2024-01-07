@@ -82,3 +82,27 @@
 .socialListItemIcon:hover {
   fill: var(--light-brand-color);
 }
+
+.statuteList {
+  display: flex;
+
+  gap: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 48px;
+  text-align: center;
+}
+
+.statuteListItem a {
+  list-style: none;
+  color: var(--dark-text-color);
+}
+
+.statuteListItem:hover a {
+  color: var(--brand-text-color);
+}
+
+.allRightsParagraf {
+  margin-top: 32px;
+  font-size: 1rem;
+}

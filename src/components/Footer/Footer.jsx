@@ -87,6 +87,24 @@ const Footer = ({text}) => {
             </a>
           </li>
         </ul>
+        <ul className={css.statuteList}>
+          <li className={css.statuteListItem}>
+            <a href="https://uwagasmartfon.pl/wp-content/uploads/2023/03/UWAGA-SMARTFON-Polityka-prywatnosci2023.pdf">
+              Polityka prywatności
+            </a>
+          </li>
+          <li className={css.statuteListItem}>
+            <a href="https://uwagasmartfon.pl/RODO/">RODO</a>
+          </li>
+          <li className={css.statuteListItem}>
+            <a href="https://uwagasmartfon.pl/wp-content/uploads/2023/03/UWAGA-SMARTFON-Regulamin2023.pdf">
+              Regulamin
+            </a>
+          </li>
+        </ul>
+        <p className={css.allRightsParagraf}>
+          © 2023 Fundacja ProjektPL. All rights reserved
+        </p>
       </address>
       <script
         type="text/javascript"
