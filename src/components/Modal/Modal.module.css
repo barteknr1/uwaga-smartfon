@@ -10,6 +10,9 @@
   border: 3px solid var(--light-brand-color);
   border-radius: 16px;
   background-color: var(--primary-background-color);
+  @media screen and (max-width: 393px) {
+    padding: 28px;
+  }
 }
 .close {
   position: absolute;
