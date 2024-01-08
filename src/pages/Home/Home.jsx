@@ -4,6 +4,7 @@ import PreviousEdition from '../../components/PreviousEdition/PreviousEdition'
 import Banner from '../../components/Banner/Banner'
 import Image1 from '../../assets/banner/heroBanner.png'
 import CountdownTimer from '../../components/Counter/Counter'
+import ApplicationForm from '../../components/ApplicationForm/ApplicationForm'
 
 const Home = () => {
   const eventDate = new Date('April 4, 2024')
@@ -20,6 +21,7 @@ const Home = () => {
       <PreviousEdition />
       <Comments />
       <Patrons />
+      <ApplicationForm />
     </>
   )
 }

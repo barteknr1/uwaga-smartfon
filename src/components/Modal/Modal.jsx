@@ -3,7 +3,7 @@ import sprite from '../../assets/svg/sprite.svg'
 import { useState } from 'react'
 
 const Modal = ({ children }) => {
-  const [isModalVisible, setIsModalVisible] = useState(false)
+  const [isModalVisible, setIsModalVisible] = useState(true)
 
   const close = () => {
     setIsModalVisible(!isModalVisible)
@@ -12,12 +12,12 @@ const Modal = ({ children }) => {
   return (
     <div className={isModalVisible ? css.backdrop : `${css.backdrop} ${css.isHidden}`}>
       <div className={css.modal}>
-        <button onClick={close}>
-          <svg className={css.close}>
+        <button  className={css.close} onClick={close}>
+          <svg className={css.closeIcon} width="24" height="24">
             <use href={sprite + '#icon-close'} />
           </svg>
         </button>
-        <div>{children}</div>
+        {children}
       </div>
     </div>
   )
