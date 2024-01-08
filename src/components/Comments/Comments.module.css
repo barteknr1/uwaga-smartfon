@@ -66,7 +66,6 @@
     gap: 40px;
     flex-direction: row;
   }
-
   .commentsBox {
     background-color: var(--secondary-background-color);
     border-radius: 0px 64px;
@@ -105,6 +104,63 @@
 
   .commentsText {
     color: var(--light-text-color);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.024px;
+  }
+
+  /* LANDING PAGE */
+  .commentsLandingPage {
+    padding-top: 164px;
+    padding-bottom: 64px;
+    padding-left: 81px;
+    padding-right: 94px;
+    background-color: var(--third-background-color);
+  }
+  .commentsTitleLandingPage {
+    font-family: var(--decoraction-font);
+    font-size: 49px;
+    margin-bottom: 64px;
+    color: var(--light-text-color);
+  }
+  .commentsBoxLandingPage {
+    background-color: var(--primary-background-color);
+    border-radius: 0px 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 26px 62px;
+  }
+  .commentsBoxLandingPage:nth-child(odd):before {
+    color: var(--light-text-color);
+    content: '“';
+    position: absolute;
+    font-family: Lateef;
+    font-size: 200px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.3;
+    top: 150px;
+    left: -6px;
+  }
+  .commentsBoxLandingPage:nth-child(even):after {
+    content: '“';
+    transform: rotate(180deg);
+    position: absolute;
+    font-family: Lateef;
+    font-size: 200px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.3;
+    color: var(--light-text-color);
+    top: -198px;
+    right: -25px;
+  }
+  .commentsTextLandingPage {
+    color: var(--dark-text-color);
     font-size: 20px;
     font-weight: 500;
     line-height: 24px;
