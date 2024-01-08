@@ -11,7 +11,7 @@ const Newsletter = () => {
       title="Zapisz się do newslettera"
     >
       <div className={css.newsletterContainer}>
-        <div className={css.newsletterBox}>
+        <div className={`${css.newsletterBox} ${css.letterBox}`}>
           <blockquote className={css.firstText}>
             Subskrybuj nasz newsletter, aby być na bieżąco z naszymi działaniami
             i otrzymywać wartościowe treści!

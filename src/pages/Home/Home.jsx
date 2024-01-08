@@ -4,6 +4,7 @@ import PreviousEdition from '../../components/PreviousEdition/PreviousEdition'
 import Banner from '../../components/Banner/Banner'
 import Image1 from '../../assets/banner/heroBanner.png'
 import CountdownTimer from '../../components/Counter/Counter'
+import Newsletter from '../../components/Newsletter/Newsletter'
 
 const Home = () => {
   const eventDate = new Date('April 4, 2024')
@@ -16,10 +17,11 @@ const Home = () => {
         addLine1="4 kwietnia 2024"
         addLine2="ICE Kraków"
       />
-      <CountdownTimer eventDate={eventDate}/>
+      <CountdownTimer eventDate={eventDate} />
       <PreviousEdition />
       <Comments isLandingPage={false} />
       <Patrons />
+      <Newsletter />
     </>
   )
 }

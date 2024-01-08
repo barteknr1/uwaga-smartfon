@@ -208,14 +208,6 @@
     flex-direction: row;
   }
 
-  .newsletterBox {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  }
-
   .firstText {
     margin-bottom: 16px;
     font-size: 1.5rem;
@@ -266,4 +258,59 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .newsletter {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 64px;
+  }
+
+  .newsletterTitle {
+    font-size: 3.0625rem;
+  }
+
+  .newsletterContainer {
+    flex-direction: row-reverse;
+  }
+
+  .svgBox {
+    margin: 0 60px;
+  }
+
+  .newsletterSvg {
+    height: 250px;
+    width: 395px;
+  }
+
+  .newsletterBox .button {
+    align-self: start;
+  }
+
+  .textboxBox {
+    margin-bottom: 24px;
+    margin-right: 106px;
+  }
+
+  .checkboxBox {
+    margin-bottom: 16px;
+  }
+
+  .svgPink {
+    width: 159.085px;
+    height: 170px;
+    right: 20px;
+    top: 20px;
+    transform: rotate(0deg);
+  }
+
+  .svgPurple {
+    width: 299.131px;
+    height: 203.02px;
+    transform: rotate(-154.803deg);
+    top: 75px;
+    left: -25px;
+  }
+
+  .letterBox {
+    align-items: flex-start;
+  }
 }
