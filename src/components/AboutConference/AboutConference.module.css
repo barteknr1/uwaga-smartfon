@@ -18,7 +18,13 @@
   justify-content: flex-end;
   margin-left: 20px;
 }
-
+.AboutConferenceContaineReverse {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: 20px;
+}
 .AboutConferenceTitle {
   font-family: var(--decoraction-font);
   font-size: 31px;
@@ -46,4 +52,107 @@
 .AboutConferenceSvg {
   position: absolute;
   z-index: -100;
+  overflow: visible;
+}
+.AboutConferenceSvg1 {
+  width: 331px;
+  height: 227px;
+}
+.AboutConferenceSvg2 {
+  width: 254px;
+  height: 250px;
+}
+.AboutConferenceSvg3 {
+  width: 285px;
+  height: 288.97px;
+}
+
+@media screen and (min-width: 755px) {
+  .AboutConferenceContainer {
+    flex-direction: row;
+    gap: 13px;
+  }
+
+  .AboutConferenceContaineReverse {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 60px;
+    position: relative;
+  }
+
+  .AboutConferenceTitle {
+    line-height: 48.75px;
+    font-size: 39px;
+  }
+
+  .AboutConferenceWraper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .AboutConferenceImg {
+    width: 237px;
+    height: 188px;
+    margin-bottom: 23px;
+  }
+  .AboutConferenceSvg1 {
+    width: 309px;
+    height: 212px;
+    transform: rotate(170deg);
+  }
+  .AboutConferenceSvg2 {
+    width: 244px;
+    height: 230px;
+  }
+  .AboutConferenceSvg3 {
+    width: 248px;
+    height: 232px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .AboutConferenceContainer {
+    gap: 96px;
+    max-width: 1440px;
+  }
+
+  .AboutConferenceContaineReverse {
+    gap: 96px;
+    max-width: 1440px;
+  }
+
+  .AboutConferenceTitle {
+    margin-top: 23px;
+  }
+
+  .AboutConferenceText {
+    margin-top: 20px;
+    margin-bottom: 32px;
+  }
+
+  .AboutConferenceWraper {
+    margin-right: 96px;
+  }
+
+  .AboutConferenceImg {
+    width: 414px;
+    height: 324px;
+    margin-bottom: 41px;
+    margin-top: 55px;
+  }
+
+  .AboutConferenceSvg1 {
+    width: 468px;
+    height: 317px;
+  }
+
+  .AboutConferenceSvg2 {
+    width: 375px;
+    height: 370px;
+  }
+  .AboutConferenceSvg3 {
+    width: 346px;
+    height: 370px;
+  }
 }

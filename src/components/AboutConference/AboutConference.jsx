@@ -31,11 +31,13 @@ const AboutConference = () => {
             src={about_foto1}
             alt="prelegenci konferencji"
           />
-          <svg className={css.AboutConferenceSvg} width="331" height="227">
+          <svg
+            className={`${css.AboutConferenceSvg} ${css.AboutConferenceSvg1}   `}
+          >
             <use href={index + '#vector1'} />
           </svg>
         </div>
-        <div className={css.AboutConferenceContainer}>
+        <div className={css.AboutConferenceContaineReverse}>
           <div className={css.AboutConferenceWraper}>
             <h3 className={css.AboutConferenceTitle}>Co chcemy osiągnąć?</h3>
             <p className={css.AboutConferenceText}>
@@ -46,12 +48,15 @@ const AboutConference = () => {
               dyskusyjne i integracja międzysektorowa.
             </p>
           </div>
+
           <img
             className={css.AboutConferenceImg}
             src={about_foto2}
             alt="widownia"
           />
-          <svg className={css.AboutConferenceSvg} width="254" height="250">
+          <svg
+            className={`${css.AboutConferenceSvg} ${css.AboutConferenceSvg2}   `}
+          >
             <use href={index + '#vector3'} />
           </svg>
         </div>
@@ -70,12 +75,15 @@ const AboutConference = () => {
               specjaliści i aktywiści.
             </p>
           </div>
+
           <img
             className={css.AboutConferenceImg}
             src={about_foto3}
             alt="widownia"
           />
-          <svg className={css.AboutConferenceSvg} width="285" height="288">
+          <svg
+            className={`${css.AboutConferenceSvg} ${css.AboutConferenceSvg3}   `}
+          >
             <use href={index + '#vector2'} />
           </svg>
         </div>
