@@ -30,20 +30,20 @@ const Footer = ({text}) => {
         <div className={css.adress}>
           <h3 className={css.adressHeading}>Konferencja Uwaga! Smartfon</h3>
           <p className={css.adressText}>
-            Centrum Kongresowe ICE <br /> Marii Konopnickiej 17 <br /> 30-302
-            Kraków
+            Centrum Konferencyjne <br /> Fabryczna CKF_13 <br />
+            ul. Fabryczna 13
+            <br /> 31-553 Kraków
           </p>
         </div>
+
         <iframe
           className={css.map}
-          width="550"
-          height="413"
           frameborder="0"
           scrolling="no"
           marginheight="0"
           marginwidth="0"
           id="gmap_canvas"
-          src="https://maps.google.com/maps?width=550&amp;height=413&amp;hl=en&amp;q=ICE%20Krak%C3%B3w%20%20Krak%C3%B3w+(ICE%20Krak%C3%B3w%20)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=ckf%2013%20Krak%C3%B3w+()&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
         ></iframe>
         <a href="https://projektpl.org/">
           <img
@@ -108,7 +108,7 @@ const Footer = ({text}) => {
       </address>
       <script
         type="text/javascript"
-        src="https://embedmaps.com/google-maps-authorization/script.js?id=dc3828865966bed71e78404cccc30a502e7aa613"
+        src="https://embedmaps.com/google-maps-authorization/script.js?id=6b87c2c524390684a6c28d38c29058170ed7c9f9"
       ></script>
     </footer>
   )
