@@ -98,6 +98,10 @@
   fill: var(--light-brand-color);
 }
 
+.iconYT {
+  width: 39px;
+}
+
 .statuteContainer {
   margin-top: 48px;
 }
@@ -128,7 +132,7 @@
   }
 
   .contactHeading {
-    font-size: 2.5rem;
+    font-size: 2.4375rem;
   }
 
   .contactMail {
@@ -158,6 +162,14 @@
     font-size: 16px;
     min-width: 270px;
     display: inline;
+  }
+
+  .adressHeading {
+    font-size: 1rem;
+  }
+
+  .adressText {
+    font-size: 1rem;
   }
 
   .adressLine {
@@ -192,6 +204,7 @@
 .allRightsParagraf {
   font-size: inherit;
   margin-top: 0;
+  padding-top: 0;
 }
 
 @media screen and (min-width: 1280px) {

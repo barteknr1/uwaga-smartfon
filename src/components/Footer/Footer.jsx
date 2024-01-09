@@ -74,7 +74,7 @@ const Footer = ({text}) => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <svg className={css.socialListItemIcon}>
+              <svg className={`${css.socialListItemIcon} ${css.iconYT}`}>
                 <use href={`${icon}#youtube`}></use>
               </svg>
             </a>
