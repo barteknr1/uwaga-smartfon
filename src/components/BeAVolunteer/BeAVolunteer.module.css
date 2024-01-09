@@ -14,8 +14,8 @@
 }
 .BeAVolunteerContainer {
   display: flex;
-  align-content: space-between;
   justify-content: center;
+
   flex-direction: column;
   gap: 64px;
   align-items: center;
@@ -28,10 +28,12 @@
   align-items: center;
   gap: 64px;
 }
-.BeAVolunteerImg {
-  width: 211px;
+
+.BeAVolunteerSvg {
   height: 226px;
+  width: 211px;
 }
+
 .BeAVolunteerTextContainer {
   display: flex;
   gap: 16px;
@@ -47,25 +49,44 @@
 }
 
 @media screen and (min-width: 765px) {
+  .BeAVolunteerContainer {
+    display: flex;
+    gap: 32px;
+    margin-top: 32px;
+  }
   .BeAVolunteerContainerBox {
     display: flex;
     flex-direction: row;
+    gap: 32px;
+    padding-left: 40px;
+    padding-left: 39px;
+  }
+
+  .BeAVolunteerTitle {
+    line-height: 39px;
+    color: var(--light-text-color);
+    padding-top: 64px;
+  }
+  .BeAVolunteerSvg {
+    flex-shrink: 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .BeAVolunteerContainer {
+    gap: 64px;
+    margin-top: 64px;
+  }
+
+  .BeAVolunteerContainerBox {
     align-items: center;
     gap: 145px;
-    padding-left: 145px;
-    padding-right: 165px;
-    padding-top: 27px;
+    padding-left: 135px;
+    padding-right: 147px;
   }
 
   .BeAVolunteerTitle {
     font-size: 49px;
     line-height: 61px;
-    color: var(--light-text-color);
-    padding-left: 80px;
     padding-top: 64px;
-  }
-  .BeAVolunteerImg {
-    width: 346px;
-    height: 370px;
   }
 }

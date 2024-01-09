@@ -1,7 +1,7 @@
 import Section from '../Section/Section'
 import css from './BeAVolunteer.module.css'
 import Button from '../Button/Button'
-import BeAVolunteerImage from '../../assets/images/BeAVolunteer.png'
+import index from '../../assets/svg/BeAVolunteer/index.svg'
 
 const BeAVolunteer = () => {
   return (
@@ -12,11 +12,9 @@ const BeAVolunteer = () => {
     >
       <div className={css.BeAVolunteerContainer}>
         <div className={css.BeAVolunteerContainerBox}>
-          <img
-            className={css.BeAVolunteerImg}
-            src={BeAVolunteerImage}
-            alt={'chłopak i dziewczyna przybijający sobie piątki'}
-          />
+          <svg className={css.BeAVolunteerSvg}>
+            <use href={index + '#group'} />
+          </svg>
           <div className={css.BeAVolunteerTextContainer}>
             <p className={css.BeAVolunteerText}>
               Jeśli chcesz być częścią inspirującej inicjatywy, która przyczynia
