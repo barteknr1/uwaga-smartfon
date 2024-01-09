@@ -10,7 +10,7 @@ const Home = () => {
   const eventDate = new Date('April 4, 2024')
   return (
     <>
-      <Banner
+        <Banner
         url={Image1}
         title="KONFERENCJA"
         main="UWAGA! SMARTFON"
