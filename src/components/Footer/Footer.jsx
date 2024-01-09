@@ -14,44 +14,50 @@ const Footer = ({text}) => {
         </h2>
         <div className={css.contactMail}>
           <a
-            className={css.contactMail}
+            className={css.contactMailAdress}
             href="mailto:konferencja@uwagasmartfon.pl"
           >
+            <svg className={css.contactMailIcon}>
+              <use href={`${icon}#mail`}></use>
+            </svg>
             konferencja@uwagasmartfon.pl
           </a>
         </div>
-        <div className={css.adress}>
-          <h3 className={css.adressHeading}>Fundacja Projekt PL</h3>
-          <p className={css.adressText}>
-            Zabłocie 23/1 <br /> 30-701 Kraków <br /> tel. 732 550 480
-          </p>
-        </div>
-        <hr className={css.adressLine}></hr>
-        <div className={css.adress}>
-          <h3 className={css.adressHeading}>Konferencja Uwaga! Smartfon</h3>
-          <p className={css.adressText}>
-            Centrum Konferencyjne <br /> Fabryczna CKF_13 <br />
-            ul. Fabryczna 13
-            <br /> 31-553 Kraków
-          </p>
-        </div>
+        <div className={css.adressContainer}>
+          <div className={css.adress}>
+            <h3 className={css.adressHeading}>Fundacja Projekt PL</h3>
+            <p className={css.adressText}>
+              Zabłocie 23/1 <br /> 30-701 Kraków <br /> tel. 732 550 480
+            </p>
 
-        <iframe
-          className={css.map}
-          frameborder="0"
-          scrolling="no"
-          marginheight="0"
-          marginwidth="0"
-          id="gmap_canvas"
-          src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=ckf%2013%20Krak%C3%B3w+()&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-        ></iframe>
+            <hr className={css.adressLine}></hr>
+
+            <h3 className={css.adressHeading}>Konferencja Uwaga! Smartfon</h3>
+            <p className={css.adressText}>
+              Centrum Konferencyjne Fabryczna CKF_13 <br />
+              ul. Fabryczna 13
+              <br /> 31-553 Kraków
+            </p>
+          </div>
+
+          <iframe
+            className={css.map}
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+            id="gmap_canvas"
+            src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=ckf%2013%20Krak%C3%B3w+()&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          ></iframe>
+        </div>
         <a href="https://projektpl.org/">
           <img
+            className={css.logo}
             src="./src/assets/images/footer/projektpl.png"
             alt="logo firmy fundacja projektpl"
-            className={css.logo}
           />
         </a>
+
         <ul className={css.socialList}>
           <li className={css.socialListItem}>
             <a
@@ -87,24 +93,26 @@ const Footer = ({text}) => {
             </a>
           </li>
         </ul>
-        <ul className={css.statuteList}>
-          <li className={css.statuteListItem}>
-            <a href="https://uwagasmartfon.pl/wp-content/uploads/2023/03/UWAGA-SMARTFON-Polityka-prywatnosci2023.pdf">
-              Polityka prywatności
-            </a>
-          </li>
-          <li className={css.statuteListItem}>
-            <a href="https://uwagasmartfon.pl/RODO/">RODO</a>
-          </li>
-          <li className={css.statuteListItem}>
-            <a href="https://uwagasmartfon.pl/wp-content/uploads/2023/03/UWAGA-SMARTFON-Regulamin2023.pdf">
-              Regulamin
-            </a>
-          </li>
-        </ul>
-        <p className={css.allRightsParagraf}>
-          © 2023 Fundacja ProjektPL. All rights reserved
-        </p>
+        <div className={css.statuteContainer}>
+          <ul className={css.statuteList}>
+            <li className={css.statuteListItem}>
+              <a href="https://uwagasmartfon.pl/wp-content/uploads/2023/03/UWAGA-SMARTFON-Polityka-prywatnosci2023.pdf">
+                Polityka prywatności
+              </a>
+            </li>
+            <li className={css.statuteListItem}>
+              <a href="https://uwagasmartfon.pl/RODO/">RODO</a>
+            </li>
+            <li className={css.statuteListItem}>
+              <a href="https://uwagasmartfon.pl/wp-content/uploads/2023/03/UWAGA-SMARTFON-Regulamin2023.pdf">
+                Regulamin
+              </a>
+            </li>
+          </ul>
+          <p className={css.allRightsParagraf}>
+            © 2023 Fundacja ProjektPL. All rights reserved
+          </p>
+        </div>
       </address>
       <script
         type="text/javascript"

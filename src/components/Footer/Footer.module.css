@@ -29,9 +29,23 @@
   transition: 500ms;
 }
 
-.contactMail:hover,
-.contactMail:focus {
+.contactMailAdress {
+  color: var(--brand-text-color);
+}
+
+.contactMailIcon {
+  display: none;
+  fill: var(--dark-brand-color);
+}
+
+.contactMail:hover a,
+.contactMail:focus a {
   color: var(--light-brand-color);
+}
+
+.contactMail:hover svg,
+.contactMail:focus svg {
+  fill: var(--light-brand-color);
 }
 
 .adress {
@@ -86,7 +100,6 @@
 
 .statuteList {
   display: flex;
-
   gap: 20px;
   font-size: 0.9rem;
   cursor: pointer;
@@ -106,4 +119,77 @@
 .allRightsParagraf {
   margin-top: 32px;
   font-size: 0.9rem;
+}
+
+@media screen and (min-width: 754px) {
+  .contact {
+    padding: 32px 40px;
+  }
+
+  .contactHeading {
+    font-size: 2.5rem;
+  }
+
+  .contactMail {
+    font-size: 1.3rem;
+    margin-top: 16px;
+    margin-bottom: 39px;
+  }
+
+  .contactMailAdress {
+    display: flex;
+    align-items: center;
+  }
+
+  .contactMailIcon {
+    width: 32px;
+    height: 32px;
+    display: block;
+    margin-right: 12px;
+  }
+
+  .adressContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .adress {
+    font-size: 16px;
+    min-width: 270px;
+    display: inline;
+  }
+
+  .adressLine {
+    margin-top: 33px;
+    margin-bottom: 19px;
+  }
+
+  .map {
+    float: right;
+    margin-top: 0;
+    margin-left: 100px;
+    height: 310px;
+  }
+
+  .logo {
+    margin-top: 41px;
+    width: 25%;
+  }
+
+  .statuteContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 28px;
+    font-size: 1rem;
+  }
+}
+
+.statuteList {
+  font-size: inherit;
+  margin-top: 0;
+}
+
+.allRightsParagraf {
+  font-size: inherit;
+  margin-top: 0;
 }
