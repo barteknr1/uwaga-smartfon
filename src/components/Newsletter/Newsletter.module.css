@@ -1,0 +1,335 @@
+.newsletter {
+  padding: 64px 20px;
+  background-color: var(--primary-background-color);
+}
+.newsletterTitle {
+  font-family: var(--decoraction-font);
+  font-size: 1.9375rem;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 30px;
+}
+.newsletterContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsletterBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.firstText {
+  font-family: var(--main-font);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.25rem; /* 125% */
+  letter-spacing: 0.00119rem;
+  margin-bottom: 25px;
+}
+
+.secondText {
+  font-family: var(--main-font);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem; /* 150% */
+  letter-spacing: 0.00119rem;
+  margin-bottom: 24px;
+}
+.bold {
+  font-weight: 600;
+}
+
+.textboxBox {
+  position: relative;
+  display: flex;
+  padding: 4px 0px 4px 16px;
+  align-items: center;
+  align-self: stretch;
+  border-radius: 4px;
+  border: 1px solid #79747e;
+  margin-bottom: 12px;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: border-color, fill;
+}
+.textboxBox:focus-within {
+  border-color: var(--dark-brand-color);
+  fill: var(--dark-brand-color);
+}
+
+.textbox {
+  position: absolute;
+  top: -9px;
+  color: #49454f;
+  background-color: var(--primary-background-color);
+  font-family: var(--form-font);
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1rem;
+}
+.textboxBox:focus-within .textbox {
+  color: var(--dark-brand-color);
+}
+
+.inputText {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.inputText:focus-within {
+  outline: none;
+}
+.svgTextButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  transition: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color;
+}
+.svgTextButton:hover {
+  background-color: #49454f25;
+}
+
+.svgTextIcon {
+  width: 24px;
+  height: 24px;
+}
+.checkboxBox {
+  display: flex;
+  align-self: start;
+  align-items: center;
+  gap: 11px;
+  margin-bottom: 32px;
+  border: 0;
+  position: relative;
+  padding: 0;
+  transition-property: border-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+
+.checkbox {
+  cursor: pointer;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  opacity: 0;
+}
+
+.checkMarkBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  border-radius: 50%;
+  height: 48px;
+  transition: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color;
+}
+.checkbox:hover ~ .checkMarkBox {
+  background-color: #49454f25;
+}
+
+.checkMark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 18px;
+  padding-bottom: 2px;
+  width: 18px;
+  border-radius: 2px;
+  border: 2px solid #49454f;
+  transition: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color;
+}
+
+.checkboxText {
+  font-family: Montserrat;
+  margin-left: 0;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.25rem; /* 166.667% */
+  letter-spacing: 0.00088rem;
+  cursor: pointer;
+}
+
+.checkboxBox input:checked ~ .checkMarkBox .checkMark {
+  background-color: var(--dark-brand-color);
+  border-color: var(--dark-brand-color);
+}
+
+.checkboxBox input:checked ~ .checkMarkBox .checkMark:after {
+  display: block;
+}
+.checkMark:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+.checkboxBox .checkMark:after {
+  width: 6px;
+  height: 11px;
+  border: solid white;
+  border-width: 0px 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.newsletterSvg {
+  position: sticky;
+  width: 186px;
+  height: 198px;
+  margin-top: 32px;
+}
+.svgLetter {
+  position: absolute;
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+}
+.svgPurple {
+  width: 232.18px;
+  height: 157.63px;
+  transform: rotate(-53.55deg);
+  position: absolute;
+  top: 45px;
+  left: 40px;
+  z-index: 2;
+}
+.svgPink {
+  width: 159px;
+  height: 170px;
+  position: absolute;
+  right: 90px;
+  top: -10px;
+  transform: rotate(-86.62deg);
+}
+
+@media screen and (min-width: 834px) {
+  .newsletter {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 0px;
+  }
+  .newsletterTitle {
+    font-size: 2.4375rem;
+    margin-bottom: 32px;
+  }
+  .newsletterContainer {
+    flex-direction: row;
+  }
+
+  .firstText {
+    margin-bottom: 16px;
+    font-size: 1.5rem;
+    line-height: 2.25rem; /* 150% */
+    letter-spacing: 0.00181rem;
+  }
+
+  .secondText {
+    margin-bottom: 32px;
+  }
+
+  .checkboxBox {
+    align-self: start;
+    margin-bottom: 64px;
+  }
+
+  .svgBox {
+    align-self: flex-start;
+  }
+
+  .newsletterSvg {
+    width: 221px;
+    height: 129px;
+    margin-top: 29px;
+  }
+
+  .svgPurple {
+    width: 141.935px;
+    height: 96.012px;
+    transform: rotate(-154.729deg);
+    top: 40px;
+    left: 5px;
+  }
+  .svgPink {
+    width: 86.843px;
+    height: 93.457px;
+    right: 15px;
+    top: -10px;
+    transform: rotate(0deg);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .newsletter {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 64px;
+  }
+
+  .newsletterTitle {
+    font-size: 3.0625rem;
+  }
+
+  .newsletterContainer {
+    flex-direction: row-reverse;
+  }
+
+  .svgBox {
+    margin: 0 60px;
+  }
+
+  .newsletterSvg {
+    height: 250px;
+    width: 395px;
+  }
+
+  .newsletterBox .button {
+    align-self: start;
+  }
+
+  .textboxBox {
+    margin-bottom: 24px;
+    margin-right: 106px;
+  }
+
+  .checkboxBox {
+    margin-bottom: 16px;
+  }
+
+  .svgPink {
+    width: 159.085px;
+    height: 170px;
+    right: 20px;
+    top: 20px;
+    transform: rotate(0deg);
+  }
+
+  .svgPurple {
+    width: 299.131px;
+    height: 203.02px;
+    transform: rotate(-154.803deg);
+    top: 75px;
+    left: -25px;
+  }
+
+  .letterBox {
+    align-items: flex-start;
+  }
+}

@@ -4,6 +4,7 @@ import PreviousEdition from '../../components/PreviousEdition/PreviousEdition'
 import Banner from '../../components/Banner/Banner'
 import Image1 from '../../assets/banner/heroBanner.png'
 import CountdownTimer from '../../components/Counter/Counter'
+import Newsletter from '../../components/Newsletter/Newsletter'
 import AboutConference from '../../components/AboutConference/AboutConference'
 
 const Home = () => {
@@ -22,6 +23,7 @@ const Home = () => {
       <PreviousEdition />
       <Comments isLandingPage={false} />
       <Patrons />
+      <Newsletter />
     </>
   )
 }
