@@ -29,9 +29,7 @@ const Footer = ({text}) => {
             <p className={css.adressText}>
               Zabłocie 23/1 <br /> 30-701 Kraków <br /> tel. 732 550 480
             </p>
-
             <hr className={css.adressLine}></hr>
-
             <h3 className={css.adressHeading}>Konferencja Uwaga! Smartfon</h3>
             <p className={css.adressText}>
               Centrum Konferencyjne Fabryczna CKF_13 <br />

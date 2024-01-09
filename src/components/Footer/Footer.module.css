@@ -11,25 +11,27 @@
   padding: 20px;
   text-align: center;
 }
+
 .contact {
-  font-size: 1.25rem;
+  font-size: 16px;
   padding: 32px 24px;
 }
 .contactHeading {
   font-family: var(--decoraction-font);
-  font-size: 1.9rem;
+  font-size: 1.9375rem;
 }
 
 .contactMail {
   color: var(--brand-text-color);
   cursor: pointer;
-  font-weight: 600;
   margin-top: 32px;
   margin-bottom: 59px;
   transition: 500ms;
 }
 
 .contactMailAdress {
+  font-weight: 600;
+  font-size: 1.25rem;
   color: var(--brand-text-color);
 }
 
@@ -48,16 +50,14 @@
   fill: var(--light-brand-color);
 }
 
-.adress {
-  font-size: 1.25rem;
-}
-
 .adressHeading {
+  font-size: 1.25rem;
   font-weight: 700;
 }
 
 .adressText {
   margin-top: 12px;
+  font-size: 1.25rem;
   font-weight: 500;
 }
 
@@ -75,7 +75,7 @@
 }
 
 .logo {
-  width: 48%;
+  width: 55%;
   margin-top: 36px;
 }
 
@@ -98,12 +98,14 @@
   fill: var(--light-brand-color);
 }
 
+.statuteContainer {
+  margin-top: 48px;
+}
+
 .statuteList {
   display: flex;
   gap: 20px;
-  font-size: 0.9rem;
   cursor: pointer;
-  margin-top: 48px;
   text-align: center;
 }
 
@@ -117,8 +119,7 @@
 }
 
 .allRightsParagraf {
-  margin-top: 32px;
-  font-size: 0.9rem;
+  padding-top: 32px;
 }
 
 @media screen and (min-width: 754px) {
@@ -180,7 +181,6 @@
     display: flex;
     justify-content: space-between;
     margin-top: 28px;
-    font-size: 1rem;
   }
 }
 
@@ -192,4 +192,30 @@
 .allRightsParagraf {
   font-size: inherit;
   margin-top: 0;
+}
+
+@media screen and (min-width: 1280px) {
+  .contact {
+    font-size: 16px;
+    padding: 80px;
+  }
+
+  .contactHeading {
+    font-size: 3.0625rem;
+  }
+
+  .contactMail {
+    margin-top: 11.5px;
+    margin-bottom: 44.5px;
+  }
+
+  .contactMailAdress {
+    font-size: 1.75rem;
+    font-weight: 600;
+  }
+
+  .contactMailIcon {
+    width: 40px;
+    height: 40px;
+  }
 }

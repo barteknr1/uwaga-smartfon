@@ -13,10 +13,10 @@
 <path d="M30.234 0h-28.468c-0.468 0-0.918 0.186-1.249 0.517s-0.517 0.78-0.517 1.249v28.468c0 0.468 0.186 0.917 0.517 1.249s0.78 0.517 1.249 0.517h15.326v-12.392h-4.17v-4.829h4.17v-3.562c0-4.133 2.524-6.384 6.212-6.384 1.766 0 3.284 0.131 3.727 0.19v4.32l-2.557 0.001c-2.005 0-2.393 0.953-2.393 2.351v3.084h4.782l-0.623 4.829h-4.16v12.392h8.155c0.468-0 0.917-0.186 1.249-0.517s0.517-0.78 0.517-1.249v-28.468c0-0.468-0.186-0.918-0.517-1.249s-0.78-0.517-1.249-0.517z"></path>
 </symbol>
 <symbol id="hamburger-menu" viewBox="0 0 34 32">
-<path d="M7.385 0h18.872c2.266 0 4.103 1.837 4.103 4.103v17.231c0 2.266-1.837 4.103-4.103 4.103h-18.872c-2.266 0-4.103-1.837-4.103-4.103v-17.231c0-2.266 1.837-4.103 4.103-4.103z"></path>
-<path fill="none" stroke="#1d1d1d" style="stroke: var(--color3, #1d1d1d)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.4615" d="M8.615 5.333h16.41"></path>
-<path fill="none" stroke="#1d1d1d" style="stroke: var(--color3, #1d1d1d)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.4615" d="M8.615 12.718h16.41"></path>
-<path fill="none" stroke="#1d1d1d" style="stroke: var(--color3, #1d1d1d)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.4615" d="M8.615 20.103h16.41"></path>
+<path fill="#f9f8f9" style="fill: var(--color2, #f9f8f9)" d="M7.385 0h18.872c2.266 0 4.103 1.837 4.103 4.103v17.231c0 2.266-1.837 4.103-4.103 4.103h-18.872c-2.266 0-4.103-1.837-4.103-4.103v-17.231c0-2.266 1.837-4.103 4.103-4.103z"></path>
+<path fill="none" stroke="#fff" style="stroke: var(--color3, #1d1d1d)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.4615" d="M8.615 5.333h16.41"></path>
+<path fill="none" stroke="##fff" style="stroke: var(--color3, #1d1d1d)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.4615" d="M8.615 12.718h16.41"></path>
+<path fill="none" stroke="#fff" style="stroke: var(--color3, #1d1d1d)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.4615" d="M8.615 20.103h16.41"></path>
 </symbol>
 <symbol id="dropdown" viewBox="0 0 59 32">
 <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="4.5714" d="M4.571 3.429l25.143 25.143 25.143-25.143"></path>
