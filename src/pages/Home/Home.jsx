@@ -9,17 +9,17 @@ const Home = () => {
   const eventDate = new Date('April 4, 2024')
   return (
     <>
-      <Banner
+      {/* <Banner
         url={Image1}
         title="KONFERENCJA"
         main="UWAGA! SMARTFON"
         addLine1="4 kwietnia 2024"
         addLine2="ICE Kraków"
-      />
-      <CountdownTimer eventDate={eventDate}/>
+      /> */}
+      {/* <CountdownTimer eventDate={eventDate} /> */}
       <PreviousEdition />
-      <Comments isLandingPage={false} />
-      <Patrons />
+      {/* <Comments isLandingPage={false} /> */}
+      {/* <Patrons /> */}
     </>
   )
 }
