@@ -20,8 +20,34 @@ import {
 } from '../../assets/images/slider'
 
 const PreviousEdition = () => {
-  const sliderOne = [slider1, slider2, slider3, slider4, slider5, slider6]
-  const sliderTwo = [slider7, slider8, slider9, slider10, slider11, slider12]
+  const sliderOne = [
+    slider1,
+    slider2,
+    slider3,
+    slider4,
+    slider5,
+    slider6,
+    slider1,
+    slider2,
+    slider3,
+    slider4,
+    slider5,
+    slider6,
+  ]
+  const sliderTwo = [
+    slider7,
+    slider8,
+    slider9,
+    slider10,
+    slider11,
+    slider12,
+    slider7,
+    slider8,
+    slider9,
+    slider10,
+    slider11,
+    slider12,
+  ]
   return (
     <Section
       sectionClass={css.slider}
@@ -32,10 +58,12 @@ const PreviousEdition = () => {
         <div>
           <Swiper
             spaceBetween={20}
-            slidesPerView={2.75}
+            slidesPerView={'auto'}
             breakpoints={{
-              394: {
-                slidesPerView: 4,
+              835: {
+                spaceBetween: 9,
+              },
+              1440: {
                 spaceBetween: 16,
               },
             }}
@@ -67,10 +95,12 @@ const PreviousEdition = () => {
         <div>
           <Swiper
             spaceBetween={20}
-            slidesPerView={2.75}
+            slidesPerView={'auto'}
             breakpoints={{
-              394: {
-                slidesPerView: 4,
+              835: {
+                spaceBetween: 9,
+              },
+              1440: {
                 spaceBetween: 16,
               },
             }}
