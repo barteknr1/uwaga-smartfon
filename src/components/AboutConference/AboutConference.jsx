@@ -12,7 +12,7 @@ const AboutConference = () => {
     <Section sectionClass={css.AboutConference}>
       <div className={css.AboutConferenceBox}>
         <div className={css.AboutConferenceContainer}>
-          <div className={css.AboutConferenceWraper}>
+          <div className={css.AboutConferenceWrapper}>
             <h3 className={css.AboutConferenceTitle}>O konferencji</h3>
             <p className={css.AboutConferenceText}>
               Konferencja „Uwaga! Smartfon” to unikatowe w skali całej Europy
@@ -37,8 +37,8 @@ const AboutConference = () => {
             <use href={index + '#vector1'} />
           </svg>
         </div>
-        <div className={css.AboutConferenceContaineReverse}>
-          <div className={css.AboutConferenceWraper}>
+        <div className={css.AboutConferenceContainer}>
+          <div className={css.AboutConferenceWrapper}>
             <h3 className={css.AboutConferenceTitle}>Co chcemy osiągnąć?</h3>
             <p className={css.AboutConferenceText}>
               Celem konferencji jest ukazanie zagrożeń związanych z nadużywaniem
@@ -61,7 +61,7 @@ const AboutConference = () => {
           </svg>
         </div>
         <div className={css.AboutConferenceContainer}>
-          <div className={css.AboutConferenceWraper}>
+          <div className={css.AboutConferenceWrapper}>
             <h3 className={css.AboutConferenceTitle}>
               Kogo chcemy zaangażować?
             </h3>

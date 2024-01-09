@@ -9,28 +9,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 26px;
+  gap: 64px;
 }
 .AboutConferenceContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  margin-left: 20px;
-}
-.AboutConferenceContaineReverse {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  margin-left: 20px;
+  gap: 40px;
+  position: relative;
 }
 .AboutConferenceTitle {
   font-family: var(--decoraction-font);
   font-size: 31px;
   color: var(--dark-text-color);
   line-height: 38.75px;
-  letter-spacing: 0px;
+  margin-bottom: 16px;
 }
 
 .AboutConferenceText {
@@ -39,19 +33,15 @@
   color: var(--dark-text-color);
   line-height: 24px;
   letter-spacing: 0.12px;
-  margin-bottom: 40px;
-  margin-top: 16px;
 }
 
 .AboutConferenceImg {
   width: 240px;
-  height: 217px;
-  object-fit: fill;
 }
 
 .AboutConferenceSvg {
   position: absolute;
-  z-index: -100;
+  z-index: -1;
   overflow: visible;
 }
 .AboutConferenceSvg1 {
@@ -73,7 +63,7 @@
     gap: 13px;
   }
 
-  .AboutConferenceContaineReverse {
+  .AboutConferenceContainer:nth-child(2n + 2) {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -86,15 +76,16 @@
     font-size: 39px;
   }
 
-  .AboutConferenceWraper {
+  .AboutConferenceWrapper {
     display: flex;
     flex-direction: column;
+  }
+  .AboutConferenceText {
+    max-width: 466px;
   }
 
   .AboutConferenceImg {
     width: 237px;
-    height: 188px;
-    margin-bottom: 23px;
   }
   .AboutConferenceSvg1 {
     width: 309px;
@@ -111,35 +102,21 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .AboutConferenceContainer {
-    gap: 96px;
-    max-width: 1440px;
-  }
-
-  .AboutConferenceContaineReverse {
-    gap: 96px;
-    max-width: 1440px;
+    gap: 95px;
   }
 
   .AboutConferenceTitle {
-    margin-top: 23px;
+    margin-bottom: 20px;
   }
 
   .AboutConferenceText {
-    margin-top: 20px;
-    margin-bottom: 32px;
-  }
-
-  .AboutConferenceWraper {
-    margin-right: 96px;
+    max-width: 554px;
   }
 
   .AboutConferenceImg {
     width: 414px;
-    height: 324px;
-    margin-bottom: 41px;
-    margin-top: 55px;
   }
 
   .AboutConferenceSvg1 {
