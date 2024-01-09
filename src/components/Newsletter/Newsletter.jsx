@@ -12,11 +12,11 @@ const Newsletter = () => {
     >
       <div className={css.newsletterContainer}>
         <div className={`${css.newsletterBox} ${css.letterBox}`}>
-          <blockquote className={css.firstText}>
+          <p className={css.firstText}>
             Subskrybuj nasz newsletter, aby być na bieżąco z naszymi działaniami
             i otrzymywać wartościowe treści!
-          </blockquote>
-          <blockquote className={css.secondText}>
+          </p>
+          <p className={css.secondText}>
             Osoby, które zapiszą się do newslettera, otrzymają między innymi
             możliwość bezpłatnego pobrania{' '}
             <span className={css.bold}>Bezpiecznego Statutu Szkoły</span> oraz{' '}
@@ -25,19 +25,23 @@ const Newsletter = () => {
             </span>
             , które zostały przygotowane przez doktora nauk prawnych Tomasza
             Lewandowskiego
-          </blockquote>
+          </p>
           <div className={css.textboxBox}>
             <label className={css.textbox} htmlFor="textbox">
               Adres e-mail:
             </label>
             <input className={css.inputText} id="textbox" type="text" />
-            <svg className={css.svgTextBox}>
-              <use href={sprite + '#trailing-icon'} />
-            </svg>
+            <button className={css.svgTextButton}>
+              <svg className={css.svgTextIcon}>
+                <use href={sprite + '#icon-close'} />
+              </svg>
+            </button>
           </div>
           <div className={css.checkboxBox}>
             <input className={css.checkbox} id="checkbox" type="checkbox" />
-            <span className={css.checkMark}></span>
+            <div className={css.checkMarkBox}>
+              <span className={css.checkMark}></span>
+            </div>
             <label className={css.checkboxText} htmlFor="checkbox">
               Wyrażam zgodę na przetwarzanie moich danych osobowych.
             </label>
