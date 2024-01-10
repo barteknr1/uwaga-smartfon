@@ -154,14 +154,15 @@
   }
 
   .adressContainer {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-areas: 'adress map';
   }
 
   .adress {
     font-size: 16px;
-    min-width: 270px;
+    max-width: 237px;
     display: inline;
+    grid-area: adress;
   }
 
   .adressHeading {
@@ -180,8 +181,9 @@
   .map {
     float: right;
     margin-top: 0;
-    margin-left: 100px;
+    min-width: 367px;
     height: 310px;
+    grid-area: map;
   }
 
   .logo {
@@ -230,5 +232,68 @@
   .contactMailIcon {
     width: 40px;
     height: 40px;
+  }
+
+  .adress {
+    display: grid;
+    max-width: none;
+    grid-template-rows: 42px;
+    grid-template-areas:
+      'adressHeadingFundation aadressLine adressHeadingConference '
+      'adresTextFundation aadressLine adressTextConference';
+  }
+  .adressContainer {
+    max-height: 129px;
+  }
+
+  .adressHeading {
+    font-size: 1rem;
+  }
+
+  .adressHeadingFundation {
+    grid-area: adressHeadingFundation;
+  }
+
+  .adressHeadingConference {
+    grid-area: adressHeadingConference;
+  }
+
+  .adressText {
+    margin-top: 0;
+    font-size: 1rem;
+  }
+
+  .adressTextFundation {
+    grid-area: adresTextFundation;
+  }
+
+  .adressTextConference {
+    grid-area: adressTextConference;
+  }
+
+  .adressLine {
+    position: relative;
+    grid-area: aadressLine;
+    transform: rotate(90deg);
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 140px;
+    top: 70px;
+  }
+
+  .map {
+    min-width: 586px;
+    height: 386px;
+    position: relative;
+    bottom: 180px;
+  }
+
+  .logo {
+    margin-top: 40px;
+    width: 13%;
+  }
+
+  .socialList {
+    margin-top: 28px;
   }
 }

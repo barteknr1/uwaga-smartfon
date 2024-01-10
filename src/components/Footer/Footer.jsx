@@ -25,13 +25,21 @@ const Footer = ({text}) => {
         </div>
         <div className={css.adressContainer}>
           <div className={css.adress}>
-            <h3 className={css.adressHeading}>Fundacja Projekt PL</h3>
-            <p className={css.adressText}>
+            <h3
+              className={`${css.adressHeading} ${css.adressHeadingFundation}`}
+            >
+              Fundacja Projekt PL
+            </h3>
+            <p className={`${css.adressText} ${css.adressTextFundation}`}>
               Zabłocie 23/1 <br /> 30-701 Kraków <br /> tel. 732 550 480
             </p>
             <hr className={css.adressLine}></hr>
-            <h3 className={css.adressHeading}>Konferencja Uwaga! Smartfon</h3>
-            <p className={css.adressText}>
+            <h3
+              className={`${css.adressHeading} ${css.adressHeadingConference}`}
+            >
+              Konferencja Uwaga! Smartfon
+            </h3>
+            <p className={`${css.adressText} ${css.adressTextConference}`}>
               Centrum Konferencyjne Fabryczna CKF_13 <br />
               ul. Fabryczna 13
               <br /> 31-553 Kraków
@@ -45,7 +53,7 @@ const Footer = ({text}) => {
             marginheight="0"
             marginwidth="0"
             id="gmap_canvas"
-            src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=ckf%2013%20Krak%C3%B3w+()&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            src="https://maps.google.com/maps?&amp;hl=en&amp;q=ckf%2013%20Krak%C3%B3w+()&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
           ></iframe>
         </div>
         <a href="https://projektpl.org/">
