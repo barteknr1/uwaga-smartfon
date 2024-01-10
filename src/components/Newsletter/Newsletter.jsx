@@ -2,8 +2,13 @@ import Section from '../Section/Section'
 import css from './Newsletter.module.css'
 import sprite from '../../assets/svg/sprite.svg'
 import Button from '../Button/Button'
+import {useState} from 'react'
 
 const Newsletter = () => {
+  const [inputText, setInputText] = useState('')
+  const handleClearInput = () => {
+    setInputText('')
+  }
   return (
     <Section
       sectionClass={css.newsletter}
@@ -30,8 +35,14 @@ const Newsletter = () => {
             <label className={css.textbox} htmlFor="textbox">
               Adres e-mail:
             </label>
-            <input className={css.inputText} id="textbox" type="text" />
-            <button className={css.svgTextButton}>
+            <input
+              className={css.inputText}
+              id="textbox"
+              type="text"
+              value={inputText}
+              onChange={(event) => setInputText(event.target.value)}
+            />
+            <button className={css.svgTextButton} onClick={handleClearInput}>
               <svg className={css.svgTextIcon}>
                 <use href={sprite + '#icon-close'} />
               </svg>
