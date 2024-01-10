@@ -3,7 +3,14 @@ import {Swiper, SwiperSlide} from 'swiper/react'
 import {Autoplay} from 'swiper/modules'
 import 'swiper/css/bundle'
 import css from './Patrons.module.css'
-import {bgk, nask, pokolenia} from '../../assets/images/patrons'
+import {
+  bgk,
+  bonumHumanum,
+  krakow,
+  nask,
+  pokolenia,
+  silnaWola,
+} from '../../assets/images/patrons'
 import Button from '../Button/Button'
 import './styles.css'
 import {useRef} from 'react'
@@ -27,23 +34,29 @@ const Patrons = () => {
     bgk,
     nask,
     pokolenia,
+    krakow,
+    bonumHumanum,
+    silnaWola,
     bgk,
     nask,
     pokolenia,
-    bgk,
-    nask,
-    pokolenia,
+    krakow,
+    bonumHumanum,
+    silnaWola,
   ]
   const patronTwo = [
     bgk,
     nask,
     pokolenia,
+    krakow,
+    bonumHumanum,
+    silnaWola,
     bgk,
     nask,
     pokolenia,
-    bgk,
-    nask,
-    pokolenia,
+    krakow,
+    bonumHumanum,
+    silnaWola,
   ]
 
   return (
@@ -61,11 +74,13 @@ const Patrons = () => {
           <Swiper
             ref={swiperRef}
             spaceBetween={20}
-            slidesPerView={2}
+            slidesPerView={'auto'}
             breakpoints={{
-              394: {
-                slidesPerView: 7,
-                spaceBetween: 20,
+              835: {
+                spaceBetween: 9,
+              },
+              1440: {
+                spaceBetween: 16,
               },
             }}
             loop={true}
@@ -101,11 +116,13 @@ const Patrons = () => {
           <Swiper
             ref={swiperRefTwo}
             spaceBetween={19}
-            slidesPerView={2}
+            slidesPerView={'auto'}
             breakpoints={{
-              394: {
-                slidesPerView: 7,
+              835: {
                 spaceBetween: 20,
+              },
+              1440: {
+                spaceBetween: 16,
               },
             }}
             loop={true}
