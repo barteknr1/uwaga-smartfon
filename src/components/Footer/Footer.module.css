@@ -10,6 +10,10 @@
   font-weight: 500;
   padding: 20px;
   text-align: center;
+  height: 102px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact {
@@ -127,6 +131,12 @@
 }
 
 @media screen and (min-width: 754px) {
+  .heading {
+    font-size: 2rem;
+    height: 132px;
+    font-weight: 400;
+  }
+
   .contact {
     padding: 32px 40px;
   }
@@ -210,6 +220,12 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .heading {
+    font-size: 2.4375rem;
+    height: 200px;
+    font-weight: 400;
+  }
+
   .contact {
     font-size: 16px;
     padding: 80px;

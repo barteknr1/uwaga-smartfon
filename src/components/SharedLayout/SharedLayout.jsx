@@ -36,7 +36,7 @@ const SharedLayout = () => {
         text={
           location.pathname.includes('/volunteering')
             ? volunteerText
-            : 'Strona została stworzona dzięki pracy wolontariuszy.'
+            : 'Strona została stworzona dzięki pracy Wolontariuszy.'
         }
       />
     </>
