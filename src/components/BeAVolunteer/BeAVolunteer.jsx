@@ -1,7 +1,7 @@
 import Section from '../Section/Section'
 import css from './BeAVolunteer.module.css'
 import Button from '../Button/Button'
-import index from '../../assets/svg/BeAVolunteer/index.svg'
+import sprite from '../../assets/svg/sprite.svg'
 
 const BeAVolunteer = () => {
   return (
@@ -13,7 +13,7 @@ const BeAVolunteer = () => {
       <div className={css.BeAVolunteerContainer}>
         <div className={css.BeAVolunteerContainerBox}>
           <svg className={css.BeAVolunteerSvg}>
-            <use href={index + '#group'} />
+            <use href={sprite + '#group'} />
           </svg>
           <div className={css.BeAVolunteerTextContainer}>
             <p className={css.BeAVolunteerText}>
