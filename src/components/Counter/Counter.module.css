@@ -1,0 +1,33 @@
+.TimeRemaining_Box {
+  background: linear-gradient(
+    0deg,
+    rgba(202, 12, 122, 1) 0%,
+    rgba(70, 44, 62, 1) 100%
+  );
+  color: var(--light-text-color);
+  font-family: var(--placeholder-font);
+  height: 106px;
+  max-width: 522px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+.TimeRemaining_InfoBox {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+}
+
+.TimeRemaining_NumBox {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+}
+
+.TimeRemaining_Info {
+  font-size: 25px;
+}
+.TimeRemaining_Num {
+  font-size: 49px;
+}

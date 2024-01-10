@@ -1,7 +1,6 @@
 .patrons {
   display: flex;
   flex-direction: column;
-  overflow: hidden;
   padding-top: 64px;
   padding-bottom: 64px;
   margin: 0;
@@ -12,15 +11,14 @@
   font-family: var(--decoraction-font);
   align-self: flex-start;
   font-size: 1.9375rem;
-  font-style: normal;
   font-weight: 400;
   line-height: normal;
   margin-bottom: 32px;
-  margin-left: 21px;
+  margin-left: 20px;
 }
 .patronsContainer {
-  overflow: hidden;
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
   align-items: center;
   gap: 16px;
@@ -29,31 +27,46 @@
 .patronsContainer > :last-child {
   margin-top: 16px;
 }
-.patronsBox {
-  align-self: stretch;
-}
+
 .patronsImg {
   width: 185px;
   height: 131px;
-  object-fit: cover;
+  object-fit: contain;
   filter: grayscale(100%);
   transition: filter 0.3s ease, transform 0.3s ease;
 }
 .patronsImg:hover {
   filter: grayscale(0%);
   transform: scale(1.1);
+  transition-duration: 0ms;
+  transition-delay: 0ms;
 }
 
-@media screen and (min-width: 394px) {
+@media screen and (min-width: 835px) {
   .patronsTitle {
-    font-size: 3.0625rem;
+    font-size: 2.4375rem;
     margin-bottom: 64px;
-    margin-left: 83px;
+    margin-left: 40px;
   }
+
   .patronsContainer {
     gap: 32px;
   }
+
   .patronsContainer > :last-child {
     margin-top: 32px;
+  }
+
+  .patronsImg {
+    width: 197px;
+    height: 139px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .patronsTitle {
+    font-size: 3.0625rem;
+    margin-bottom: 64px;
+    margin-left: 80px;
   }
 }
