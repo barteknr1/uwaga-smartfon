@@ -237,7 +237,7 @@
   .adress {
     display: grid;
     max-width: none;
-    grid-template-rows: 42px;
+    grid-template-rows: 40px;
     grid-template-areas:
       'adressHeadingFundation aadressLine adressHeadingConference '
       'adresTextFundation aadressLine adressTextConference';
@@ -247,7 +247,7 @@
   }
 
   .adressHeading {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .adressHeadingFundation {

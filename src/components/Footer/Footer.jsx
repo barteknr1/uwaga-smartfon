@@ -40,7 +40,8 @@ const Footer = ({text}) => {
               Konferencja Uwaga! Smartfon
             </h3>
             <p className={`${css.adressText} ${css.adressTextConference}`}>
-              Centrum Konferencyjne Fabryczna CKF_13 <br />
+              Centrum Konferencyjne <br />
+              Fabryczna CKF_13 <br />
               ul. Fabryczna 13
               <br /> 31-553 Kraków
             </p>
