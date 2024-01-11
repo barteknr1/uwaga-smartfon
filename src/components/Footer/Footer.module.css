@@ -130,7 +130,7 @@
   padding-top: 32px;
 }
 
-@media screen and (min-width: 754px) {
+@media screen and (min-width: 765px) {
   .heading {
     font-size: 2rem;
     height: 132px;
