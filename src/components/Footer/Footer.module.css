@@ -80,14 +80,15 @@
 
 .logo {
   width: 55%;
-  margin-top: 36px;
+  margin-top: 40.11px;
 }
 
 .socialList {
   display: flex;
-  margin-top: 32px;
+  margin-top: 32.46px;
   gap: 32px;
 }
+
 .socialListItem {
   cursor: pointer;
 }
@@ -197,8 +198,12 @@
   }
 
   .logo {
-    margin-top: 41px;
+    margin-top: 71px;
     width: 25%;
+  }
+
+  .socialList {
+    margin-top: 44.46px;
   }
 
   .statuteContainer {
@@ -307,9 +312,5 @@
   .logo {
     margin-top: 40px;
     width: 13%;
-  }
-
-  .socialList {
-    margin-top: 28px;
   }
 }
