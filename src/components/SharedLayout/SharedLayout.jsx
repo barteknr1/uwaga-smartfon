@@ -5,7 +5,7 @@ import Navigation from '../Navigation/Navigation'
 import Footer from '../Footer/Footer'
 
 import css from './SharedLayout.module.css'
-import icon from '../../assets/images/vectors/icons.svg'
+import icon from '../../assets/svg/sprite.svg'
 
 const SharedLayout = () => {
   const [isOpen, setIsOpen] = useState(false)

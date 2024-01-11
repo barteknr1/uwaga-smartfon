@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 
-import icon from '../../assets/images/vectors/icons.svg'
+import icon from '../../assets/svg/sprite.svg'
 import css from './Footer.module.css'
 
 const Footer = ({text}) => {
