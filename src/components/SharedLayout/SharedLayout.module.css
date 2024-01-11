@@ -17,7 +17,7 @@
   top: 12px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 765px) {
   .header {
     display: block;
     width: 100%;

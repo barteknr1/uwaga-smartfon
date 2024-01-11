@@ -1,15 +1,23 @@
-import {Outlet} from 'react-router-dom'
-import {Suspense, useState} from 'react'
-import css from './SharedLayout.module.css'
-import icon from '../../assets/images/vectors/icons.svg'
+import {Outlet, useLocation} from 'react-router-dom'
+import {Suspense, useState, useEffect} from 'react'
+
 import Navigation from '../Navigation/Navigation'
+import Footer from '../Footer/Footer'
+
+import css from './SharedLayout.module.css'
+import icon from '../../assets/svg/sprite.svg'
 
 const SharedLayout = () => {
   const [isOpen, setIsOpen] = useState(false)
+  const location = useLocation()
+
+  useEffect(() => {}, [location])
 
   const toggleMenu = () => {
     setIsOpen((open) => !open)
   }
+
+  const volunteerText = 'Z głębi serca dziękujemy!'
 
   return (
     <>
@@ -24,6 +32,13 @@ const SharedLayout = () => {
           <Outlet />
         </Suspense>
       </main>
+      <Footer
+        text={
+          location.pathname.includes('/volunteering')
+            ? volunteerText
+            : 'Strona została stworzona dzięki pracy Wolontariuszy.'
+        }
+      />
     </>
   )
 }
