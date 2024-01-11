@@ -3,23 +3,29 @@ import {Swiper, SwiperSlide} from 'swiper/react'
 import {Autoplay} from 'swiper/modules'
 import 'swiper/css/bundle'
 import css from './Patrons.module.css'
-import {bgk, nask, pokolenia} from '../../assets/images/patrons'
+import {
+  bgk,
+  bonumHumanum,
+  krakow,
+  nask,
+  pokolenia,
+  silnaWola,
+} from '../../assets/images/patrons'
 import Button from '../Button/Button'
 import './styles.css'
 import {useRef} from 'react'
 
 const Patrons = () => {
   const swiperRef = useRef(null)
+  const swiperRefTwo = useRef(null)
 
-  const handleMouseEnter = () => {
+  const handleMouseEnter = (swiperRef) => {
     if (swiperRef.current) {
-      console.log(swiperRef.current?.swiper)
       swiperRef.current.swiper.autoplay.stop()
-      swiperRef.current.swiper.autoplay.pause()
     }
   }
 
-  const handleMouseLeave = () => {
+  const handleMouseLeave = (swiperRef) => {
     if (swiperRef.current) {
       swiperRef.current.swiper.autoplay.start()
     }
@@ -28,23 +34,29 @@ const Patrons = () => {
     bgk,
     nask,
     pokolenia,
+    krakow,
+    bonumHumanum,
+    silnaWola,
     bgk,
     nask,
     pokolenia,
-    bgk,
-    nask,
-    pokolenia,
+    krakow,
+    bonumHumanum,
+    silnaWola,
   ]
   const patronTwo = [
     bgk,
     nask,
     pokolenia,
+    krakow,
+    bonumHumanum,
+    silnaWola,
     bgk,
     nask,
     pokolenia,
-    bgk,
-    nask,
-    pokolenia,
+    krakow,
+    bonumHumanum,
+    silnaWola,
   ]
 
   return (
@@ -56,17 +68,19 @@ const Patrons = () => {
       <div className={css.patronsContainer}>
         <div
           className={css.patronsBox}
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
+          onMouseEnter={() => handleMouseEnter(swiperRef)}
+          onMouseLeave={() => handleMouseLeave(swiperRef)}
         >
           <Swiper
             ref={swiperRef}
             spaceBetween={20}
-            slidesPerView={2}
+            slidesPerView={'auto'}
             breakpoints={{
-              394: {
-                slidesPerView: 7,
-                spaceBetween: 20,
+              835: {
+                spaceBetween: 9,
+              },
+              1440: {
+                spaceBetween: 16,
               },
             }}
             loop={true}
@@ -94,14 +108,21 @@ const Patrons = () => {
             ))}
           </Swiper>
         </div>
-        <div className={css.patronsBox}>
+        <div
+          className={css.patronsBox}
+          onMouseEnter={() => handleMouseEnter(swiperRefTwo)}
+          onMouseLeave={() => handleMouseLeave(swiperRefTwo)}
+        >
           <Swiper
+            ref={swiperRefTwo}
             spaceBetween={19}
-            slidesPerView={2}
+            slidesPerView={'auto'}
             breakpoints={{
-              394: {
-                slidesPerView: 7,
+              835: {
                 spaceBetween: 20,
+              },
+              1440: {
+                spaceBetween: 16,
               },
             }}
             loop={true}
@@ -109,7 +130,6 @@ const Patrons = () => {
               delay: 0,
               reverseDirection: true,
               disableOnInteraction: false,
-              pauseOnMouseEnter: true,
             }}
             speed={4000}
             pagination={{
