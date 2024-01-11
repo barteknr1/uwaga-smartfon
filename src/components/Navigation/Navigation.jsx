@@ -2,7 +2,7 @@ import {NavLink} from 'react-router-dom'
 
 import Button from '../Button/Button'
 
-import icon from '../../assets/images/vectors/icons.svg'
+import icon from '../../assets/svg/sprite.svg'
 import css from './Navigation.module.css'
 
 const Navigation = () => {

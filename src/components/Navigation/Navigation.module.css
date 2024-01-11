@@ -67,7 +67,7 @@
   margin: 0 4px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 765px) {
   .nav {
     flex-direction: row;
     width: 100%;
