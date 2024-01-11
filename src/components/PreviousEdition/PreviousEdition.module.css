@@ -46,6 +46,7 @@
 
   .sliderTitle {
     margin-bottom: 32px;
+    margin-left: 40px;
   }
   .slideImg {
     width: 242px;
@@ -65,5 +66,6 @@
   .sliderTitle {
     font-size: 3.0625rem;
     margin-bottom: 64px;
+    margin-left: 80px;
   }
 }
