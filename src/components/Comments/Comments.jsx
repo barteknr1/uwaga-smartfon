@@ -1,6 +1,7 @@
 import Section from '../Section/Section'
 import PropTypes from 'prop-types'
 import css from './Comments.module.css'
+import sprite from '../../assets/svg/sprite.svg'
 
 const Comments = ({isLandingPage}) => {
   const sectionClass = isLandingPage ? css.commentsLandingPage : css.comments
@@ -14,6 +15,10 @@ const Comments = ({isLandingPage}) => {
   const textClass = isLandingPage
     ? css.commentsTextLandingPage
     : css.commentsText
+
+  const leftSvgClass = isLandingPage ? css.leftSvgLandingPage : css.leftSvg
+  const rightSvgClass = isLandingPage ? css.rightSvgLandingPage : css.rightSvg
+
   return (
     <Section
       sectionClass={sectionClass}
@@ -21,6 +26,12 @@ const Comments = ({isLandingPage}) => {
       title="Opinie uczestników"
     >
       <div className={css.commentsContainer}>
+        <svg className={leftSvgClass}>
+          <use href={sprite + '#paragraph-icon'} />
+        </svg>
+        <svg className={rightSvgClass}>
+          <use href={sprite + '#paragraph-icon'} />
+        </svg>
         <div className={boxClass}>
           <blockquote className={textClass}>
             “To było niezwykłe doświadczenie słuchania na żywo ekspertów, którzy
