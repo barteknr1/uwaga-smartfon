@@ -72,3 +72,40 @@
   font-size: 1rem;
   line-height: 18.78px;
 }
+
+@media screen and (min-width: 756px) {
+  .container {
+    gap: 32px;
+    padding: 0 40px;
+  }
+
+  .programTitle {
+    font-size: 2.4375rem;
+    line-height: 48.75px;
+  }
+  .programSubTitle {
+    font-size: 1.9375rem;
+    line-height: 38.75px;
+  }
+
+  .singleSchedule {
+    display: flex;
+    flex-direction: row;
+    height: 105px;
+    padding: 32px;
+    border-radius: 16px;
+    align-items: center;
+  }
+
+  .scheduleTime {
+    font-weight: 400;
+  }
+  .scheduleSvg {
+    width: 40px;
+    height: 40px;
+  }
+  .scheduleText {
+    line-height: 24px;
+    letter-spacing: 0.12px;
+  }
+}
