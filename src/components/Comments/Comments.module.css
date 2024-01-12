@@ -2,19 +2,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 64px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 32px 20px 64px;
   background-color: var(--third-background-color);
 }
 .commentsTitle {
   align-self: flex-start;
   font-family: var(--decoraction-font);
   color: var(--light-text-color);
-  font-size: 31px;
-  font-style: normal;
-  font-weight: 400;
+  font-size: 1.9375rem;
   line-height: normal;
   margin-bottom: 25px;
 }
@@ -24,146 +19,172 @@
   align-items: center;
   gap: 32px;
 }
+
+.leftSvg,
+.rightSvg {
+  display: none;
+}
+
 .commentsBox {
   background-color: var(--primary-background-color);
   border-radius: 0px 64px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 27px;
-  padding-bottom: 37px;
-  padding-left: 37px;
-  padding-right: 31px;
+  padding: 30px;
 }
 .commentsText {
   font-family: var(--main-font);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.019px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.00119rem;
 }
 
-@media screen and (min-width: 394px) {
+@media screen and (min-width: 765px) {
   .comments {
-    padding-top: 164px;
-    padding-bottom: 64px;
-    padding-left: 81px;
-    padding-right: 94px;
+    padding: 32px 40px;
+    margin-top: 128px;
+    margin-bottom: 64px;
     background-color: var(--primary-background-color);
   }
+
   .commentsTitle {
-    font-family: var(--decoraction-font);
     color: var(--dark-text-color);
-    font-size: 49px;
+    font-size: 2.4375rem;
     margin-bottom: 64px;
   }
+
   .commentsContainer {
-    max-width: 1440px;
     position: relative;
-    padding-bottom: 64px;
-    padding-left: 15px;
-    gap: 40px;
-    flex-direction: row;
+    gap: 64px;
   }
+
+  .leftSvg {
+    fill: var(--brand-text-color);
+    display: block;
+    position: absolute;
+    width: 58px;
+    height: 38px;
+    bottom: 164px;
+    left: 0;
+  }
+
+  .rightSvg {
+    fill: var(--brand-text-color);
+    display: block;
+    transform: rotate(180deg);
+    position: absolute;
+    width: 58px;
+    height: 38px;
+    top: 0;
+    right: 0;
+  }
+
   .commentsBox {
     background-color: var(--secondary-background-color);
     border-radius: 0px 64px;
     display: flex;
+    height: 164px;
     justify-content: center;
     align-items: center;
     padding: 26px 62px;
   }
-  .commentsBox:nth-child(odd):before {
-    content: '“';
-    position: absolute;
-    font-family: Lateef;
-    font-size: 200px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    opacity: 0.3;
-    color: var(--dark-brand-color);
-    top: 150px;
-    left: -6px;
+
+  .commentsBox:nth-child(odd) {
+    margin-right: 238px;
   }
-  .commentsBox:nth-child(even):after {
-    content: '“';
-    transform: rotate(180deg);
-    position: absolute;
-    font-family: Lateef;
-    font-size: 200px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    opacity: 0.3;
-    color: var(--dark-brand-color);
-    top: -198px;
-    right: -25px;
+
+  .commentsBox:nth-child(even) {
+    margin-left: 238px;
   }
 
   .commentsText {
     color: var(--light-text-color);
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0.024px;
   }
 
   /* LANDING PAGE */
+
   .commentsLandingPage {
-    padding-top: 164px;
-    padding-bottom: 64px;
-    padding-left: 81px;
-    padding-right: 94px;
     background-color: var(--third-background-color);
   }
   .commentsTitleLandingPage {
-    font-family: var(--decoraction-font);
-    font-size: 49px;
-    margin-bottom: 64px;
     color: var(--light-text-color);
   }
+
+  .leftSvgLandingPage {
+    fill: var(--light-text-color);
+  }
+
+  .rightSvgLandingPage {
+    fill: var(--light-text-color);
+  }
+
   .commentsBoxLandingPage {
     background-color: var(--primary-background-color);
+  }
+
+  .commentsTextLandingPage {
+    color: var(--dark-text-color);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .comments {
+    padding: 64px 80px;
+    margin: 0px;
+  }
+  .commentsTitle {
+    font-size: 3.0625rem;
+    margin-bottom: 64px;
+  }
+  .commentsContainer {
+    position: relative;
+    padding-bottom: 54px;
+    padding-left: 15px;
+    padding-right: 15px;
+    gap: 40px;
+    flex-direction: row;
+  }
+
+  .leftSvg {
+    bottom: 0;
+    left: 0;
+  }
+  .rightSvg {
+    top: -54px;
+    right: 0;
+  }
+
+  .commentsBox {
+    background-color: var(--secondary-background-color);
     border-radius: 0px 64px;
     display: flex;
+    height: 172px;
     justify-content: center;
     align-items: center;
     padding: 26px 62px;
   }
-  .commentsBoxLandingPage:nth-child(odd):before {
-    color: var(--light-text-color);
-    content: '“';
-    position: absolute;
-    font-family: Lateef;
-    font-size: 200px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    opacity: 0.3;
-    top: 150px;
-    left: -6px;
+
+  .commentsBox:nth-child(even),
+  .commentsBox:nth-child(odd) {
+    margin: 0;
   }
-  .commentsBoxLandingPage:nth-child(even):after {
-    content: '“';
-    transform: rotate(180deg);
-    position: absolute;
-    font-family: Lateef;
-    font-size: 200px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    opacity: 0.3;
+
+  .commentsText {
     color: var(--light-text-color);
-    top: -198px;
-    right: -25px;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    letter-spacing: 0.0015rem;
   }
+
+  /* LANDING PAGE */
+
+  .commentsBoxLandingPage {
+    background-color: var(--primary-background-color);
+  }
+
   .commentsTextLandingPage {
     color: var(--dark-text-color);
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0.024px;
   }
 }
