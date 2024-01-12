@@ -195,4 +195,11 @@
 <line x1="6.5" y1="24.5" x2="26.5" y2="24.5" stroke="#1D1D1D" stroke-width="3" stroke-linecap="round"/>
 </symbol>
 
+<symbol id="icon-down" viewBox="0 0 34 32">
+<path fill="none" stroke="#ca0c7a" style="stroke: var(--color1, #ca0c7a)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.6" d="M32.8 9.6l-16 13.6-16-13.6"></path>
+</symbol>
+<symbol id="icon-up" viewBox="0 0 34 32">
+<path fill="none" stroke="#ca0c7a" style="stroke: var(--color1, #ca0c7a)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.6" d="M0.8 22.4l16-13.6 16 13.6"></path>
+</symbol>
+
 </defs></svg>
