@@ -8,7 +8,7 @@ import css from './Navigation.module.css'
 const Navigation = () => {
   return (
     <div className={css.nav}>
-      <NavLink to="/">
+      <NavLink to="/landing-page">
         <svg className={css.navLogo}>
           <use href={`${icon}#logo`}></use>
         </svg>
