@@ -1,0 +1,128 @@
+.workshops {
+  padding: 64px 20px;
+}
+
+.workshopsTitle {
+  font-size: 1.9375rem;
+  font-family: var(--decoraction-font);
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 32px;
+}
+
+.workshopsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 64px;
+}
+
+.workshopsBox {
+  gap: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.workshopsText {
+  font-style: var(--main-font);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem; /* 150% */
+  letter-spacing: 0.00119rem;
+}
+
+.boldText {
+  font-weight: 700;
+}
+
+.workshopsList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.workshopsListText {
+  font-style: var(--main-font);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5rem; /* 150% */
+  letter-spacing: 0.00119rem;
+  margin-bottom: 11px;
+}
+
+.workshopsListItem {
+  font-style: var(--main-font);
+  list-style-type: disc;
+  list-style-position: inside;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem; /* 150% */
+  letter-spacing: 0.00119rem;
+}
+
+@media screen and (min-width: 765px) {
+  .workshops {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .workshopsTitle {
+    font-size: 2.4375rem;
+    margin-bottom: 27px;
+  }
+
+  .workshopsListText {
+    margin-bottom: 0;
+  }
+
+  .workshopsContainer {
+    gap: 0;
+  }
+
+  .workshopsBox {
+    gap: 27px;
+  }
+
+  .workshopsList {
+    gap: 27px;
+  }
+
+  .workshopsText {
+    margin-right: 230px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    .workshops {
+      padding-left: 80px;
+      padding-right: 80px;
+      margin-bottom: 64px;
+    }
+
+    .workshopsTitle {
+      font-size: 3.0625rem;
+    }
+
+    .workshopsContainer {
+      gap: 64px;
+    }
+
+    .workshopsBox {
+      flex-direction: row;
+      gap: 128px;
+    }
+
+    .workshopsText {
+      margin-right: 0;
+    }
+
+    .workshopsList {
+      gap: 12px;
+    }
+
+    .workshopsListText {
+      margin-bottom: 12px;
+      width: max-content;
+    }
+  }
+}
