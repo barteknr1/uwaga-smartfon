@@ -55,6 +55,7 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .scheduleTime {
   color: var(--dark-text-color);
   font-family: var(--decoraction-font);
@@ -97,6 +98,14 @@
     align-items: center;
   }
 
+  .scheduleTablet {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+  }
+
   .scheduleTime {
     font-weight: 400;
   }
@@ -107,5 +116,28 @@
   .scheduleText {
     line-height: 24px;
     letter-spacing: 0.12px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .program {
+    padding-top: 64px;
+    padding-bottom: 208px;
+  }
+  .container {
+    padding: 0 80px;
+  }
+
+  .programTitle {
+    font-size: 3.0625rem;
+    line-height: 61.25px;
+  }
+  .programSubTitle {
+    font-size: 2.4375rem;
+    line-height: 48.75px;
+  }
+
+  .singleSchedule {
+    height: 104px;
+    padding: 32px 103px;
   }
 }
