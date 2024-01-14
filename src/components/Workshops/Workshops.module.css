@@ -1,8 +1,17 @@
 .workshops {
   padding: 64px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.workshops button {
+  margin-top: 64px;
 }
 
 .workshopsTitle {
+  align-self: start;
   font-size: 1.9375rem;
   font-family: var(--decoraction-font);
   font-weight: 400;
@@ -13,13 +22,12 @@
 .workshopsContainer {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  gap: 64px;
+  gap: 32px;
 }
 
 .workshopsBox {
-  gap: 32px;
   display: flex;
   flex-direction: column;
 }
@@ -48,7 +56,7 @@
   font-weight: 700;
   line-height: 1.5rem; /* 150% */
   letter-spacing: 0.00119rem;
-  margin-bottom: 11px;
+  margin-bottom: 23px;
 }
 
 .workshopsListItem {
@@ -59,6 +67,7 @@
   font-weight: 400;
   line-height: 1.5rem; /* 150% */
   letter-spacing: 0.00119rem;
+  margin-left: 10px;
 }
 
 @media screen and (min-width: 765px) {
@@ -67,17 +76,23 @@
     padding-right: 40px;
   }
 
+  .workshops button {
+    margin-top: 0;
+  }
+
   .workshopsTitle {
     font-size: 2.4375rem;
     margin-bottom: 27px;
   }
 
   .workshopsListText {
+    margin-top: 27px;
     margin-bottom: 0;
   }
 
   .workshopsContainer {
     gap: 0;
+    align-items: flex-start;
   }
 
   .workshopsBox {
@@ -99,17 +114,22 @@
       margin-bottom: 64px;
     }
 
+    .workshops button {
+      margin-top: 64px;
+    }
+
     .workshopsTitle {
       font-size: 3.0625rem;
+      margin-bottom: 64px;
     }
 
     .workshopsContainer {
-      gap: 64px;
+      flex-direction: row;
+      gap: 128px;
     }
 
     .workshopsBox {
-      flex-direction: row;
-      gap: 128px;
+      gap: 24px;
     }
 
     .workshopsText {
@@ -121,7 +141,7 @@
     }
 
     .workshopsListText {
-      margin-bottom: 12px;
+      margin-top: 0;
       width: max-content;
     }
   }

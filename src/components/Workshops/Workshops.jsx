@@ -24,19 +24,21 @@ const Workshops = () => {
             </span>
             .
           </p>
+        </div>
+        <div className={css.workshopsBox}>
+          <p className={css.workshopsListText}>
+            Tematy warsztatów, które pojawią się podczas wydarzenia Uwaga!
+            Smartfon:
+          </p>
           <ul className={css.workshopsList}>
-            <p className={css.workshopsListText}>
-              Tematy warsztatów, które pojawią się podczas wydarzenia Uwaga!
-              Smartfon:
-            </p>
             <li className={css.workshopsListItem}>Warsztat 1</li>
             <li className={css.workshopsListItem}>Warsztat 2</li>
             <li className={css.workshopsListItem}>Warsztat 3</li>
             <li className={css.workshopsListItem}>Warsztat 4</li>
           </ul>
         </div>
-        <Button variant="primary" content="Zapisz się na warsztat" />
       </div>
+      <Button variant="primary" content="Zapisz się na warsztat" />
     </Section>
   )
 }
