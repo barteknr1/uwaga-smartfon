@@ -1,69 +1,79 @@
-.AboutConference {
+.aboutConference {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 64px;
-  padding-top: 64px;
+  padding: 64px 20px;
 }
-.AboutConferenceBox {
+.aboutConferenceBox {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 64px;
 }
-.AboutConferenceContainer {
+.aboutConferenceContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
   gap: 40px;
-  position: relative;
 }
-.AboutConferenceTitle {
+.aboutConferenceTitle {
   font-family: var(--decoraction-font);
-  font-size: 31px;
-  color: var(--dark-text-color);
-  line-height: 38.75px;
+  font-size: 1.9375rem;
+  line-height: normal;
   margin-bottom: 16px;
 }
 
-.AboutConferenceText {
+.aboutConferenceText {
   font-family: var(--main-font);
-  font-size: 16px;
-  color: var(--dark-text-color);
-  line-height: 24px;
-  letter-spacing: 0.12px;
+  font-size: 1rem;
+  line-height: 1.5rem; /* 150% */
+  letter-spacing: 0.00119rem;
 }
 
-.AboutConferenceImg {
+.aboutConferenceImgBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutConferenceImg {
   width: 240px;
+  height: 217px;
+  z-index: 2;
 }
 
-.AboutConferenceSvg {
+.aboutConferenceSvg {
   position: absolute;
-  z-index: -1;
+  z-index: 1;
   overflow: visible;
 }
-.AboutConferenceSvg1 {
+.aboutConferenceSvg1 {
+  transform: rotate(167.429deg);
   width: 331px;
   height: 227px;
 }
-.AboutConferenceSvg2 {
+.aboutConferenceSvg2 {
   width: 254px;
   height: 250px;
 }
-.AboutConferenceSvg3 {
+.aboutConferenceSvg3 {
+  transform: rotate(66.401deg);
   width: 285px;
-  height: 288.97px;
+  height: 289px;
 }
 
-@media screen and (min-width: 755px) {
-  .AboutConferenceContainer {
-    flex-direction: row;
-    gap: 13px;
+@media screen and (min-width: 765px) {
+  .aboutConference {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
-  .AboutConferenceContainer:nth-child(2n + 2) {
+  .aboutConferenceContainer {
+    flex-direction: row;
+  }
+
+  .aboutConferenceContainer:nth-child(2n + 2) {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -71,64 +81,90 @@
     position: relative;
   }
 
-  .AboutConferenceTitle {
-    line-height: 48.75px;
-    font-size: 39px;
-  }
-
-  .AboutConferenceWrapper {
+  .aboutConferenceWrapper {
     display: flex;
     flex-direction: column;
   }
-  .AboutConferenceText {
-    max-width: 466px;
-  }
 
-  .AboutConferenceImg {
+  .aboutConferenceImg {
+    position: absolute;
     width: 237px;
+    height: 188px;
   }
-  .AboutConferenceSvg1 {
+  .aboutConferenceSvg1 {
+    position: relative;
     width: 309px;
     height: 212px;
-    transform: rotate(170deg);
+    transform: rotate(-10.674deg);
   }
-  .AboutConferenceSvg2 {
+  .aboutConferenceSvg2 {
+    position: relative;
     width: 244px;
     height: 230px;
   }
-  .AboutConferenceSvg3 {
+  .aboutConferenceSvg3 {
+    position: relative;
     width: 248px;
     height: 232px;
+    transform: rotate(0deg);
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .AboutConferenceContainer {
+  .aboutConference {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  .aboutConferenceBox {
+    padding-left: 108px;
+    padding-right: 108px;
+  }
+  .aboutConferenceContainer {
     gap: 95px;
   }
-
-  .AboutConferenceTitle {
+  .aboutConferenceContainer:nth-child(2) {
+    gap: 95px;
+  }
+  .aboutConferenceContainer:nth-child(2) .aboutConferenceWrapper {
+    margin-left: 60px;
+  }
+  .aboutConferenceContainer:nth-child(3) .aboutConferenceWrapper {
+    margin-right: 60px;
+  }
+  .aboutConferenceTitle {
+    font-size: 2.4375rem;
     margin-bottom: 20px;
   }
 
-  .AboutConferenceText {
-    max-width: 554px;
+  .aboutConferenceImgBox {
+    justify-content: flex-end;
   }
-
-  .AboutConferenceImg {
+  .aboutConferenceContainer:nth-child(2) .aboutConferenceImgBox {
     width: 414px;
+    height: 324px;
+    justify-content: flex-start;
   }
 
-  .AboutConferenceSvg1 {
+  .aboutConferenceImg {
+    width: 414px;
+    height: 324px;
+  }
+
+  .aboutConferenceSvg1 {
+    transform: rotate(0deg);
+    right: -40px;
+    top: 40px;
     width: 468px;
     height: 317px;
   }
 
-  .AboutConferenceSvg2 {
+  .aboutConferenceSvg2 {
+    left: -65px;
     width: 375px;
     height: 370px;
   }
-  .AboutConferenceSvg3 {
+  .aboutConferenceSvg3 {
+    right: -28px;
     width: 346px;
     height: 370px;
   }
