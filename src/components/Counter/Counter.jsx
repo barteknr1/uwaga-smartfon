@@ -1,7 +1,9 @@
 import {useState, useEffect} from 'react'
 import PropTypes from 'prop-types'
 import css from './Counter.module.css'
-const CountdownTimer = ({eventDate}) => {
+const CountdownTimer = () => {
+  const eventDate = new Date('April 4, 2024')
+
   const calculateTimeRemaining = (targetDate) => {
     const currentDate = new Date()
     const difference = targetDate - currentDate
