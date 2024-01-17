@@ -1,6 +1,7 @@
 import {useState, useEffect} from 'react'
 import PropTypes from 'prop-types'
 import css from './Counter.module.css'
+
 const CountdownTimer = () => {
   const eventDate = new Date('April 4, 2024')
 

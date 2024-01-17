@@ -7,6 +7,7 @@ import Newsletter from '../../components/Newsletter/Newsletter'
 import AboutConference from '../../components/AboutConference/AboutConference'
 
 const Home = () => {
+  const eventDate = new Date('April 4, 2024 10:00:00')
   return (
     <>
       <Banner
