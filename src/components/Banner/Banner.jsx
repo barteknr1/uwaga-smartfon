@@ -21,8 +21,8 @@ Banner.propTypes = {
   url: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   main: PropTypes.string.isRequired,
-  addLine1: PropTypes.string.isRequired,
-  addLine2: PropTypes.string.isRequired,
+  addLine1: PropTypes.string,
+  addLine2: PropTypes.string,
 }
 
 export default Banner

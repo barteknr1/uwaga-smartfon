@@ -1,7 +1,7 @@
 import {Swiper, SwiperSlide} from 'swiper/react'
 import {Pagination, Navigation} from 'swiper/modules'
 import Section from '../Section/Section'
-import Areas from './areasList'
+import Areas from './Areas'
 import './styles.css'
 import 'swiper/css/bundle'
 import css from './VolunteerAreas.module.css'

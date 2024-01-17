@@ -1,5 +1,4 @@
 import {useState, useEffect} from 'react'
-import PropTypes from 'prop-types'
 import css from './Counter.module.css'
 
 const CountdownTimer = () => {
@@ -50,7 +49,5 @@ const CountdownTimer = () => {
     </div>
   )
 }
-CountdownTimer.propTypes = {
-  eventDate: PropTypes.instanceOf(Date).isRequired,
-}
+
 export default CountdownTimer
