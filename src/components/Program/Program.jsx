@@ -1,10 +1,12 @@
+// Program.js
 import {useState, useEffect} from 'react'
 import Section from '../Section/Section'
 import css from './Program.module.css'
-import sprite from '../../assets/svg/sprite.svg'
+import SingleSchedule from './SingleSchedule'
 
 const Program = () => {
   const [isMobileView, setIsMobileView] = useState(window.innerWidth < 756)
+  const [expandedDetails, setExpandedDetails] = useState(Array(2).fill(false))
 
   useEffect(() => {
     const handleResize = () => {
@@ -17,6 +19,51 @@ const Program = () => {
       window.removeEventListener('resize', handleResize)
     }
   }, [])
+
+  const toggleDetails = (index) => {
+    const newExpandedDetails = [...expandedDetails]
+    newExpandedDetails[index] = !newExpandedDetails[index]
+    setExpandedDetails(newExpandedDetails)
+  }
+
+  const scheduleData = [
+    {
+      scheduleTime: '13:45',
+      scheduleText:
+        'Lorem ipsum dolor sit amet consectetur. Lacus sed tempor cursus sodales massa malesuada aliquam. ',
+      additionalText:
+        'Lorem ipsum dolor sit amet consectetur.Lacus sed tempor cursus sodales massa malesuada aliquam.Lorem ipsum dolor sit amet consectetur.Lacus sed tempor cursus sodales massa malesuada aliquam.Lorem ipsum dolor sit amet consectetur.Lacus sed tempor cursus sodales massa malesuada aliquam. ',
+    },
+    {
+      scheduleTime: '13:45',
+      scheduleText:
+        'Lorem ipsum dolor sit amet consectetur. Lacus sed tempor cursus sodales massa malesuada aliquam. ',
+      additionalText:
+        'Lorem ipsum dolor sit amet consectetur. Lacus sed tempor cursus sodales massa malesuada aliquam. Lorem ipsum dolor sit amet consectetur. Lacus sed tempor cursus sodales massa malesuada aliquam. Lorem ipsum dolor sit amet consectetur. Lacus sed tempor cursus sodales massa malesuada aliquam. ',
+    },
+    {
+      scheduleTime: '13:45',
+      scheduleText:
+        'Lorem ipsum dolor sit amet consectetur. Lacus sed tempor cursus sodales massa malesuada aliquam. ',
+      additionalText:
+        'Lorem ipsum dolor sit amet consectetur. Lacus sed tempor cursus sodales massa malesuada aliquam. Lorem ipsum dolor sit amet consectetur. Lacus sed tempor cursus sodales massa malesuada aliquam. Lorem ipsum dolor sit amet consectetur. Lacus sed tempor cursus sodales massa malesuada aliquam. ',
+    },
+    {
+      scheduleTime: '13:45',
+      scheduleText:
+        'Lorem ipsum dolor sit amet consectetur. Lacus sed tempor cursus sodales massa malesuada aliquam. ',
+      additionalText:
+        'Lorem ipsum dolor sit amet consectetur. Lacus sed tempor cursus sodales massa malesuada aliquam. Lorem ipsum dolor sit amet consectetur. Lacus sed tempor cursus sodales massa malesuada aliquam. Lorem ipsum dolor sit amet consectetur. Lacus sed tempor cursus sodales massa malesuada aliquam. ',
+    },
+    {
+      scheduleTime: '13:45',
+      scheduleText:
+        'Lorem ipsum dolor sit amet consectetur. Lacus sed tempor cursus sodales massa malesuada aliquam. ',
+      additionalText:
+        'Lorem ipsum dolor sit amet consectetur. Lacus sed tempor cursus sodales massa malesuada aliquam. Lorem ipsum dolor sit amet consectetur. Lacus sed tempor cursus sodales massa malesuada aliquam. Lorem ipsum dolor sit amet consectetur. Lacus sed tempor cursus sodales massa malesuada aliquam. ',
+    },
+  ]
+
   return (
     <Section sectionClass={css.program}>
       <div className={css.container}>
@@ -26,141 +73,15 @@ const Program = () => {
         </div>
 
         <div className={css.scheduleContainer}>
-          {isMobileView ? (
-            <div className={css.singleSchedule}>
-              <div className={css.scheduleMobile}>
-                <h4 className={css.scheduleTime}>13:45</h4>
-                <svg className={css.scheduleSvg}>
-                  <use href={sprite + '#icon-down'} />
-                </svg>
-              </div>
-              <p className={css.scheduleText}>
-                Lorem ipsum dolor sit amet consectetur. Arcu mi nunc at
-                nascetur.
-              </p>
-            </div>
-          ) : (
-            <div className={css.singleSchedule}>
-              <div className={css.scheduleTablet}>
-                <h4 className={css.scheduleTime}>13:45</h4>
-                <p className={css.scheduleText}>
-                  Lorem ipsum dolor sit amet consectetur. Arcu mi nunc at
-                  nascetur.
-                </p>
-                <svg className={css.scheduleSvg}>
-                  <use href={sprite + '#icon-down'} />
-                </svg>
-              </div>
-            </div>
-          )}
-          {isMobileView ? (
-            <div className={css.singleSchedule}>
-              <div className={css.scheduleMobile}>
-                <h4 className={css.scheduleTime}>13:45</h4>
-                <svg className={css.scheduleSvg}>
-                  <use href={sprite + '#icon-down'} />
-                </svg>
-              </div>
-              <p className={css.scheduleText}>
-                Lorem ipsum dolor sit amet consectetur. Arcu mi nunc at
-                nascetur.
-              </p>
-            </div>
-          ) : (
-            <div className={css.singleSchedule}>
-              <div className={css.scheduleTablet}>
-                <h4 className={css.scheduleTime}>13:45</h4>
-                <p className={css.scheduleText}>
-                  Lorem ipsum dolor sit amet consectetur. Arcu mi nunc at
-                  nascetur.
-                </p>
-                <svg className={css.scheduleSvg}>
-                  <use href={sprite + '#icon-down'} />
-                </svg>
-              </div>
-            </div>
-          )}
-          {isMobileView ? (
-            <div className={css.singleSchedule}>
-              <div className={css.scheduleMobile}>
-                <h4 className={css.scheduleTime}>13:45</h4>
-                <svg className={css.scheduleSvg}>
-                  <use href={sprite + '#icon-down'} />
-                </svg>
-              </div>
-              <p className={css.scheduleText}>
-                Lorem ipsum dolor sit amet consectetur. Arcu mi nunc at
-                nascetur.
-              </p>
-            </div>
-          ) : (
-            <div className={css.singleSchedule}>
-              <div className={css.scheduleTablet}>
-                <h4 className={css.scheduleTime}>13:45</h4>
-                <p className={css.scheduleText}>
-                  Lorem ipsum dolor sit amet consectetur. Arcu mi nunc at
-                  nascetur.
-                </p>
-                <svg className={css.scheduleSvg}>
-                  <use href={sprite + '#icon-down'} />
-                </svg>
-              </div>
-            </div>
-          )}
-          {isMobileView ? (
-            <div className={css.singleSchedule}>
-              <div className={css.scheduleMobile}>
-                <h4 className={css.scheduleTime}>13:45</h4>
-                <svg className={css.scheduleSvg}>
-                  <use href={sprite + '#icon-down'} />
-                </svg>
-              </div>
-              <p className={css.scheduleText}>
-                Lorem ipsum dolor sit amet consectetur. Arcu mi nunc at
-                nascetur.
-              </p>
-            </div>
-          ) : (
-            <div className={css.singleSchedule}>
-              <div className={css.scheduleTablet}>
-                <h4 className={css.scheduleTime}>13:45</h4>
-                <p className={css.scheduleText}>
-                  Lorem ipsum dolor sit amet consectetur. Arcu mi nunc at
-                  nascetur.
-                </p>
-                <svg className={css.scheduleSvg}>
-                  <use href={sprite + '#icon-down'} />
-                </svg>
-              </div>
-            </div>
-          )}
-          {isMobileView ? (
-            <div className={css.singleSchedule}>
-              <div className={css.scheduleMobile}>
-                <h4 className={css.scheduleTime}>13:45</h4>
-                <svg className={css.scheduleSvg}>
-                  <use href={sprite + '#icon-down'} />
-                </svg>
-              </div>
-              <p className={css.scheduleText}>
-                Lorem ipsum dolor sit amet consectetur. Arcu mi nunc at
-                nascetur.
-              </p>
-            </div>
-          ) : (
-            <div className={css.singleSchedule}>
-              <div className={css.scheduleTablet}>
-                <h4 className={css.scheduleTime}>13:45</h4>
-                <p className={css.scheduleText}>
-                  Lorem ipsum dolor sit amet consectetur. Arcu mi nunc at
-                  nascetur.
-                </p>
-                <svg className={css.scheduleSvg}>
-                  <use href={sprite + '#icon-down'} />
-                </svg>
-              </div>
-            </div>
-          )}
+          {scheduleData.map((data, index) => (
+            <SingleSchedule
+              key={index}
+              isMobileView={isMobileView}
+              expandedDetails={expandedDetails[index]}
+              onToggleDetails={() => toggleDetails(index)}
+              {...data}
+            />
+          ))}
         </div>
       </div>
     </Section>

@@ -6,7 +6,7 @@ import Image1 from '../../assets/banner/heroBanner.png'
 import CountdownTimer from '../../components/Counter/Counter'
 import Newsletter from '../../components/Newsletter/Newsletter'
 import AboutConference from '../../components/AboutConference/AboutConference'
-import Program from '../../components/Program/Program'
+
 const Home = () => {
   const eventDate = new Date('April 4, 2024')
   return (
@@ -20,7 +20,6 @@ const Home = () => {
       />
       <CountdownTimer eventDate={eventDate} />
       <AboutConference />
-      <Program />
       <PreviousEdition />
       <Comments isLandingPage={false} />
       <Patrons />

@@ -43,7 +43,6 @@
 .singleSchedule {
   display: flex;
   flex-direction: column;
-  height: 96px;
   padding: 8px 16px 8px 16px;
   border-radius: 12px;
   background-color: var(--primary-background-color);
@@ -73,6 +72,9 @@
   font-size: 1rem;
   line-height: 18.78px;
 }
+.additionalText {
+  padding: 13px 0px 13px 0px;
+}
 
 @media screen and (min-width: 756px) {
   .container {
@@ -92,7 +94,6 @@
   .singleSchedule {
     display: flex;
     flex-direction: row;
-    height: 105px;
     padding: 32px;
     border-radius: 16px;
     align-items: center;
@@ -102,7 +103,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+
     gap: 8px;
   }
 
@@ -112,10 +113,14 @@
   .scheduleSvg {
     width: 40px;
     height: 40px;
+    flex-shrink: 0;
   }
   .scheduleText {
     line-height: 24px;
     letter-spacing: 0.12px;
+  }
+  .additionalText {
+    padding: 32px 0px 32px 0px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -137,7 +142,6 @@
   }
 
   .singleSchedule {
-    height: 104px;
     padding: 32px 103px;
   }
 }
