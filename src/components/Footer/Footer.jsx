@@ -60,7 +60,7 @@ const Footer = ({text}) => {
         <a href="https://projektpl.org/">
           <img
             className={css.logo}
-            src="./src/assets/images/footer/projektpl.png"
+            src="src/assets/images/footer/projektpl.png"
             alt="logo firmy fundacja projektpl"
           />
         </a>
