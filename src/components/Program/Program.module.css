@@ -1,20 +1,15 @@
 .program {
   display: flex;
   flex-direction: column;
-  overflow: hidden;
-  padding-top: 32px;
-  padding-bottom: 126px;
   background-image: url(../../assets/bgImages/program.png);
   background-size: cover;
   background-repeat: no-repeat;
+  padding: 32px 20px 126px 20px;
 }
 .container {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  align-content: space-around;
-  flex-wrap: wrap;
-  padding: 0 20px;
 }
 .titleContainer {
   display: flex;
@@ -47,6 +42,7 @@
   border-radius: 12px;
   background-color: var(--primary-background-color);
   gap: 8px;
+  justify-content: space-evenly;
 }
 .scheduleMobile {
   display: flex;
@@ -76,10 +72,12 @@
   padding: 13px 0px 13px 0px;
 }
 
-@media screen and (min-width: 756px) {
+@media screen and (min-width: 765px) {
+  .program {
+    padding: 32px 40px 128px 40px;
+  }
   .container {
     gap: 32px;
-    padding: 0 40px;
   }
 
   .programTitle {
@@ -94,16 +92,16 @@
   .singleSchedule {
     display: flex;
     flex-direction: row;
-    padding: 32px;
+    padding: 32px 40px 32px 40px;
     border-radius: 16px;
     align-items: center;
+    flex-shrink: 0;
   }
 
   .scheduleTablet {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
     gap: 8px;
   }
 
@@ -125,11 +123,7 @@
 }
 @media screen and (min-width: 1280px) {
   .program {
-    padding-top: 64px;
-    padding-bottom: 208px;
-  }
-  .container {
-    padding: 0 80px;
+    padding: 64px 80px 208px 80px;
   }
 
   .programTitle {
@@ -142,6 +136,6 @@
   }
 
   .singleSchedule {
-    padding: 32px 103px;
+    padding: 32px 103px 32px 103px;
   }
 }
