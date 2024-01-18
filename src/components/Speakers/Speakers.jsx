@@ -11,10 +11,10 @@ import css from './Speakers.module.css'
 import './styles.css'
 
 const Speakers = () => {
-  const [isModalVisible, setIsModalVisible] = useState(false)
+  const [isModalVisible, setIsModalVisible] = useState(true)
   const [selectedSpeaker, setSelectedSpeaker] = useState(null)
   const toggleModal = (speaker) => {
-    console.log(selectedSpeaker)
+    console.log(selectedSpeaker, isModalVisible)
     setSelectedSpeaker(speaker)
     setIsModalVisible(!isModalVisible)
   }
@@ -70,8 +70,14 @@ const Speakers = () => {
         </Swiper>
         {isModalVisible && selectedSpeaker && (
           <Modal>
-            <img src={selectedSpeaker.img} />
-            <p>{selectedSpeaker.about}</p>
+            <img className={css.speakerImg} src={selectedSpeaker.img} />
+            <div className={css.speakerAboutBox}>
+              {selectedSpeaker.about.map((paragraph, index) => (
+                <p className={css.speakerAboutText} key={index}>
+                  {paragraph}
+                </p>
+              ))}
+            </div>
           </Modal>
         )}
       </div>
