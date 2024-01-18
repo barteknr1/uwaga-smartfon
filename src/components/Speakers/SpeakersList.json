@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "img": "./src/assets/images/Speakers/dr-roman-solecki.png",
+    "name": "dr Roman Solecki",
+    "title": "Ekspert",
+    "about": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda at sit odio ullam, ab modi sed fugiat architecto dolorum placeat eaque molestias, minima dolor obcaecati debitis ratione repellat possimus inventore magnam error expedita voluptatibus! Itaque nisi quos minima ullam? Dolor, similique quos. Ad fugit deleniti iure, distinctio impedit facilis quibusdam omnis odio dicta repellendus vero sequi eveniet deserunt repudiandae quidem modi cumque dolorum magnam! Amet adipisci ratione sapiente, iure reprehenderit necessitatibus delectus tenetur sunt vel perferendis repudiandae recusandae. Corporis magni deleniti natus praesentium dolores. Quam, dolores delectus! Sint at quod, qui exercitationem, numquam dicta repellat maxime tempora ea ipsa fugit."
+  },
+  {
+    "id": 2,
+    "img": "./src/assets/images/Speakers/piotr-czubaty.png",
+    "name": "Piotr Czubaty",
+    "title": "Specjalista",
+    "about": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda at sit odio ullam, ab modi sed fugiat architecto dolorum placeat eaque molestias, minima dolor obcaecati debitis ratione repellat possimus inventore magnam error expedita voluptatibus! Itaque nisi quos minima ullam? Dolor, similique quos. Ad fugit deleniti iure, distinctio impedit facilis quibusdam omnis odio dicta repellendus vero sequi eveniet deserunt repudiandae quidem modi cumque dolorum magnam! Amet adipisci ratione sapiente, iure reprehenderit necessitatibus delectus tenetur sunt vel perferendis repudiandae recusandae. Corporis magni deleniti natus praesentium dolores."
+  },
+  {
+    "id": 3,
+    "img": "./src/assets/images/Speakers/dr-lukasz-cichocki.png",
+    "name": "dr Łukasz Cichocki",
+    "title": "Specjalista",
+    "about": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda at sit odio ullam, ab modi sed fugiat architecto dolorum placeat eaque molestias, minima dolor obcaecati debitis ratione repellat possimus inventore magnam error expedita voluptatibus! Itaque nisi quos minima ullam? Dolor, similique quos. Ad fugit deleniti iure, distinctio impedit facilis quibusdam omnis odio dicta repellendus vero sequi eveniet deserunt repudiandae quidem modi cumque dolorum magnam! Amet adipisci ratione sapiente, iure reprehenderit necessitatibus delectus tenetur sunt vel perferendis repudiandae recusandae."
+  },
+  {
+    "id": 4,
+    "img": "./src/assets/images/Speakers/tomasz-lewandowski.png",
+    "name": "Tomasz Lewandowski",
+    "title": "Specjalista",
+    "about": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda at sit odio ullam, ab modi sed fugiat architecto dolorum placeat eaque molestias, minima dolor obcaecati debitis ratione repellat possimus inventore magnam error expedita voluptatibus! Itaque nisi quos minima ullam? Dolor, similique quos. Ad fugit deleniti iure, distinctio impedit facilis quibusdam omnis odio dicta repellendus vero sequi eveniet deserunt repudiandae quidem modi cumque dolorum magnam!"
+  }
+]
