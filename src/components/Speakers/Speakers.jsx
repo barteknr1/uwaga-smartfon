@@ -14,7 +14,6 @@ const Speakers = () => {
   const [isModalVisible, setIsModalVisible] = useState(true)
   const [selectedSpeaker, setSelectedSpeaker] = useState(null)
   const toggleModal = (speaker) => {
-    console.log(selectedSpeaker, isModalVisible)
     setSelectedSpeaker(speaker)
     setIsModalVisible(!isModalVisible)
   }
