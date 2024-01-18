@@ -1,6 +1,7 @@
 import Banner from '../../components/Banner/Banner'
 import Image2 from '../../assets/banner/heroBanner2.png'
 import VolunteerAreas from '../../components/VolunteerAreas/VolunteerAreas'
+import DearVolunteer from '..//../components/DearVolunteer/DearVolunteer'
 
 const Volunteering = () => {
   return (
@@ -11,6 +12,7 @@ const Volunteering = () => {
         main="UWAGA! SMARTFON"
       ></Banner>
       <VolunteerAreas />
+      <DearVolunteer />
     </>
   )
 }
