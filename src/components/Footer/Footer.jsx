@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types'
 
 import icon from '../../assets/svg/sprite.svg'
+import {logo} from '../../assets/images/footer'
 import css from './Footer.module.css'
 
 const Footer = ({text}) => {
@@ -60,7 +61,7 @@ const Footer = ({text}) => {
         <a href="https://projektpl.org/">
           <img
             className={css.logo}
-            src="./src/assets/images/footer/projektpl.png"
+            src={logo}
             alt="logo firmy fundacja projektpl"
           />
         </a>
