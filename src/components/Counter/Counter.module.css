@@ -7,9 +7,13 @@
   color: var(--light-text-color);
   font-family: var(--placeholder-font);
   height: 106px;
-  max-width: 522px;
+  width: 522px;
   border-top-right-radius: 50px;
   border-bottom-left-radius: 50px;
+  z-index: 1;
+  position: absolute;
+  right: 83px;
+  bottom: 80px;
 }
 .TimeRemaining_InfoBox {
   display: flex;

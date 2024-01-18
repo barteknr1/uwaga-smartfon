@@ -49,10 +49,10 @@ const Footer = ({text}) => {
 
           <iframe
             className={css.map}
-            frameborder="0"
+            frameBorder="0"
             scrolling="no"
-            marginheight="0"
-            marginwidth="0"
+            marginHeight="0"
+            marginWidth="0"
             id="gmap_canvas"
             src="https://maps.google.com/maps?&amp;hl=en&amp;q=ckf%2013%20Krak%C3%B3w+()&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
           ></iframe>

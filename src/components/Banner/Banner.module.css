@@ -1,5 +1,6 @@
 .HeroBanner {
   display: flex;
+  position: relative;
 }
 
 .HeroBanner_img {
