@@ -21,13 +21,13 @@
   color: var(--light-text-color);
   font-family: var(--decoraction-font);
   font-size: 1.9375rem;
-  line-height: 38.75px;
+  line-height: 2.421875rem;
 }
 .programSubTitle {
   color: var(--light-text-color);
   font-family: var(--decoraction-font);
   font-size: 1.25rem;
-  line-height: 25px;
+  line-height: 1.5625rem;
 }
 .scheduleContainer {
   display: flex;
@@ -43,30 +43,35 @@
   background-color: var(--primary-background-color);
   gap: 8px;
   justify-content: space-evenly;
+  position: relative;
 }
-.scheduleMobile {
+.timeAndContentBox {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
 }
 
 .scheduleTime {
   color: var(--dark-text-color);
   font-family: var(--decoraction-font);
   font-size: 1.25rem;
-  line-height: 25px;
+  line-height: 1.5625rem;
   font-weight: 500;
 }
 .scheduleSvg {
   width: 26px;
   height: 26px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 8px;
+  margin-right: 16px;
 }
 .scheduleText {
   color: var(--dark-text-color);
   font-family: var(--main-font);
   font-size: 1rem;
-  line-height: 18.78px;
+  line-height: 1.17375rem;
 }
 .additionalText {
   padding: 13px 0px 13px 0px;
@@ -82,11 +87,11 @@
 
   .programTitle {
     font-size: 2.4375rem;
-    line-height: 48.75px;
+    line-height: 3.046875rem;
   }
   .programSubTitle {
     font-size: 1.9375rem;
-    line-height: 38.75px;
+    line-height: 2.421875rem;
   }
 
   .singleSchedule {
@@ -95,11 +100,9 @@
     padding: 32px 40px 32px 40px;
     border-radius: 16px;
     align-items: center;
-    flex-shrink: 0;
   }
 
-  .scheduleTablet {
-    display: flex;
+  .timeAndContentBox {
     flex-direction: row;
     justify-content: space-between;
     gap: 8px;
@@ -112,9 +115,16 @@
     width: 40px;
     height: 40px;
     flex-shrink: 0;
+    top: 0%;
+    right: 0%;
+    transform: translate(0%, 50%);
+    margin-top: 0;
+    margin-right: 32px;
+    margin-left: 8px;
   }
+
   .scheduleText {
-    line-height: 24px;
+    line-height: 1.5rem;
     letter-spacing: 0.12px;
   }
   .additionalText {
@@ -128,11 +138,11 @@
 
   .programTitle {
     font-size: 3.0625rem;
-    line-height: 61.25px;
+    line-height: 3.828125rem;
   }
   .programSubTitle {
     font-size: 2.4375rem;
-    line-height: 48.75px;
+    line-height: 3.046875rem;
   }
 
   .singleSchedule {

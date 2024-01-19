@@ -1,24 +1,13 @@
 // Program.js
-import {useState, useEffect} from 'react'
+import {useState} from 'react'
 import Section from '../Section/Section'
 import css from './Program.module.css'
 import SingleSchedule from './SingleSchedule'
 
 const Program = () => {
-  const [isMobileView, setIsMobileView] = useState(window.innerWidth < 756)
   const [expandedDetails, setExpandedDetails] = useState(Array(2).fill(false))
 
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobileView(window.innerWidth < 756)
-    }
-
-    window.addEventListener('resize', handleResize)
-
-    return () => {
-      window.removeEventListener('resize', handleResize)
-    }
-  }, [])
+ 
 
   const toggleDetails = (index) => {
     const newExpandedDetails = [...expandedDetails]
@@ -76,8 +65,7 @@ const Program = () => {
           {scheduleData.map((data, index) => (
             <SingleSchedule
               key={index}
-              isMobileView={isMobileView}
-              expandedDetails={expandedDetails[index]}
+               expandedDetails={expandedDetails[index]}
               onToggleDetails={() => toggleDetails(index)}
               {...data}
             />
