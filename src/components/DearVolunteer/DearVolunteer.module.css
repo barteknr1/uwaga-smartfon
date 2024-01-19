@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   padding: 64px 20px 64px 20px;
-  align-items: center;
   gap: 32px;
 }
 .container {
@@ -16,17 +15,13 @@
   flex-direction: column;
   gap: 44px;
 }
-.textBox1 {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-.textBox2 {
+.textBox {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   align-items: center;
 }
+
 .dearVolunteerTitle {
   font-family: var(--decoraction-font);
   font-size: 1.9375rem;
@@ -38,7 +33,7 @@
   color: var(--dark-text-color);
   size: 1rem;
   line-height: 1.5rem;
-  letter-spacing: 0.12%;
+  letter-spacing: 0.0012rem;
 }
 
 .dearVolunteerSvg {
@@ -72,10 +67,7 @@
     width: 228px;
     height: 228px;
   }
-  .textBox1 {
-    flex: 1;
-  }
-  .textBox2 {
+  .textBox {
     flex: 1;
   }
 }
