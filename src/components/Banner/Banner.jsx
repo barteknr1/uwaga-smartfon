@@ -2,7 +2,6 @@ import PropTypes from 'prop-types'
 import styles from '../Banner/Banner.module.css'
 import CountdownTimer from '../Counter/Counter'
 
-
 const Banner = ({ url, title, main, addLine1, addLine2 }) => {
   return (
     <div className={styles.HeroBanner}>

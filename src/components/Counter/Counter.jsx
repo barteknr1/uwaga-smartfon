@@ -50,7 +50,5 @@ const CountdownTimer = () => {
     </div>
   )
 }
-CountdownTimer.propTypes = {
-  eventDate: PropTypes.instanceOf(Date).isRequired,
-}
+
 export default CountdownTimer
