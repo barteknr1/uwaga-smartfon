@@ -2,8 +2,9 @@ import {Outlet, useLocation} from 'react-router-dom'
 import {Suspense, useState} from 'react'
 import {motion, useAnimation} from 'framer-motion'
 
-import HomeNav from '../NavHome/NavHome'
+import NavHome from '../NavHome/NavHome'
 import Footer from '../Footer/Footer'
+import HeaderTablet from '../HeaderTablet/HeaderTablet'
 
 import css from './SharedLayout.module.css'
 import icon from '../../assets/svg/sprite.svg'
@@ -24,8 +25,9 @@ const SharedLayout = () => {
   return (
     <>
       <header className={`${css.header} ${isOpen && css['is-open']}`}>
-        <HomeNav />
+        <NavHome />
       </header>
+      <HeaderTablet />
       <motion.svg
         className={css.mobileMenuTrigger}
         onClick={toggleMenu}

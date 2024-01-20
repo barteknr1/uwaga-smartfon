@@ -17,7 +17,7 @@
   top: 12px;
 }
 
-@media screen and (min-width: 765px) {
+@media screen and (min-width: 1280px) {
   .header {
     display: block;
     width: 100%;
@@ -28,17 +28,11 @@
     top: 0;
   }
 
-  .main {
-    margin-top: 150px;
-  }
-
-  .mobileMenuTrigger {
-    display: block;
-  }
-}
-
-@media screen and (min-width: 1280px) {
   .mobileMenuTrigger {
     display: none;
+  }
+
+  .main {
+    margin-top: 150px;
   }
 }
