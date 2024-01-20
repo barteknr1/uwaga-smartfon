@@ -15,7 +15,7 @@ const SharedLayout = () => {
 
   const toggleMenu = async () => {
     await setIsOpen((open) => !open)
-    controls.start({scale: isOpen ? 1 : 1.2})
+    controls.start({scale: isOpen ? 1 : 0.8})
   }
 
   const menuIconId = isOpen ? 'icon-close' : 'hamburger-menu'
