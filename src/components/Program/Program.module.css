@@ -42,13 +42,14 @@
   border-radius: 12px;
   background-color: var(--primary-background-color);
   gap: 8px;
-  justify-content: space-evenly;
+  justify-content: flex start;
   position: relative;
 }
 .timeAndContentBox {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-right: 8px;
 }
 
 .scheduleTime {
@@ -62,10 +63,8 @@
   width: 26px;
   height: 26px;
   position: absolute;
-  top: 0;
-  right: 0;
-  margin-top: 8px;
-  margin-right: 16px;
+  top: 8px;
+  right: 16px;
 }
 .scheduleText {
   color: var(--dark-text-color);
@@ -105,7 +104,8 @@
   .timeAndContentBox {
     flex-direction: row;
     justify-content: space-between;
-    gap: 8px;
+    gap: 32px;
+    padding-right: 64px;
   }
 
   .scheduleTime {
@@ -115,22 +115,20 @@
     width: 40px;
     height: 40px;
     flex-shrink: 0;
-    top: 0%;
-    right: 0%;
-    transform: translate(0%, 50%);
-    margin-top: 0;
-    margin-right: 32px;
-    margin-left: 8px;
-  }
-
-  .scheduleText {
-    line-height: 1.5rem;
-    letter-spacing: 0.12px;
-  }
-  .additionalText {
-    padding: 32px 0px 32px 0px;
+    top: 32px;
+    right: 32px;
+    bottom: 32px;
   }
 }
+
+.scheduleText {
+  line-height: 1.5rem;
+  letter-spacing: 0.12px;
+}
+.additionalText {
+  padding: 32px 0px 32px 0px;
+}
+
 @media screen and (min-width: 1280px) {
   .program {
     padding: 64px 80px 208px 80px;
