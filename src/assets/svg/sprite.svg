@@ -192,6 +192,13 @@
 <path fill-rule="evenodd" clip-rule="evenodd" d="M149.081 0.0370798C177.396 -1.03435 200.487 21.2983 218.503 43.0904C234.64 62.6106 237.787 87.3009 241.859 112.264C247.221 145.131 264.097 180.656 245.452 208.29C225.156 238.372 185.393 251.956 149.081 249.774C114.388 247.688 89.1488 220.927 63.6769 197.363C36.6894 172.397 -4.69428 148.599 0.435043 112.264C5.55384 76.0022 55.449 70.2665 84.7401 48.152C106.959 31.3772 121.225 1.09117 149.081 0.0370798Z" fill="#9A5FBD"/>
 </symbol>
 
+<symbol id="icon-down" viewBox="0 0 34 32">
+<path fill="none" stroke="#ca0c7a" style="stroke: var(--color1, #ca0c7a)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.6" d="M32.8 9.6l-16 13.6-16-13.6"></path>
+</symbol>
+<symbol id="icon-up" viewBox="0 0 34 32">
+<path fill="none" stroke="#ca0c7a" style="stroke: var(--color1, #ca0c7a)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.6" d="M0.8 22.4l16-13.6 16 13.6"></path>
+</symbol>
+
 <symbol id="aboutPink" viewBox="0 0 283 288" fill="none">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M119.184 2.17767C156.767 -6.3312 195.598 22.133 225.657 48.3826C255.643 74.5675 284.458 108.148 282.484 144.78C280.625 179.299 240.546 194.048 216.484 218.644C192.468 243.195 179.849 280.951 143.861 286.489C104.524 292.542 60.4283 275.972 31.7058 247.078C4.46111 219.671 -3.75631 179.621 2.99136 144.78C8.54209 116.119 44.6388 107.801 63.0574 85.1964C85.0605 58.1924 83.2586 10.3115 119.184 2.17767Z" fill="#CA0C7A"/>
 </symbol>
