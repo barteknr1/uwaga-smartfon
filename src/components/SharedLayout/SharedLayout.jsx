@@ -1,7 +1,7 @@
 import {Outlet, useLocation} from 'react-router-dom'
 import {Suspense, useState, useEffect} from 'react'
 
-import Navigation from '../Navigation/Navigation'
+import HomeNav from '../HomeNav/HomeNav'
 import Footer from '../Footer/Footer'
 
 import css from './SharedLayout.module.css'
@@ -22,7 +22,7 @@ const SharedLayout = () => {
   return (
     <>
       <header className={`${css.header} ${isOpen && css['is-open']}`}>
-        <Navigation />
+        <HomeNav />
       </header>
       <svg className={css.mobileMenuTrigger} onClick={toggleMenu}>
         <use href={`${icon}#hamburger-menu`}></use>

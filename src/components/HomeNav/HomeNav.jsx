@@ -3,9 +3,9 @@ import {NavLink} from 'react-router-dom'
 import Button from '../Button/Button'
 
 import icon from '../../assets/svg/sprite.svg'
-import css from './Navigation.module.css'
+import css from './HomeNav.module.css'
 
-const Navigation = () => {
+const HomeNav = () => {
   return (
     <div className={css.nav}>
       <NavLink to="/landing-page">
@@ -43,4 +43,4 @@ const Navigation = () => {
   )
 }
 
-export default Navigation
+export default HomeNav
