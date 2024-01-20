@@ -5,6 +5,7 @@ import Banner from '../../components/Banner/Banner'
 import Image1 from '../../assets/banner/heroBanner.png'
 import Newsletter from '../../components/Newsletter/Newsletter'
 import AboutConference from '../../components/AboutConference/AboutConference'
+import BeAVolunteer from '../../components/BeAVolunteer/BeAVolunteer'
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
       <AboutConference />
       <PreviousEdition />
       <Comments isLandingPage={false} />
+      <BeAVolunteer />
       <Patrons />
       <Newsletter />
     </>

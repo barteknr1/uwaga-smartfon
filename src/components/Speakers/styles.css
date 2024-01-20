@@ -1,0 +1,7 @@
+.swiper-wrapper:hover {
+  transition-timing-function: linear;
+}
+
+.swiper-slide {
+  width: auto;
+}
