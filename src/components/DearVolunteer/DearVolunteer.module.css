@@ -1,0 +1,87 @@
+.dearVolunteer {
+  display: flex;
+  flex-direction: column;
+  padding: 64px 20px 64px 20px;
+  gap: 32px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+}
+.textWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+.textBox {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.dearVolunteerTitle {
+  font-family: var(--decoraction-font);
+  font-size: 1.9375rem;
+  line-height: 2.421875rem;
+  color: var(--dark-text-color);
+}
+.dearVolunteerText {
+  font: var(--main-font);
+  color: var(--dark-text-color);
+  size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.0012rem;
+}
+
+.dearVolunteerSvg {
+  width: 345px;
+  height: 328px;
+}
+
+@media screen and (min-width: 765px) {
+  .dearVolunteer {
+    align-items: flex-start;
+    padding: 128px 41px 128px 41px;
+    justify-content: flex-start;
+    gap: 64px;
+  }
+  .dearVolunteerTitle {
+    font-size: 2.4375rem;
+    font-size: 3.046875rem;
+  }
+  .container {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+  }
+  .textWrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 67px;
+  }
+
+  .dearVolunteerSvg {
+    width: 228px;
+    height: 228px;
+  }
+  .textBox {
+    flex: 1;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .dearVolunteer {
+    padding: 128px 81px 128px 81px;
+    justify-content: flex-start;
+  }
+
+  .textWrapper {
+    gap: 112px;
+  }
+
+  .dearVolunteerSvg {
+    width: 377px;
+    height: 328px;
+  }
+}
