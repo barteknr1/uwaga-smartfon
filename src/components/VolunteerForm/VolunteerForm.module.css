@@ -1,0 +1,319 @@
+.volunteerForm {
+  padding: 64px 20px;
+}
+
+.ellipse,
+.ellipse2 {
+  display: none;
+}
+
+.volunteerFormTitle {
+  font-family: var(--decoraction-font);
+  font-size: 1.9375rem;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 30px;
+}
+
+.volunteerFormContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  border-radius: 6.184px;
+  border: 1.546px solid var(--light-brand-color);
+  padding: 41px 14px 15px;
+}
+
+.volunteerFormContainer button {
+  align-self: center;
+}
+
+.volunteerFormInputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.volunteerFormBox {
+  position: relative;
+  display: flex;
+  padding: 4px 0px 4px 8px;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid #79747e;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: border-color, fill;
+}
+
+.volunteerFormBox:focus-within {
+  border-color: var(--dark-brand-color);
+  fill: var(--dark-brand-color);
+}
+
+.textbox {
+  position: absolute;
+  padding: 0 2px;
+  top: -4px;
+  left: 6px;
+  color: #49454f;
+  background-color: var(--primary-background-color);
+  font-family: var(--form-font);
+  font-size: 0.3865rem;
+  font-weight: 400;
+  line-height: 0.51538rem;
+}
+
+.textboxBox:focus-within .textbox {
+  color: var(--dark-brand-color);
+}
+
+.volunteerFormInput {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  width: 95%;
+  font-family: Montserrat;
+  font-size: 0.51538rem;
+  font-weight: 400;
+  line-height: 0.77306rem; /* 150% */
+  letter-spacing: 0.01613rem;
+}
+
+.volunteerFormInput:focus-within {
+  outline: none;
+}
+
+.svgTextButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  transition: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color;
+}
+
+.svgTextButton:hover {
+  background-color: #49454f25;
+}
+
+.svgTextIcon {
+  width: 12px;
+  height: 12px;
+}
+
+.checkboxBox {
+  display: flex;
+  align-self: start;
+  align-items: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  border: 0;
+  position: relative;
+  padding: 0;
+  transition-property: border-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+
+.checkbox {
+  cursor: pointer;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  opacity: 0;
+}
+
+.checkMarkBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  border-radius: 50%;
+  height: 24px;
+  transition: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color;
+}
+.checkbox:hover ~ .checkMarkBox {
+  background-color: #49454f25;
+}
+
+.checkMark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10px;
+  padding-bottom: 2px;
+  width: 10px;
+  border-radius: 2px;
+  border: 1px solid #49454f;
+  transition: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color;
+}
+
+.checkboxText {
+  font-family: Montserrat;
+  font-size: 0.51538rem;
+  font-weight: 400;
+  line-height: 0.77306rem; /* 150% */
+  letter-spacing: 0.00063rem;
+  cursor: pointer;
+}
+
+.checkboxBox input:checked ~ .checkMarkBox .checkMark {
+  background-color: var(--dark-brand-color);
+  border-color: var(--dark-brand-color);
+}
+
+.checkboxBox input:checked ~ .checkMarkBox .checkMark:after {
+  display: block;
+}
+.checkMark:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+.checkboxBox .checkMark:after {
+  width: 3px;
+  height: 6px;
+  border: solid white;
+  border-width: 0px 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+@media screen and (min-width: 765px) {
+  .volunteerForm {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .volunteerFormTitle {
+    font-size: 2.4375rem;
+    margin-bottom: 64px;
+  }
+
+  .volunteerFormContainer {
+    padding: 80px 61px;
+  }
+
+  .volunteerFormInputContainer {
+    gap: 16px;
+  }
+
+  .volunteerFormBox {
+    padding-left: 16px;
+  }
+
+  .textbox {
+    font-size: 0.75rem;
+    line-height: 1rem; /* 133.333% */
+    left: 14px;
+    top: -9px;
+  }
+
+  .volunteerFormInput {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.03125rem;
+    width: 91%;
+  }
+
+  .svgTextButton {
+    width: 48px;
+    height: 48px;
+  }
+
+  .svgTextIcon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .checkboxBox {
+    margin-top: 56px;
+    margin-bottom: 64px;
+    align-self: center;
+  }
+
+  .checkMarkBox {
+    width: 48px;
+    height: 48px;
+  }
+
+  .checkMark {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #49454f;
+  }
+
+  .checkboxText {
+    font-size: 1rem;
+    line-height: 1.5rem; /* 150% */
+    letter-spacing: 0.00119rem;
+  }
+
+  .checkboxBox .checkMark:after {
+    width: 6px;
+    height: 11px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .volunteerForm {
+    overflow: hidden;
+    position: relative;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .ellipse {
+    left: -95px;
+    top: 0;
+    display: block;
+    width: 395px;
+    height: 395px;
+    border-radius: 395px;
+    background: linear-gradient(
+      180deg,
+      rgba(173, 0, 255, 0.15) 0%,
+      rgba(250, 0, 255, 0.15) 100%
+    );
+    filter: blur(65.3499984741211px);
+    position: absolute;
+  }
+  .ellipse2 {
+    bottom: 242px;
+    right: -141px;
+    display: block;
+    width: 395px;
+    height: 395px;
+    border-radius: 395px;
+    background: linear-gradient(
+      180deg,
+      rgba(173, 0, 255, 0.15) 0%,
+      rgba(250, 0, 255, 0.15) 100%
+    );
+    filter: blur(65.3499984741211px);
+    position: absolute;
+  }
+
+  .volunteerFormTitle {
+    font-size: 3.0625rem;
+    margin-bottom: 100px;
+    width: 57%;
+  }
+
+  .volunteerFormContainer {
+    margin-left: 217px;
+    margin-right: 217px;
+    padding: 80px 107px;
+  }
+}
