@@ -1,5 +1,6 @@
 import {Outlet, useLocation} from 'react-router-dom'
-import {Suspense, useState, useEffect} from 'react'
+import {Suspense, useState} from 'react'
+import {motion, useAnimation} from 'framer-motion'
 
 import HomeNav from '../NavHome/NavHome'
 import Footer from '../Footer/Footer'
@@ -10,13 +11,14 @@ import icon from '../../assets/svg/sprite.svg'
 const SharedLayout = () => {
   const [isOpen, setIsOpen] = useState(false)
   const location = useLocation()
+  const controls = useAnimation()
 
-  useEffect(() => {}, [location])
-
-  const toggleMenu = () => {
-    setIsOpen((open) => !open)
+  const toggleMenu = async () => {
+    await setIsOpen((open) => !open)
+    controls.start({scale: isOpen ? 1 : 1.2})
   }
 
+  const menuIconId = isOpen ? 'icon-close' : 'hamburger-menu'
   const volunteerText = 'Z głębi serca dziękujemy!'
 
   return (
@@ -24,9 +26,14 @@ const SharedLayout = () => {
       <header className={`${css.header} ${isOpen && css['is-open']}`}>
         <HomeNav />
       </header>
-      <svg className={css.mobileMenuTrigger} onClick={toggleMenu}>
-        <use href={`${icon}#hamburger-menu`}></use>
-      </svg>
+      <motion.svg
+        className={css.mobileMenuTrigger}
+        onClick={toggleMenu}
+        animate={controls}
+        initial={{scale: 1}}
+      >
+        <use href={`${icon}#${menuIconId}`} />
+      </motion.svg>
       <main className={css.main}>
         <Suspense fallback={null}>
           <Outlet />
@@ -34,7 +41,7 @@ const SharedLayout = () => {
       </main>
       <Footer
         text={
-          location.pathname.includes('/volunteering')
+          location.pathname.startsWith('/volunteering')
             ? volunteerText
             : 'Strona została stworzona dzięki pracy Wolontariuszy.'
         }
