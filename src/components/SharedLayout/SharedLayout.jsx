@@ -1,7 +1,7 @@
 import {Outlet, useLocation} from 'react-router-dom'
 import {Suspense, useState, useEffect} from 'react'
 
-import HomeNav from '../HomeNav/HomeNav'
+import HomeNav from '../NavHome/NavHome'
 import Footer from '../Footer/Footer'
 
 import css from './SharedLayout.module.css'
