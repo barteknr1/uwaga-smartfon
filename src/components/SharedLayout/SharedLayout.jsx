@@ -4,7 +4,7 @@ import {motion, useAnimation} from 'framer-motion'
 
 import NavHome from '../NavHome/NavHome'
 import Footer from '../Footer/Footer'
-import HeaderTablet from '../HeaderTablet/HeaderTablet'
+import NavTablet from '../NavTablet/NavTablet'
 
 import css from './SharedLayout.module.css'
 import icon from '../../assets/svg/sprite.svg'
@@ -27,14 +27,14 @@ const SharedLayout = () => {
       <header className={`${css.header} ${isOpen && css['is-open']}`}>
         <NavHome />
       </header>
-      <HeaderTablet />
+      <NavTablet />
       <motion.svg
         className={css.mobileMenuTrigger}
         onClick={toggleMenu}
         animate={controls}
         initial={{scale: 1}}
       >
-        <use href={`${icon}#${menuIconId}`} />
+        <use className={css.mobileMenuTriggerIcon} href={`${icon}#${menuIconId}`} />
       </motion.svg>
       <main className={css.main}>
         <Suspense fallback={null}>
