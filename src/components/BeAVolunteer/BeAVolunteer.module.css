@@ -49,6 +49,11 @@
 }
 
 @media screen and (min-width: 765px) {
+  .BeAVolunteer {
+    padding-top: 25px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
   .BeAVolunteerContainer {
     display: flex;
     gap: 32px;
@@ -58,8 +63,6 @@
     display: flex;
     flex-direction: row;
     gap: 32px;
-    padding-left: 40px;
-    padding-left: 39px;
   }
 
   .BeAVolunteerTitle {
@@ -72,6 +75,11 @@
   }
 }
 @media screen and (min-width: 1280px) {
+  .BeAVolunteer {
+    padding-top: 25px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
   .BeAVolunteerContainer {
     gap: 64px;
     margin-top: 64px;
@@ -80,8 +88,6 @@
   .BeAVolunteerContainerBox {
     align-items: center;
     gap: 145px;
-    padding-left: 135px;
-    padding-right: 147px;
   }
 
   .BeAVolunteerTitle {
