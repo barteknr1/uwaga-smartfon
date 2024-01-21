@@ -17,6 +17,10 @@
 
   .navTablet button {
     font-size: 1rem;
+    height: 35px;
+    width: 134px;
+    display: flex;
+    align-items: center;
   }
 
   .navLogo {
