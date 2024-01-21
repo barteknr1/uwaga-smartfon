@@ -1,6 +1,7 @@
 import {NavLink} from 'react-router-dom'
 
 import Button from '../Button/Button'
+import {routes} from './index'
 
 import icon from '../../assets/svg/sprite.svg'
 import css from './NavHome.module.css'
@@ -14,24 +15,14 @@ const NavHome = () => {
         </svg>
       </NavLink>
       <nav className={css.navList}>
-        <NavLink className={css.navItem} to="/">
-          O konferencji
-        </NavLink>
-        <NavLink className={css.navItem} to="/">
-          Edycje
-          <svg className={css.navItemIcon}>
-            <use href={`${icon}#dropdown`}></use>
-          </svg>
-        </NavLink>
-        <NavLink className={css.navItem} to="volunteering">
-          Wolontariat
-        </NavLink>
-        <NavLink className={css.navItem} to="/">
-          Newsletter
-        </NavLink>
-        <NavLink className={css.navItem} to="/">
-          Partnerzy i Patroni
-        </NavLink>
+        {routes.map((route) => {
+          const {href, title} = route
+          return (
+            <NavLink key={title} className={css.navItem} to={href}>
+              {title}
+            </NavLink>
+          )
+        })}
         <Button variant="support" content="Wesprzyj"></Button>
       </nav>
       <div className={css.navLang}>

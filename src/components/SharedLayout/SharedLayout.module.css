@@ -7,21 +7,21 @@
 }
 
 .mobileMenuTrigger {
+  width: 48px;
+  height: 48px;
+  border-radius: 5px;
   overflow: hidden;
-  width: 33px;
-  height: 31px;
   cursor: pointer;
+  background-color: var(--primary-background-color);
   right: 14px;
   top: 12px;
-  background-color: var(--primary-background-color);
   position: fixed;
   z-index: 999;
 }
 
 @media screen and (min-width: 765px) {
   .mobileMenuTrigger {
-    right: 14px;
-    top: 25px;
+    top: 16px;
   }
 
   .main {

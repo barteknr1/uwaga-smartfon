@@ -1,25 +1,17 @@
 import {Outlet, useLocation} from 'react-router-dom'
 import {Suspense, useState} from 'react'
-import {motion, useAnimation} from 'framer-motion'
+import {Spin as Hamburger} from 'hamburger-react'
 
 import NavHome from '../NavHome/NavHome'
 import Footer from '../Footer/Footer'
 import NavTablet from '../NavTablet/NavTablet'
 
 import css from './SharedLayout.module.css'
-import icon from '../../assets/svg/sprite.svg'
 
 const SharedLayout = () => {
   const [isOpen, setIsOpen] = useState(false)
   const location = useLocation()
-  const controls = useAnimation()
 
-  const toggleMenu = async () => {
-    await setIsOpen((open) => !open)
-    controls.start({scale: isOpen ? 1 : 0.8})
-  }
-
-  const menuIconId = isOpen ? 'icon-close' : 'hamburger-menu'
   const volunteerText = 'Z głębi serca dziękujemy!'
 
   return (
@@ -28,14 +20,9 @@ const SharedLayout = () => {
         <NavHome />
       </header>
       <NavTablet />
-      <motion.svg
-        className={css.mobileMenuTrigger}
-        onClick={toggleMenu}
-        animate={controls}
-        initial={{scale: 1}}
-      >
-        <use className={css.mobileMenuTriggerIcon} href={`${icon}#${menuIconId}`} />
-      </motion.svg>
+      <div className={css.mobileMenuTrigger}>
+        <Hamburger toggled={isOpen} size={20} toggle={setIsOpen} />
+      </div>
       <main className={css.main}>
         <Suspense fallback={null}>
           <Outlet />
