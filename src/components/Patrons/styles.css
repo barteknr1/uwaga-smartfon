@@ -5,3 +5,7 @@
 .swiper-slide {
   width: auto;
 }
+
+.swiperPatrons {
+  overflow: visible;
+}

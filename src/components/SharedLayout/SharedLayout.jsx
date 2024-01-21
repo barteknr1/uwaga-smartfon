@@ -1,32 +1,28 @@
 import {Outlet, useLocation} from 'react-router-dom'
-import {Suspense, useState, useEffect} from 'react'
+import {Suspense, useState} from 'react'
+import {Spin as Hamburger} from 'hamburger-react'
 
-import Navigation from '../Navigation/Navigation'
+import NavHome from '../NavHome/NavHome'
 import Footer from '../Footer/Footer'
+import NavTablet from '../NavTablet/NavTablet'
 
 import css from './SharedLayout.module.css'
-import icon from '../../assets/svg/sprite.svg'
 
 const SharedLayout = () => {
   const [isOpen, setIsOpen] = useState(false)
   const location = useLocation()
-
-  useEffect(() => {}, [location])
-
-  const toggleMenu = () => {
-    setIsOpen((open) => !open)
-  }
 
   const volunteerText = 'Z głębi serca dziękujemy!'
 
   return (
     <>
       <header className={`${css.header} ${isOpen && css['is-open']}`}>
-        <Navigation />
+        <NavHome />
       </header>
-      <svg className={css.mobileMenuTrigger} onClick={toggleMenu}>
-        <use href={`${icon}#hamburger-menu`}></use>
-      </svg>
+      <NavTablet />
+      <div className={css.mobileMenuTrigger}>
+        <Hamburger toggled={isOpen} size={20} toggle={setIsOpen} />
+      </div>
       <main className={css.main}>
         <Suspense fallback={null}>
           <Outlet />
@@ -34,7 +30,7 @@ const SharedLayout = () => {
       </main>
       <Footer
         text={
-          location.pathname.includes('/volunteering')
+          location.pathname.startsWith('/volunteering')
             ? volunteerText
             : 'Strona została stworzona dzięki pracy Wolontariuszy.'
         }
