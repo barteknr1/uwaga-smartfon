@@ -1,6 +1,6 @@
 import {useState} from 'react'
 import {Swiper, SwiperSlide} from 'swiper/react'
-import {EffectCoverflow, Navigation, Pagination} from 'swiper/modules'
+import {EffectCoverflow, Pagination} from 'swiper/modules'
 import 'swiper/css/bundle'
 
 import Modal from '../Modal/Modal'
@@ -27,6 +27,7 @@ const Speakers = () => {
       <div className={css.speakersContainer}>
         <Swiper
           effect={'coverflow'}
+          grabCursor={true}
           spaceBetween={40}
           breakpoints={{
             765: {
@@ -36,6 +37,7 @@ const Speakers = () => {
               spaceBetween: 32,
             },
           }}
+          centeredSlides={true}
           slidesPerView={'auto'}
           coverflowEffect={{
             rotate: 50,
@@ -45,10 +47,8 @@ const Speakers = () => {
             slideShadows: true,
           }}
           loop={true}
-          centeredSlides={true}
           pagination={false}
-          navigation={false}
-          modules={[Navigation, Pagination, EffectCoverflow]}
+          modules={[EffectCoverflow, Pagination]}
           className="swiperSpeakers"
         >
           {speakers.map((speaker) => (
