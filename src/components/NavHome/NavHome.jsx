@@ -1,4 +1,3 @@
-import React from 'react'
 import {NavLink, useLocation} from 'react-router-dom'
 import PropTypes from 'prop-types'
 
@@ -16,7 +15,7 @@ const NavHome = ({setIsOpen}) => {
   }
 
   const {routes, landingPageRoutes} = navigationRoutes
-  
+
   const currentRoutes =
     location.pathname === '/landing-page' ? landingPageRoutes : routes
 

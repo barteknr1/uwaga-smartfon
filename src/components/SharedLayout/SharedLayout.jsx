@@ -1,5 +1,4 @@
-import {useState} from 'react'
-import {Suspense} from 'react'
+import {useState, Suspense} from 'react'
 import {Outlet, useLocation} from 'react-router-dom'
 import {Spin as Hamburger} from 'hamburger-react'
 
