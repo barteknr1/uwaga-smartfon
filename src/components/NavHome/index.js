@@ -1,6 +1,4 @@
-import icon from '../../assets/svg/sprite.svg'
-
-export const routes = [
+const routes = [
   {
     title: 'O konferencji',
     href: '/',
@@ -8,7 +6,6 @@ export const routes = [
   {
     title: 'Edycje',
     href: '/',
-    Icon: icon.dropdown,
   },
   {
     title: 'Wolontariat',
@@ -23,3 +20,24 @@ export const routes = [
     href: '/',
   },
 ]
+
+const landingPageRoutes = [
+  {
+    title: 'O wydarzeniu',
+    href: '/',
+  },
+  {
+    title: 'Program',
+    href: '/',
+  },
+  {
+    title: 'Prelegenci',
+    href: '/',
+  },
+  {
+    title: 'Newsletter',
+    href: '/',
+  },
+]
+
+export default {routes, landingPageRoutes}

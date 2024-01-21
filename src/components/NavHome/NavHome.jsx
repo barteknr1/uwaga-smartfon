@@ -1,16 +1,24 @@
-import {NavLink} from 'react-router-dom'
+import React from 'react'
+import {NavLink, useLocation} from 'react-router-dom'
 import PropTypes from 'prop-types'
 
 import Button from '../Button/Button'
-import {routes} from './index'
+import navigationRoutes from './index'
 
 import icon from '../../assets/svg/sprite.svg'
 import css from './NavHome.module.css'
 
 const NavHome = ({setIsOpen}) => {
+  const location = useLocation()
+
   const handleNavLinkClick = () => {
     setIsOpen(false)
   }
+
+  const {routes, landingPageRoutes} = navigationRoutes
+  
+  const currentRoutes =
+    location.pathname === '/landing-page' ? landingPageRoutes : routes
 
   return (
     <div className={css.nav}>
@@ -20,7 +28,7 @@ const NavHome = ({setIsOpen}) => {
         </svg>
       </NavLink>
       <nav className={css.navList}>
-        {routes.map(({href, title}) => (
+        {currentRoutes.map(({href, title}) => (
           <NavLink
             key={title}
             className={css.navItem}
