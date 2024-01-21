@@ -1,5 +1,5 @@
-import {Outlet, useLocation} from 'react-router-dom'
 import {Suspense, useState} from 'react'
+import {Outlet, useLocation} from 'react-router-dom'
 import {Spin as Hamburger} from 'hamburger-react'
 
 import NavHome from '../NavHome/NavHome'
@@ -8,18 +8,18 @@ import NavTablet from '../NavTablet/NavTablet'
 
 import css from './SharedLayout.module.css'
 
+const volunteerText = 'Z głębi serca dziękujemy!'
+
 const SharedLayout = () => {
   const [isOpen, setIsOpen] = useState(false)
   const location = useLocation()
 
-  const volunteerText = 'Z głębi serca dziękujemy!'
-
   return (
     <>
       <header className={`${css.header} ${isOpen && css['is-open']}`}>
-        <NavHome />
+        <NavHome isOpen={isOpen} setIsOpen={setIsOpen} />
       </header>
-      <NavTablet />
+      <NavTablet isOpen={isOpen} setIsOpen={setIsOpen} />
       <div className={css.mobileMenuTrigger}>
         <Hamburger toggled={isOpen} size={20} toggle={setIsOpen} />
       </div>
