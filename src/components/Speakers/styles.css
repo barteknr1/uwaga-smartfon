@@ -1,7 +1,23 @@
-.swiper-wrapper:hover {
-  transition-timing-function: linear;
+.swiper {
+  width: 100%;
 }
 
 .swiper-slide {
-  width: auto;
+  background-position: center;
+  background-size: cover;
+  height: 339px;
+  width: 260px;
+}
+
+@media screen and (min-width: 765px) {
+  .swiper-slide {
+    height: 300px;
+    width: 238px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .swiper-slide {
+    height: 383px;
+    width: 300px;
+  }
 }
