@@ -93,7 +93,6 @@
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-
     font-size: 1rem;
     height: auto;
     border-radius: 0;
@@ -114,6 +113,10 @@
     align-items: center;
     gap: 16px;
     margin-bottom: 0px;
+  }
+
+  .nav .navList button {
+    display: block;
   }
 
   .navItem {
