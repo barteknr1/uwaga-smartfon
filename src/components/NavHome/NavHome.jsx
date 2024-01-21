@@ -1,6 +1,4 @@
-import {useRef} from 'react'
 import {NavLink} from 'react-router-dom'
-import {useClickAway} from 'react-use'
 import PropTypes from 'prop-types'
 
 import Button from '../Button/Button'
@@ -10,15 +8,12 @@ import icon from '../../assets/svg/sprite.svg'
 import css from './NavHome.module.css'
 
 const NavHome = ({setIsOpen}) => {
-  const ref = useRef(null)
-  useClickAway(ref, () => setIsOpen(false))
-
   const handleNavLinkClick = () => {
     setIsOpen(false)
   }
 
   return (
-    <div ref={ref} className={css.nav}>
+    <div className={css.nav}>
       <NavLink to="/landing-page" onClick={handleNavLinkClick}>
         <svg className={css.navLogo}>
           <use href={`${icon}#logo`}></use>

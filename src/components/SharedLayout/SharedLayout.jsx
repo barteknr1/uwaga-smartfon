@@ -1,4 +1,5 @@
-import {Suspense, useState} from 'react'
+import {useState} from 'react'
+import {Suspense} from 'react'
 import {Outlet, useLocation} from 'react-router-dom'
 import {Spin as Hamburger} from 'hamburger-react'
 
@@ -17,11 +18,11 @@ const SharedLayout = () => {
   return (
     <>
       <header className={`${css.header} ${isOpen && css['is-open']}`}>
-        <NavHome isOpen={isOpen} setIsOpen={setIsOpen} />
+        <NavHome setIsOpen={setIsOpen} />
       </header>
-      <NavTablet isOpen={isOpen} setIsOpen={setIsOpen} />
+      <NavTablet />
       <div className={css.mobileMenuTrigger}>
-        <Hamburger toggled={isOpen} size={20} toggle={setIsOpen} />
+        <Hamburger toggle={setIsOpen} toggled={isOpen} />
       </div>
       <main className={css.main}>
         <Suspense fallback={null}>
