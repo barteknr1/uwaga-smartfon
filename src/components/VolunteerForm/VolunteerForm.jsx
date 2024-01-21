@@ -36,8 +36,8 @@ const VolunteerForm = () => {
       title="Wypełnij formularz i zostań częścią zespołu wolontariuszy!"
     >
       <div className={css.ellipse}></div>
-      <div className={css.volunteerFormContainer}>
-        <div className={css.volunteerFormInputContainer}>
+      <form className={css.volunteerFormContainer}>
+        <fieldset className={css.volunteerFormInputContainer}>
           <div className={css.volunteerFormBox}>
             <label className={css.textbox} htmlFor="name">
               Imię i nazwisko
@@ -122,7 +122,7 @@ const VolunteerForm = () => {
               </svg>
             </button>
           </div>
-        </div>
+        </fieldset>
         <div className={css.checkboxBox}>
           <input className={css.checkbox} id="checkbox" type="checkbox" />
           <div className={css.checkMarkBox}>
@@ -133,7 +133,7 @@ const VolunteerForm = () => {
           </label>
         </div>
         <Button variant="primary" content="Wyślij formularz" />
-      </div>
+      </form>
       <div className={css.ellipse2}></div>
     </Section>
   )
