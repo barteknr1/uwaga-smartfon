@@ -7,17 +7,29 @@
 }
 
 .mobileMenuTrigger {
-  position: fixed;
-  z-index: 999;
+  width: 48px;
+  height: 48px;
+  border-radius: 5px;
   overflow: hidden;
-  width: 33px;
-  height: 31px;
   cursor: pointer;
+  background-color: var(--primary-background-color);
   right: 14px;
   top: 12px;
+  position: fixed;
+  z-index: 999;
 }
 
 @media screen and (min-width: 765px) {
+  .mobileMenuTrigger {
+    top: 16px;
+  }
+
+  .main {
+    padding-top: 80px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
   .header {
     display: block;
     width: 100%;
@@ -28,10 +40,12 @@
     top: 0;
   }
 
-  .main {
-    margin-top: 150px;
-  }
   .mobileMenuTrigger {
     display: none;
+  }
+
+  .main {
+    padding-top: 0;
+    margin-top: 140px;
   }
 }
