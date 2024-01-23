@@ -35,6 +35,10 @@ const landingPageRoutes = [
     href: '/',
   },
   {
+    title: 'Partnerzy i Patroni',
+    href: '/',
+  },
+  {
     title: 'Newsletter',
     href: '/',
   },
