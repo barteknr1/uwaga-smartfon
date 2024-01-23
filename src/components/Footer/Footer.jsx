@@ -1,16 +1,20 @@
+import {useTranslation} from 'react-i18next'
 import PropTypes from 'prop-types'
 
 import icon from '../../assets/svg/sprite.svg'
 import css from './Footer.module.css'
 
 const Footer = ({text}) => {
+  const {t} = useTranslation()
+
   return (
     <footer className={css.footer}>
       <h2 className={css.heading}>{text}</h2>
       <address className={css.contact}>
         <h2 className={css.contactHeading}>
-          Masz pytania? <br />
-          Zapraszamy do kontaktu
+          {t('footer.title1')}
+          <br />
+          {t('footer.title2')}
         </h2>
         <div className={css.contactMail}>
           <a

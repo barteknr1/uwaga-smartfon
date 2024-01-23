@@ -1,4 +1,5 @@
 import {useState} from 'react'
+import {useTranslation} from 'react-i18next'
 import {Swiper, SwiperSlide} from 'swiper/react'
 import {EffectCoverflow, Navigation, Pagination} from 'swiper/modules'
 import 'swiper/css/bundle'
@@ -11,7 +12,8 @@ import css from './Speakers.module.css'
 import './styles.css'
 
 const Speakers = () => {
-  const [isModalVisible, setIsModalVisible] = useState(true)
+  const {t} = useTranslation()
+  const [isModalVisible, setIsModalVisible] = useState(false)
   const [selectedSpeaker, setSelectedSpeaker] = useState(null)
   const toggleModal = (speaker) => {
     setSelectedSpeaker(speaker)
@@ -22,7 +24,7 @@ const Speakers = () => {
     <Section
       sectionClass={css.speakers}
       titleClass={css.speakersTitle}
-      title="Prelegenci"
+      title={t('speakers.title')}
     >
       <div className={css.speakersContainer}>
         <Swiper
@@ -71,7 +73,9 @@ const Speakers = () => {
           <Modal>
             <img className={css.speakerImg} src={selectedSpeaker.img} />
             <div className={css.speakerAboutBox}>
-              {selectedSpeaker.about.map((paragraph, index) => (
+              {t(`speakers.about.${selectedSpeaker.id}`, {
+                returnObjects: true,
+              }).map((paragraph, index) => (
                 <p className={css.speakerAboutText} key={index}>
                   {paragraph}
                 </p>
