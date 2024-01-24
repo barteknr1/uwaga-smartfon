@@ -9,14 +9,8 @@ import css from './Dropdown.module.css'
 const Dropdown = () => {
   const [isOpen, setIsOpen] = useState(false)
 
-  const findNestedArray = (array) => {
-    for (const item of array) {
-      if (Array.isArray(item.el)) {
-        return item.el
-      }
-    }
-    return null
-  }
+  const findNestedArray = (array) =>
+    array.find((item) => Array.isArray(item.el))?.el || null
 
   const elNav = findNestedArray(navigationRoutes.routes)
 
