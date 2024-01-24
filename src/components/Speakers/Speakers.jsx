@@ -1,7 +1,6 @@
 import {useState} from 'react'
-import {useTranslation} from 'react-i18next'
 import {Swiper, SwiperSlide} from 'swiper/react'
-import {EffectCoverflow, Navigation, Pagination} from 'swiper/modules'
+import {EffectCoverflow, Pagination} from 'swiper/modules'
 import 'swiper/css/bundle'
 
 import Modal from '../Modal/Modal'
@@ -12,8 +11,7 @@ import css from './Speakers.module.css'
 import './styles.css'
 
 const Speakers = () => {
-  const {t} = useTranslation()
-  const [isModalVisible, setIsModalVisible] = useState(false)
+  const [isModalVisible, setIsModalVisible] = useState(true)
   const [selectedSpeaker, setSelectedSpeaker] = useState(null)
   const openModal = (speaker) => {
     console.log(selectedSpeaker)
@@ -29,11 +27,12 @@ const Speakers = () => {
     <Section
       sectionClass={css.speakers}
       titleClass={css.speakersTitle}
-      title={t('speakers.title')}
+      title="Prelegenci"
     >
       <div className={css.speakersContainer}>
         <Swiper
           effect={'coverflow'}
+          grabCursor={true}
           spaceBetween={40}
           breakpoints={{
             765: {
@@ -43,6 +42,7 @@ const Speakers = () => {
               spaceBetween: 32,
             },
           }}
+          centeredSlides={true}
           slidesPerView={'auto'}
           coverflowEffect={{
             rotate: 50,
@@ -52,10 +52,8 @@ const Speakers = () => {
             slideShadows: true,
           }}
           loop={true}
-          centeredSlides={true}
           pagination={false}
-          navigation={false}
-          modules={[Navigation, Pagination, EffectCoverflow]}
+          modules={[EffectCoverflow, Pagination]}
           className="swiperSpeakers"
         >
           {speakers.map((speaker) => (
@@ -78,9 +76,7 @@ const Speakers = () => {
           <Modal closeModal={closeModal} isModalVisible={isModalVisible}>
             <img className={css.speakerImg} src={selectedSpeaker.img} />
             <div className={css.speakerAboutBox}>
-              {t(`speakers.about.${selectedSpeaker.id}`, {
-                returnObjects: true,
-              }).map((paragraph, index) => (
+              {selectedSpeaker.about.map((paragraph, index) => (
                 <p className={css.speakerAboutText} key={index}>
                   {paragraph}
                 </p>
