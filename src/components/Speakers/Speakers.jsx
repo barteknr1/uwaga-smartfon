@@ -13,9 +13,14 @@ import './styles.css'
 const Speakers = () => {
   const [isModalVisible, setIsModalVisible] = useState(true)
   const [selectedSpeaker, setSelectedSpeaker] = useState(null)
-  const toggleModal = (speaker) => {
+  const openModal = (speaker) => {
+    console.log(selectedSpeaker)
     setSelectedSpeaker(speaker)
-    setIsModalVisible(!isModalVisible)
+    setIsModalVisible(true)
+  }
+
+  const closeModal = () => {
+    setIsModalVisible(false)
   }
 
   return (
@@ -52,7 +57,7 @@ const Speakers = () => {
           className="swiperSpeakers"
         >
           {speakers.map((speaker) => (
-            <SwiperSlide onClick={() => toggleModal(speaker)} key={speaker.id}>
+            <SwiperSlide onClick={() => openModal(speaker)} key={speaker.id}>
               <div className={css.speakersBox}>
                 <img
                   className={css.speakerImg}
@@ -68,7 +73,7 @@ const Speakers = () => {
           ))}
         </Swiper>
         {isModalVisible && selectedSpeaker && (
-          <Modal>
+          <Modal closeModal={closeModal} isModalVisible={isModalVisible}>
             <img className={css.speakerImg} src={selectedSpeaker.img} />
             <div className={css.speakerAboutBox}>
               {selectedSpeaker.about.map((paragraph, index) => (
