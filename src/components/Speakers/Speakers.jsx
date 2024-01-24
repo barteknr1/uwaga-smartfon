@@ -1,6 +1,7 @@
 import {useState} from 'react'
+import {useTranslation} from 'react-i18next'
 import {Swiper, SwiperSlide} from 'swiper/react'
-import {EffectCoverflow, Pagination} from 'swiper/modules'
+import {EffectCoverflow, Navigation, Pagination} from 'swiper/modules'
 import 'swiper/css/bundle'
 
 import Modal from '../Modal/Modal'
@@ -11,23 +12,29 @@ import css from './Speakers.module.css'
 import './styles.css'
 
 const Speakers = () => {
-  const [isModalVisible, setIsModalVisible] = useState(true)
+  const {t} = useTranslation()
+  const [isModalVisible, setIsModalVisible] = useState(false)
   const [selectedSpeaker, setSelectedSpeaker] = useState(null)
-  const toggleModal = (speaker) => {
+
+  const openModal = (speaker) => {
+    console.log(selectedSpeaker)
     setSelectedSpeaker(speaker)
-    setIsModalVisible(!isModalVisible)
+    setIsModalVisible(true)
+  }
+
+  const closeModal = () => {
+    setIsModalVisible(false)
   }
 
   return (
     <Section
       sectionClass={css.speakers}
       titleClass={css.speakersTitle}
-      title="Prelegenci"
+      title={t('speakers.title')}
     >
       <div className={css.speakersContainer}>
         <Swiper
           effect={'coverflow'}
-          grabCursor={true}
           spaceBetween={40}
           breakpoints={{
             765: {
@@ -37,7 +44,6 @@ const Speakers = () => {
               spaceBetween: 32,
             },
           }}
-          centeredSlides={true}
           slidesPerView={'auto'}
           coverflowEffect={{
             rotate: 50,
@@ -47,12 +53,14 @@ const Speakers = () => {
             slideShadows: true,
           }}
           loop={true}
+          centeredSlides={true}
           pagination={false}
-          modules={[EffectCoverflow, Pagination]}
+          navigation={false}
+          modules={[Navigation, Pagination, EffectCoverflow]}
           className="swiperSpeakers"
         >
           {speakers.map((speaker) => (
-            <SwiperSlide onClick={() => toggleModal(speaker)} key={speaker.id}>
+            <SwiperSlide onClick={() => openModal(speaker)} key={speaker.id}>
               <div className={css.speakersBox}>
                 <img
                   className={css.speakerImg}
@@ -68,10 +76,12 @@ const Speakers = () => {
           ))}
         </Swiper>
         {isModalVisible && selectedSpeaker && (
-          <Modal>
+          <Modal closeModal={closeModal} isModalVisible={isModalVisible}>
             <img className={css.speakerImg} src={selectedSpeaker.img} />
             <div className={css.speakerAboutBox}>
-              {selectedSpeaker.about.map((paragraph, index) => (
+              {t(`speakers.about.${selectedSpeaker.id}`, {
+                returnObjects: true,
+              }).map((paragraph, index) => (
                 <p className={css.speakerAboutText} key={index}>
                   {paragraph}
                 </p>
