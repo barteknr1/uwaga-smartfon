@@ -17,60 +17,70 @@ const OurVolunteers = () => {
   const dataVolunteer = [
     {
       name: 'Karolina Bożemska',
-      teamRole: 'UX/UI Designer ',
-      teamRole2: 'Project Manager',
+      teamRole: 'UX/UI Designer Project Manager',
+      linkedinUrl:
+        'https://www.linkedin.com/in/karolina-bo%C5%BCemska-a4611926a/',
       images: Karolina,
     },
     {
       name: 'Bartek Barański',
       teamRole: 'Developer',
+      linkedinUrl: 'https://www.linkedin.com/in/barteknr1/',
       images: Bartek,
     },
     {
       name: 'Patrycja Bruzgo',
       teamRole: 'DUX/UI Designer',
+      linkedinUrl: 'https://www.linkedin.com/in/patrycja-bruzgo/',
       images: Patrycja,
     },
     {
       name: 'Piotr Drechsler',
       teamRole: 'Developer',
+      linkedinUrl: 'https://www.linkedin.com/in/piotr-drechsler/',
       images: Piotr,
     },
     {
       name: 'Julia Kaim',
       teamRole: 'Developer',
+      linkedinUrl: 'https://www.linkedin.com/in/julia-kaim-1b5b24267/',
       images: Julia,
     },
     {
       name: 'Wiktoria Kaim',
       teamRole: 'Social Media Specialist',
+      linkedinUrl: 'https://www.linkedin.com/in/wiktoria-kaim-14b4ba26a/',
       images: Wiktoria,
     },
 
     {
       name: 'Joanna Regulska',
       teamRole: 'UX/UI Designer',
+      linkedinUrl: 'https://www.linkedin.com/in/joanna-regulska/',
       images: Joanna,
     },
     {
       name: 'Sara Sagan',
-      teamRole: 'UX/UI Designer ',
-      teamRole2: 'Graphic Design Lead',
+      teamRole: 'UX/UI Designer Graphic Design Lead',
+      linkedinUrl: 'https://www.linkedin.com/in/sara-sagan01/',
       images: Sara,
     },
     {
       name: 'Ewelina Suszczyńska',
       teamRole: 'Social Media Specialist',
+      linkedinUrl: 'https://www.linkedin.com/in/ewelina-suszczy%C5%84ska/',
       images: Ewelina,
     },
     {
       name: 'Vincent Słomiński',
       teamRole: 'Lead Developer',
+      linkedinUrl: 'https://www.linkedin.com/in/vincent-slominski/',
       images: Vincent,
     },
     {
       name: 'Dagmara Sobczak',
       teamRole: 'Developer',
+      linkedinUrl: 'https://www.linkedin.com/in/dagmara-sobczak-746076279/',
       images: Dagmara,
     },
   ]

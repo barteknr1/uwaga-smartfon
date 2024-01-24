@@ -13,7 +13,6 @@
 .ourVolunteersContainer {
   display: flex;
   flex-direction: row;
-  column-gap: 55px;
   row-gap: 20px;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -32,6 +31,7 @@
 }
 .volunteerImg {
   width: 149px;
+  flex-shrink: 0;
 }
 .volunteerName {
   font-family: var(--main-font);
@@ -51,11 +51,16 @@
   font-size: 1rem;
   line-height: 1.17375rem;
   font-weight: 400;
+  max-width: 149px;
+  text-align: center;
+  text-decoration: underline;
+  color: var(--dark-text-color);
 }
 
 .volunteerIcon {
   width: 24px;
   height: 24px;
+  flex-shrink: 0;
 }
 @media screen and (min-width: 765px) {
   .ourVolunteers {
@@ -89,14 +94,16 @@
   }
   .volunteerText {
     flex-direction: row;
-    flex-wrap: wrap;
+    align-items: flex-end;
     justify-content: center;
-    gap: 0px;
+    gap: 2px;
   }
   .volunteerRole {
     font-size: 1.25rem;
     line-height: normal;
     font-weight: 500;
+    max-width: 200px;
+    text-align: center;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -113,5 +120,8 @@
   }
   .volunteerImg {
     width: 302px;
+  }
+  .volunteerRole {
+    max-width: 300px;
   }
 }
