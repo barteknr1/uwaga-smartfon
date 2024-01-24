@@ -6,6 +6,11 @@ const routes = [
   {
     title: 'Edycje',
     href: '/',
+    el: [
+      {elTitle: '2022', elHref: '/edycja2022'},
+      {elTitle: '2023', elHref: '/edycja2023'},
+      {elTitle: '2024', elHref: '/landing-page'},
+    ],
   },
   {
     title: 'Wolontariat',

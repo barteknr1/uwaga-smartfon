@@ -2,6 +2,7 @@ import {NavLink, useLocation} from 'react-router-dom'
 import PropTypes from 'prop-types'
 
 import Button from '../Button/Button'
+import Dropdown from '../Dropdown/Dropdown'
 import navigationRoutes from './index'
 
 import icon from '../../assets/svg/sprite.svg'
@@ -10,31 +11,33 @@ import css from './NavHome.module.css'
 const NavHome = ({setIsOpen}) => {
   const location = useLocation()
 
-  const handleNavLinkClick = () => {
-    setIsOpen(false)
+  const handleNavLinkClick = (hasNestedItems) => {
+    if (!hasNestedItems) {
+      setIsOpen(false)
+    }
   }
 
   const {routes, landingPageRoutes} = navigationRoutes
-
   const currentRoutes =
     location.pathname === '/landing-page' ? landingPageRoutes : routes
 
   return (
     <div className={css.nav}>
-      <NavLink to="/landing-page" onClick={handleNavLinkClick}>
+      <NavLink to="/landing-page" onClick={() => handleNavLinkClick(false)}>
         <svg className={css.navLogo}>
           <use href={`${icon}#logo`}></use>
         </svg>
       </NavLink>
       <nav className={css.navList}>
-        {currentRoutes.map(({href, title}) => (
+        {currentRoutes.map(({href, title, el}) => (
           <NavLink
             key={title}
             className={css.navItem}
             to={href}
-            onClick={handleNavLinkClick}
+            onClick={() => handleNavLinkClick(Array.isArray(el))}
           >
             {title}
+            {el && <Dropdown />}
           </NavLink>
         ))}
         <Button variant="support" content="Wesprzyj" />
