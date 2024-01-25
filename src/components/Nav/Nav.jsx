@@ -31,7 +31,7 @@ const Nav = ({setNavIsOpen}) => {
             key={title}
             className={css.navItem}
             to={href}
-            onClick={handleNavLinkClick}
+            onClick={() => (el ? null : handleNavLinkClick())}
           >
             {title}
             {el && <Dropdown />}
