@@ -96,8 +96,12 @@
   "footer": {
     "title1": "Masz pytania?",
     "title2": "Zapraszamy do kontaktu",
+    "adres1": "Fundacja Projekt PL",
+    "adres2": "Konferencja Uwaga! Smartfon",
     "heading1": "Z głębi serca dziękujemy!",
-    "heading2": "Strona została stworzona dzięki pracy Wolontariuszy."
+    "heading2": "Strona została stworzona dzięki pracy Wolontariuszy.",
+    "privatePolicy": "Polityka prywatności",
+    "regulamin": "Regulamin"
   },
   "newsletter": {
     "title": "Zapisz się do newslettera",

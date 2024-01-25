@@ -96,8 +96,12 @@
   "footer": {
     "title1": "Have Questions?",
     "title2": "Feel free to contact us",
+    "adres1": "Projekt PL Foundation",
+    "adres2": "Uwaga! Smartfon Conference",
     "heading1": "From the bottom of our hearts, thank you!",
-    "heading2": "The website was created thanks to the work of Volunteers."
+    "heading2": "The website was created thanks to the work of Volunteers.",
+    "privatePolicy": "Privacy Policy",
+    "regulamin": "Terms and Conditions"
   },
   "newsletter": {
     "title": "Subscribe to the Newsletter",
