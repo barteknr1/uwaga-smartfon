@@ -95,12 +95,7 @@ const Newsletter = () => {
               {t('newsletter.agreement')}
             </label>
           </div>
-          {error && (
-            <p className={css.errorText}>
-              Uzupełnij wszystkie dane i zaznacz zgodę na przetwarzanie danych
-              osobowych, aby przesłać formularz.
-            </p>
-          )}
+          {error && <p className={css.errorText}>{t('newsletter.error')}</p>}
           <Button
             variant="secondary"
             content={t('newsletter.title')}
