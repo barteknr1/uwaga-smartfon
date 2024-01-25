@@ -1,5 +1,4 @@
 import {NavLink, useLocation} from 'react-router-dom'
-import PropTypes from 'prop-types'
 
 import Button from '../Button/Button'
 import Dropdown from '../Dropdown/Dropdown'
@@ -9,14 +8,8 @@ import navigationRoutes from './index'
 import icon from '../../assets/svg/sprite.svg'
 import css from './Nav.module.css'
 
-const Nav = ({setNavIsOpen}) => {
+const Nav = () => {
   const location = useLocation()
-
-  const handleNavLinkClick = (hasNestedItems) => {
-    if (!hasNestedItems) {
-      setNavIsOpen(false)
-    }
-  }
 
   const {routes, landingPageRoutes} = navigationRoutes
   const currentRoutes =
@@ -24,7 +17,7 @@ const Nav = ({setNavIsOpen}) => {
 
   return (
     <div className={css.nav}>
-      <NavLink to="/landing-page" onClick={() => handleNavLinkClick(false)}>
+      <NavLink to="/landing-page">
         <svg className={css.navLogo}>
           <use href={`${icon}#logo`}></use>
         </svg>
@@ -33,12 +26,7 @@ const Nav = ({setNavIsOpen}) => {
         {currentRoutes.map(
           // @ts-ignore
           ({href, title, el}) => (
-            <NavLink
-              key={title}
-              className={css.navItem}
-              to={href}
-              onClick={() => handleNavLinkClick(Array.isArray(el))}
-            >
+            <NavLink key={title} className={css.navItem} to={href}>
               {title}
               {el && <Dropdown />}
             </NavLink>
@@ -53,10 +41,6 @@ const Nav = ({setNavIsOpen}) => {
       </div>
     </div>
   )
-}
-
-Nav.propTypes = {
-  setNavIsOpen: PropTypes.func.isRequired,
 }
 
 export default Nav
