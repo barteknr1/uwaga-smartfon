@@ -1,10 +1,12 @@
+import {useTranslation} from 'react-i18next'
+import {useState} from 'react'
 import Section from '../Section/Section'
 import css from './Newsletter.module.css'
 import sprite from '../../assets/svg/sprite.svg'
 import Button from '../Button/Button'
-import {useState} from 'react'
 
 const Newsletter = () => {
+  const {t} = useTranslation()
   const [inputText, setInputText] = useState('')
   const handleClearInput = () => {
     setInputText('')
@@ -13,23 +15,17 @@ const Newsletter = () => {
     <Section
       sectionClass={css.newsletter}
       titleClass={css.newsletterTitle}
-      title="Zapisz się do newslettera"
+      title={t('newsletter.title')}
     >
       <div className={css.newsletterContainer}>
         <div className={`${css.newsletterBox} ${css.letterBox}`}>
-          <p className={css.firstText}>
-            Subskrybuj nasz newsletter, aby być na bieżąco z naszymi działaniami
-            i otrzymywać wartościowe treści!
-          </p>
+          <p className={css.firstText}>{t('newsletter.text1')}</p>
           <p className={css.secondText}>
-            Osoby, które zapiszą się do newslettera, otrzymają między innymi
-            możliwość bezpłatnego pobrania{' '}
-            <span className={css.bold}>Bezpiecznego Statutu Szkoły</span> oraz{' '}
-            <span className={css.bold}>
-              Regulaminu Korzystania z Mediów Cyfrowych w Szkole
-            </span>
-            , które zostały przygotowane przez doktora nauk prawnych Tomasza
-            Lewandowskiego
+            {t('newsletter.text2')}{' '}
+            <span className={css.bold}>{t('newsletter.bold1')}</span>{' '}
+            {t('newsletter.text3')}{' '}
+            <span className={css.bold}>{t('newsletter.bold2')}</span>{' '}
+            {t('newsletter.text4')}
           </p>
           <div className={css.textboxBox}>
             <label className={css.textbox} htmlFor="textbox">
@@ -54,10 +50,10 @@ const Newsletter = () => {
               <span className={css.checkMark}></span>
             </div>
             <label className={css.checkboxText} htmlFor="checkbox">
-              Wyrażam zgodę na przetwarzanie moich danych osobowych.
+              {t('newsletter.agreement')}
             </label>
           </div>
-          <Button variant="secondary" content="Zapisz się do newslettera" />
+          <Button variant="secondary" content={t('newsletter.title')} />
         </div>
         <div className={`${css.newsletterBox} ${css.svgBox}`}>
           <div className={css.newsletterSvg}>
