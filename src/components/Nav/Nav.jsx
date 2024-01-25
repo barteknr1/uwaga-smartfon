@@ -3,17 +3,18 @@ import PropTypes from 'prop-types'
 
 import Button from '../Button/Button'
 import Dropdown from '../Dropdown/Dropdown'
+
 import navigationRoutes from './index'
 
 import icon from '../../assets/svg/sprite.svg'
-import css from './NavHome.module.css'
+import css from './Nav.module.css'
 
-const NavHome = ({setIsOpen}) => {
+const Nav = ({setNavIsOpen}) => {
   const location = useLocation()
 
   const handleNavLinkClick = (hasNestedItems) => {
     if (!hasNestedItems) {
-      setIsOpen(false)
+      setNavIsOpen(false)
     }
   }
 
@@ -29,17 +30,20 @@ const NavHome = ({setIsOpen}) => {
         </svg>
       </NavLink>
       <nav className={css.navList}>
-        {currentRoutes.map(({href, title, el}) => (
-          <NavLink
-            key={title}
-            className={css.navItem}
-            to={href}
-            onClick={() => handleNavLinkClick(Array.isArray(el))}
-          >
-            {title}
-            {el && <Dropdown />}
-          </NavLink>
-        ))}
+        {currentRoutes.map(
+          // @ts-ignore
+          ({href, title, el}) => (
+            <NavLink
+              key={title}
+              className={css.navItem}
+              to={href}
+              onClick={() => handleNavLinkClick(Array.isArray(el))}
+            >
+              {title}
+              {el && <Dropdown />}
+            </NavLink>
+          )
+        )}
         <Button variant="support" content="Wesprzyj" />
       </nav>
       <div className={css.navLang}>
@@ -51,8 +55,8 @@ const NavHome = ({setIsOpen}) => {
   )
 }
 
-NavHome.propTypes = {
-  setIsOpen: PropTypes.func.isRequired,
+Nav.propTypes = {
+  setNavIsOpen: PropTypes.func.isRequired,
 }
 
-export default NavHome
+export default Nav

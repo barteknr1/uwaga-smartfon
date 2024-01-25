@@ -2,26 +2,26 @@ import {useState, Suspense} from 'react'
 import {Outlet, useLocation} from 'react-router-dom'
 import {Spin as Hamburger} from 'hamburger-react'
 
-import NavHome from '../NavHome/NavHome'
-import Footer from '../Footer/Footer'
+import Nav from '../Nav/Nav'
 import NavTablet from '../NavTablet/NavTablet'
+import Footer from '../Footer/Footer'
 
 import css from './SharedLayout.module.css'
 
 const volunteerText = 'Z głębi serca dziękujemy!'
 
 const SharedLayout = () => {
-  const [isOpen, setIsOpen] = useState(false)
+  const [navIsOpen, setNavIsOpen] = useState(false)
   const location = useLocation()
 
   return (
     <>
-      <header className={`${css.header} ${isOpen && css['is-open']}`}>
-        <NavHome setIsOpen={setIsOpen} />
+      <header className={`${css.header} ${navIsOpen && css['is-open']}`}>
+        <Nav setNavIsOpen={setNavIsOpen} />
       </header>
       <NavTablet />
       <div className={css.mobileMenuTrigger}>
-        <Hamburger toggle={setIsOpen} toggled={isOpen} />
+        <Hamburger toggle={setNavIsOpen} toggled={navIsOpen} />
       </div>
       <main className={css.main}>
         <Suspense fallback={null}>

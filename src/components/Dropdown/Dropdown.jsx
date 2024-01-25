@@ -1,7 +1,7 @@
 import {useState} from 'react'
 import {NavLink} from 'react-router-dom'
 
-import navigationRoutes from '../NavHome/index'
+import navigationRoutes from '../Nav/index'
 
 import icon from '../../assets/svg/sprite.svg'
 import css from './Dropdown.module.css'
