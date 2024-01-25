@@ -1,6 +1,9 @@
-import Section from '../Section/Section'
+import {useTranslation} from 'react-i18next'
+import {useRef} from 'react'
 import {Swiper, SwiperSlide} from 'swiper/react'
 import {Autoplay} from 'swiper/modules'
+import Section from '../Section/Section'
+import Button from '../Button/Button'
 import 'swiper/css/bundle'
 import css from './Patrons.module.css'
 import {
@@ -19,11 +22,10 @@ import {
   szpitalBabinskiego,
   tarczaPFR,
 } from '../../assets/images/patrons'
-import Button from '../Button/Button'
 import './styles.css'
-import {useRef} from 'react'
 
 const Patrons = () => {
+  const {t} = useTranslation()
   const swiperRef = useRef(null)
   const swiperRefTwo = useRef(null)
 
@@ -75,7 +77,7 @@ const Patrons = () => {
     <Section
       sectionClass={css.patrons}
       titleClass={css.patronsTitle}
-      title="Partnerzy & Patroni"
+      title={t('patrons.title')}
     >
       <div className={css.patronsContainer}>
         <div
@@ -163,7 +165,7 @@ const Patrons = () => {
             ))}
           </Swiper>
         </div>
-        <Button variant="support" content="Wesprzyj"></Button>
+        <Button variant="support" content={t('patrons.buttonText')}></Button>
       </div>
     </Section>
   )
