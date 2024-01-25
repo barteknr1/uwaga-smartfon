@@ -1,6 +1,7 @@
-import Section from '../Section/Section'
+import {useTranslation} from 'react-i18next'
 import {Swiper, SwiperSlide} from 'swiper/react'
 import {Autoplay} from 'swiper/modules'
+import Section from '../Section/Section'
 import 'swiper/css/bundle'
 import css from './PreviousEdition.module.css'
 import './styles.css'
@@ -20,6 +21,7 @@ import {
 } from '../../assets/images/slider'
 
 const PreviousEdition = () => {
+  const {t} = useTranslation()
   const sliderOne = [
     slider1,
     slider2,
@@ -52,7 +54,7 @@ const PreviousEdition = () => {
     <Section
       sectionClass={css.slider}
       titleClass={css.sliderTitle}
-      title="Poprzednie Edycje"
+      title={t('previousEdition.title')}
     >
       <div className={css.container}>
         <div>

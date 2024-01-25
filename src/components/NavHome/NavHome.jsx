@@ -6,7 +6,21 @@ import {routes} from './index'
 import icon from '../../assets/svg/sprite.svg'
 import css from './NavHome.module.css'
 
+import {useState} from 'react'
+import {useTranslation} from 'react-i18next'
+
+// import i18n from '../../i18n'
+
 const NavHome = () => {
+  const {i18n, t} = useTranslation()
+
+  const [language, setLanguage] = useState('en')
+
+  const changeLanguage = (lang) => {
+    setLanguage(lang)
+    i18n.changeLanguage(lang)
+  }
+
   return (
     <div className={css.nav}>
       <NavLink to="/landing-page">
@@ -26,9 +40,13 @@ const NavHome = () => {
         <Button variant="support" content="Wesprzyj"></Button>
       </nav>
       <div className={css.navLang}>
-        <button className={css.navLangBtn}>PL</button>
+        <button onClick={() => changeLanguage('pl')} className={css.navLangBtn}>
+          PL
+        </button>
         <span className={css.navLangSpan}>|</span>{' '}
-        <button className={css.navLangBtn}>ENG</button>
+        <button onClick={() => changeLanguage('en')} className={css.navLangBtn}>
+          ENG
+        </button>
       </div>
     </div>
   )

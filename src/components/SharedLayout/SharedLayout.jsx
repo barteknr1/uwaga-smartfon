@@ -1,6 +1,7 @@
 import {Outlet, useLocation} from 'react-router-dom'
 import {Suspense, useState} from 'react'
 import {Spin as Hamburger} from 'hamburger-react'
+import {useTranslation} from 'react-i18next'
 
 import NavHome from '../NavHome/NavHome'
 import Footer from '../Footer/Footer'
@@ -9,10 +10,11 @@ import NavTablet from '../NavTablet/NavTablet'
 import css from './SharedLayout.module.css'
 
 const SharedLayout = () => {
+  const {t} = useTranslation()
   const [isOpen, setIsOpen] = useState(false)
   const location = useLocation()
 
-  const volunteerText = 'Z głębi serca dziękujemy!'
+  const volunteerText = `${t('footer.heading1')}`
 
   return (
     <>
@@ -32,7 +34,7 @@ const SharedLayout = () => {
         text={
           location.pathname.startsWith('/volunteering')
             ? volunteerText
-            : 'Strona została stworzona dzięki pracy Wolontariuszy.'
+            : `${t('footer.heading2')}`
         }
       />
     </>
