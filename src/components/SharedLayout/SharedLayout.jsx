@@ -3,8 +3,8 @@ import {Outlet, useLocation} from 'react-router-dom'
 import {Spin as Hamburger} from 'hamburger-react'
 
 import Nav from '../Nav/Nav'
-import NavTablet from '../NavTablet/NavTablet'
 import Footer from '../Footer/Footer'
+import NavTablet from '../NavTablet/NavTablet'
 
 import css from './SharedLayout.module.css'
 
