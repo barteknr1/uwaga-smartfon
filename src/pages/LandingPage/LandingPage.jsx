@@ -6,7 +6,6 @@ import Program from '../../components/Program/Program'
 const LandingPage = () => {
   return (
     <>
-      <div>LandingPage</div>
       <Program />
       <Workshops />
       <Speakers />
