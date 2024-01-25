@@ -8,10 +8,11 @@ import icon from '../../assets/svg/sprite.svg'
 import css from './Dropdown.module.css'
 
 const Dropdown = ({setNavIsOpen}) => {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isDropOpen, setDropIsOpen] = useState(false)
 
   const handleDropdownLinkClick = () => {
     setNavIsOpen(false)
+    setDropIsOpen(false)
   }
 
   const findNestedArray = (array) =>
@@ -20,7 +21,7 @@ const Dropdown = ({setNavIsOpen}) => {
   const elNav = findNestedArray(navigationRoutes.routes)
 
   const handleDropdownToggle = () => {
-    setIsOpen(!isOpen)
+    setDropIsOpen(!isDropOpen)
   }
 
   return (
@@ -30,7 +31,7 @@ const Dropdown = ({setNavIsOpen}) => {
       </svg>
       <ul
         className={css.dropdownList}
-        style={{display: isOpen ? 'block' : 'none'}}
+        style={{display: isDropOpen ? 'block' : 'none'}}
       >
         {elNav.map((elItem) => (
           <NavLink

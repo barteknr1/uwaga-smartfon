@@ -9,7 +9,7 @@ import navigationRoutes from './index'
 import icon from '../../assets/svg/sprite.svg'
 import css from './Nav.module.css'
 
-const Nav = ({setNavIsOpen}) => {
+const Nav = ({setNavIsOpen, setDropIsOpen}) => {
   const location = useLocation()
 
   const {routes, landingPageRoutes} = navigationRoutes
@@ -18,6 +18,7 @@ const Nav = ({setNavIsOpen}) => {
 
   const handleNavLinkClick = () => {
     setNavIsOpen(false)
+    setDropIsOpen(false)
   }
 
   return (
@@ -52,6 +53,7 @@ const Nav = ({setNavIsOpen}) => {
 
 Nav.propTypes = {
   setNavIsOpen: PropTypes.func.isRequired,
+  setDropIsOpen: PropTypes.func.isRequired,
 }
 
 export default Nav
