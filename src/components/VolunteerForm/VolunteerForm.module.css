@@ -25,6 +25,17 @@
   padding: 41px 14px 15px;
 }
 
+.errorText {
+  color: var(--error-color);
+  text-align: center;
+  font-family: var(--placeholder-font);
+  font-size: 0.51538rem;
+  font-weight: 400;
+  line-height: 0.77306rem; /* 150% */
+  letter-spacing: 0.00063rem;
+  margin-bottom: 16px;
+}
+
 .volunteerFormContainer button {
   align-self: center;
 }
@@ -48,6 +59,9 @@
   transition-property: border-color, fill;
 }
 
+.volunteerFormBoxError {
+  border: 2px solid var(--error-color);
+}
 .volunteerFormBox:focus-within {
   border-color: var(--dark-brand-color);
   fill: var(--dark-brand-color);
@@ -64,6 +78,10 @@
   font-size: 0.3865rem;
   font-weight: 400;
   line-height: 0.51538rem;
+}
+
+.textboxError {
+  color: var(--error-color);
 }
 
 .textboxBox:focus-within .textbox {
@@ -112,8 +130,8 @@
   display: flex;
   align-self: start;
   align-items: center;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  margin-top: 16px;
+  margin-bottom: 16px;
   border: 0;
   position: relative;
   padding: 0;
@@ -158,6 +176,9 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: background-color;
 }
+.checkMarkError {
+  border-color: var(--error-color);
+}
 
 .checkboxText {
   font-family: Montserrat;
@@ -195,6 +216,13 @@
   .volunteerForm {
     padding-left: 40px;
     padding-right: 40px;
+  }
+
+  .errorText {
+    font-size: 1rem;
+    line-height: 1.5rem; /* 150% */
+    letter-spacing: 0.00119rem;
+    margin-bottom: 32px;
   }
 
   .volunteerFormTitle {
@@ -240,7 +268,7 @@
 
   .checkboxBox {
     margin-top: 56px;
-    margin-bottom: 64px;
+    margin-bottom: 32px;
     align-self: center;
   }
 
