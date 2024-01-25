@@ -1,9 +1,11 @@
-import React from 'react'
-import PropTypes from 'prop-types'
 import {NavLink, useLocation} from 'react-router-dom'
+import PropTypes from 'prop-types'
+
 import Button from '../Button/Button'
 import Dropdown from '../Dropdown/Dropdown'
+
 import navigationRoutes from './index'
+
 import icon from '../../assets/svg/sprite.svg'
 import css from './Nav.module.css'
 
@@ -34,7 +36,7 @@ const Nav = ({setNavIsOpen}) => {
             onClick={() => (el ? null : handleNavLinkClick())}
           >
             {title}
-            {el && <Dropdown />}
+            {el && <Dropdown setNavIsOpen={setNavIsOpen} />}
           </NavLink>
         ))}
         <Button variant="support" content="Wesprzyj" />
