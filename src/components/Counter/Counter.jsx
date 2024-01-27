@@ -40,10 +40,12 @@ const CountdownTimer = () => {
         <span className={css.TimeRemaining_Info}>{t('counter.minutes')}</span>
       </div>
       <div className={css.TimeRemaining_NumBox}>
-        <span className={css.TimeRemaining_Num}>{timeRemaining.days} :</span>
+        <span className={css.TimeRemaining_Num}>{timeRemaining.days}</span>
+        <span className={css.dots}>:</span>
         <span className={css.TimeRemaining_Num}>
-          {formatTime(timeRemaining.hours)} :
+          {formatTime(timeRemaining.hours)}
         </span>
+        <span className={css.dots}>:</span>
         <span className={css.TimeRemaining_Num}>
           {formatTime(timeRemaining.minutes)}
         </span>

@@ -80,10 +80,19 @@
     "quote1": "“To było niezwykłe doświadczenie słuchania na żywo ekspertów, którzy poruszali sprawy, mające wpływ na wychowanie dzieci. Dla mnie jako rodzica było to niezwykle ubogacające. Cieszę się, że konferencji mogłem słuchać razem z moją żoną.”",
     "quote2": "“Bardzo serdecznie wam dziękuję, bo byłam przerażona tym tematem, a teraz mam konkretną wiedzę i umiem odróżnić przynajmniej w podstawowym zakresie nawyk od uzależnienia. I wiem, co robić, w końcu wiem, co robić!”"
   },
+
+  "banner": {
+    "title": "KONFERENCJA",
+    "titleVolunteer": "ZOSTAŃ WOLONTARIUSZEM WYDARZENIA",
+    "button": "Zapisz się na konferencję",
+    "buttonVolunteer": "Dołącz do wolontariatu",
+    "date": "04 kwietnia 2024"
+  },
+
   "counter": {
-    "days": "dni",
-    "hours": "godzin",
-    "minutes": "minut"
+    "days": "Dni",
+    "hours": "Godzin",
+    "minutes": "Minut"
   },
   "dearVolunteer": {
     "title": "Szanowni wolontariusze!",
