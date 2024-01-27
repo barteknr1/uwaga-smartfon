@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "img": "../src/assets/images/Speakers/dr-roman-solecki.png",
+    "img": "assets/images/Speakers/dr-roman-solecki.png",
     "name": "dr Roman Solecki",
     "title": "Ekspert",
     "about": [
@@ -15,7 +15,7 @@
   },
   {
     "id": 2,
-    "img": "../src/assets/images/Speakers/piotr-czubaty.png",
+    "img": "assets/images/Speakers/piotr-czubaty.png",
     "name": "Piotr Czubaty",
     "title": "Specjalista",
     "about": [
@@ -29,7 +29,7 @@
   },
   {
     "id": 3,
-    "img": "../src/assets/images/Speakers/dr-lukasz-cichocki.png",
+    "img": "assets/images/Speakers/dr-lukasz-cichocki.png",
     "name": "dr Łukasz Cichocki",
     "title": "Specjalista",
     "about": [
@@ -43,7 +43,7 @@
   },
   {
     "id": 4,
-    "img": "../src/assets/images/Speakers/tomasz-lewandowski.png",
+    "img": "assets/images/Speakers/tomasz-lewandowski.png",
     "name": "Tomasz Lewandowski",
     "title": "Specjalista",
     "about": [
@@ -60,7 +60,7 @@
   },
   {
     "id": 5,
-    "img": "../src/assets/images/Speakers/Monika_Przybysz.png",
+    "img": "assets/images/Speakers/Monika_Przybysz.png",
     "name": "Prof. Monika Przybysz",
     "title": "Specjalista",
     "about": [
@@ -78,7 +78,7 @@
   },
   {
     "id": 6,
-    "img": "../src/assets/images/Speakers/paula_arguelles.png",
+    "img": "assets/images/Speakers/paula_arguelles.png",
     "name": "Paula Arguelles",
     "title": "Specjalista",
     "about": ["Paula Arguelles", "Lorem ipsum "]
@@ -104,7 +104,7 @@
   },
   {
     "id": 8,
-    "img": "../src/assets/images/Speakers/Sylwia_Jaskulska.png",
+    "img": "assets/images/Speakers/Sylwia_Jaskulska.png",
     "name": "Sylwia Jaskulska",
     "title": "Specjalista",
     "about": [
