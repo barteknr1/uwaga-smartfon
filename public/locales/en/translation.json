@@ -80,10 +80,17 @@
     "quote1": "“It was an extraordinary experience to listen live to experts addressing issues that impact the upbringing of children. As a parent, it was incredibly enriching for me. I'm glad I could attend the conference together with my wife.”",
     "quote2": "“Thank you very much because I was scared of this topic, and now I have specific knowledge and can distinguish, at least in basic terms, habit from addiction. And I know what to do; finally, I know what to do!”"
   },
+  "banner": {
+    "title": "CONFERENCE",
+    "titleVolunteer": "BECOME AN EVENT VOLUNTEER",
+    "button": "Register for the conference",
+    "buttonVolunteer": "Join the volunteer team",
+    "date": "April 04, 2024"
+  },
   "counter": {
-    "days": "days",
-    "hours": "hours",
-    "minutes": "minutes"
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Minutes"
   },
   "dearVolunteer": {
     "title": "Dear Volunteers!",
