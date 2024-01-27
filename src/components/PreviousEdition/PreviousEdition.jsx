@@ -62,10 +62,10 @@ const PreviousEdition = () => {
             spaceBetween={20}
             slidesPerView={'auto'}
             breakpoints={{
-              835: {
+              765: {
                 spaceBetween: 9,
               },
-              1440: {
+              1280: {
                 spaceBetween: 16,
               },
             }}
@@ -74,14 +74,14 @@ const PreviousEdition = () => {
               delay: 0,
               disableOnInteraction: false,
             }}
-            speed={4000}
+            speed={6000}
             pagination={{
               clickable: false,
             }}
             navigation={false}
             modules={[Autoplay]}
             allowTouchMove={false}
-            className="mySwiper"
+            className="previousEditionSwiper"
           >
             {sliderOne.map((slider, index) => (
               <SwiperSlide key={index}>
@@ -99,10 +99,10 @@ const PreviousEdition = () => {
             spaceBetween={20}
             slidesPerView={'auto'}
             breakpoints={{
-              835: {
+              765: {
                 spaceBetween: 9,
               },
-              1440: {
+              1280: {
                 spaceBetween: 16,
               },
             }}
@@ -112,14 +112,14 @@ const PreviousEdition = () => {
               reverseDirection: true,
               disableOnInteraction: false,
             }}
-            speed={4000}
+            speed={6000}
             pagination={{
               clickable: false,
             }}
             navigation={false}
             modules={[Autoplay]}
             allowTouchMove={false}
-            className="mySwiper"
+            className="previousEditionSwiper"
           >
             {sliderTwo.map((slider, index) => (
               <SwiperSlide key={index}>

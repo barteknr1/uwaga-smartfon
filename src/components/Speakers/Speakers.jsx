@@ -1,12 +1,13 @@
 import {useState} from 'react'
 import {useTranslation} from 'react-i18next'
 import {Swiper, SwiperSlide} from 'swiper/react'
-import {EffectCoverflow, Pagination} from 'swiper/modules'
+import {Pagination} from 'swiper/modules'
 import 'swiper/css/bundle'
 
 import Modal from '../Modal/Modal'
 import Section from '../Section/Section'
 import speakers from './SpeakersList.json'
+import sprite from '../../assets/svg/sprite.svg'
 
 import css from './Speakers.module.css'
 import './styles.css'
@@ -28,7 +29,6 @@ const Speakers = () => {
     >
       <div className={css.speakersContainer}>
         <Swiper
-          effect={'coverflow'}
           grabCursor={true}
           spaceBetween={40}
           breakpoints={{
@@ -41,16 +41,9 @@ const Speakers = () => {
           }}
           centeredSlides={true}
           slidesPerView={'auto'}
-          coverflowEffect={{
-            rotate: 50,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            slideShadows: true,
-          }}
           loop={true}
           pagination={false}
-          modules={[EffectCoverflow, Pagination]}
+          modules={[Pagination]}
           className="swiperSpeakers"
         >
           {speakers.map((speaker) => (
@@ -71,15 +64,25 @@ const Speakers = () => {
         </Swiper>
         {isModalVisible && selectedSpeaker && (
           <Modal>
-            <img className={css.speakerImg} src={selectedSpeaker.img} />
-            <div className={css.speakerAboutBox}>
-              {t(`speakers.about.${selectedSpeaker.id}`, {
+            <div className={css.speakersModalContainer}>
+              <div className={css.speakerImgBox}>
+                <img
+                  className={css.speakerModalImg}
+                  src={selectedSpeaker.img}
+                />
+                <svg className={css.speakerSvg}>
+                  <use href={sprite + '#speakersSvg'} />
+                </svg>
+              </div>
+              <div className={css.speakerAboutBox}>
+                {t(`speakers.about.${selectedSpeaker.id}`, {
                 returnObjects: true,
               }).map((paragraph, index) => (
-                <p className={css.speakerAboutText} key={index}>
-                  {paragraph}
-                </p>
-              ))}
+                  <p className={css.speakerAboutText} key={index}>
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
             </div>
           </Modal>
         )}
