@@ -6,32 +6,68 @@ import css from './VolunteerForm.module.css'
 
 const VolunteerForm = () => {
   const [nameInput, setNameInput] = useState('')
+  const [isNameValid, setIsNameValid] = useState(true)
   const [emailInput, setEmailInput] = useState('')
+  const [isEmailValid, setIsEmailValid] = useState(true)
   const [positionInput, setPositionInput] = useState('')
+  const [isPositionValid, setIsPositionValid] = useState(true)
   const [areaInput, setAreaInput] = useState('')
+  const [isAreaValid, setIsAreaValid] = useState(true)
   const [isChecked, setIsChecked] = useState(false)
   const [error, setError] = useState(false)
 
   const handleClearInput = (inputType) => {
     setError(false)
-
-    if (inputType === 'name') setNameInput('')
-    if (inputType === 'email') setEmailInput('')
-    if (inputType === 'position') setPositionInput('')
-    if (inputType === 'area') setAreaInput('')
+    setIsNameValid(true)
+    setIsEmailValid(true)
+    setIsPositionValid(true)
+    setIsAreaValid(true)
+    if (inputType === 'name') {
+      setNameInput('')
+    }
+    if (inputType === 'email') {
+      setEmailInput('')
+    }
+    if (inputType === 'position') {
+      setPositionInput('')
+    }
+    if (inputType === 'area') {
+      setAreaInput('')
+    }
   }
 
   const handleSubmit = (event) => {
     event.preventDefault()
     const emailContain = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
     if (emailContain.test(emailInput)) {
-      console.log('Email:', emailInput, 'Consent:', isChecked, 'Err:', error)
+      setIsEmailValid(true)
       setError(false)
     } else {
-      console.log('Email:', emailInput, 'Consent:', isChecked, 'Err:', error)
+      setIsEmailValid(false)
       setError(true)
-      console.error('Please enter a valid e-mail address')
     }
+
+    if (!nameInput.trim() || !/\s/.test(nameInput)) {
+      setIsNameValid(false)
+      setError(true)
+    } else {
+      setIsNameValid(true)
+    }
+
+    if (!areaInput.trim()) {
+      setIsAreaValid(false)
+      setError(true)
+    } else {
+      setIsAreaValid(true)
+    }
+
+    if (!positionInput.trim()) {
+      setIsPositionValid(false)
+      setError(true)
+    } else {
+      setIsPositionValid(true)
+    }
+
     if (!isChecked) {
       setError(true)
     }
@@ -48,11 +84,11 @@ const VolunteerForm = () => {
         <fieldset className={css.volunteerFormInputContainer}>
           <div
             className={`${css.volunteerFormBox} ${
-              error && css.volunteerFormBoxError
+              !isNameValid && css.volunteerFormBoxError
             }`}
           >
             <label
-              className={`${css.textbox} ${error && css.textboxError}`}
+              className={`${css.textbox} ${!isNameValid && css.textboxError}`}
               htmlFor="name"
             >
               Imię i nazwisko
@@ -70,7 +106,7 @@ const VolunteerForm = () => {
               className={css.svgTextButton}
               onClick={() => handleClearInput('name')}
             >
-              {!error ? (
+              {isNameValid ? (
                 <svg className={css.svgTextIcon}>
                   <use href={sprite + '#icon-close'} />
                 </svg>
@@ -83,11 +119,11 @@ const VolunteerForm = () => {
           </div>
           <div
             className={`${css.volunteerFormBox} ${
-              error && css.volunteerFormBoxError
+              !isEmailValid && css.volunteerFormBoxError
             }`}
           >
             <label
-              className={`${css.textbox} ${error && css.textboxError}`}
+              className={`${css.textbox} ${!isEmailValid && css.textboxError}`}
               htmlFor="email"
             >
               Adres e-mail
@@ -105,7 +141,7 @@ const VolunteerForm = () => {
               className={css.svgTextButton}
               onClick={() => handleClearInput('email')}
             >
-              {!error ? (
+              {isEmailValid ? (
                 <svg className={css.svgTextIcon}>
                   <use href={sprite + '#icon-close'} />
                 </svg>
@@ -118,11 +154,13 @@ const VolunteerForm = () => {
           </div>
           <div
             className={`${css.volunteerFormBox} ${
-              error && css.volunteerFormBoxError
+              !isPositionValid && css.volunteerFormBoxError
             }`}
           >
             <label
-              className={`${css.textbox} ${error && css.textboxError}`}
+              className={`${css.textbox} ${
+                !isPositionValid && css.textboxError
+              }`}
               htmlFor="position"
             >
               Stanowisko
@@ -140,7 +178,7 @@ const VolunteerForm = () => {
               className={css.svgTextButton}
               onClick={() => handleClearInput('position')}
             >
-              {!error ? (
+              {isPositionValid ? (
                 <svg className={css.svgTextIcon}>
                   <use href={sprite + '#icon-close'} />
                 </svg>
@@ -153,11 +191,11 @@ const VolunteerForm = () => {
           </div>
           <div
             className={`${css.volunteerFormBox} ${
-              error && css.volunteerFormBoxError
+              !isAreaValid && css.volunteerFormBoxError
             }`}
           >
             <label
-              className={`${css.textbox} ${error && css.textboxError}`}
+              className={`${css.textbox} ${!isNameValid && css.textboxError}`}
               htmlFor="area"
             >
               Obszar działania, który chcesz wesprzeć
@@ -175,7 +213,7 @@ const VolunteerForm = () => {
               className={css.svgTextButton}
               onClick={() => handleClearInput('area')}
             >
-              {!error ? (
+              {isAreaValid ? (
                 <svg className={css.svgTextIcon}>
                   <use href={sprite + '#icon-close'} />
                 </svg>
@@ -200,7 +238,12 @@ const VolunteerForm = () => {
               className={`${css.checkMark} ${error && css.checkMarkError}`}
             ></span>
           </div>
-          <label className={css.checkboxText} htmlFor="checkbox">
+          <label
+            className={`${css.checkboxText} ${
+              error && !isChecked && css.checkboxTextError
+            }`}
+            htmlFor="checkbox"
+          >
             Wyrażam zgodę na przetwarzanie moich danych osobowych.
           </label>
         </div>
