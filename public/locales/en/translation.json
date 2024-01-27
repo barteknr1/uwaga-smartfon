@@ -118,7 +118,8 @@
     "text3": "and",
     "bold2": "Regulations for the Use of Digital Media in School,",
     "text4": "prepared by Dr. Tomasz Lewandowski, a doctor of law.",
-    "agreement": "I agree to the processing of my personal data."
+    "agreement": "I agree to the processing of my personal data.",
+    "error": "Complete all fields and check the consent for personal data processing to submit the form."
   },
   "patrons": {
     "title": "Partners & Patrons",

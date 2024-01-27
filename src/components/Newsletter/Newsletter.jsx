@@ -7,9 +7,30 @@ import Button from '../Button/Button'
 
 const Newsletter = () => {
   const {t} = useTranslation()
-  const [inputText, setInputText] = useState('')
+  const [email, setEmail] = useState('')
+  const [isEmailValid, setIsEmailValid] = useState(false)
+  const [isChecked, setIsChecked] = useState(false)
+  const [error, setError] = useState(false)
+
   const handleClearInput = () => {
-    setInputText('')
+    setEmail('')
+    setIsEmailValid(false)
+    setError(false)
+  }
+
+  const handleSubmit = (event) => {
+    event.preventDefault()
+    const emailContain = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    if (emailContain.test(email)) {
+      setIsEmailValid(true)
+      setError(false)
+    } else {
+      setIsEmailValid(false)
+      setError(true)
+    }
+    if (!isChecked) {
+      setError(true)
+    }
   }
   return (
     <Section
@@ -17,7 +38,7 @@ const Newsletter = () => {
       titleClass={css.newsletterTitle}
       title={t('newsletter.title')}
     >
-      <div className={css.newsletterContainer}>
+      <form className={css.newsletterContainer} onSubmit={handleSubmit}>
         <div className={`${css.newsletterBox} ${css.letterBox}`}>
           <p className={css.firstText}>{t('newsletter.text1')}</p>
           <p className={css.secondText}>
@@ -27,33 +48,74 @@ const Newsletter = () => {
             <span className={css.bold}>{t('newsletter.bold2')}</span>{' '}
             {t('newsletter.text4')}
           </p>
-          <div className={css.textboxBox}>
-            <label className={css.textbox} htmlFor="textbox">
+          <div
+            className={`${css.textboxBox} ${
+              error && !isEmailValid && css.textboxBoxError
+            }`}
+          >
+            <label
+              className={`${css.textbox} ${
+                error && !isEmailValid && css.textboxError
+              }`}
+              htmlFor="textbox"
+            >
               Adres e-mail:
             </label>
             <input
+              placeholder="Adres e-mail"
               className={css.inputText}
               id="textbox"
-              type="text"
-              value={inputText}
-              onChange={(event) => setInputText(event.target.value)}
+              type="email"
+              value={email}
+              onChange={(event) => setEmail(event.target.value)}
             />
-            <button className={css.svgTextButton} onClick={handleClearInput}>
-              <svg className={css.svgTextIcon}>
-                <use href={sprite + '#icon-close'} />
-              </svg>
+            <button
+              className={css.svgTextButton}
+              type="button"
+              onClick={handleClearInput}
+            >
+              {!error && isEmailValid ? (
+                <svg className={css.svgTextIcon}>
+                  <use href={sprite + '#icon-close'} />
+                </svg>
+              ) : (
+                <svg className={css.svgTextIcon}>
+                  <use href={sprite + '#error-icon'} />
+                </svg>
+              )}
             </button>
           </div>
           <div className={css.checkboxBox}>
-            <input className={css.checkbox} id="checkbox" type="checkbox" />
+            <input
+              className={css.checkbox}
+              id="checkbox"
+              type="checkbox"
+              checked={isChecked}
+              onChange={() => setIsChecked(!isChecked)}
+            />
             <div className={css.checkMarkBox}>
-              <span className={css.checkMark}></span>
+              <span
+                className={`${css.checkMark} ${
+                  error && !isChecked && css.checkMarkError
+                }`}
+              ></span>
             </div>
-            <label className={css.checkboxText} htmlFor="checkbox">
+            <label
+              className={`${css.checkboxText} ${
+                error && !isChecked && css.checkboxTextError
+              }`}
+              htmlFor="checkbox"
+            >
               {t('newsletter.agreement')}
             </label>
           </div>
-          <Button variant="secondary" content={t('newsletter.title')} />
+          {error && <p className={css.errorText}>{t('newsletter.error')}</p>}
+          <Button
+            variant="secondary"
+            content={t('newsletter.title')}
+            type="submit"
+            disabled={!isChecked}
+          />
         </div>
         <div className={`${css.newsletterBox} ${css.svgBox}`}>
           <div className={css.newsletterSvg}>
@@ -68,7 +130,7 @@ const Newsletter = () => {
             </svg>
           </div>
         </div>
-      </div>
+      </form>
     </Section>
   )
 }
