@@ -18,11 +18,8 @@ const Newsletter = () => {
     setError(false)
   }
 
-  const errorSvg = !error && isEmailValid
-
   const handleSubmit = (event) => {
     event.preventDefault()
-    console.log(errorSvg, error, isEmailValid)
     const emailContain = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
     if (emailContain.test(email)) {
       setIsEmailValid(true)
