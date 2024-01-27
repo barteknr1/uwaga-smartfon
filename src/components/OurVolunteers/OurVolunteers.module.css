@@ -22,8 +22,9 @@
   flex-direction: column;
   align-items: center;
   gap: 8px;
+  width: 150px;
 }
-.textTablet {
+.text {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,7 +32,6 @@
 }
 .volunteerImg {
   width: 149px;
-  flex-shrink: 0;
 }
 .volunteerName {
   font-family: var(--main-font);
@@ -39,22 +39,20 @@
   line-height: 1.17375rem;
   font-weight: 600;
 }
-.volunteerText {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  line-height: normal;
-  gap: 8px;
-}
+
 .volunteerRole {
   font-family: var(--main-font);
   font-size: 1rem;
   line-height: 1.17375rem;
   font-weight: 400;
-  max-width: 149px;
+  /* max-width: 150px;*/
   text-align: center;
   text-decoration: underline;
   color: var(--dark-text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
 }
 
 .volunteerIcon {
@@ -62,6 +60,7 @@
   height: 24px;
   flex-shrink: 0;
 }
+
 @media screen and (min-width: 765px) {
   .ourVolunteers {
     padding: 128px 39px;
@@ -89,21 +88,24 @@
   .volunteerImg {
     width: 238px;
   }
-  .textTablet {
-    gap: 0px;
-  }
-  .volunteerText {
-    flex-direction: row;
-    align-items: flex-end;
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    gap: 2px;
+    gap: 4px;
   }
+
   .volunteerRole {
     font-size: 1.25rem;
-    line-height: normal;
+    line-height: 1.4675rem;
     font-weight: 500;
-    max-width: 200px;
-    text-align: center;
+    /* max-width: 200px;*/
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    align-items: flex-end;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -121,7 +123,7 @@
   .volunteerImg {
     width: 302px;
   }
-  .volunteerRole {
+  /* .volunteerRole {
     max-width: 300px;
-  }
+  }*/
 }
