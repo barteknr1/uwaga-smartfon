@@ -1,3 +1,4 @@
+import {useTranslation} from 'react-i18next'
 import Section from '../Section/Section'
 import css from './AboutVolunteer.module.css'
 import {
@@ -8,39 +9,42 @@ import {
 import sprite from '../../assets/svg/sprite.svg'
 
 const AboutVolunteer = () => {
+  const {t} = useTranslation()
+
   return (
     <Section sectionClass={css.aboutVolunteer}>
       <div className={css.ellipse}></div>
       <div className={css.aboutVolunteerBox}>
         <div className={css.aboutVolunteerContainer}>
           <div className={css.aboutVolunteerWrapper}>
-            <h3 className={css.aboutVolunteerTitle}>Jeśli:</h3>
+            <h3 className={css.aboutVolunteerTitle}>
+              {t('aboutVolunteer.title1')}
+            </h3>
             <ul className={css.aboutVolunteerList}>
               <li className={css.aboutVolunteerItem}>
-                chcesz{' '}
+                {t('aboutVolunteer.text')}{' '}
                 <span className={css.bold}>
-                  być częścią inspirującej inicjatywy
+                  {t('aboutVolunteer.list1.item1.bold')}
                 </span>{' '}
-                , która przyczynia się do edukacji i świadomości w ważnej
-                kwestii uzależnienia dzieci i młodzieży od ekranów,
+                {t('aboutVolunteer.list1.item1.text')}
               </li>
               <li className={css.aboutVolunteerItem}>
-                chcesz{' '}
+                {t('aboutVolunteer.text')}{' '}
                 <span className={css.bold}>
-                  pomóc w dotarciu do szerokiego grona odbiorców
-                </span>
-                wydarzenia,
+                  {t('aboutVolunteer.list1.item2.bold')}
+                </span>{' '}
+                {t('aboutVolunteer.list1.item2.text')}
               </li>
               <li className={css.aboutVolunteerItem}>
-                chcesz{' '}
+                {t('aboutVolunteer.text')}{' '}
                 <span className={css.bold}>
-                  wesprzeć swoją aktywnością organizację konferencji
-                </span>
-                “Uwaga! Smartfon”.
+                  {t('aboutVolunteer.list1.item3.bold')}
+                </span>{' '}
+                {t('aboutVolunteer.list1.item3.text')}
               </li>
             </ul>
             <p className={css.aboutVolunteerText}>
-              Jeśli TAK, to poszukujemy właśnie CIEBIE!
+              {t('aboutVolunteer.list1.p')}
             </p>
           </div>
           <div className={css.aboutVolunteerImgBox}>
@@ -50,7 +54,7 @@ const AboutVolunteer = () => {
               alt="wolontariuszka"
             />
             <svg
-              className={`${css.aboutVolunteerSvg} ${css.aboutVolunteerSvg1}   `}
+              className={`${css.aboutVolunteerSvg} ${css.aboutVolunteerSvg1}`}
             >
               <use href={sprite + '#aboutPurple'} />
             </svg>
@@ -59,31 +63,31 @@ const AboutVolunteer = () => {
         <div className={css.aboutVolunteerContainer}>
           <div className={css.aboutVolunteerWrapper}>
             <h3 className={css.aboutVolunteerTitle}>
-              Aby zostać wolontariuszem
+              {t('aboutVolunteer.title2')}
             </h3>
             <ul className={css.aboutVolunteerList}>
               <li className={css.aboutVolunteerItem}>
                 <span className={css.bold}>
-                  Przeczytaj dostępne informacje na temat konferencji
+                  {t('aboutVolunteer.list2.item1.bold')}
                 </span>{' '}
-                i celów, które chcemy osiągnąć.
+                {t('aboutVolunteer.list2.item1.text')}
               </li>
               <li className={css.aboutVolunteerItem}>
-                Zorientuj się, jakie zadania będą wymagały wsparcia
-                wolontariuszy i{' '}
+                {t('aboutVolunteer.list2.item2.text')}{' '}
                 <span className={css.bold}>
-                  wybierz interesujący Cię obszar działania
+                  {t('aboutVolunteer.list2.item2.bold')}
                 </span>
-                .
               </li>
               <li className={css.aboutVolunteerItem}>
                 <span className={css.bold}>
-                  Wypełnij formularz zgłoszeniowy
+                  {t('aboutVolunteer.list2.item3.bold')}
                 </span>{' '}
-                lub skontaktuj się z nami mailowo.
+                {t('aboutVolunteer.list2.item3.text')}
               </li>
             </ul>
-            <p className={css.aboutVolunteerText}>Zapraszamy serdecznie!</p>
+            <p className={css.aboutVolunteerText}>
+              {t('aboutVolunteer.list2.p')}
+            </p>
           </div>
           <div className={css.aboutVolunteerImgBox}>
             <img
@@ -101,43 +105,43 @@ const AboutVolunteer = () => {
         <div className={css.aboutVolunteerContainer}>
           <div className={css.aboutVolunteerWrapper}>
             <h3 className={css.aboutVolunteerTitle}>
-              Dlaczego warto do nas dołączyć?
+              {t('aboutVolunteer.title3')}
             </h3>
             <ul className={css.aboutVolunteerList}>
               <li className={css.aboutVolunteerItem}>
-                Poznasz ciekawych i inspirujących ludzi, z którymi{' '}
-                <span className={css.bold}>zbudujesz wartościowe relacje</span>.
-              </li>
-              <li className={css.aboutVolunteerItem}>
-                <span className={css.bold}>Zyskasz doświadczenie</span> przy
-                organizacji konferencji o ważnym społecznym znaczeniu.
-              </li>
-              <li className={css.aboutVolunteerItem}>
-                Dołączając do wolontariatu,{' '}
+                {t('aboutVolunteer.list3.item1.text')}{' '}
                 <span className={css.bold}>
-                  zdobędziesz praktyczne umiejętności pracy zespołowej
+                  {t('aboutVolunteer.list3.item1.bold')}
                 </span>
-                , a także cenne doświadczenie zawodowe.
               </li>
               <li className={css.aboutVolunteerItem}>
-                Jako wolontariusz{' '}
                 <span className={css.bold}>
-                  masz szansę osobiście poznać ekspertów
+                  {t('aboutVolunteer.list3.item2.bold')}
+                </span>{' '}
+                {t('aboutVolunteer.list3.item2.text')}
+              </li>
+              <li className={css.aboutVolunteerItem}>
+                {t('aboutVolunteer.list3.item3.text1')}{' '}
+                <span className={css.bold}>
+                  {t('aboutVolunteer.list3.item3.bold')}
+                </span>{' '}
+                {t('aboutVolunteer.list3.item3.text2')}
+              </li>
+              <li className={css.aboutVolunteerItem}>
+                {t('aboutVolunteer.list3.item4.text1')}{' '}
+                <span className={css.bold}>
+                  {t('aboutVolunteer.list3.item4.bold1')}
                 </span>
-                , psychologów oraz profesorów, a także{' '}
-                <span className={css.bold}>zdobyć wiedzę</span>, która może być
-                wartościowa zarówno dla Ciebie, jak i dla Twojej społeczności.
+                {t('aboutVolunteer.list3.item4.text2')}{' '}
+                <span className={css.bold}>
+                  {t('aboutVolunteer.list3.item4.bold2')}
+                </span>{' '}
+                {t('aboutVolunteer.list3.item4.text3')}
               </li>
             </ul>
             <p className={css.aboutVolunteerText}>
-              Zostań ambasadorem wydarzenia “Uwaga! Smartfon”, podziel się
-              swoimi umiejętnościami i wiedzą, aby wesprzeć ważny cel, a tym
-              samym zainwestuj w swój rozwój osobisty.{' '}
-              <span className={css.bold}>
-                Twoje zaangażowanie może pomóc w edukacji oraz wsparciu dzieci i
-                młodzieży
-              </span>
-              .
+              {t('aboutVolunteer.list3.p')}{' '}
+              <span className={css.bold}>{t('aboutVolunteer.list3.bold')}</span>
             </p>
           </div>
           <div className={css.aboutVolunteerImgBox}>

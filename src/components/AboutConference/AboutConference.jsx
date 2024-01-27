@@ -1,3 +1,4 @@
+import {useTranslation} from 'react-i18next'
 import Section from '../Section/Section'
 import Button from '../Button/Button'
 import css from './AboutConference.module.css'
@@ -9,22 +10,18 @@ import {
 import sprite from '../../assets/svg/sprite.svg'
 
 const AboutConference = () => {
+  const {t} = useTranslation()
+
   return (
     <Section sectionClass={css.aboutConference}>
       <div className={css.aboutConferenceBox}>
         <div className={css.aboutConferenceContainer}>
           <div className={css.aboutConferenceWrapper}>
-            <h3 className={css.aboutConferenceTitle}>O konferencji</h3>
+            <h3 className={css.aboutConferenceTitle}>
+              {t('aboutConference.title1')}
+            </h3>
             <p className={css.aboutConferenceText}>
-              Konferencja „Uwaga! Smartfon” to unikatowe w skali całej Europy
-              wydarzenie poświęcone zagadnieniom cyfryzacji i nadmiernemu
-              korzystaniu z urządzeń ekranowych przez dzieci i młodzież.
-              Spotykamy się w gronie wybitnych specjalistów z dziedziny
-              pedagogiki, psychologii i psychiatrii oraz ekspertów i
-              popularyzatorów wiedzy o cyfrowych zagrożeniach i cyfrowej
-              higienie. Dyskutujemy m.in. o „uzależnieniu od ekranów”,
-              cyfryzacji edukacji, kwestii smartfonów w szkołach i roli
-              nowoczesnych technologii w życiu społecznym.
+              {t('aboutConference.text1')}
             </p>
           </div>
           <div className={css.aboutConferenceImgBox}>
@@ -42,13 +39,11 @@ const AboutConference = () => {
         </div>
         <div className={css.aboutConferenceContainer}>
           <div className={css.aboutConferenceWrapper}>
-            <h3 className={css.aboutConferenceTitle}>Co chcemy osiągnąć?</h3>
+            <h3 className={css.aboutConferenceTitle}>
+              {t('aboutConference.title2')}
+            </h3>
             <p className={css.aboutConferenceText}>
-              Celem konferencji jest ukazanie zagrożeń związanych z nadużywaniem
-              smartfonów przez dzieci i młodzież szkolną oraz zaproponowanie
-              alternatywnych form spędzania przez nich wolnego czasu. W ramach
-              „Uwaga! Smartfon” odbywają się wykłady, warsztaty, panele
-              dyskusyjne i integracja międzysektorowa.
+              {t('aboutConference.text2')}
             </p>
           </div>
           <div className={css.aboutConferenceImgBox}>
@@ -67,16 +62,10 @@ const AboutConference = () => {
         <div className={css.aboutConferenceContainer}>
           <div className={css.aboutConferenceWrapper}>
             <h3 className={css.aboutConferenceTitle}>
-              Kogo chcemy zaangażować?
+              {t('aboutConference.title3')}
             </h3>
             <p className={css.aboutConferenceText}>
-              „Uwaga! Smartfon” jest przestrzenią spotkania dla ekspertów,
-              naukowców, specjalistów i praktyków z różnych obszarów i dziedzin
-              funkcjonujących wokół cyfryzacji. Rdzeniem tematycznym jest
-              przeciwdziałanie uzależnieniom i negatywne następstwa nadużywania
-              smartfonów. Udział w konferencji był i zawsze pozostanie
-              bezpłatny, a jej głównymi odbiorcami są nauczyciele, rodzice,
-              specjaliści i aktywiści.
+              {t('aboutConference.text3')}
             </p>
           </div>
           <div className={css.aboutConferenceImgBox}>
@@ -92,7 +81,7 @@ const AboutConference = () => {
             </svg>
           </div>
         </div>
-        <Button variant="secondary" content="Więcej" />
+        <Button variant="secondary" content={t('aboutConference.buttonText')} />
       </div>
     </Section>
   )

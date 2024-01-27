@@ -1,3 +1,4 @@
+import {useTranslation} from 'react-i18next'
 import PropTypes from 'prop-types'
 
 import icon from '../../assets/svg/sprite.svg'
@@ -5,13 +6,16 @@ import {logo} from '../../assets/images/footer'
 import css from './Footer.module.css'
 
 const Footer = ({text}) => {
+  const {t} = useTranslation()
+
   return (
     <footer className={css.footer}>
       <h2 className={css.heading}>{text}</h2>
       <address className={css.contact}>
         <h2 className={css.contactHeading}>
-          Masz pytania? <br />
-          Zapraszamy do kontaktu
+          {t('footer.title1')}
+          <br />
+          {t('footer.title2')}
         </h2>
         <div className={css.contactMail}>
           <a
@@ -29,7 +33,7 @@ const Footer = ({text}) => {
             <h3
               className={`${css.adressHeading} ${css.adressHeadingFundation}`}
             >
-              Fundacja Projekt PL
+              {t('footer.adres1')}
             </h3>
             <p className={`${css.adressText} ${css.adressTextFundation}`}>
               Zabłocie 23/1 <br /> 30-701 Kraków <br /> tel. 732 550 480
@@ -38,7 +42,7 @@ const Footer = ({text}) => {
             <h3
               className={`${css.adressHeading} ${css.adressHeadingConference}`}
             >
-              Konferencja Uwaga! Smartfon
+              {t('footer.adres2')}
             </h3>
             <p className={`${css.adressText} ${css.adressTextConference}`}>
               Centrum Konferencyjne <br />
@@ -105,7 +109,7 @@ const Footer = ({text}) => {
           <ul className={css.statuteList}>
             <li className={css.statuteListItem}>
               <a href="https://uwagasmartfon.pl/wp-content/uploads/2023/03/UWAGA-SMARTFON-Polityka-prywatnosci2023.pdf">
-                Polityka prywatności
+                {t('footer.privatePolicy')}
               </a>
             </li>
             <li className={css.statuteListItem}>
@@ -113,7 +117,7 @@ const Footer = ({text}) => {
             </li>
             <li className={css.statuteListItem}>
               <a href="https://uwagasmartfon.pl/wp-content/uploads/2023/03/UWAGA-SMARTFON-Regulamin2023.pdf">
-                Regulamin
+                {t('footer.regulamin')}
               </a>
             </li>
           </ul>
