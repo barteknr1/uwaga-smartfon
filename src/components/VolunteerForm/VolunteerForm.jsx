@@ -1,10 +1,12 @@
 import {useState} from 'react'
+import {useTranslation} from 'react-i18next'
 import Section from '../Section/Section'
 import Button from '../Button/Button'
 import sprite from '../../assets/svg/sprite.svg'
 import css from './VolunteerForm.module.css'
 
 const VolunteerForm = () => {
+  const {t} = useTranslation()
   const [nameInput, setNameInput] = useState('')
   const [isNameValid, setIsNameValid] = useState(true)
   const [emailInput, setEmailInput] = useState('')
@@ -77,7 +79,7 @@ const VolunteerForm = () => {
     <Section
       sectionClass={css.volunteerForm}
       titleClass={css.volunteerFormTitle}
-      title="Wypełnij formularz i zostań częścią zespołu wolontariuszy!"
+      title={t('volunteerForm.title')}
     >
       <div className={css.ellipse}></div>
       <form className={css.volunteerFormContainer} onSubmit={handleSubmit}>
@@ -91,10 +93,10 @@ const VolunteerForm = () => {
               className={`${css.textbox} ${!isNameValid && css.textboxError}`}
               htmlFor="name"
             >
-              Imię i nazwisko
+              {t('volunteerForm.name')}
             </label>
             <input
-              placeholder="Imię i nazwisko"
+              placeholder={t('volunteerForm.name')}
               className={css.volunteerFormInput}
               id="name"
               type="text"
@@ -126,10 +128,10 @@ const VolunteerForm = () => {
               className={`${css.textbox} ${!isEmailValid && css.textboxError}`}
               htmlFor="email"
             >
-              Adres e-mail
+              {t('volunteerForm.email')}
             </label>
             <input
-              placeholder="Adres e-mail"
+              placeholder={t('volunteerForm.email')}
               className={css.volunteerFormInput}
               id="email"
               type="email"
@@ -163,10 +165,10 @@ const VolunteerForm = () => {
               }`}
               htmlFor="position"
             >
-              Stanowisko
+              {t('volunteerForm.position')}
             </label>
             <input
-              placeholder="Stanowisko"
+              placeholder={t('volunteerForm.position')}
               className={css.volunteerFormInput}
               id="position"
               type="text"
@@ -198,10 +200,10 @@ const VolunteerForm = () => {
               className={`${css.textbox} ${!isNameValid && css.textboxError}`}
               htmlFor="area"
             >
-              Obszar działania, który chcesz wesprzeć
+              {t('volunteerForm.area')}
             </label>
             <input
-              placeholder="Obszar działania, który chcesz wesprzeć"
+              placeholder={t('volunteerForm.area')}
               className={css.volunteerFormInput}
               id="area"
               type="text"
@@ -244,16 +246,15 @@ const VolunteerForm = () => {
             }`}
             htmlFor="checkbox"
           >
-            Wyrażam zgodę na przetwarzanie moich danych osobowych.
+            {t('volunteerForm.agreement')}
           </label>
         </div>
-        {error && (
-          <p className={css.errorText}>
-            Uzupełnij wszystkie dane i zaznacz zgodę na przetwarzanie danych
-            osobowych, aby przesłać formularz.
-          </p>
-        )}
-        <Button variant="primary" content="Wyślij formularz" type="submit" />
+        {error && <p className={css.errorText}>{t('volunteerForm.error')}</p>}
+        <Button
+          variant="primary"
+          content={t('volunteerForm.button')}
+          type="submit"
+        />
       </form>
       <div className={css.ellipse2}></div>
     </Section>
