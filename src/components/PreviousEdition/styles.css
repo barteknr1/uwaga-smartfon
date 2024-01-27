@@ -1,6 +1,7 @@
 .swiper-wrapper {
   transition-timing-function: linear;
 }
-.swiper-slide {
+.previousEditionSwiper .swiper-slide {
   width: auto;
+  height: auto;
 }

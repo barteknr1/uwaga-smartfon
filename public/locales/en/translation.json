@@ -1,0 +1,234 @@
+{
+  "aboutConference": {
+    "title1": "About the Conference",
+    "text1": "The conference \"Uwaga! Smartfon\" is a unique event on a European scale dedicated to issues related to digitization and excessive use of screen devices by children and adolescents. We gather in the company of prominent specialists in the fields of pedagogy, psychology, and psychiatry, as well as experts and advocates for knowledge about digital threats and digital hygiene. We discuss topics such as \"screen addiction,\" digitization of education, the role of smartphones in schools, and the impact of modern technologies on social life.",
+    "title2": "What do we want to achieve?",
+    "text2": "The goal of the conference is to highlight the risks associated with the overuse of smartphones by schoolchildren and adolescents and to propose alternative ways for them to spend their free time. Within the \"Uwaga! Smartfon\" framework, lectures, workshops, panel discussions, and cross-sectoral integration activities take place.",
+    "title3": "Whom do we want to engage?",
+    "text3": "\"Uwaga! Smartfon\" is a meeting space for experts, scientists, specialists, and practitioners from various areas and fields related to digitization. The core thematic focus is on preventing dependencies and the negative consequences of excessive smartphone use. Participation in the conference has been and will always remain free, with its primary audience being teachers, parents, specialists, and activists.",
+    "buttonText": "Read More"
+  },
+  "aboutVolunteer": {
+    "title1": "If:",
+    "text": "you want",
+    "list1": {
+      "item1": {
+        "bold": "to be part of an inspiring initiative,",
+        "text": "that contributes to the education and awareness of the important issue of children and youth addiction to screens,"
+      },
+      "item2": {
+        "bold": "to help reach a wide audience",
+        "text": "for the event"
+      },
+      "item3": {
+        "bold": "to support the organization",
+        "text": "of the 'Uwaga! Smartfon' conference"
+      },
+      "p": "If YES, then we are looking for YOU!"
+    },
+    "title2": "To become a volunteer",
+    "list2": {
+      "item1": {
+        "bold": "Read available information",
+        "text": "about the conference and the goals we want to achieve."
+      },
+      "item2": {
+        "text": "Find out what tasks will require the support of volunteers and",
+        "bold": "choose the area of activity"
+      },
+      "item3": {
+        "bold": "Fill out the application form",
+        "text": "or contact us by email."
+      },
+      "p": "You are warmly welcome!"
+    },
+    "title3": "Why join us?",
+    "list3": {
+      "item1": {
+        "text": "You will meet interesting and inspiring people, with whom you will",
+        "bold": "build valuable relationships."
+      },
+      "item2": {
+        "bold": "You will gain experience",
+        "text": "in organizing a conference of great social significance."
+      },
+      "item3": {
+        "text1": "By joining the volunteer team, you will",
+        "bold": "acquire practical teamwork skills",
+        "text2": "and valuable professional experience."
+      },
+      "item4": {
+        "text1": "As a volunteer, you have the chance to",
+        "bold1": "personally meet experts",
+        "text2": ", psychologists, and professors, and also",
+        "bold2": "gain knowledge,",
+        "text3": "that can be valuable both for you and your community."
+      },
+      "p": "Become an ambassador for the 'Uwaga! Smartfon' event, share your skills and knowledge to support an important cause, and invest in your personal development.",
+      "bold": "Your involvement can help educate and support children and youth."
+    }
+  },
+  "beAVolunteer": {
+    "title": "Become a Volunteer for \"Projekt PL\" Foundation",
+    "text1": "If you want to be part of an inspiring initiative that contributes to the education and awareness of the important issue of children and youth addiction to screens, if you want to help reach a wide audience for the event, if you want to support the organization of the 'Uwaga! Smartfon' conference,",
+    "text2": "If YES, become a Volunteer and join our team! You will gain valuable experience, meet inspiring people, and invest in your personal development.",
+    "text3": "Fill out the application form and together with us, organize the unforgettable 'Uwaga! Smartfon' event.",
+    "buttonText": "Become a Volunteer"
+  },
+  "comments": {
+    "title": "Participant Opinions",
+    "quote1": "“It was an extraordinary experience to listen live to experts addressing issues that impact the upbringing of children. As a parent, it was incredibly enriching for me. I'm glad I could attend the conference together with my wife.”",
+    "quote2": "“Thank you very much because I was scared of this topic, and now I have specific knowledge and can distinguish, at least in basic terms, habit from addiction. And I know what to do; finally, I know what to do!”"
+  },
+  "banner": {
+    "title": "CONFERENCE",
+    "titleVolunteer": "BECOME AN EVENT VOLUNTEER",
+    "button": "Register for the conference",
+    "buttonVolunteer": "Join the volunteer team",
+    "date": "April 04, 2024"
+  },
+  "counter": {
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Minutes"
+  },
+  "dearVolunteer": {
+    "title": "Dear Volunteers!",
+    "text1": "We would like to express immense gratitude for your invaluable work for the 'Uwaga! Smartfon' Conference. Your dedication, enthusiasm, and professionalism have made an extraordinary contribution to the success of this event. Thanks to your readiness to act, the next edition of the event promises to be professional, filled with inspiration, and positive energy.",
+    "text2": "Heartfelt thanks are also extended to the co-authors of the Home Page and Landing Page for the 'Uwaga! Smartfon' event.",
+    "text3": "The project team that created the virtual meeting place for participants, speakers, and volunteers, as well as the information collection about the 'Uwaga! Smartfon' Conference, consisting of UX/UI Designers and Developers, contributed their part to promote awareness and education regarding the addiction of children and youth to screens.",
+    "text4": "May this shared adventure leave you with positive memories and bring valuable experiences. Thank you for every hour, every smile, and the helpful hand you have extended.",
+    "text5": "We hope that you will choose to join us for future events as well. Your work is priceless to us, and your commitment - unforgettable."
+  },
+  "footer": {
+    "title1": "Have Questions?",
+    "title2": "Feel free to contact us",
+    "adres1": "Projekt PL Foundation",
+    "adres2": "Uwaga! Smartfon Conference",
+    "heading1": "From the bottom of our hearts, thank you!",
+    "heading2": "The website was created thanks to the work of Volunteers.",
+    "privatePolicy": "Privacy Policy",
+    "regulamin": "Terms and Conditions"
+  },
+  "newsletter": {
+    "title": "Subscribe to the Newsletter",
+    "text1": "Subscribe to our newsletter to stay up-to-date with our activities and receive valuable content!",
+    "text2": "People who subscribe to the newsletter will, among other things, have the opportunity to download",
+    "bold1": "Safe School Statute",
+    "text3": "and",
+    "bold2": "Regulations for the Use of Digital Media in School,",
+    "text4": "prepared by Dr. Tomasz Lewandowski, a doctor of law.",
+    "agreement": "I agree to the processing of my personal data.",
+    "error": "Complete all fields and check the consent for personal data processing to submit the form."
+  },
+  "patrons": {
+    "title": "Partners & Patrons",
+    "buttonText": "Support"
+  },
+  "previousEdition": {
+    "title": "Previous Editions"
+  },
+  "speakers": {
+    "title": "Speakers",
+    "about": {
+      "1": [
+        "Roman Solecki",
+        "Educator, prevention specialist, certified logotherapist; addiction psychotherapist, mediator;",
+        "Ph.D. in social sciences dedicated to Youth Activity in cyberspace. Bachelor's degree in Family Counseling and Mediation. Basic Mediation Course in the Polish Mediators Association. Completed the Małopolski Center for Addiction Therapists Training at the Dr. Józef Babiński Clinical Hospital in Krakow.",
+        "Implementer of the preventive program \"Sapper - how to defuse aggression among young people\"; preventive-educational program \"Archezja\" and \"Cuder\". Since 2006, collaborates with the Archezja Problem Prevention Center as an implementer of preventive-educational activities for children and youth.",
+        "Conducts research on youth activity in cyberspace, prevention and therapy of media addiction, depression, and the sense of life among young people.",
+        "Since 2020, coordinates the work of the Krakow Institute of Logotherapy."
+      ],
+      "2": [
+        "Piotr Czubaty",
+        "Information security expert, lead auditor for ISMS according to ISO/IEC 27001, data protection inspector, compliance specialist.",
+        "Trainer, lecturer, and author of the book: \"GDPR: employer's duties. Practical guide with templates\".",
+        "Founder and president of the Foundation for Privacy and Digital Security \"SIECI\", whose statutory goals include combating digital addiction.",
+        "Works daily with public administration units, entrepreneurs, and the third sector, raising internal standards and the level of security in the face of digital challenges and international law requirements.",
+        "After hours, initiates educational activities, fulfilling the mission of spreading knowledge about the dangers of misuse or improper use of new technologies."
+      ],
+      "3": [
+        "Łukasz Cichocki",
+        "Doctor of Medical Sciences, psychiatrist, psychotherapist, academic teacher with over twenty years of experience.",
+        "Medical Director of the J. Babiński Clinical Hospital in Krakow.",
+        "Author of many scientific papers, popularizer of knowledge in the field of mental health. Long-time president of the Polish-German Society of Mental Health.",
+        "Social activist, president of the Institute for the Development of Social Initiatives.",
+        "Privately: husband, father of four, in his free time likes to sleep, walk, read - especially Sapkowski and lately Wegner."
+      ],
+      "4": [
+        "Tomasz Lewandowski",
+        "Deals with public international law, personal data protection law, international humanitarian law of armed conflicts, and the philosophy of international law.",
+        "Interested in: freedom of artistic expression, sovereignty both in international and national law, the relationship between law and psychology.",
+        "Author of several publications in the field of constitutional law, human rights protection, public international law, and personal data protection.",
+        "Speaker at international and national scientific conferences.",
+        "Judge of the prestigious Philip C. Jessup International Law Moot Court Competition. Trainer of student teams participating in moot court competitions.",
+        "Implements scientific projects financed by the National Science Center and the European Commission, often collaborates with foreign research centers.",
+        "Recipient of the Scholarship of the Kulczyk Family Fund and the Foundation of the University of Adam Mickiewicz in Poznań.",
+        "In 2017, received a special award in the Rising Stars Lawyers - Leaders of Tomorrow 2017 competition organized by Dziennik Gazeta Prawna and Wolters Kluwer Polska, aimed at selecting young lawyers distinguished in professional work and social attitudes."
+      ],
+      "5": [
+        "Prof. Monika Przybysz",
+        "PR specialist, crisis management, social media, media researcher, lecturer at the Institute of Media Education and Journalism at UKSW in Warsaw.",
+        "Trainer in crisis communication, image creation, social media, internet communication. For 3 years, she has been conducting workshops for students, parents, teachers, educators, and caregivers on communication through smartphones. She has trained over 10,000 people in dozens of schools in this area.",
+        "Awarded by the Prime Minister of the Republic of Poland for her doctorate in 2008. Graduated with a Golden Badge from postgraduate studies at the University of Warsaw in public relations. She defended her doctorate in 2007 in the field of crisis communication management, and her habilitation in 2014 in the field of press spokespersonship.",
+        "Head of the public relations section at the Polish Society of Social Communication. Co-organizer of annual workshops for press spokespersons of religious and diocesan orders since 2008.",
+        "Winner of the PRoton 2013 public relations industry award.",
+        "Author of books and scientific articles in the field of social communication and media in the areas of public relations, press spokespersonship, crisis communication, social media communication, internet communication, advertising, corporate social responsibility, and sustainable development.",
+        "Since 2016, a member of the Working Group on Ethics and Standards of Responsible Business Conduct at the Ministry of Investment and Development;",
+        "Since 2018, a member of the Working Group on the Social Responsibility of Universities at the Ministry of Regional Development.",
+        "Since 2019, until 2022, a representative of the Republic of Poland in the working group Social Dimension in the work of the Bologna Follow-Up Group within the Bologna Process."
+      ],
+      "6": ["Paula Arguelles", "Lorem ipsum "],
+      "7": [
+        "Catherine L'Ecuyer",
+        "Canadian, currently residing in Barcelona with four children.",
+        "She holds an MBA from IESE Business School, an official title of European Master of Research, and a doctorate in education and psychology.",
+        "Her article \"The Wonder Approach to Learning\" was published in the Swiss journal Frontiers in Human Neuroscience, which made her master's thesis a new hypothesis/theory of learning.",
+        "In 2015, she received the Pajarita award from the Spanish Toy Manufacturers Association for promoting the culture of play in the media, and in 2020, she became an honorary member of the Spanish Montessori Association (Association Montessori Española).",
+        "She was invited to speak before the Education Committee of the Spanish Congress of Deputies and at the Second Educational Summit organized by the European Commission.",
+        "She was a consultant to the government of the state of Puebla in Mexico on preschool reform, was part of a task force for the Spanish government on the use of digital technologies by minors, and participated in a report for CERLALC (UNESCO) on the use of digital media in childhood.",
+        "She is a researcher and author of many scientific publications on Montessori education, as well as several books and articles on education in general, including It Looks Better in 3D, on the use of digital technologies in childhood and adolescence, and The Wonder Approach, published in eight languages and 60 countries.",
+        "In 2021, Editorial Espasa published her book Conversaciones con mi maestra [Conversations with my teacher], an essay in the form of a Socratic dialogue about the origin of methods that can be found in classrooms today.",
+        "Currently, she collaborates with the Mind-Brain Group at the University of Navarra and is a columnist in various news outlets, including El País, La Vanguardia, and El Mundo in Spanish, as well as The Huffington Post in French.",
+        "She is the founder and director of Fundación CLE, a non-profit organization dedicated to promoting classical education."
+      ],
+      "8": [
+        "Dr. hab. Sylwia Jaskulska, Prof. UAM",
+        "Professor in the School Pedagogy Workshop at the Faculty of Educational Studies, Adam Mickiewicz University in Poznań.",
+        "Author and co-author of dozens of scientific and popular science texts, as well as several books. Socially engaged in educational topics through various channels, including TVN24, Radio Zet, Newsweek Psychology of Child, WTK, Radio Poznań, TVP3, Wysokie Obcasy Extra.",
+        "Conducting webinars, training, and author's meetings for Diet & Training by Ann (Anna Lewandowska), Nowa Era, Librus, the School Without Grades Foundation, Macmillan Polska, and Znak Publishing House.",
+        "Ambassador of the Year of Relations in Education campaign, a member of the Program Council of the UAM Coordination and Program Center for Teacher Education in Poznań, deputy editor-in-chief of the \"Pedagogical Yearbook\".",
+        "Master of special pedagogy, doctor of social sciences in the field of pedagogy, mother of two teenagers."
+      ]
+    }
+  },
+  "areas": {
+    "title": "Volunteering Areas",
+    "text": "And many others, which we haven't even thought of now.",
+    "list": {
+      "strategySocialMedia": "Co-creating strategies for actions on social media platforms.",
+      "createContent": "Creating content (especially on Facebook, LinkedIn, X, YouTube).",
+      "moderationMedia": "Moderating foundation's channels on social media.",
+      "foundationOfficeWork": "Co-creating the work of the foundation's office.",
+      "organizeEvent": "Working on organizing the 'Uwaga! Smartfon' event.",
+      "promoteEvent": "Promoting the event in your local community, within the school, and in interest groups.",
+      "actionsDuringConference": "Activities during the conference, such as welcoming participants and facilitating communication among conference guests.",
+      "assistResearch": "Assisting in conducting research and creating reports on youth addiction to smartphones."
+    }
+  },
+  "workshops": {
+    "title": "Workshops",
+    "text1": "During the conference, there will be",
+    "bold": "workshops with experts,",
+    "text2": "to which we warmly invite you. Each conference participant will have the opportunity to participate in one selected workshop. The condition for participation is",
+    "bold2": "sending the form, in which you should choose one of the given topics.",
+    "text3": "Workshop topics that will be available during the 'Uwaga! Smartfon' event:",
+    "list": {
+      "item1": "Workshop 1",
+      "item2": "Workshop 2",
+      "item3": "Workshop 3",
+      "item4": "Workshop 4"
+    },
+    "button": "Sign up for a workshop"
+  }
+}

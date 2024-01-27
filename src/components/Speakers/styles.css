@@ -8,6 +8,10 @@
   height: 339px;
   width: 260px;
 }
+.swiperSpeakers {
+  padding-top: 20px;
+  overflow: visible;
+}
 
 @media screen and (min-width: 765px) {
   .swiper-slide {

@@ -1,6 +1,7 @@
-import Section from '../Section/Section'
+import {useTranslation} from 'react-i18next'
 import {Swiper, SwiperSlide} from 'swiper/react'
 import {Autoplay} from 'swiper/modules'
+import Section from '../Section/Section'
 import 'swiper/css/bundle'
 import css from './PreviousEdition.module.css'
 import './styles.css'
@@ -20,6 +21,7 @@ import {
 } from '../../assets/images/slider'
 
 const PreviousEdition = () => {
+  const {t} = useTranslation()
   const sliderOne = [
     slider1,
     slider2,
@@ -52,7 +54,7 @@ const PreviousEdition = () => {
     <Section
       sectionClass={css.slider}
       titleClass={css.sliderTitle}
-      title="Poprzednie Edycje"
+      title={t('previousEdition.title')}
     >
       <div className={css.container}>
         <div>
@@ -60,10 +62,10 @@ const PreviousEdition = () => {
             spaceBetween={20}
             slidesPerView={'auto'}
             breakpoints={{
-              835: {
+              765: {
                 spaceBetween: 9,
               },
-              1440: {
+              1280: {
                 spaceBetween: 16,
               },
             }}
@@ -72,14 +74,14 @@ const PreviousEdition = () => {
               delay: 0,
               disableOnInteraction: false,
             }}
-            speed={4000}
+            speed={6000}
             pagination={{
               clickable: false,
             }}
             navigation={false}
             modules={[Autoplay]}
             allowTouchMove={false}
-            className="mySwiper"
+            className="previousEditionSwiper"
           >
             {sliderOne.map((slider, index) => (
               <SwiperSlide key={index}>
@@ -97,10 +99,10 @@ const PreviousEdition = () => {
             spaceBetween={20}
             slidesPerView={'auto'}
             breakpoints={{
-              835: {
+              765: {
                 spaceBetween: 9,
               },
-              1440: {
+              1280: {
                 spaceBetween: 16,
               },
             }}
@@ -110,14 +112,14 @@ const PreviousEdition = () => {
               reverseDirection: true,
               disableOnInteraction: false,
             }}
-            speed={4000}
+            speed={6000}
             pagination={{
               clickable: false,
             }}
             navigation={false}
             modules={[Autoplay]}
             allowTouchMove={false}
-            className="mySwiper"
+            className="previousEditionSwiper"
           >
             {sliderTwo.map((slider, index) => (
               <SwiperSlide key={index}>
