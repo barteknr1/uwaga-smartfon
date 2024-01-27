@@ -191,6 +191,10 @@
   cursor: pointer;
 }
 
+.checkboxTextError {
+  color: var(--error-color);
+}
+
 .checkboxBox input:checked ~ .checkMarkBox .checkMark {
   background-color: var(--dark-brand-color);
   border-color: var(--dark-brand-color);
