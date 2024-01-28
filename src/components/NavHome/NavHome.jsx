@@ -12,7 +12,7 @@ import {useTranslation} from 'react-i18next'
 // import i18n from '../../i18n'
 
 const NavHome = () => {
-  const {i18n, t} = useTranslation()
+  const { i18n, t } = useTranslation()
 
   const [language, setLanguage] = useState('en')
 
@@ -21,7 +21,7 @@ const NavHome = () => {
     i18n.changeLanguage(lang)
   }
 
-    const scrollToTop = () => {
+  const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: "smooth"
@@ -37,7 +37,7 @@ const NavHome = () => {
       </NavLink>
       <nav className={css.navList}>
         {routes.map((route) => {
-          const {href, title} = route
+          const { href, title } = route
           return (
             <NavLink key={title} className={css.navItem} to={href} onClick={() => scrollToTop()}>
               {title}
