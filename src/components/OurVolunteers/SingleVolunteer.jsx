@@ -1,3 +1,4 @@
+import React from 'react'
 import PropTypes from 'prop-types'
 import css from './OurVolunteers.module.css'
 import sprite from '../../assets/svg/sprite.svg'
@@ -15,10 +16,11 @@ const SingleVolunteer = ({name, teamRole, linkedinUrl, images}) => (
         rel="noopener noreferrer"
       >
         <div className={css.teamRoleWrapper}>
-          {' '}
-          {teamRole.map((role, index) => (
-            <p key={index}>{role}</p>
-          ))}{' '}
+          {Array.isArray(teamRole) ? (
+            teamRole.map((role, index) => <p key={index}>{role}</p>)
+          ) : (
+            <p>{teamRole}</p>
+          )}
         </div>
 
         <svg className={css.volunteerIcon}>
@@ -28,9 +30,13 @@ const SingleVolunteer = ({name, teamRole, linkedinUrl, images}) => (
     </div>
   </div>
 )
+
 SingleVolunteer.propTypes = {
   name: PropTypes.string.isRequired,
-  teamRole: PropTypes.arrayOf(PropTypes.string).isRequired,
+  teamRole: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.arrayOf(PropTypes.string),
+  ]).isRequired,
   images: PropTypes.string.isRequired,
   linkedinUrl: PropTypes.string.isRequired,
 }
