@@ -6,7 +6,7 @@ import 'swiper/css/bundle'
 
 import Modal from '../Modal/Modal'
 import Section from '../Section/Section'
-import speakers from './SpeakersList.json'
+import speakersData from './SpeakersList'
 import sprite from '../../assets/svg/sprite.svg'
 
 import css from './Speakers.module.css'
@@ -46,7 +46,7 @@ const Speakers = () => {
           modules={[Pagination]}
           className="swiperSpeakers"
         >
-          {speakers.map((speaker) => (
+          {speakersData.map((speaker) => (
             <SwiperSlide onClick={() => toggleModal(speaker)} key={speaker.id}>
               <div className={css.speakersBox}>
                 <img
@@ -76,8 +76,8 @@ const Speakers = () => {
               </div>
               <div className={css.speakerAboutBox}>
                 {t(`speakers.about.${selectedSpeaker.id}`, {
-                returnObjects: true,
-              }).map((paragraph, index) => (
+                  returnObjects: true,
+                }).map((paragraph, index) => (
                   <p className={css.speakerAboutText} key={index}>
                     {paragraph}
                   </p>
