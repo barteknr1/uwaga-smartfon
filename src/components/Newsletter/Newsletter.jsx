@@ -8,13 +8,13 @@ import Button from '../Button/Button'
 const Newsletter = () => {
   const {t} = useTranslation()
   const [email, setEmail] = useState('')
-  const [isEmailValid, setIsEmailValid] = useState(false)
+  const [isEmailValid, setIsEmailValid] = useState(true)
   const [isChecked, setIsChecked] = useState(false)
   const [error, setError] = useState(false)
 
   const handleClearInput = () => {
     setEmail('')
-    setIsEmailValid(false)
+    setIsEmailValid(true)
     setError(false)
   }
 
@@ -50,13 +50,11 @@ const Newsletter = () => {
           </p>
           <div
             className={`${css.textboxBox} ${
-              error && !isEmailValid && css.textboxBoxError
+              !isEmailValid && css.textboxBoxError
             }`}
           >
             <label
-              className={`${css.textbox} ${
-                error && !isEmailValid && css.textboxError
-              }`}
+              className={`${css.textbox} ${!isEmailValid && css.textboxError}`}
               htmlFor="textbox"
             >
               Adres e-mail:
@@ -74,7 +72,7 @@ const Newsletter = () => {
               type="button"
               onClick={handleClearInput}
             >
-              {!error && isEmailValid ? (
+              {isEmailValid ? (
                 <svg className={css.svgTextIcon}>
                   <use href={sprite + '#icon-close'} />
                 </svg>
