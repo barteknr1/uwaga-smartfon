@@ -7,7 +7,9 @@ import icon from '../../assets/svg/sprite.svg'
 import css from './NavHome.module.css'
 
 import {useState} from 'react'
-import {useTranslation} from 'react-i18next'
+import { useTranslation } from 'react-i18next'
+
+import Support from '../Support/Support'
 
 // import i18n from '../../i18n'
 
@@ -37,7 +39,8 @@ const NavHome = () => {
             </NavLink>
           )
         })}
-        <Button variant="support" content="Wesprzyj"></Button>
+        <Support/>
+        {/* <Button variant="support" content="Wesprzyj"></Button> */}
       </nav>
       <div className={css.navLang}>
         <button onClick={() => changeLanguage('pl')} className={css.navLangBtn}>

@@ -3,10 +3,10 @@ import {useTranslation} from 'react-i18next'
 import Section from '../Section/Section'
 import CountdownTimer from '../Counter/Counter'
 import css from './Banner.module.css'
-import Button from '../Button/Button'
+import ApplicationForm from '../ApplicationForm/ApplicationForm'
 
-const Banner = ({page, title, button}) => {
-  const {t} = useTranslation()
+const Banner = ({page, title}) => {
+  const { t } = useTranslation()
 
   return (
     <Section
@@ -24,7 +24,7 @@ const Banner = ({page, title, button}) => {
           <CountdownTimer />
         </div>
       )}
-      <Button variant="primary" content={button} />
+      {<ApplicationForm/>}
     </Section>
   )
 }
