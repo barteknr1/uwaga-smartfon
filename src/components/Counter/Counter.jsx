@@ -4,7 +4,7 @@ import css from './Counter.module.css'
 
 const CountdownTimer = () => {
   const {t} = useTranslation()
-  const eventDate = new Date('April 4, 2024')
+  const eventDate = new Date('April 4, 2024 10:00:00')
 
   const calculateTimeRemaining = (targetDate) => {
     const currentDate = new Date()
