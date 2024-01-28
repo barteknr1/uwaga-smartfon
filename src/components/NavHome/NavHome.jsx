@@ -1,15 +1,12 @@
 import {NavLink} from 'react-router-dom'
-
-import Button from '../Button/Button'
 import {routes} from './index'
-
 import icon from '../../assets/svg/sprite.svg'
 import css from './NavHome.module.css'
-
 import {useState} from 'react'
 import { useTranslation } from 'react-i18next'
-
 import Support from '../Support/Support'
+
+
 
 // import i18n from '../../i18n'
 
@@ -40,7 +37,6 @@ const NavHome = () => {
           )
         })}
         <Support/>
-        {/* <Button variant="support" content="Wesprzyj"></Button> */}
       </nav>
       <div className={css.navLang}>
         <button onClick={() => changeLanguage('pl')} className={css.navLangBtn}>

@@ -41,7 +41,6 @@ const ApplicationForm = () => {
     }
 
   const handleChange = (e) => {
-
     e.persist();
     const { name, value, type, checked } = e.currentTarget;
     const inputValue = type === 'checkbox' ? checked : value;
@@ -54,6 +53,7 @@ const ApplicationForm = () => {
   useEffect(() => {
     console.log(inputs);
   }, [inputs])
+
 
   const openModal = () => {
     setIsModalVisible(true)
@@ -174,14 +174,14 @@ const ApplicationForm = () => {
                 </label>
               </div>
             </div>
-            <Button content="Wyślij formularz zgłoszeniowy" variant="secondary" type="submit" />
+            <Button type="submit" content="Wyślij formularz zgłoszeniowy" variant="secondary" />
           </form>
         </div>
 
   
   return (
     <>
-      <Button variant="primary" content={t('banner.button')} onClick={() => openModal()} />
+      <Button type="button" variant="primary" content={t('banner.button')} onClick={() => openModal()} />
     </>
   )
 };

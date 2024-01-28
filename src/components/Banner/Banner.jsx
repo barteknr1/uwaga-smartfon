@@ -32,7 +32,6 @@ const Banner = ({page, title}) => {
 Banner.propTypes = {
   page: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  button: PropTypes.string.isRequired,
 }
 
 export default Banner

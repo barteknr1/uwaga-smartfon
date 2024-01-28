@@ -27,7 +27,7 @@ const Support = () => {
 
   return (
     <>
-      <Button variant="support" content="Support" onClick={() => openModal()} />
+      <Button type="button" variant="support" content="Support" onClick={() => openModal()} />
     </>
   )
 };
