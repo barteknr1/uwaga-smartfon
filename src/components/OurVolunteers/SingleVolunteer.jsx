@@ -14,7 +14,13 @@ const SingleVolunteer = ({name, teamRole, linkedinUrl, images}) => (
         target="_blank"
         rel="noopener noreferrer"
       >
-        {teamRole}
+        <div className={css.teamRoleWrapper}>
+          {' '}
+          {teamRole.map((role, index) => (
+            <p key={index}>{role}</p>
+          ))}{' '}
+        </div>
+
         <svg className={css.volunteerIcon}>
           <use href={sprite + '#icon-ion_social-linkedin'} />
         </svg>
@@ -24,7 +30,7 @@ const SingleVolunteer = ({name, teamRole, linkedinUrl, images}) => (
 )
 SingleVolunteer.propTypes = {
   name: PropTypes.string.isRequired,
-  teamRole: PropTypes.string.isRequired,
+  teamRole: PropTypes.arrayOf(PropTypes.string).isRequired,
   images: PropTypes.string.isRequired,
   linkedinUrl: PropTypes.string.isRequired,
 }

@@ -17,20 +17,20 @@ const OurVolunteers = () => {
   const dataVolunteer = [
     {
       name: 'Karolina Bożemska',
-      teamRole: 'UX/UI Designer Project Manager',
+      teamRole: ['UX/UI Designer', 'Project Menager'],
       linkedinUrl:
         'https://www.linkedin.com/in/karolina-bo%C5%BCemska-a4611926a/',
       images: Karolina,
     },
     {
-      name: 'Bartek Barański',
+      name: 'Bartek Brański',
       teamRole: 'Developer',
       linkedinUrl: 'https://www.linkedin.com/in/barteknr1/',
       images: Bartek,
     },
     {
       name: 'Patrycja Bruzgo',
-      teamRole: 'DUX/UI Designer',
+      teamRole: 'UX/UI Designer',
       linkedinUrl: 'https://www.linkedin.com/in/patrycja-bruzgo/',
       images: Patrycja,
     },
@@ -61,7 +61,7 @@ const OurVolunteers = () => {
     },
     {
       name: 'Sara Sagan',
-      teamRole: 'UX/UI Designer Graphic Design Lead',
+      teamRole: ['UX/UI Designer', 'Project Menager'],
       linkedinUrl: 'https://www.linkedin.com/in/sara-sagan01/',
       images: Sara,
     },

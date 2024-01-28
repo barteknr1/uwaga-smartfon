@@ -14,7 +14,8 @@
   display: flex;
   flex-direction: row;
   row-gap: 20px;
-  justify-content: space-between;
+  column-gap: 50px;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 .volunteerWrapper {
@@ -38,6 +39,7 @@
   font-size: 1rem;
   line-height: 1.17375rem;
   font-weight: 600;
+  text-align: center;
 }
 
 .volunteerRole {
@@ -45,7 +47,6 @@
   font-size: 1rem;
   line-height: 1.17375rem;
   font-weight: 400;
-  /* max-width: 150px;*/
   text-align: center;
   text-decoration: underline;
   color: var(--dark-text-color);
@@ -79,7 +80,7 @@
   }
   .ourVolunteersContainer {
     column-gap: 20px;
-    row-gap: 35px;
+    row-gap: 32px;
   }
   .volunteerWrapper {
     gap: 16px;
@@ -100,7 +101,6 @@
     font-size: 1.25rem;
     line-height: 1.4675rem;
     font-weight: 500;
-    /* max-width: 200px;*/
     position: relative;
     display: flex;
     flex-direction: row;
@@ -123,7 +123,4 @@
   .volunteerImg {
     width: 302px;
   }
-  /* .volunteerRole {
-    max-width: 300px;
-  }*/
 }
