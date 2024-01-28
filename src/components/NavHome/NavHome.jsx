@@ -21,9 +21,16 @@ const NavHome = () => {
     i18n.changeLanguage(lang)
   }
 
+    const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    })
+  }
+
   return (
     <div className={css.nav}>
-      <NavLink to="/landing-page">
+      <NavLink to="/landing-page" onClick={() => scrollToTop()}>
         <svg className={css.navLogo}>
           <use href={`${icon}#logo`}></use>
         </svg>
@@ -32,7 +39,7 @@ const NavHome = () => {
         {routes.map((route) => {
           const {href, title} = route
           return (
-            <NavLink key={title} className={css.navItem} to={href}>
+            <NavLink key={title} className={css.navItem} to={href} onClick={() => scrollToTop()}>
               {title}
             </NavLink>
           )
