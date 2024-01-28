@@ -4,6 +4,7 @@ import AboutVolunteer from '../../components/AboutVolunteer/AboutVolunteer'
 import DearVolunteer from '..//../components/DearVolunteer/DearVolunteer'
 import VolunteerForm from '../../components/VolunteerForm/VolunteerForm'
 import {useTranslation} from 'react-i18next'
+import OurVolunteers from '../../components/OurVolunteers/OurVolunteers'
 
 const Volunteering = () => {
   const {t} = useTranslation()
@@ -17,6 +18,7 @@ const Volunteering = () => {
       <AboutVolunteer />
       <VolunteerAreas />
       <VolunteerForm />
+      <OurVolunteers />
       <DearVolunteer />
     </>
   )
