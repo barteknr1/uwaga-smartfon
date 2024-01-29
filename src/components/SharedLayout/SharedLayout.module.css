@@ -18,6 +18,27 @@
   position: fixed;
   z-index: 999;
 }
+.scrollToTop {
+  position: fixed;
+  right: 16px;
+  bottom: -60px;
+  background-color: var(--magenta-color);
+  z-index: 999;
+  opacity: 0.7;
+  border-radius: 50%;
+  transition: opacity 0.3s ease-in-out, bottom 0.3s ease-in-out;
+}
+.scrollVisible {
+  bottom: 20px;
+}
+.scrollToTop:hover,
+.scrollToTop:focus {
+  opacity: 1;
+}
+.scrollToTopSvg {
+  width: 54px;
+  height: 54px;
+}
 
 @media screen and (min-width: 765px) {
   .mobileMenuTrigger {
