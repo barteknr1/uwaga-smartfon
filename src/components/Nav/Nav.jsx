@@ -1,7 +1,8 @@
 //@ts-nocheck
-import {useState, useEffect, useRef} from 'react'
+import {useState} from 'react'
 import {NavLink, useLocation} from 'react-router-dom'
 import PropTypes from 'prop-types'
+import {useTranslation} from 'react-i18next'
 
 import Button from '../Button/Button'
 import Dropdown from '../Dropdown/Dropdown'
@@ -13,6 +14,14 @@ import css from './Nav.module.css'
 
 const Nav = ({setNavIsOpen}) => {
   const [isDropOpen, setDropIsOpen] = useState(false)
+  const {i18n, t} = useTranslation()
+
+  const [language, setLanguage] = useState('en')
+
+  const changeLanguage = (lang) => {
+    setLanguage(lang)
+    i18n.changeLanguage(lang)
+  }
 
   const location = useLocation()
 
@@ -71,11 +80,14 @@ const Nav = ({setNavIsOpen}) => {
         ))}
         <Button variant="support" content="Wesprzyj" />
       </nav>
-
       <div className={css.navLang}>
-        <button className={css.navLangBtn}>PL</button>
-        <span className={css.navLangSpan}>|</span>
-        <button className={css.navLangBtn}>ENG</button>
+        <button onClick={() => changeLanguage('pl')} className={css.navLangBtn}>
+          PL
+        </button>
+        <span className={css.navLangSpan}>|</span>{' '}
+        <button onClick={() => changeLanguage('en')} className={css.navLangBtn}>
+          ENG
+        </button>
       </div>
     </div>
   )
