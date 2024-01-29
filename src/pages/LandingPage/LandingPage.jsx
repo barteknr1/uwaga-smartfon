@@ -4,6 +4,7 @@ import Speakers from '../../components/Speakers/Speakers'
 import Workshops from '../../components/Workshops/Workshops'
 import Program from '../../components/Program/Program'
 import Banner from '../../components/Banner/Banner'
+import AboutConference from '../../components/AboutConference/AboutConference'
 
 const LandingPage = () => {
   const {t} = useTranslation()
@@ -15,6 +16,7 @@ const LandingPage = () => {
         title={t('banner.title')}
         button={t('banner.button')}
       />
+      <AboutConference />
       <Program />
       <Workshops />
       <Speakers />
