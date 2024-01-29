@@ -6,23 +6,23 @@ import Banner from '../../components/Banner/Banner'
 import Newsletter from '../../components/Newsletter/Newsletter'
 import AboutConference from '../../components/AboutConference/AboutConference'
 import BeAVolunteer from '../../components/BeAVolunteer/BeAVolunteer'
+import Modal from '../../components/Modal/Modal'
 
 const Home = () => {
-  const {t} = useTranslation()
+  const { t } = useTranslation()
 
   return (
     <>
       <Banner
         page="Home"
-        title={t('banner.title')}
-        button={t('banner.button')}
-      />
+        title={t('banner.title')} />
       <AboutConference />
       <PreviousEdition />
       <Comments isLandingPage={false} />
       <BeAVolunteer />
       <Patrons />
       <Newsletter />
+      <Modal />
     </>
   )
 }

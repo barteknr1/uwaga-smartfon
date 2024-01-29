@@ -5,21 +5,19 @@ import DearVolunteer from '..//../components/DearVolunteer/DearVolunteer'
 import VolunteerForm from '../../components/VolunteerForm/VolunteerForm'
 import {useTranslation} from 'react-i18next'
 import OurVolunteers from '../../components/OurVolunteers/OurVolunteers'
+import Modal from '../../components/Modal/Modal'
 
 const Volunteering = () => {
   const {t} = useTranslation()
   return (
     <>
-      <Banner
-        page="Volunteering"
-        title={t('banner.titleVolunteer')}
-        button={t('banner.buttonVolunteer')}
-      ></Banner>
+      <Banner page="Volunteering" title="ZOSTAŃ WOLONTARIUSZEM WYDARZENIA" />
       <AboutVolunteer />
       <VolunteerAreas />
       <VolunteerForm />
       <OurVolunteers />
       <DearVolunteer />
+      <Modal />
     </>
   )
 }
