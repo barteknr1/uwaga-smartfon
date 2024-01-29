@@ -1,21 +1,3 @@
-.dropdown {
-  display: flex;
-  flex-direction: column;
-}
-
-.dropdownIcon {
-  margin-top: 11px;
-  width: 11px;
-  height: 11px;
-  margin-left: 10px;
-}
-
-.dropdownList {
-  display: none;
-  margin-top: 20px;
-  margin-left: -60px;
-}
-
 .dropdownListItem {
   margin-top: 16px;
   width: 200px;
@@ -32,19 +14,6 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .dropdownIcon {
-    margin-top: 7px;
-  }
-
-  .dropdownList {
-    margin-left: -66px;
-    margin-top: 34px;
-    background-color: var(--primary-background-color);
-    position: fixed;
-    z-index: 999;
-    border-radius: 0px 0px 12px 12px;
-  }
-
   .dropdownListItem {
     width: 103px;
     color: var(--dark-text-color);
