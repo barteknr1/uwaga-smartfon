@@ -1,0 +1,27 @@
+.dropdownListItem {
+  margin-top: 16px;
+  width: 200px;
+  margin-top: 0;
+  padding: 8px 16px;
+  color: var(--light-text-color);
+}
+
+.dropdownListItem:hover,
+.dropdownListItem:focus {
+  background-color: var(--primary-background-color);
+  color: var(--dark-text-color);
+  border-radius: 12px;
+}
+
+@media screen and (min-width: 1280px) {
+  .dropdownListItem {
+    width: 103px;
+    color: var(--dark-text-color);
+  }
+
+  .dropdownListItem:hover,
+  .dropdownListItem:focus {
+    background-color: var(--magenta-color);
+    color: var(--light-text-color);
+  }
+}
