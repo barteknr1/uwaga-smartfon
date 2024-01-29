@@ -1,6 +1,5 @@
 .newsletter {
   padding: 64px 20px;
-  background-color: var(--primary-background-color);
 }
 .newsletterTitle {
   font-family: var(--decoraction-font);
@@ -58,6 +57,22 @@
   transition-duration: 250ms;
   transition-property: border-color, fill;
 }
+
+.textboxBoxError {
+  border: 3px solid var(--error-color);
+}
+
+.errorText {
+  color: var(--error-color);
+  text-align: center;
+  font-family: var(--placeholder-font);
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.25rem; /* 166.667% */
+  letter-spacing: 0.00088rem;
+  margin-bottom: 16px;
+}
+
 .textboxBox:focus-within {
   border-color: var(--dark-brand-color);
   fill: var(--dark-brand-color);
@@ -73,6 +88,11 @@
   font-weight: 400;
   line-height: 1rem;
 }
+
+.textboxError {
+  color: var(--error-color);
+}
+
 .textboxBox:focus-within .textbox {
   color: var(--dark-brand-color);
 }
@@ -111,7 +131,7 @@
   align-self: start;
   align-items: center;
   gap: 11px;
-  margin-bottom: 32px;
+  margin-bottom: 16px;
   border: 0;
   position: relative;
   padding: 0;
@@ -157,14 +177,22 @@
   transition-property: background-color;
 }
 
+.checkMarkError {
+  border: 3px solid var(--error-color);
+}
+
 .checkboxText {
-  font-family: Montserrat;
+  font-family: var(--placeholder-font);
   margin-left: 0;
   font-size: 0.75rem;
   font-weight: 400;
   line-height: 1.25rem; /* 166.667% */
   letter-spacing: 0.00088rem;
   cursor: pointer;
+}
+
+.checkboxTextError {
+  color: var(--error-color);
 }
 
 .checkboxBox input:checked ~ .checkMarkBox .checkMark {
@@ -220,7 +248,7 @@
   transform: rotate(-86.62deg);
 }
 
-@media screen and (min-width: 834px) {
+@media screen and (min-width: 765px) {
   .newsletter {
     padding-left: 40px;
     padding-right: 40px;
@@ -245,9 +273,17 @@
     margin-bottom: 32px;
   }
 
+  .errorText {
+    margin-bottom: 32px;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem; /* 150% */
+    letter-spacing: 0.00119rem;
+  }
+
   .checkboxBox {
     align-self: start;
-    margin-bottom: 64px;
+    margin-bottom: 32px;
   }
 
   .svgBox {
@@ -276,7 +312,7 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .newsletter {
     padding-left: 80px;
     padding-right: 80px;

@@ -1,21 +1,31 @@
-import Section from '../Section/Section'
+import {useTranslation} from 'react-i18next'
+import {useRef} from 'react'
 import {Swiper, SwiperSlide} from 'swiper/react'
 import {Autoplay} from 'swiper/modules'
+import Section from '../Section/Section'
+import Button from '../Button/Button'
 import 'swiper/css/bundle'
 import css from './Patrons.module.css'
 import {
   bgk,
-  bonumHumanum,
-  krakow,
   nask,
   pokolenia,
+  krakow,
+  bonumHumanum,
   silnaWola,
+  iris,
+  iworis,
+  cps,
+  oaza,
+  pti,
+  pktsKrzywe,
+  szpitalBabinskiego,
+  tarczaPFR,
 } from '../../assets/images/patrons'
-import Button from '../Button/Button'
 import './styles.css'
-import {useRef} from 'react'
 
 const Patrons = () => {
+  const {t} = useTranslation()
   const swiperRef = useRef(null)
   const swiperRefTwo = useRef(null)
 
@@ -37,33 +47,71 @@ const Patrons = () => {
     krakow,
     bonumHumanum,
     silnaWola,
+    iris,
+    // DUBEL 1
     bgk,
     nask,
     pokolenia,
     krakow,
     bonumHumanum,
     silnaWola,
+    iris,
+    // DUBEL 2
+    bgk,
+    nask,
+    pokolenia,
+    krakow,
+    bonumHumanum,
+    silnaWola,
+    iris,
+    // DUBEL 3
+    bgk,
+    nask,
+    pokolenia,
+    krakow,
+    bonumHumanum,
+    silnaWola,
+    iris,
   ]
   const patronTwo = [
-    bgk,
-    nask,
-    pokolenia,
-    krakow,
-    bonumHumanum,
-    silnaWola,
-    bgk,
-    nask,
-    pokolenia,
-    krakow,
-    bonumHumanum,
-    silnaWola,
+    iworis,
+    cps,
+    oaza,
+    pti,
+    pktsKrzywe,
+    szpitalBabinskiego,
+    tarczaPFR,
+    // DUBEL 1
+    iworis,
+    cps,
+    oaza,
+    pti,
+    pktsKrzywe,
+    szpitalBabinskiego,
+    tarczaPFR,
+    // DUBEL 2
+    iworis,
+    cps,
+    oaza,
+    pti,
+    pktsKrzywe,
+    szpitalBabinskiego,
+    tarczaPFR,
+    // DUBEL 3
+    iworis,
+    cps,
+    oaza,
+    pti,
+    pktsKrzywe,
+    szpitalBabinskiego,
+    tarczaPFR,
   ]
 
   return (
     <Section
       sectionClass={css.patrons}
       titleClass={css.patronsTitle}
-      title="Partnerzy & Patroni"
+      title={t('patrons.title')}
     >
       <div className={css.patronsContainer}>
         <div
@@ -76,10 +124,10 @@ const Patrons = () => {
             spaceBetween={20}
             slidesPerView={'auto'}
             breakpoints={{
-              835: {
+              765: {
                 spaceBetween: 9,
               },
-              1440: {
+              1280: {
                 spaceBetween: 16,
               },
             }}
@@ -118,10 +166,10 @@ const Patrons = () => {
             spaceBetween={19}
             slidesPerView={'auto'}
             breakpoints={{
-              835: {
+              765: {
                 spaceBetween: 20,
               },
-              1440: {
+              1280: {
                 spaceBetween: 16,
               },
             }}
@@ -151,7 +199,7 @@ const Patrons = () => {
             ))}
           </Swiper>
         </div>
-        <Button variant="support" content="Wesprzyj"></Button>
+        <Button variant="support" content={t('patrons.buttonText')}></Button>
       </div>
     </Section>
   )

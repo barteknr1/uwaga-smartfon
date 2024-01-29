@@ -1,7 +1,11 @@
 import {useState, useEffect} from 'react'
-import PropTypes from 'prop-types'
+import {useTranslation} from 'react-i18next'
 import css from './Counter.module.css'
-const CountdownTimer = ({eventDate}) => {
+
+const CountdownTimer = () => {
+  const {t} = useTranslation()
+  const eventDate = new Date('April 4, 2024 10:00:00')
+
   const calculateTimeRemaining = (targetDate) => {
     const currentDate = new Date()
     const difference = targetDate - currentDate
@@ -31,15 +35,17 @@ const CountdownTimer = ({eventDate}) => {
   return (
     <div className={css.TimeRemaining_Box}>
       <div className={css.TimeRemaining_InfoBox}>
-        <span className={css.TimeRemaining_Info}>Dni</span>
-        <span className={css.TimeRemaining_Info}>Godzin</span>
-        <span className={css.TimeRemaining_Info}>Minut</span>
+        <span className={css.TimeRemaining_Info}>{t('counter.days')}</span>
+        <span className={css.TimeRemaining_Info}>{t('counter.hours')}</span>
+        <span className={css.TimeRemaining_Info}>{t('counter.minutes')}</span>
       </div>
       <div className={css.TimeRemaining_NumBox}>
-        <span className={css.TimeRemaining_Num}>{timeRemaining.days} :</span>
+        <span className={css.TimeRemaining_Num}>{timeRemaining.days}</span>
+        <span className={css.dots}>:</span>
         <span className={css.TimeRemaining_Num}>
-          {formatTime(timeRemaining.hours)} :
+          {formatTime(timeRemaining.hours)}
         </span>
+        <span className={css.dots}>:</span>
         <span className={css.TimeRemaining_Num}>
           {formatTime(timeRemaining.minutes)}
         </span>
@@ -47,7 +53,5 @@ const CountdownTimer = ({eventDate}) => {
     </div>
   )
 }
-CountdownTimer.propTypes = {
-  eventDate: PropTypes.instanceOf(Date).isRequired,
-}
+
 export default CountdownTimer

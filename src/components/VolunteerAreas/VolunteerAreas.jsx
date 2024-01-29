@@ -1,17 +1,21 @@
 import {Swiper, SwiperSlide} from 'swiper/react'
 import {Pagination, Navigation} from 'swiper/modules'
 import Section from '../Section/Section'
-import Areas from './areasList'
+import Areas from './Areas'
 import './styles.css'
 import 'swiper/css/bundle'
 import css from './VolunteerAreas.module.css'
+import {useTranslation} from 'react-i18next'
 
 const VolunteerAreas = () => {
+  const {t} = useTranslation()
+  const areas = Areas()
+
   return (
     <Section
       sectionClass={css.volunteerAreas}
       titleClass={css.volunteerAreasTitle}
-      title="Obszary działania wolontariatu"
+      title={t('areas.title')}
     >
       <div className={css.volunteerAreasContainer}>
         <div className={css.sliderContainer}>
@@ -25,19 +29,17 @@ const VolunteerAreas = () => {
             modules={[Navigation, Pagination]}
             className="mySwiper"
           >
-            {Areas.map((item, index) => (
-              <SwiperSlide key={index}>{item}</SwiperSlide>
+            {areas.map((area, index) => (
+              <SwiperSlide key={index}>{area}</SwiperSlide>
             ))}
           </Swiper>
         </div>
         <div className={css.listContainer}>
-          {Areas.map((item) => (
-            <div key={item.key}>{item}</div>
+          {areas.map((area, index) => (
+            <div key={index}>{area}</div>
           ))}
         </div>
-        <p className={css.volunteerAreasText}>
-          Oraz wiele innych, o których teraz nawet nie pomyśleliśmy.
-        </p>
+        <p className={css.volunteerAreasText}>{t('areas.text')}</p>
       </div>
     </Section>
   )

@@ -7,10 +7,10 @@ import App from './App.jsx'
 import './stylesheet/vars.css'
 import './stylesheet/common.css'
 // import './index.css'
-
+import './i18n'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="uwaga-smartfon">
       <App />
     </BrowserRouter>
   </React.StrictMode>

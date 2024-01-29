@@ -1,29 +1,138 @@
-.HeroBanner {
+.banner {
   display: flex;
-}
-
-.HeroBanner_img {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-  background-position: center center;
-  gap: 30px;
-}
-
-.HeroBanner_info {
-  position: absolute;
-  display: flex;
-  font-family: var(--main-font);
   flex-direction: column;
+  height: 657px;
+  padding-left: 20px;
+  padding-right: 20px;
+  justify-content: flex-end;
+  padding-bottom: 32px;
+  background-repeat: no-repeat;
+}
+.banner button {
+  align-self: center;
+}
+.bannerHome {
+  background-image: url(../../assets/images/banner/heroBannerHomeMob.png);
+  background-size: cover;
+  background-position-x: 30%;
+}
+
+.bannerLanding {
+  background-image: url(../../assets/images/banner/heroBannerLandingMob.png);
+  background-size: cover;
+  background-position-x: 30%;
+}
+
+.bannerVolunteering {
+  background-image: url(../../assets/images/banner/heroBannerVolunteeringMob.png);
+  background-size: cover;
+  background-position-x: center, -300px;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  gap: 50px;
+  justify-content: flex-start;
+}
+.bannerVolunteering button {
+  margin-top: auto;
+}
+
+.bannerTitle {
   color: var(--light-text-color);
-  margin: 120px;
-}
-.HeroBanner_main {
-  font-size: 79px;
-  font-weight: 600;
-}
-.HeroBanner_add {
-  font-size: 49px;
+  font-family: var(--main-font);
+  font-size: 1.9375rem;
   font-weight: 400;
+  line-height: normal;
+}
+
+.bannerContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 47px;
+}
+
+.titleMain {
+  color: var(--light-text-color);
+  font-family: var(--main-font);
+  font-size: 2.25rem;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.bannerText {
+  color: var(--light-text-color);
+  font-family: var(--main-font);
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: normal;
+}
+
+@media screen and (min-width: 765px) {
+  .banner {
+    position: relative;
+    height: 564px;
+    padding: 40px 40px 0 40px;
+    justify-content: center;
+  }
+
+  .bannerHome {
+    background-position-y: bottom;
+  }
+
+  .bannerLanding {
+    background-position-y: center;
+  }
+  .bannerVolunteering {
+    background-position-y: bottom;
+    padding-top: 0;
+    gap: 20px;
+  }
+  .bannerVolunteering button {
+    margin-top: 32px;
+  }
+
+  .banner button {
+    align-self: flex-start;
+  }
+
+  .bannerTitle,
+  .bannerText {
+    font-size: 2.4375rem;
+  }
+
+  .titleMain {
+    font-size: 3.0625rem;
+  }
+
+  .bannerContainer {
+    margin-top: 20px;
+    margin-bottom: 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .banner {
+    padding-top: 0;
+    height: 765px;
+    padding-left: 128px;
+  }
+  .bannerHome {
+    background-image: url(../../assets/images/banner/heroBannerHome.png);
+  }
+  .bannerLanding {
+    background-image: url(../../assets/images/banner/heroBannerLanding.png);
+  }
+  .bannerVolunteering {
+    background-image: url(../../assets/images/banner/heroBannerVolunteer.png);
+  }
+  .bannerTitle {
+    margin-right: 40%;
+  }
+  .bannerTitle,
+  .bannerText {
+    font-size: 3.0625rem;
+  }
+
+  .titleMain {
+    font-size: 4.75rem;
+  }
 }
