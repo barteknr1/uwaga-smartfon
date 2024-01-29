@@ -1,4 +1,4 @@
-import {useState, Suspense} from 'react'
+import {useState, useEffect, useRef, Suspense} from 'react'
 import {Outlet, useLocation} from 'react-router-dom'
 import {Spin as Hamburger} from 'hamburger-react'
 
@@ -12,16 +12,40 @@ const volunteerText = 'Z głębi serca dziękujemy!'
 
 const SharedLayout = () => {
   const [navIsOpen, setNavIsOpen] = useState(false)
+  const menuRef = useRef(null)
+  const buttonRef = useRef(null)
+
   const location = useLocation()
+
+  const handleOutsideClick = (event) => {
+    if (
+      menuRef.current &&
+      !menuRef.current.contains(event.target) &&
+      event.target !== buttonRef.current
+    ) {
+      setNavIsOpen(false)
+    }
+  }
+
+  useEffect(() => {
+    document.addEventListener('mousedown', handleOutsideClick)
+
+    return () => {
+      document.removeEventListener('mousedown', handleOutsideClick)
+    }
+  }, [])
 
   return (
     <>
-      <header className={`${css.header} ${navIsOpen && css['is-open']}`}>
+      <header
+        className={`${css.header} ${navIsOpen && css['is-open']}`}
+        ref={menuRef}
+      >
         <Nav setNavIsOpen={setNavIsOpen} />
       </header>
       <NavTablet />
       <div className={css.mobileMenuTrigger}>
-        <Hamburger toggle={setNavIsOpen} toggled={navIsOpen} />
+        <Hamburger toggle={setNavIsOpen} toggled={navIsOpen} ref={buttonRef} />
       </div>
       <main className={css.main}>
         <Suspense fallback={null}>
