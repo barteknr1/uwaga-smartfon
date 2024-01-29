@@ -34,6 +34,8 @@ form > button {
   margin-bottom: 32px;
 }
 .inputWrapper {
+  display: flex;
+  align-items: center;
   position: relative;
   height: 56px;
 }
@@ -44,9 +46,9 @@ form > button {
   font-weight: 400;
   color: #49454f;
   background-color: #fef7ff;
-  position: relative;
+  position: absolute;
   padding: 4px;
-  top: 12px;
+  top: -11px;
   left: 15px;
 }
 .input {
@@ -70,7 +72,8 @@ form > button {
 }
 .menuWrapper {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+
   gap: 24px;
 }
 .menuText {
@@ -94,11 +97,10 @@ form > button {
   justify-content: center;
   width: 24px;
   height: 24px;
-  border-radius: 50%;
-  z-index: 1;
   position: absolute;
   right: 4px;
-  top: 50%;
+  border-radius: 50%;
+  z-index: 5;
   transition: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: background-color;

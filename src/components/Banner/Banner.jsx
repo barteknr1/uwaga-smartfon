@@ -4,9 +4,11 @@ import Section from '../Section/Section'
 import CountdownTimer from '../Counter/Counter'
 import css from './Banner.module.css'
 import ApplicationForm from '../ApplicationForm/ApplicationForm'
+import { useLocation } from 'react-router-dom'
 
 const Banner = ({page, title}) => {
   const { t } = useTranslation()
+  const location = useLocation()
 
   return (
     <Section
@@ -24,7 +26,7 @@ const Banner = ({page, title}) => {
           <CountdownTimer />
         </div>
       )}
-      {<ApplicationForm/>}
+      {location.pathname.startsWith('/volunteering') ? `inny formularz :)` : <ApplicationForm/>}
     </Section>
   )
 }
