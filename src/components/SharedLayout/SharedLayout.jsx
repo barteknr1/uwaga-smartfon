@@ -1,11 +1,13 @@
-import {useState, useEffect, useRef, Suspense} from 'react'
+import React, {useState, useEffect, useRef, Suspense} from 'react'
 import {Outlet, useLocation} from 'react-router-dom'
-import sprite from '../../assets/svg/sprite.svg'
 import {Spin as Hamburger} from 'hamburger-react'
 import {useTranslation} from 'react-i18next'
+
 import Nav from '../Nav/Nav'
 import Footer from '../Footer/Footer'
 import NavTablet from '../NavTablet/NavTablet'
+
+import sprite from '../../assets/svg/sprite.svg'
 import css from './SharedLayout.module.css'
 
 const SharedLayout = () => {
@@ -14,7 +16,7 @@ const SharedLayout = () => {
   const menuRef = useRef(null)
   const buttonRef = useRef(null)
   const location = useLocation()
-  const { t } = useTranslation()
+  const {t} = useTranslation()
 
   const handleOutsideClick = (event) => {
     if (
@@ -28,10 +30,10 @@ const SharedLayout = () => {
 
   useEffect(() => {
     document.addEventListener('mousedown', handleOutsideClick)
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll)
     return () => {
       document.removeEventListener('mousedown', handleOutsideClick)
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('scroll', handleScroll)
     }
   }, [])
 
@@ -39,16 +41,16 @@ const SharedLayout = () => {
 
   const handleScroll = () => {
     if (window.scrollY > 20) {
-      setShowScroll(true);
+      setShowScroll(true)
     } else {
-      setShowScroll(false);
+      setShowScroll(false)
     }
   }
 
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth"
+      behavior: 'smooth',
     })
   }
 
@@ -60,9 +62,10 @@ const SharedLayout = () => {
       >
         <Nav setNavIsOpen={setNavIsOpen} />
       </header>
+
       <NavTablet />
       <div className={css.mobileMenuTrigger}>
-        <Hamburger toggle={setNavIsOpen} toggled={navIsOpen} ref={buttonRef} />
+        <Hamburger toggle={setNavIsOpen} toggled={navIsOpen} />
       </div>
       <main className={css.main}>
         <Suspense fallback={null}>
@@ -76,7 +79,15 @@ const SharedLayout = () => {
             : `${t('footer.heading2')}`
         }
       />
-      <button type="button" className={showScroll ? `${css.scrollToTop} ${css.scrollVisible}` : `${css.scrollToTop}`} onClick={() => scrollToTop()}>
+      <button
+        type="button"
+        className={
+          showScroll
+            ? `${css.scrollToTop} ${css.scrollVisible}`
+            : `${css.scrollToTop}`
+        }
+        onClick={() => scrollToTop()}
+      >
         <svg className={css.scrollToTopSvg}>
           <use href={sprite + '#icon-Arrow-back'} />
         </svg>
