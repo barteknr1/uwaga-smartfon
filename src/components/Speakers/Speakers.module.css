@@ -129,7 +129,7 @@
   }
 
   .speakerModalImg {
-    top: 40px;
+    top: 20px;
     position: absolute;
     width: 272px;
     height: 379px;
@@ -148,7 +148,12 @@
   }
 
   .speakerImgBox {
+    padding-top: 0;
     justify-content: flex-start;
+  }
+
+  .speakerAboutBox {
+    padding-top: 20px;
   }
 
   /* modal */
@@ -192,6 +197,6 @@
   }
 
   .speakerAboutBox {
-    padding: 72px 75px 0 50px;
+    padding: 50px 75px 0 50px;
   }
 }

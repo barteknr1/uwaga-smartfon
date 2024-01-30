@@ -18,7 +18,6 @@ const Speakers = () => {
 
   const handleSpeakerClick = (speaker) => {
     setSelectedSpeaker(speaker)
-
     setModalContent(
       <div className={css.speakersModalContainer}>
         <div className={css.speakerImgBox}>
