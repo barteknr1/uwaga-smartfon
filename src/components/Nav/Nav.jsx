@@ -24,9 +24,7 @@ const Nav = ({setNavIsOpen}) => {
         setDropIsOpen(false)
       }
     }
-
     document.addEventListener('mousedown', handleOutsideClick)
-
     return () => {
       document.removeEventListener('mousedown', handleOutsideClick)
     }
