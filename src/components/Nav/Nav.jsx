@@ -105,7 +105,7 @@ const Nav = ({setNavIsOpen}) => {
 }
 
 Nav.propTypes = {
-  setNavIsOpen: PropTypes.func,
+  setNavIsOpen: PropTypes.func.isRequired,
 }
 
 export default Nav
