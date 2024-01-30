@@ -19,13 +19,20 @@
   flex-direction: column;
 }
 
-.speakersContainer > div:nth-child(2) {
+/* backdrop */
+.speakersModalIsOpen ~ div {
   overflow-y: auto;
   align-items: flex-start;
 }
-.speakersContainer > div:nth-child(2) > div {
+/* modal */
+.speakersModalIsOpen ~ div > div {
   position: absolute;
   padding: 20px;
+  max-width: 357px;
+}
+/*modal button close */
+.speakersModalIsOpen ~ div > div > button {
+  z-index: 999;
 }
 
 .speakerAboutText {
@@ -144,8 +151,10 @@
     justify-content: flex-start;
   }
 
-  .speakersContainer > div:nth-child(2) > div {
+  /* modal */
+  .speakersModalIsOpen ~ div > div {
     padding-left: 0;
+    max-width: 757px;
   }
 }
 
@@ -163,7 +172,8 @@
     height: 300px;
   }
 
-  .speakersContainer > div:nth-child(2) > div {
+  /* modal */
+  .speakersModalIsOpen ~ div > div {
     max-width: 1285px;
   }
 
@@ -179,5 +189,9 @@
 
   .speakerAboutText:nth-child(1) {
     margin-bottom: 32px;
+  }
+
+  .speakerAboutBox {
+    padding: 72px 75px 0 50px;
   }
 }
