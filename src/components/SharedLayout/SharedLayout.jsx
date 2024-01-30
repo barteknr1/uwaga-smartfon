@@ -18,24 +18,29 @@ const SharedLayout = () => {
   const location = useLocation()
   const {t} = useTranslation()
 
-  const handleOutsideClick = (event) => {
-    if (
-      menuRef.current &&
-      !menuRef.current.contains(event.target) &&
-      event.target !== buttonRef.current
-    ) {
-      setNavIsOpen(false)
-    }
-  }
-
   useEffect(() => {
+    const handleOutsideClick = (event) => {
+      const isHamburgerMenuClick = event.target.closest('.mobileMenuTrigger')
+      const isNavClick = event.target.closest(`.${css.header}`)
+
+      if (
+        navIsOpen &&
+        !isHamburgerMenuClick &&
+        !buttonRef.current.contains(event.target) &&
+        !isNavClick
+      ) {
+        setNavIsOpen(false)
+      }
+    }
+
     document.addEventListener('mousedown', handleOutsideClick)
     window.addEventListener('scroll', handleScroll)
+
     return () => {
       document.removeEventListener('mousedown', handleOutsideClick)
       window.removeEventListener('scroll', handleScroll)
     }
-  }, [])
+  }, [navIsOpen])
 
   const volunteerText = `${t('footer.heading1')}`
 
@@ -64,7 +69,7 @@ const SharedLayout = () => {
       </header>
 
       <NavTablet />
-      <div className={css.mobileMenuTrigger}>
+      <div ref={buttonRef} className={css.mobileMenuTrigger}>
         <Hamburger toggle={setNavIsOpen} toggled={navIsOpen} />
       </div>
       <main className={css.main}>

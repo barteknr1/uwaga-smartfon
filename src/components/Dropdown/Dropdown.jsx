@@ -1,3 +1,4 @@
+import React from 'react'
 import {NavLink} from 'react-router-dom'
 import PropTypes from 'prop-types'
 
@@ -17,19 +18,15 @@ const Dropdown = ({setNavIsOpen, setDropIsOpen}) => {
 
   const elNav = findNestedArray(navigationRoutes.routes)
 
-  return (
-    <>
-      {elNav.map((elItem) => (
-        <NavLink
-          key={elItem.elTitle}
-          to={elItem.elHref}
-          onClick={handleDropdownLinkClick}
-        >
-          <li className={css.dropdownListItem}>{elItem.elTitle}</li>
-        </NavLink>
-      ))}
-    </>
-  )
+  return elNav.map((elItem) => (
+    <NavLink
+      key={elItem.elTitle}
+      to={elItem.elHref}
+      onClick={handleDropdownLinkClick}
+    >
+      <li className={css.dropdownListItem}>{elItem.elTitle}</li>
+    </NavLink>
+  ))
 }
 
 Dropdown.propTypes = {
