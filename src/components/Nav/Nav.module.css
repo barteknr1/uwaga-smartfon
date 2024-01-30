@@ -48,6 +48,10 @@
   fill: var(--light-text-color);
 }
 
+.navDrop {
+  cursor: pointer;
+}
+
 .navLang {
   position: absolute;
   display: flex;
@@ -94,6 +98,7 @@
   display: none;
   margin-top: 20px;
   margin-left: -60px;
+  color: var(--light-text-color);
 }
 
 @media screen and (min-width: 765px) {

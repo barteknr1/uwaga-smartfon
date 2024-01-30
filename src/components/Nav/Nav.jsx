@@ -47,36 +47,35 @@ const Nav = ({setNavIsOpen}) => {
       </NavLink>
       <nav className={css.navList}>
         {currentRoutes.map(({href, title, el}) => (
-          <NavLink
-            key={title}
-            className={css.navItem}
-            to={href}
-            onClick={() => {
-              if (el) {
-                handleDropdownToggle()
-              } else {
-                handleNavLinkClick()
-              }
-            }}
-          >
-            {title}
-            {el && (
-              <div className={css.dropdown}>
-                <svg className={css.dropdownIcon}>
-                  <use href={`${icon}#dropdown`}></use>
-                </svg>
-                <ul
-                  className={css.dropdownList}
-                  style={{display: isDropOpen ? 'block' : 'none'}}
-                >
-                  <Dropdown
-                    setNavIsOpen={setNavIsOpen}
-                    setDropIsOpen={setDropIsOpen}
-                  />
-                </ul>
+          <div className={css.navDrop} key={title}>
+            {el ? (
+              <div className={css.navItem} onClick={handleDropdownToggle}>
+                {title}
+                <div className={css.dropdown}>
+                  <svg className={css.dropdownIcon}>
+                    <use href={`${icon}#dropdown`}></use>
+                  </svg>
+                  <ul
+                    className={css.dropdownList}
+                    style={{display: isDropOpen ? 'block' : 'none'}}
+                  >
+                    <Dropdown
+                      setNavIsOpen={setNavIsOpen}
+                      setDropIsOpen={setDropIsOpen}
+                    />
+                  </ul>
+                </div>
               </div>
+            ) : (
+              <NavLink
+                className={css.navItem}
+                to={href}
+                onClick={handleNavLinkClick}
+              >
+                {title}
+              </NavLink>
             )}
-          </NavLink>
+          </div>
         ))}
         <Button variant="support" content="Wesprzyj" />
       </nav>
