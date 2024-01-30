@@ -13,8 +13,8 @@ import css from './SharedLayout.module.css'
 const SharedLayout = () => {
   const [showScroll, setShowScroll] = useState(false)
   const [navIsOpen, setNavIsOpen] = useState(false)
-  const menuRef = useRef(null)
-  const buttonRef = useRef(null)
+  const containerRef = useRef(null)
+
   const location = useLocation()
   const {t} = useTranslation()
 
@@ -26,7 +26,7 @@ const SharedLayout = () => {
       if (
         navIsOpen &&
         !isHamburgerMenuClick &&
-        !buttonRef.current.contains(event.target) &&
+        !containerRef.current.contains(event.target) &&
         !isNavClick
       ) {
         setNavIsOpen(false)
@@ -63,13 +63,13 @@ const SharedLayout = () => {
     <>
       <header
         className={`${css.header} ${navIsOpen && css['is-open']}`}
-        ref={menuRef}
+        ref={containerRef}
       >
         <Nav setNavIsOpen={setNavIsOpen} />
       </header>
 
       <NavTablet />
-      <div ref={buttonRef} className={css.mobileMenuTrigger}>
+      <div ref={containerRef} className={css.mobileMenuTrigger}>
         <Hamburger toggle={setNavIsOpen} toggled={navIsOpen} />
       </div>
       <main className={css.main}>
