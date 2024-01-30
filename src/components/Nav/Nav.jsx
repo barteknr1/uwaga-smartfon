@@ -1,5 +1,5 @@
 //@ts-nocheck
-import {useState} from 'react'
+import {useState, useEffect, useRef} from 'react'
 import {NavLink, useLocation} from 'react-router-dom'
 import PropTypes from 'prop-types'
 import {useTranslation} from 'react-i18next'
@@ -15,8 +15,22 @@ import css from './Nav.module.css'
 const Nav = ({setNavIsOpen}) => {
   const [isDropOpen, setDropIsOpen] = useState(false)
   const {i18n, t} = useTranslation()
-
   const [language, setLanguage] = useState('en')
+  const containerRef = useRef(null)
+
+  useEffect(() => {
+    const handleOutsideClick = (event) => {
+      if (isDropOpen && !containerRef.current.contains(event.target)) {
+        setDropIsOpen(false)
+      }
+    }
+
+    document.addEventListener('mousedown', handleOutsideClick)
+
+    return () => {
+      document.removeEventListener('mousedown', handleOutsideClick)
+    }
+  }, [isDropOpen])
 
   const changeLanguage = (lang) => {
     setLanguage(lang)
@@ -51,7 +65,7 @@ const Nav = ({setNavIsOpen}) => {
             {el ? (
               <div className={css.navItem} onClick={handleDropdownToggle}>
                 {title}
-                <div className={css.dropdown}>
+                <div ref={containerRef} className={css.dropdown}>
                   <svg className={css.dropdownIcon}>
                     <use href={`${icon}#dropdown`}></use>
                   </svg>
