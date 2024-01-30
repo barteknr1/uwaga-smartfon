@@ -30,8 +30,8 @@ const Dropdown = ({setNavIsOpen, setDropIsOpen}) => {
 }
 
 Dropdown.propTypes = {
-  setNavIsOpen: PropTypes.func,
-  setDropIsOpen: PropTypes.func,
+  setNavIsOpen: PropTypes.func.isRequired,
+  setDropIsOpen: PropTypes.func.isRequired,
 }
 
 export default Dropdown
