@@ -2,10 +2,7 @@
   background-color: var(--primary-background-color);
   display: flex;
   flex-direction: column;
-  width: 298px;
-  position: fixed;
-  z-index: 999;
-  right: 0;
+
   font-size: 1.25rem;
   padding: 60px 16px 100px 16px;
   border-radius: 12px 0px 12px 12px;
