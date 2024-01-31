@@ -69,8 +69,9 @@ const Nav = ({setNavIsOpen}) => {
                     <use href={`${icon}#dropdown`}></use>
                   </svg>
                   <ul
-                    className={css.dropdownList}
-                    style={{display: isDropOpen ? 'block' : 'none'}}
+                    className={
+                      isDropOpen ? css.dropdownList : css.dropdownListIsOpen
+                    }
                   >
                     <Dropdown
                       setNavIsOpen={setNavIsOpen}

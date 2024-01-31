@@ -94,8 +94,12 @@
   margin-left: 10px;
 }
 
-.dropdownList {
+.dropdownListIsOpen {
   display: none;
+}
+
+.dropdownList {
+  display: block;
   margin-top: 20px;
   margin-left: -60px;
   color: var(--light-text-color);
