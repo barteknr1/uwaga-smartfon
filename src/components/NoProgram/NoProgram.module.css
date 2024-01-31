@@ -4,7 +4,7 @@
   background-image: url(../../assets/bgImages/noprogram.png);
   background-size: cover;
   background-repeat: no-repeat;
-
+  background-position: center center;
   gap: 50px;
   padding: 32px 20px 85px 20px;
 }
@@ -22,7 +22,6 @@
   line-height: 1.4675rem;
   text-align: center;
   font-weight: 500;
-  align-self: center;
 }
 
 @media screen and (min-width: 765px) {
