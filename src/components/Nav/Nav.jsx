@@ -6,6 +6,7 @@ import {useTranslation} from 'react-i18next'
 
 import Button from '../Button/Button'
 import Dropdown from '../Dropdown/Dropdown'
+import ScrollToTop from '../ScrollToTop/ScrollToTop'
 
 import navigationRoutes from './index'
 
@@ -52,7 +53,7 @@ const Nav = ({setNavIsOpen}) => {
 
   return (
     <div className={css.nav}>
-      <NavLink to="/">
+      <NavLink to="/" onClick={() => ScrollToTop()}>
         <svg className={css.navLogo}>
           <use href={`${icon}#logo`}></use>
         </svg>
