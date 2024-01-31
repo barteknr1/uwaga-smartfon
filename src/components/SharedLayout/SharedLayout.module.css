@@ -57,11 +57,9 @@
 
 @media screen and (min-width: 1280px) {
   .header {
-    display: block;
     width: 100%;
     background-color: var(--primary-background-color);
-    position: fixed;
-    z-index: 999;
+    transform: translateX(0);
     overflow: hidden;
     top: 0;
   }
