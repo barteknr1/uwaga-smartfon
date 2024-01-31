@@ -2,6 +2,7 @@ import React from 'react'
 import {NavLink} from 'react-router-dom'
 import PropTypes from 'prop-types'
 
+import ScrollToTop from '../ScrollToTop/ScrollToTop'
 import navigationRoutes from '../Nav/index'
 
 import icon from '../../assets/svg/sprite.svg'
@@ -11,6 +12,7 @@ const Dropdown = ({setNavIsOpen, setDropIsOpen}) => {
   const handleDropdownLinkClick = () => {
     setNavIsOpen(false)
     setDropIsOpen(false)
+    ScrollToTop()
   }
 
   const findNestedArray = (array) =>

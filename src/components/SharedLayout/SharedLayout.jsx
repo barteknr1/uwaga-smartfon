@@ -7,6 +7,7 @@ import Nav from '../Nav/Nav'
 import Footer from '../Footer/Footer'
 import NavTablet from '../NavTablet/NavTablet'
 import ScrollToAnchor from '../ScrollToAnchor/ScrollToAnchor'
+import ScrollToTop from '../ScrollToTop/ScrollToTop'
 
 import sprite from '../../assets/svg/sprite.svg'
 import css from './SharedLayout.module.css'
@@ -53,13 +54,6 @@ const SharedLayout = () => {
     }
   }
 
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    })
-  }
-
   return (
     <>
       <ScrollToAnchor />
@@ -93,7 +87,7 @@ const SharedLayout = () => {
             ? `${css.scrollToTop} ${css.scrollVisible}`
             : `${css.scrollToTop}`
         }
-        onClick={() => scrollToTop()}
+        onClick={() => ScrollToTop()}
       >
         <svg className={css.scrollToTopSvg}>
           <use href={sprite + '#icon-Arrow-back'} />
