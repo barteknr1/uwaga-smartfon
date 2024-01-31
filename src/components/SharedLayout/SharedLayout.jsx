@@ -6,6 +6,7 @@ import {useTranslation} from 'react-i18next'
 import Nav from '../Nav/Nav'
 import Footer from '../Footer/Footer'
 import NavTablet from '../NavTablet/NavTablet'
+import ScrollToAnchor from '../ScrollToAnchor/ScrollToAnchor'
 
 import sprite from '../../assets/svg/sprite.svg'
 import css from './SharedLayout.module.css'
@@ -61,6 +62,7 @@ const SharedLayout = () => {
 
   return (
     <>
+      <ScrollToAnchor />
       <header
         className={`${css.header} ${navIsOpen && css['is-open']}`}
         ref={containerRef}

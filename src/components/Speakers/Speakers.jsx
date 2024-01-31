@@ -23,6 +23,7 @@ const Speakers = () => {
 
   return (
     <Section
+      id="speakers"
       sectionClass={css.speakers}
       titleClass={css.speakersTitle}
       title={t('speakers.title')}

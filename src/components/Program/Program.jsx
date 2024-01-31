@@ -7,8 +7,6 @@ import SingleSchedule from './SingleSchedule'
 const Program = () => {
   const [expandedDetails, setExpandedDetails] = useState(Array(2).fill(false))
 
- 
-
   const toggleDetails = (index) => {
     const newExpandedDetails = [...expandedDetails]
     newExpandedDetails[index] = !newExpandedDetails[index]
@@ -54,7 +52,7 @@ const Program = () => {
   ]
 
   return (
-    <Section sectionClass={css.program}>
+    <Section id="program" sectionClass={css.program}>
       <div className={css.container}>
         <div className={css.titleContainer}>
           <h1 className={css.programTitle}>Program</h1>
@@ -65,7 +63,7 @@ const Program = () => {
           {scheduleData.map((data, index) => (
             <SingleSchedule
               key={index}
-               expandedDetails={expandedDetails[index]}
+              expandedDetails={expandedDetails[index]}
               onToggleDetails={() => toggleDetails(index)}
               {...data}
             />

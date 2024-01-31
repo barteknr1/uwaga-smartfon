@@ -52,7 +52,7 @@ const Nav = ({setNavIsOpen}) => {
 
   return (
     <div className={css.nav}>
-      <NavLink to="/landing-page">
+      <NavLink to="/">
         <svg className={css.navLogo}>
           <use href={`${icon}#logo`}></use>
         </svg>
