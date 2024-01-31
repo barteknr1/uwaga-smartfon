@@ -1,9 +1,8 @@
 import {NavLink} from 'react-router-dom'
-
-import Button from '../Button/Button'
-
 import icon from '../../assets/svg/sprite.svg'
 import css from './NavTablet.module.css'
+import Support from '../Support/Support'
+
 
 const NavTablet = () => {
   return (
@@ -14,7 +13,7 @@ const NavTablet = () => {
             <use href={`${icon}#logo`}></use>
           </svg>
         </NavLink>
-        <Button variant="support" content="Wesprzyj" />
+        <Support />
       </div>
     </div>
   )

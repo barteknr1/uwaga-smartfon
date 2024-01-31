@@ -1,0 +1,135 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+form > button {
+  margin: 0 auto;
+}
+.formText {
+  font-family: var(--placeholder-font);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.03rem;
+}
+.formHeader {
+  font-family: var(--decoraction-font);
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: var(--dark-text-color);
+}
+.fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  width: 100%;
+  gap: 16px;
+}
+.bottomArea {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.inputWrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 56px;
+}
+.label {
+  font-family: var(--form-font);
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 400;
+  color: #49454f;
+  background-color: #fef7ff;
+  position: absolute;
+  padding: 4px;
+  top: -11px;
+  left: 15px;
+}
+.input {
+  border: 1px solid #79747e;
+  border-radius: 4px;
+  padding-left: 16px;
+  width: 100%;
+  height: 56px;
+  background-color: var(--primary-background-color);
+}
+.input::placeholder {
+  font-family: var(--placeholder-font);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.03rem;
+  color: rgba(60, 60, 67, 0.6);
+}
+.input:focus {
+  background-color: white;
+}
+.menuWrapper {
+  display: flex;
+  flex-direction: row;
+
+  gap: 24px;
+}
+.menuText {
+  font-family: var(--placeholder-font);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.03rem;
+}
+.checkbox {
+  display: flex;
+  gap: 16px;
+}
+.radio {
+  display: flex;
+  gap: 12px;
+}
+.svgTextButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 4px;
+  border-radius: 50%;
+  z-index: 5;
+  transition: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color;
+}
+
+.svgTextButton:hover {
+  background-color: #49454f25;
+}
+
+.svgTextIcon {
+  width: 12px;
+  height: 12px;
+}
+
+@media screen and (min-width: 765px) {
+  .formHeader {
+    font-size: 2.44rem;
+    font-weight: 400;
+  }
+  .menuWrapper {
+    flex-direction: row;
+  }
+  .svgTextButton {
+    width: 48px;
+    height: 48px;
+  }
+
+  .svgTextIcon {
+    width: 24px;
+    height: 24px;
+  }
+}

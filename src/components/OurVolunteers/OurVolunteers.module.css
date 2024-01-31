@@ -1,0 +1,126 @@
+.ourVolunteers {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 20px 0 20px;
+  gap: 32px;
+}
+.ourVolunteersTitle {
+  font-family: var(--decoraction-font);
+  font-size: 1.9375rem;
+  line-height: normal;
+}
+.ourVolunteersContainer {
+  display: flex;
+  flex-direction: row;
+  row-gap: 20px;
+  column-gap: 50px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.volunteerWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 150px;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.volunteerImg {
+  width: 149px;
+}
+.volunteerName {
+  font-family: var(--main-font);
+  font-size: 1rem;
+  line-height: 1.17375rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.volunteerRole {
+  font-family: var(--main-font);
+  font-size: 1rem;
+  line-height: 1.17375rem;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: underline;
+  color: var(--dark-text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.volunteerIcon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+@media screen and (min-width: 765px) {
+  .ourVolunteers {
+    padding: 0px 39px;
+    gap: 64px;
+  }
+
+  .ourVolunteersTitle {
+    font-size: 3.0625rem;
+    line-height: 3.8125rem;
+  }
+
+  .volunteerName {
+    font-size: 1.25rem;
+    line-height: 1.4675rem;
+    font-weight: 700;
+  }
+  .ourVolunteersContainer {
+    column-gap: 20px;
+    row-gap: 32px;
+  }
+  .volunteerWrapper {
+    gap: 16px;
+    width: 238px;
+  }
+  .volunteerImg {
+    width: 238px;
+  }
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  }
+
+  .volunteerRole {
+    font-size: 1.25rem;
+    line-height: 1.4675rem;
+    font-weight: 500;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    align-items: flex-end;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .ourVolunteers {
+    padding: 0px 82px;
+  }
+
+  .ourVolunteersContainer {
+    column-gap: 24px;
+    row-gap: 60px;
+  }
+  .volunteerWrapper {
+    width: 302px;
+  }
+  .volunteerImg {
+    width: 302px;
+  }
+}
