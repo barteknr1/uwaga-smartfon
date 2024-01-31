@@ -1,10 +1,10 @@
-import { useState, useEffect, createContext, useContext } from 'react'
+import {useState, useEffect, createContext, useContext} from 'react'
 import PropTypes from 'prop-types'
 
-const ModalContext = createContext();
+const ModalContext = createContext()
 
 const useModal = () => {
-  return useContext(ModalContext);
+  return useContext(ModalContext)
 }
 
 export const ModalProvider = ({children}) => {
@@ -12,10 +12,12 @@ export const ModalProvider = ({children}) => {
   const [modalContent, setModalContent] = useState(null)
 
   const openModal = () => {
+    document.body.style.overflow = 'hidden'
     setIsModalVisible(true)
   }
 
   const closeModal = () => {
+    document.body.style.overflow = 'visible'
     setIsModalVisible(false)
   }
   const closeOnBackdrop = (e) => {
@@ -29,19 +31,29 @@ export const ModalProvider = ({children}) => {
         closeModal()
       }
     }
-    window.addEventListener('keydown', closeOnEscape);
-    return () => window.removeEventListener('keydown', closeOnEscape);
+    window.addEventListener('keydown', closeOnEscape)
+    return () => window.removeEventListener('keydown', closeOnEscape)
   }, [isModalVisible])
 
   return (
-    <ModalContext.Provider value={{ isModalVisible, setIsModalVisible, closeModal, closeOnBackdrop, openModal, modalContent, setModalContent }}>
+    <ModalContext.Provider
+      value={{
+        isModalVisible,
+        setIsModalVisible,
+        closeModal,
+        closeOnBackdrop,
+        openModal,
+        modalContent,
+        setModalContent,
+      }}
+    >
       {children}
     </ModalContext.Provider>
   )
-};
+}
 
 ModalProvider.propTypes = {
   children: PropTypes.node,
 }
 
-export { ModalContext, useModal };
+export {ModalContext, useModal}
