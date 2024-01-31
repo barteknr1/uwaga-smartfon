@@ -242,5 +242,16 @@
     "agreement": "Wyrażam zgodę na przetwarzanie moich danych osobowych.",
     "error": "Uzupełnij wszystkie dane i zaznacz zgodę na przetwarzanie danych osobowych, aby przesłać formularz.",
     "button": "Wyślij formularz"
+  },
+  "navigation": {
+    "aboutConference": "O konferencji",
+    "editions": "Edycje",
+    "volunteering": "Wolontariat",
+    "newsletter": "Newsletter",
+    "patrons": "Partnerzy i Patroni",
+    "aboutEvent": "O wydarzeniu",
+    "program": "Program",
+    "speakers": "Prelegenci",
+    "buttonSupport": "Wesprzyj"
   }
 }

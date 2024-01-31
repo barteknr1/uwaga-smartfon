@@ -16,7 +16,7 @@ const Nav = ({setNavIsOpen}) => {
   const [isDropOpen, setDropIsOpen] = useState(false)
   const {i18n, t} = useTranslation()
 
-  const [language, setLanguage] = useState('en')
+  const [, setLanguage] = useState('en')
 
   const changeLanguage = (lang) => {
     setLanguage(lang)
@@ -59,7 +59,7 @@ const Nav = ({setNavIsOpen}) => {
               }
             }}
           >
-            {title}
+            {t(`${title}`)}
             {el && (
               <div className={css.dropdown}>
                 <svg className={css.dropdownIcon}>
@@ -78,7 +78,7 @@ const Nav = ({setNavIsOpen}) => {
             )}
           </NavLink>
         ))}
-        <Button variant="support" content="Wesprzyj" />
+        <Button variant="support" content={t('navigation.buttonSupport')} />
       </nav>
       <div className={css.navLang}>
         <button onClick={() => changeLanguage('pl')} className={css.navLangBtn}>

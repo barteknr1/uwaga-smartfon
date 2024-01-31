@@ -11,7 +11,7 @@ const Volunteering = () => {
   const {t} = useTranslation()
   return (
     <>
-      <Banner page="Volunteering" title="ZOSTAŃ WOLONTARIUSZEM WYDARZENIA" />
+      <Banner page="Volunteering" title={t('banner.titleVolunteer')} />
       <AboutVolunteer />
       <VolunteerAreas />
       <VolunteerForm />

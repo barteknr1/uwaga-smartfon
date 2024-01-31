@@ -1,10 +1,10 @@
 const routes = [
   {
-    title: 'O konferencji',
+    title: 'navigation.aboutConference',
     href: '/',
   },
   {
-    title: 'Edycje',
+    title: 'navigation.editions',
 
     el: [
       {elTitle: '2022', elHref: '/edycja2022'},
@@ -13,38 +13,38 @@ const routes = [
     ],
   },
   {
-    title: 'Wolontariat',
+    title: 'navigation.volunteering',
     href: 'volunteering',
   },
   {
-    title: 'Newsletter',
+    title: 'navigation.newsletter',
     href: '/',
   },
   {
-    title: 'Partnerzy i Patroni',
+    title: 'navigation.patrons',
     href: '/',
   },
 ]
 
 const landingPageRoutes = [
   {
-    title: 'O wydarzeniu',
+    title: 'navigation.aboutEvent',
     href: '/',
   },
   {
-    title: 'Program',
+    title: 'navigation.program',
     href: '/',
   },
   {
-    title: 'Prelegenci',
+    title: 'navigation.speakers',
     href: '/',
   },
   {
-    title: 'Partnerzy i Patroni',
+    title: 'navigation.patrons',
     href: '/',
   },
   {
-    title: 'Newsletter',
+    title: 'navigation.newsletter',
     href: '/',
   },
 ]
