@@ -18,6 +18,7 @@ const Nav = ({setNavIsOpen}) => {
   const {i18n, t} = useTranslation()
   const [language, setLanguage] = useState('en')
   const containerRef = useRef(null)
+  const location = useLocation()
 
   const scrollToAnchor = (anchorId) => {
     if (!anchorId) return
@@ -28,16 +29,15 @@ const Nav = ({setNavIsOpen}) => {
       }, 200)
     }
   }
-  const changeLanguage = (lang) => {
-    setLanguage(lang)
-    i18n.changeLanguage(lang)
-  }
-
-  const location = useLocation()
 
   const {routes, landingPageRoutes} = navigationRoutes
   const currentRoutes =
     location.pathname === '/landing-page' ? landingPageRoutes : routes
+
+  const changeLanguage = (lang) => {
+    setLanguage(lang)
+    i18n.changeLanguage(lang)
+  }
 
   const handleNavLinkClick = () => {
     setNavIsOpen(false)
@@ -58,9 +58,7 @@ const Nav = ({setNavIsOpen}) => {
         setDropIsOpen(false)
       }
     }
-
     document.addEventListener('mousedown', handleOutsideClick)
-
     return () => {
       document.removeEventListener('mousedown', handleOutsideClick)
     }
