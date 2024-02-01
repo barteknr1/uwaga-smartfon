@@ -48,6 +48,7 @@ const Speakers = () => {
 
   return (
     <Section
+      id="speakers"
       sectionClass={
         selectedSpeaker
           ? `${css.speakers} ${css.speakersModalIsOpen}`

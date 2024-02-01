@@ -5,6 +5,8 @@ import Workshops from '../../components/Workshops/Workshops'
 import Program from '../../components/Program/Program'
 import Banner from '../../components/Banner/Banner'
 import AboutConference from '../../components/AboutConference/AboutConference'
+import Patrons from '../../components/Patrons/Patrons'
+import Newsletter from '../../components/Newsletter/Newsletter'
 import Modal from '../../components/Modal/Modal'
 
 const LandingPage = () => {
@@ -18,6 +20,8 @@ const LandingPage = () => {
       <Workshops />
       <Speakers />
       <Comments isLandingPage={true} />
+      <Patrons />
+      <Newsletter />
       <Modal />
     </>
   )

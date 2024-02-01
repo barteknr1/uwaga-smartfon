@@ -1,3 +1,4 @@
+import React from 'react'
 import {NavLink} from 'react-router-dom'
 import PropTypes from 'prop-types'
 
@@ -7,9 +8,17 @@ import icon from '../../assets/svg/sprite.svg'
 import css from './Dropdown.module.css'
 
 const Dropdown = ({setNavIsOpen, setDropIsOpen}) => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    })
+  }
+
   const handleDropdownLinkClick = () => {
     setNavIsOpen(false)
     setDropIsOpen(false)
+    scrollToTop()
   }
 
   const findNestedArray = (array) =>
@@ -17,24 +26,20 @@ const Dropdown = ({setNavIsOpen, setDropIsOpen}) => {
 
   const elNav = findNestedArray(navigationRoutes.routes)
 
-  return (
-    <>
-      {elNav.map((elItem) => (
-        <NavLink
-          key={elItem.elTitle}
-          to={elItem.elHref}
-          onClick={handleDropdownLinkClick}
-        >
-          <li className={css.dropdownListItem}>{elItem.elTitle}</li>
-        </NavLink>
-      ))}
-    </>
-  )
+  return elNav.map((elItem) => (
+    <NavLink
+      key={elItem.elTitle}
+      to={elItem.elHref}
+      onClick={handleDropdownLinkClick}
+    >
+      <li className={css.dropdownListItem}>{elItem.elTitle}</li>
+    </NavLink>
+  ))
 }
 
 Dropdown.propTypes = {
-  setNavIsOpen: PropTypes.func,
-  setDropIsOpen: PropTypes.func,
+  setNavIsOpen: PropTypes.func.isRequired,
+  setDropIsOpen: PropTypes.func.isRequired,
 }
 
 export default Dropdown
