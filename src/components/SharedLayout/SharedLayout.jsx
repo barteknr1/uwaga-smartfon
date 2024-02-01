@@ -6,7 +6,6 @@ import {useTranslation} from 'react-i18next'
 import Nav from '../Nav/Nav'
 import Footer from '../Footer/Footer'
 import NavTablet from '../NavTablet/NavTablet'
-import ScrollToTop from '../ScrollToTop/ScrollToTop'
 
 import sprite from '../../assets/svg/sprite.svg'
 import css from './SharedLayout.module.css'
@@ -27,9 +26,8 @@ const SharedLayout = () => {
       if (
         navIsOpen &&
         !isHamburgerMenuClick &&
-        containerRef.current &&
-        'contains' in containerRef.current &&
-        containerRef.current.contains(event.target) &&
+        containerRef.current && // Check if containerRef.current is not null
+        !containerRef.current.contains(event.target) &&
         !isNavClick
       ) {
         setNavIsOpen(false)
@@ -53,6 +51,13 @@ const SharedLayout = () => {
     } else {
       setShowScroll(false)
     }
+  }
+
+  const ScrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    })
   }
 
   return (

@@ -6,7 +6,6 @@ import {useTranslation} from 'react-i18next'
 
 import Button from '../Button/Button'
 import Dropdown from '../Dropdown/Dropdown'
-import ScrollToTop from '../ScrollToTop/ScrollToTop'
 
 import navigationRoutes from './index'
 
