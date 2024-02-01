@@ -219,7 +219,7 @@
   "workshops": {
     "title": "Workshops",
     "text1": "During the conference, there will be",
-    "bold": "workshops with experts,",
+    "bold1": "workshops with experts,",
     "text2": "to which we warmly invite you. Each conference participant will have the opportunity to participate in one selected workshop. The condition for participation is",
     "bold2": "sending the form, in which you should choose one of the given topics.",
     "text3": "Workshop topics that will be available during the 'Uwaga! Smartfon' event:",
@@ -241,11 +241,12 @@
     "error": "Please fill in all the details and check the consent for processing personal data to submit the form.",
     "button": "Send Form"
   },
-    "program": {
+  "program": {
     "title": "Program"
   },
   "noProgram": {
-    "title": "Program"
+    "title": "Program",
+    "paragraph": "The program will be available soon!"
   },
   "navigation": {
     "aboutConference": "About the Conference",
