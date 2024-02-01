@@ -27,18 +27,6 @@ const Nav = ({setNavIsOpen}) => {
     }
   }
 
-  useEffect(() => {
-    const handleOutsideClick = (event) => {
-      if (isDropOpen && !containerRef.current.contains(event.target)) {
-        setDropIsOpen(false)
-      }
-    }
-    document.addEventListener('mousedown', handleOutsideClick)
-    return () => {
-      document.removeEventListener('mousedown', handleOutsideClick)
-    }
-  }, [isDropOpen])
-
   const changeLanguage = (lang) => {
     setLanguage(lang)
     i18n.changeLanguage(lang)
@@ -58,6 +46,18 @@ const Nav = ({setNavIsOpen}) => {
   const handleDropdownToggle = () => {
     setDropIsOpen(!isDropOpen)
   }
+
+  useEffect(() => {
+    const handleOutsideClick = (event) => {
+      if (isDropOpen && !containerRef.current.contains(event.target)) {
+        setDropIsOpen(false)
+      }
+    }
+    document.addEventListener('mousedown', handleOutsideClick)
+    return () => {
+      document.removeEventListener('mousedown', handleOutsideClick)
+    }
+  }, [isDropOpen])
 
   return (
     <div className={css.nav}>
