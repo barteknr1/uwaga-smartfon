@@ -65,7 +65,7 @@ const Nav = ({setNavIsOpen}) => {
 
   return (
     <div className={css.nav}>
-      <NavLink to="/" onClick={() => ScrollToTop()}>
+      <NavLink to="/" onClick={() => scrollToTop()}>
         <svg className={css.navLogo}>
           <use href={`${icon}#logo`}></use>
         </svg>

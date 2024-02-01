@@ -53,7 +53,7 @@ const SharedLayout = () => {
     }
   }
 
-  const ScrollToTop = () => {
+  const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: 'smooth',
@@ -92,7 +92,7 @@ const SharedLayout = () => {
             ? `${css.scrollToTop} ${css.scrollVisible}`
             : `${css.scrollToTop}`
         }
-        onClick={() => ScrollToTop()}
+        onClick={() => scrollToTop()}
       >
         <svg className={css.scrollToTopSvg}>
           <use href={sprite + '#icon-Arrow-back'} />

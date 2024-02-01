@@ -9,7 +9,7 @@ import css from './NavTablet.module.css'
 const NavTablet = () => {
   const {t} = useTranslation()
 
-  const ScrollToTop = () => {
+  const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: 'smooth',
@@ -18,7 +18,7 @@ const NavTablet = () => {
   return (
     <div className={css.navTabletFixed}>
       <div className={css.navTablet}>
-        <NavLink to="/" onClick={() => ScrollToTop()}>
+        <NavLink to="/" onClick={() => scrollToTop()}>
           <svg className={css.navLogo}>
             <use href={`${icon}#logo`}></use>
           </svg>

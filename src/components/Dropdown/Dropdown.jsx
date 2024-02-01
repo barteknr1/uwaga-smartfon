@@ -8,7 +8,7 @@ import icon from '../../assets/svg/sprite.svg'
 import css from './Dropdown.module.css'
 
 const Dropdown = ({setNavIsOpen, setDropIsOpen}) => {
-  const ScrollToTop = () => {
+  const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: 'smooth',
@@ -18,7 +18,7 @@ const Dropdown = ({setNavIsOpen, setDropIsOpen}) => {
   const handleDropdownLinkClick = () => {
     setNavIsOpen(false)
     setDropIsOpen(false)
-    ScrollToTop()
+    scrollToTop()
   }
 
   const findNestedArray = (array) =>
