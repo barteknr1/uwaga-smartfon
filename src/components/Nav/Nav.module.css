@@ -46,6 +46,7 @@
 }
 
 .navDrop {
+  display: block;
   cursor: pointer;
 }
 
