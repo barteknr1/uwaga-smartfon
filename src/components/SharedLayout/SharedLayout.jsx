@@ -27,7 +27,9 @@ const SharedLayout = () => {
       if (
         navIsOpen &&
         !isHamburgerMenuClick &&
-        !containerRef.current.contains(event.target) &&
+        containerRef.current &&
+        'contains' in containerRef.current &&
+        containerRef.current.contains(event.target) &&
         !isNavClick
       ) {
         setNavIsOpen(false)

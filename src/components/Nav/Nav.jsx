@@ -20,15 +20,14 @@ const Nav = ({setNavIsOpen}) => {
   const containerRef = useRef(null)
 
   const scrollToAnchor = (anchorId) => {
+    if (!anchorId) return
     const anchorElement = document.getElementById(anchorId)
-    console.log(anchorElement)
     if (anchorElement) {
       setTimeout(() => {
         anchorElement.scrollIntoView({behavior: 'smooth'})
       }, 200)
     }
   }
-
   const changeLanguage = (lang) => {
     setLanguage(lang)
     i18n.changeLanguage(lang)
@@ -51,11 +50,17 @@ const Nav = ({setNavIsOpen}) => {
 
   useEffect(() => {
     const handleOutsideClick = (event) => {
-      if (isDropOpen && !containerRef.current.contains(event.target)) {
+      if (
+        isDropOpen &&
+        containerRef.current &&
+        !containerRef.current.contains(event.target)
+      ) {
         setDropIsOpen(false)
       }
     }
+
     document.addEventListener('mousedown', handleOutsideClick)
+
     return () => {
       document.removeEventListener('mousedown', handleOutsideClick)
     }
