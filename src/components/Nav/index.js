@@ -1,7 +1,7 @@
 const routes = [
   {
     title: 'O konferencji',
-    href: '/',
+    href: '#about_conference',
   },
   {
     title: 'Edycje',
@@ -14,38 +14,38 @@ const routes = [
   },
   {
     title: 'Wolontariat',
-    href: 'volunteering',
-  },
-  {
-    title: 'Newsletter',
-    href: '/',
+    href: '/volunteering',
   },
   {
     title: 'Partnerzy i Patroni',
-    href: '/',
+    href: '#patrons',
+  },
+  {
+    title: 'Newsletter',
+    href: '#newsletter',
   },
 ]
 
 const landingPageRoutes = [
   {
     title: 'O wydarzeniu',
-    href: '/',
+    href: '#about_conference',
   },
   {
     title: 'Program',
-    href: '/',
+    href: '#program',
   },
   {
     title: 'Prelegenci',
-    href: '/',
+    href: '#speakers',
   },
   {
     title: 'Partnerzy i Patroni',
-    href: '/',
+    href: '#patrons',
   },
   {
     title: 'Newsletter',
-    href: '/',
+    href: '#newsletter',
   },
 ]
 

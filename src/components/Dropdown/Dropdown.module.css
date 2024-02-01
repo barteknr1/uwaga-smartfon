@@ -3,7 +3,6 @@
   width: 200px;
   margin-top: 0;
   padding: 8px 16px;
-  color: var(--light-text-color);
 }
 
 .dropdownListItem:hover,

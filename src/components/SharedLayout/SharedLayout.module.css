@@ -1,9 +1,13 @@
 .header {
-  display: none;
+  position: fixed;
+  z-index: 999;
+  right: 0;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
 }
 
-.is-open {
-  display: block;
+.header.is-open {
+  transform: translateX(0);
 }
 
 .mobileMenuTrigger {
@@ -18,6 +22,7 @@
   position: fixed;
   z-index: 999;
 }
+
 .scrollToTop {
   position: fixed;
   right: 16px;
@@ -52,12 +57,11 @@
 
 @media screen and (min-width: 1280px) {
   .header {
-    display: block;
-    width: 100%;
-    background-color: var(--primary-background-color);
     position: fixed;
     z-index: 999;
-    overflow: hidden;
+    width: 100%;
+    background-color: var(--primary-background-color);
+    transform: translateX(0);
     top: 0;
   }
 
