@@ -243,6 +243,9 @@
     "error": "Uzupełnij wszystkie dane i zaznacz zgodę na przetwarzanie danych osobowych, aby przesłać formularz.",
     "button": "Wyślij formularz"
   },
+  "program": {
+    "title": "Program"
+  },
   "noProgram": {
     "title": "Program"
   }

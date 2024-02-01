@@ -241,6 +241,9 @@
     "error": "Please fill in all the details and check the consent for processing personal data to submit the form.",
     "button": "Send Form"
   },
+    "program": {
+    "title": "Program"
+  },
   "noProgram": {
     "title": "Program"
   }
