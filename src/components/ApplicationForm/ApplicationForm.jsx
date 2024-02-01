@@ -76,7 +76,7 @@ const ApplicationForm = () => {
 
   const modalContent = (
     <div>
-      <p className={css.formHeader}>Formularz zgłoszeniowy</p>
+      <h4 className={css.formHeader}>Formularz zgłoszeniowy</h4>
       <form className={css.form} onSubmit={handleSubmit}>
         <fieldset className={css.fieldset}>
           <div className={css.inputWrapper}>
