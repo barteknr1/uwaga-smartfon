@@ -37,6 +37,7 @@ const Newsletter = () => {
       sectionClass={css.newsletter}
       titleClass={css.newsletterTitle}
       title={t('newsletter.title')}
+      id="newsletter"
     >
       <form className={css.newsletterContainer} onSubmit={handleSubmit}>
         <div className={`${css.newsletterBox} ${css.letterBox}`}>

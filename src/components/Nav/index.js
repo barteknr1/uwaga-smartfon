@@ -1,7 +1,7 @@
 const routes = [
   {
     title: 'navigation.aboutConference',
-    href: '/',
+    href: '#about_conference',
   },
   {
     title: 'navigation.editions',
@@ -14,38 +14,38 @@ const routes = [
   },
   {
     title: 'navigation.volunteering',
-    href: 'volunteering',
-  },
-  {
-    title: 'navigation.newsletter',
-    href: '/',
+    href: '/volunteering',
   },
   {
     title: 'navigation.patrons',
-    href: '/',
+    href: '#patrons',
+  },
+  {
+    title: 'navigation.newsletter',
+    href: '#newsletter',
   },
 ]
 
 const landingPageRoutes = [
   {
     title: 'navigation.aboutEvent',
-    href: '/',
+    href: '#about_conference',
   },
   {
     title: 'navigation.program',
-    href: '/',
+    href: '#program',
   },
   {
     title: 'navigation.speakers',
-    href: '/',
+    href: '#speakers',
   },
   {
     title: 'navigation.patrons',
-    href: '/',
+    href: '#patrons',
   },
   {
     title: 'navigation.newsletter',
-    href: '/',
+    href: '#newsletter',
   },
 ]
 

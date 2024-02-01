@@ -3,11 +3,12 @@ import {useState} from 'react'
 import Section from '../Section/Section'
 import css from './Program.module.css'
 import SingleSchedule from './SingleSchedule'
+import {useTranslation} from 'react-i18next'
 
 const Program = () => {
   const [expandedDetails, setExpandedDetails] = useState(Array(2).fill(false))
 
- 
+  const {t} = useTranslation()
 
   const toggleDetails = (index) => {
     const newExpandedDetails = [...expandedDetails]
@@ -53,19 +54,23 @@ const Program = () => {
     },
   ]
 
+  console.log(SingleSchedule)
   return (
-    <Section sectionClass={css.program}>
+    <Section
+      sectionClass={css.program}
+      titleClass={css.programTitle}
+      title={t('program.title')}
+    >
       <div className={css.container}>
         <div className={css.titleContainer}>
-          <h1 className={css.programTitle}>Program</h1>
-          <h2 className={css.programSubTitle}>4 kwietnia 2024</h2>
+          <p className={css.programSubTitle}>4 kwietnia 2024</p>
         </div>
 
         <div className={css.scheduleContainer}>
           {scheduleData.map((data, index) => (
             <SingleSchedule
               key={index}
-               expandedDetails={expandedDetails[index]}
+              expandedDetails={expandedDetails[index]}
               onToggleDetails={() => toggleDetails(index)}
               {...data}
             />
