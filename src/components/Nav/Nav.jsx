@@ -23,7 +23,9 @@ const Nav = ({setNavIsOpen}) => {
     const anchorElement = document.getElementById(anchorId)
     console.log(anchorElement)
     if (anchorElement) {
-      anchorElement.scrollIntoView({behavior: 'smooth'})
+      setTimeout(() => {
+        anchorElement.scrollIntoView({behavior: 'smooth'})
+      }, 200)
     }
   }
 
@@ -67,9 +69,9 @@ const Nav = ({setNavIsOpen}) => {
         </svg>
       </NavLink>
       <nav className={css.navList}>
-        {currentRoutes.map(({href, title, el}) => (
-          <div className={css.navDrop} key={title}>
-            {el ? (
+        {currentRoutes.map(({href, title, el}) =>
+          el ? (
+            <div className={css.navDrop} key={title}>
               <div className={css.navItem} onClick={handleDropdownToggle}>
                 {title}
                 <div ref={containerRef} className={css.dropdown}>
@@ -88,22 +90,24 @@ const Nav = ({setNavIsOpen}) => {
                   </ul>
                 </div>
               </div>
-            ) : (
-              <NavLink
-                className={css.navItem}
-                to={href}
-                onClick={() => {
-                  handleNavLinkClick()
-                  scrollToAnchor(href.substring(1))
-                }}
-              >
-                {title}
-              </NavLink>
-            )}
-          </div>
-        ))}
+            </div>
+          ) : (
+            <NavLink
+              key={title}
+              className={css.navItem}
+              to={href}
+              onClick={() => {
+                handleNavLinkClick()
+                scrollToAnchor(href.substring(1))
+              }}
+            >
+              {title}
+            </NavLink>
+          )
+        )}
         <Button variant="support" content="Wesprzyj" />
       </nav>
+
       <div className={css.navLang}>
         <button onClick={() => changeLanguage('pl')} className={css.navLangBtn}>
           PL
