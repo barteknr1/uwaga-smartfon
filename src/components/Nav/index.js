@@ -14,7 +14,7 @@ const routes = [
   },
   {
     title: 'Wolontariat',
-    href: 'volunteering',
+    href: '/volunteering',
   },
   {
     title: 'Partnerzy i Patroni',

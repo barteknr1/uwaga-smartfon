@@ -19,6 +19,14 @@ const Nav = ({setNavIsOpen}) => {
   const [language, setLanguage] = useState('en')
   const containerRef = useRef(null)
 
+  const scrollToAnchor = (anchorId) => {
+    const anchorElement = document.getElementById(anchorId)
+    console.log(anchorElement)
+    if (anchorElement) {
+      anchorElement.scrollIntoView({behavior: 'smooth'})
+    }
+  }
+
   useEffect(() => {
     const handleOutsideClick = (event) => {
       if (isDropOpen && !containerRef.current.contains(event.target)) {
@@ -84,7 +92,10 @@ const Nav = ({setNavIsOpen}) => {
               <NavLink
                 className={css.navItem}
                 to={href}
-                onClick={handleNavLinkClick}
+                onClick={() => {
+                  handleNavLinkClick()
+                  scrollToAnchor(href.substring(1))
+                }}
               >
                 {title}
               </NavLink>
