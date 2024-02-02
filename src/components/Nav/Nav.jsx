@@ -19,19 +19,13 @@ const Nav = ({setNavIsOpen}) => {
   const containerRef = useRef(null)
   const location = useLocation()
 
-  const scrollToAnchor = (anchorId) => {
-    if (!anchorId) return
-    const anchorElement = document.getElementById(anchorId)
-    if (anchorElement) {
-      setTimeout(() => {
-        anchorElement.scrollIntoView({behavior: 'smooth'})
-      }, 200)
-    }
-  }
-
-  const {routes, landingPageRoutes} = navigationRoutes
+  const {routes, landingPageRoutes, volunteeringPageRoutes} = navigationRoutes
   const currentRoutes =
-    location.pathname === '/landing-page' ? landingPageRoutes : routes
+    location.pathname === '/landing-page'
+      ? landingPageRoutes
+      : location.pathname === '/volunteering'
+      ? volunteeringPageRoutes
+      : routes
 
   const changeLanguage = (lang) => {
     setLanguage(lang)
@@ -45,6 +39,23 @@ const Nav = ({setNavIsOpen}) => {
 
   const handleDropdownToggle = () => {
     setDropIsOpen(!isDropOpen)
+  }
+
+  const scrollToAnchor = (anchorId) => {
+    if (!anchorId) return
+    const anchorElement = document.getElementById(anchorId)
+    if (anchorElement) {
+      setTimeout(() => {
+        anchorElement.scrollIntoView({behavior: 'smooth'})
+      }, 200)
+    }
+  }
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    })
   }
 
   useEffect(() => {
@@ -62,13 +73,6 @@ const Nav = ({setNavIsOpen}) => {
       document.removeEventListener('mousedown', handleOutsideClick)
     }
   }, [isDropOpen])
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    })
-  }
 
   return (
     <div className={css.nav}>

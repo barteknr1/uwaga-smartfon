@@ -16,6 +16,7 @@ const VolunteerAreas = () => {
       sectionClass={css.volunteerAreas}
       titleClass={css.volunteerAreasTitle}
       title={t('areas.title')}
+      id="volunteering_areas"
     >
       <div className={css.volunteerAreasContainer}>
         <div className={css.sliderContainer}>
