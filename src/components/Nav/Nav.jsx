@@ -114,9 +114,8 @@ const Nav = ({setNavIsOpen}) => {
             </NavLink>
           )
         )}
-        <Button variant="support" content="Wesprzyj" />
+        <Support />
       </nav>
-      <Support />
       <div className={css.navLang}>
         <button onClick={() => changeLanguage('pl')} className={css.navLangBtn}>
           PL
