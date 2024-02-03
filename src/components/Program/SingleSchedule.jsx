@@ -12,14 +12,14 @@ const SingleSchedule = ({
   return (
     <div className={css.singleSchedule}>
       <div className={css.timeAndContentBox}>
-        <h4 className={css.scheduleTime}>{scheduleTime}</h4>
+        <p className={css.scheduleTime}>{scheduleTime}</p>
         <div className={css.scheduleContent}>
-          <p className={css.scheduleText}>
+          <span className={css.scheduleText}>
             {scheduleText}
             {expandedDetails && (
               <p className={css.additionalText}>{additionalText}</p>
             )}
-          </p>
+          </span>
         </div>
       </div>
       <svg className={css.scheduleSvg} onClick={onToggleDetails}>
@@ -35,7 +35,7 @@ SingleSchedule.propTypes = {
   scheduleTime: PropTypes.string.isRequired,
   scheduleText: PropTypes.string.isRequired,
   additionalText: PropTypes.string.isRequired,
-  expandedDetails: PropTypes.bool.isRequired,
+  expandedDetails: PropTypes.bool,
   onToggleDetails: PropTypes.func.isRequired,
 }
 

@@ -112,6 +112,7 @@ const Patrons = () => {
       sectionClass={css.patrons}
       titleClass={css.patronsTitle}
       title={t('patrons.title')}
+      id="patrons"
     >
       <div className={css.patronsContainer}>
         <div
