@@ -221,7 +221,7 @@
   "workshops": {
     "title": "Warsztaty",
     "text1": "Podczas konferencji będą odbywały się",
-    "bold": "warsztaty z ekspertami,",
+    "bold1": "warsztaty z ekspertami,",
     "text2": "na które serdecznie zapraszamy. Każdy z uczestników konferencji będzie miał możliwość uczestnictwa w jednym wybranym wykładzie. Warunkiem uczestnictwa jest",
     "bold2": "wysłanie formularza, w którym należy wybrać jeden z podanych tematów.",
     "text3": "Tematy warsztatów, które pojawią się podczas wydarzenia \"Uwaga! Smartfon\":",
@@ -247,6 +247,18 @@
     "title": "Program"
   },
   "noProgram": {
-    "title": "Program"
+    "title": "Program",
+    "paragraph": "Program pojawi się już wkrótce!"
+  },
+  "navigation": {
+    "aboutConference": "O konferencji",
+    "editions": "Edycje",
+    "volunteering": "Wolontariat",
+    "newsletter": "Newsletter",
+    "patrons": "Partnerzy i Patroni",
+    "aboutEvent": "O wydarzeniu",
+    "program": "Program",
+    "speakers": "Prelegenci",
+    "buttonSupport": "Wesprzyj"
   }
 }

@@ -10,7 +10,7 @@ const NoProgram = () => {
       titleClass={css.noProgramTitle}
       title={t('noProgram.title')}
     >
-      <p className={css.text}>Program pojawi się już wkrótce!</p>
+      <p className={css.text}>{t('noProgram.paragraph')}</p>
     </Section>
   )
 }

@@ -16,8 +16,8 @@ const Workshops = () => {
         <div className={css.workshopsBox}>
           <p className={css.workshopsText}>
             {t('workshops.text1')}{' '}
-            <span className={css.boldText}>{t('workshops.bold1')}</span>
-            {t('workshops.text2')}
+            <span className={css.boldText}>{t('workshops.bold1')} </span>
+            {t('workshops.text2')}{' '}
             <span className={css.boldText}>{t('workshops.bold2')}</span>
           </p>
         </div>

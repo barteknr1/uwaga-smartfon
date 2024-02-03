@@ -15,7 +15,7 @@ import css from './Nav.module.css'
 const Nav = ({setNavIsOpen}) => {
   const [isDropOpen, setDropIsOpen] = useState(false)
   const {i18n, t} = useTranslation()
-  const [language, setLanguage] = useState('en')
+  const [, setLanguage] = useState('en')
   const containerRef = useRef(null)
   const location = useLocation()
 
@@ -82,7 +82,7 @@ const Nav = ({setNavIsOpen}) => {
           el ? (
             <div className={css.navDrop} key={title}>
               <div className={css.navItem} onClick={handleDropdownToggle}>
-                {title}
+                {t(`${title}`)}
                 <div ref={containerRef} className={css.dropdown}>
                   <svg className={css.dropdownIcon}>
                     <use href={`${icon}#dropdown`}></use>
@@ -110,7 +110,7 @@ const Nav = ({setNavIsOpen}) => {
                 scrollToAnchor(href.substring(1))
               }}
             >
-              {title}
+              {t(`${title}`)}
             </NavLink>
           )
         )}
