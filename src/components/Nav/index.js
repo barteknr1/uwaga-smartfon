@@ -49,4 +49,27 @@ const landingPageRoutes = [
   },
 ]
 
-export default {routes, landingPageRoutes}
+const volunteeringPageRoutes = [
+  {
+    title: 'O wolontariace',
+    href: '#about_volunteering',
+  },
+  {
+    title: 'Obszary działania',
+    href: '#volunteering_areas',
+  },
+  {
+    title: 'Formularz zgłoszeniowy',
+    href: '#volunteer_form',
+  },
+  {
+    title: 'Nasi wolontariusze',
+    href: '#our_volunteers',
+  },
+  {
+    title: 'Podziękowania',
+    href: '#dear_volunteers',
+  },
+]
+
+export default {routes, landingPageRoutes, volunteeringPageRoutes}

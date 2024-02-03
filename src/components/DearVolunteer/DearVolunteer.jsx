@@ -11,6 +11,7 @@ const DearVolunteer = () => {
       sectionClass={css.dearVolunteer}
       titleClass={css.dearVolunteerTitle}
       title={t('dearVolunteer.title')}
+      id="dear_volunteers"
     >
       <div className={css.container}>
         <div className={css.textWrapper}>

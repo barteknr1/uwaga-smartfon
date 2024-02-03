@@ -12,7 +12,7 @@ const AboutVolunteer = () => {
   const {t} = useTranslation()
 
   return (
-    <Section sectionClass={css.aboutVolunteer}>
+    <Section sectionClass={css.aboutVolunteer} id="about_volunteering">
       <div className={css.ellipse}></div>
       <div className={css.aboutVolunteerBox}>
         <div className={css.aboutVolunteerContainer}>

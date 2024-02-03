@@ -80,6 +80,7 @@ const VolunteerForm = () => {
       sectionClass={css.volunteerForm}
       titleClass={css.volunteerFormTitle}
       title={t('volunteerForm.title')}
+      id="volunteer_form"
     >
       <div className={css.ellipse}></div>
       <form className={css.volunteerFormContainer} onSubmit={handleSubmit}>
