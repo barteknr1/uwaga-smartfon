@@ -21,6 +21,7 @@
     width: 134px;
     display: flex;
     align-items: center;
+    justify-content: center;
   }
 
   .navLogo {
