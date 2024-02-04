@@ -2,10 +2,10 @@ import romanSolecki from '../../assets/images/Speakers/dr-roman-solecki.png'
 import piotrCzubaty from '../../assets/images/Speakers/piotr-czubaty.png'
 import lukaszCichocki from '../../assets/images/Speakers/dr-lukasz-cichocki.png'
 import tomaszLewandowski from '../../assets/images/Speakers/tomasz-lewandowski.png'
-import monikaPrzybysz from '../../assets/images/Speakers/monika_przybysz.png'
-import paulaArguelles from '../../assets/images/Speakers/paula_arguelles.png'
+import monikaPrzybysz from '../../assets/images/Speakers/monika-przybysz.png'
+import paulaArguelles from '../../assets/images/Speakers/paula-arguelles.png'
 import catherineLEcuyer from '../../assets/images/Speakers/no-photo.jpg'
-import sylwiaJaskulska from '../../assets/images/Speakers/sylwia_jaskulska.png'
+import sylwiaJaskulska from '../../assets/images/Speakers/sylwia-jaskulska.png'
 
 const speakersData = [
   {
