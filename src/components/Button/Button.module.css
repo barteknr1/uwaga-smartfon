@@ -1,7 +1,7 @@
 .button {
   font-family: var(--main-font);
   font-weight: 500;
-  font-size: 20px;
+  font-size: 1.25rem;
   padding: 16px 32px;
   border-radius: 12px;
   position: relative;

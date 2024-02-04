@@ -17,6 +17,7 @@ form > button {
   font-family: var(--decoraction-font);
   font-weight: 500;
   font-size: 1.25rem;
+  line-height: 1.25;
   color: var(--dark-text-color);
 }
 .fieldset {

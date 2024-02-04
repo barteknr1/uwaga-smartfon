@@ -4,7 +4,7 @@ import {NavLink, useLocation} from 'react-router-dom'
 import PropTypes from 'prop-types'
 import {useTranslation} from 'react-i18next'
 
-import Button from '../Button/Button'
+import Support from '../Support/Support'
 import Dropdown from '../Dropdown/Dropdown'
 
 import navigationRoutes from './index'
@@ -118,9 +118,8 @@ const Nav = ({setNavIsOpen}) => {
             </NavLink>
           )
         )}
-        <Button variant="support" content="Wesprzyj" />
+        <Support />
       </nav>
-
       <div className={css.navLang}>
         <button onClick={() => changeLanguage('pl')} className={css.navLangBtn}>
           PL
