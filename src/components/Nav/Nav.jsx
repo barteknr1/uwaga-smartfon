@@ -4,7 +4,7 @@ import {NavLink, useLocation} from 'react-router-dom'
 import PropTypes from 'prop-types'
 import {useTranslation} from 'react-i18next'
 
-import Button from '../Button/Button'
+import Support from '../Support/Support'
 import Dropdown from '../Dropdown/Dropdown'
 
 import navigationRoutes from './index'
@@ -15,23 +15,17 @@ import css from './Nav.module.css'
 const Nav = ({setNavIsOpen}) => {
   const [isDropOpen, setDropIsOpen] = useState(false)
   const {i18n, t} = useTranslation()
-  const [language, setLanguage] = useState('en')
+  const [, setLanguage] = useState('en')
   const containerRef = useRef(null)
   const location = useLocation()
 
-  const scrollToAnchor = (anchorId) => {
-    if (!anchorId) return
-    const anchorElement = document.getElementById(anchorId)
-    if (anchorElement) {
-      setTimeout(() => {
-        anchorElement.scrollIntoView({behavior: 'smooth'})
-      }, 200)
-    }
-  }
-
-  const {routes, landingPageRoutes} = navigationRoutes
+  const {routes, landingPageRoutes, volunteeringPageRoutes} = navigationRoutes
   const currentRoutes =
-    location.pathname === '/landing-page' ? landingPageRoutes : routes
+    location.pathname === '/landing-page'
+      ? landingPageRoutes
+      : location.pathname === '/volunteering'
+      ? volunteeringPageRoutes
+      : routes
 
   const changeLanguage = (lang) => {
     setLanguage(lang)
@@ -45,6 +39,23 @@ const Nav = ({setNavIsOpen}) => {
 
   const handleDropdownToggle = () => {
     setDropIsOpen(!isDropOpen)
+  }
+
+  const scrollToAnchor = (anchorId) => {
+    if (!anchorId) return
+    const anchorElement = document.getElementById(anchorId)
+    if (anchorElement) {
+      setTimeout(() => {
+        anchorElement.scrollIntoView({behavior: 'smooth'})
+      }, 200)
+    }
+  }
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    })
   }
 
   useEffect(() => {
@@ -75,7 +86,7 @@ const Nav = ({setNavIsOpen}) => {
           el ? (
             <div className={css.navDrop} key={title}>
               <div className={css.navItem} onClick={handleDropdownToggle}>
-                {title}
+                {t(`${title}`)}
                 <div ref={containerRef} className={css.dropdown}>
                   <svg className={css.dropdownIcon}>
                     <use href={`${icon}#dropdown`}></use>
@@ -103,13 +114,12 @@ const Nav = ({setNavIsOpen}) => {
                 scrollToAnchor(href.substring(1))
               }}
             >
-              {title}
+              {t(`${title}`)}
             </NavLink>
           )
         )}
-        <Button variant="support" content="Wesprzyj" />
+        <Support />
       </nav>
-
       <div className={css.navLang}>
         <button onClick={() => changeLanguage('pl')} className={css.navLangBtn}>
           PL

@@ -81,7 +81,11 @@ const AboutConference = () => {
             </svg>
           </div>
         </div>
-        <Button variant="secondary" content={t('aboutConference.buttonText')} />
+        <Button
+          type="button"
+          variant="secondary"
+          content={t('aboutConference.buttonText')}
+        />
       </div>
     </Section>
   )

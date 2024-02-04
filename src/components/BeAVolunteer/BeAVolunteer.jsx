@@ -25,6 +25,7 @@ const BeAVolunteer = () => {
           </div>{' '}
         </div>
         <Button
+          type="button"
           variant="secondary"
           content={t('beAVolunteer.buttonText')}
         ></Button>

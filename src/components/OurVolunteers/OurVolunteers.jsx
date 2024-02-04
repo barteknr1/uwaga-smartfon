@@ -90,6 +90,7 @@ const OurVolunteers = () => {
       sectionClass={css.ourVolunteers}
       titleClass={css.ourVolunteersTitle}
       title="Nasi Wolontariusze"
+      id="our_volunteers"
     >
       <div className={css.ourVolunteersContainer}>
         {dataVolunteer.map((data, index) => (

@@ -1,10 +1,10 @@
 const routes = [
   {
-    title: 'O konferencji',
+    title: 'navigation.aboutConference',
     href: '#about_conference',
   },
   {
-    title: 'Edycje',
+    title: 'navigation.editions',
 
     el: [
       {elTitle: '2022', elHref: '/edycja2022'},
@@ -13,40 +13,63 @@ const routes = [
     ],
   },
   {
-    title: 'Wolontariat',
+    title: 'navigation.volunteering',
     href: '/volunteering',
   },
   {
-    title: 'Partnerzy i Patroni',
+    title: 'navigation.patrons',
     href: '#patrons',
   },
   {
-    title: 'Newsletter',
+    title: 'navigation.newsletter',
     href: '#newsletter',
   },
 ]
 
 const landingPageRoutes = [
   {
-    title: 'O wydarzeniu',
+    title: 'navigation.aboutEvent',
     href: '#about_conference',
   },
   {
-    title: 'Program',
+    title: 'navigation.program',
     href: '#program',
   },
   {
-    title: 'Prelegenci',
+    title: 'navigation.speakers',
     href: '#speakers',
   },
   {
-    title: 'Partnerzy i Patroni',
+    title: 'navigation.patrons',
     href: '#patrons',
   },
   {
-    title: 'Newsletter',
+    title: 'navigation.newsletter',
     href: '#newsletter',
   },
 ]
 
-export default {routes, landingPageRoutes}
+const volunteeringPageRoutes = [
+  {
+    title: 'O wolontariace',
+    href: '#about_volunteering',
+  },
+  {
+    title: 'Obszary działania',
+    href: '#volunteering_areas',
+  },
+  {
+    title: 'Formularz zgłoszeniowy',
+    href: '#volunteer_form',
+  },
+  {
+    title: 'Nasi wolontariusze',
+    href: '#our_volunteers',
+  },
+  {
+    title: 'Podziękowania',
+    href: '#dear_volunteers',
+  },
+]
+
+export default {routes, landingPageRoutes, volunteeringPageRoutes}
