@@ -10,6 +10,14 @@
   transform: translateX(0);
 }
 
+.navMobileLogo {
+  position: fixed;
+  z-index: 999;
+  cursor: pointer;
+  margin-left: 11px;
+  margin-top: 5px;
+}
+
 .mobileMenuTrigger {
   width: 48px;
   height: 48px;
@@ -46,6 +54,9 @@
 }
 
 @media screen and (min-width: 765px) {
+  .navMobileLogo {
+    display: none;
+  }
   .mobileMenuTrigger {
     top: 16px;
   }

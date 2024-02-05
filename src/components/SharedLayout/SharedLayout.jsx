@@ -1,5 +1,5 @@
 import {useState, useEffect, useRef, Suspense} from 'react'
-import {Outlet, useLocation} from 'react-router-dom'
+import {NavLink, Outlet, useLocation} from 'react-router-dom'
 import {Spin as Hamburger} from 'hamburger-react'
 import {useTranslation} from 'react-i18next'
 
@@ -7,6 +7,7 @@ import Nav from '../Nav/Nav'
 import Footer from '../Footer/Footer'
 import NavTablet from '../NavTablet/NavTablet'
 
+import {mobileLogo} from '../../assets/images/mobileNav'
 import sprite from '../../assets/svg/sprite.svg'
 import css from './SharedLayout.module.css'
 
@@ -62,6 +63,13 @@ const SharedLayout = () => {
 
   return (
     <>
+      <NavLink to="/" onClick={() => scrollToTop()}>
+        <img
+          className={css.navMobileLogo}
+          alt="Uwaga smartfon logo for mobile phones"
+          src={mobileLogo}
+        />
+      </NavLink>
       <header
         className={`${css.header} ${navIsOpen && css['is-open']}`}
         ref={containerRef}
