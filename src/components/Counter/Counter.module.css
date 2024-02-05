@@ -7,7 +7,7 @@
   color: var(--light-text-color);
   font-family: var(--placeholder-font);
   border-radius: 0px 43px;
-  width: 353px;
+  max-width: 353px;
   padding: 5px 68px 0 68px;
 }
 .TimeRemaining_InfoBox {
