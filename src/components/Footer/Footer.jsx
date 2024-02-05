@@ -62,7 +62,11 @@ const Footer = ({text}) => {
             src="https://maps.google.com/maps?&amp;hl=en&amp;q=ckf%2013%20Krak%C3%B3w+()&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
           ></iframe>
         </div>
-        <a href="https://projektpl.org/">
+        <a
+          href="https://projektpl.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img
             className={css.logo}
             src={logo}
