@@ -1,8 +1,11 @@
 import css from './Support.module.css'
 import Button from '../Button/Button'
 import {useModal} from '../Modal/ModalProvider'
+import {useTranslation} from 'react-i18next'
 
 const Support = () => {
+  const {t} = useTranslation()
+
   const {isModalVisible, setIsModalVisible, setModalContent} = useModal()
 
   const openModal = () => {
@@ -12,14 +15,9 @@ const Support = () => {
 
   const modalContent = (
     <div className={css.supportContainer}>
-      <h4 className={css.supportHeader}>Wesprzyj naszą inicjatywę</h4>
-      <p className={css.supportText}>
-        Dołącz do nas i przekaż darowiznę — tylko z Twoją pomocą może nam się to
-        udać!
-      </p>
-      <p className={css.supportText}>
-        Wybierz kwotę darowizny, którą chcesz przekazać:
-      </p>
+      <h4 className={css.supportHeader}>{t('support.title')}</h4>
+      <p className={css.supportText}>{t('support.text1')}</p>
+      <p className={css.supportText}>{t('support.text2')}</p>
       <div className={css.supportButtons}>
         <button className={css.supportButton} type="button">
           35 zł
@@ -34,7 +32,7 @@ const Support = () => {
           ____zł
         </button>
       </div>
-      <Button type="submit" content="Wesprzyj" variant="primary" />
+      <Button type="submit" content={t('support.button')} variant="primary" />
     </div>
   )
 
@@ -43,7 +41,7 @@ const Support = () => {
       <Button
         type="button"
         variant="support"
-        content="Support"
+        content={t('support.button')}
         onClick={() => openModal()}
       />
     </>

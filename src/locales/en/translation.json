@@ -257,6 +257,17 @@
     "aboutEvent": "About the Event",
     "program": "Program",
     "speakers": "Speakers",
-    "buttonSupport": "Support"
+    "buttonSupport": "Support",
+    "aboutVolunteer": "About Volunteering",
+    "volunteeringAreas": "Volunteering Areas",
+    "volunteerForm": "Volunteer Form",
+    "ourVolunteers": "Our Volunteers",
+    "dearVolunteers": "Thanks"
+  },
+  "support": {
+    "title": "Support Our Initiative",
+    "text1": "Join us and make a donation — only with your help can we make it happen!",
+    "text2": "Choose the amount of the donation you would like to contribute:",
+    "button": "Support"
   }
 }

@@ -3,6 +3,7 @@ import {useRef} from 'react'
 import {Swiper, SwiperSlide} from 'swiper/react'
 import {Autoplay} from 'swiper/modules'
 import Section from '../Section/Section'
+import Support from '../Support/Support'
 import Button from '../Button/Button'
 import 'swiper/css/bundle'
 import css from './Patrons.module.css'
@@ -200,7 +201,7 @@ const Patrons = () => {
             ))}
           </Swiper>
         </div>
-        <Button variant="support" content={t('patrons.buttonText')}></Button>
+        <Support />
       </div>
     </Section>
   )
