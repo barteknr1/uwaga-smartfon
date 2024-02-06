@@ -259,16 +259,17 @@
     display: grid;
     max-width: none;
     grid-template-rows: 40px;
+    column-gap: 10%;
     grid-template-areas:
-      'adressHeadingFundation aadressLine adressHeadingConference '
-      'adresTextFundation aadressLine adressTextConference';
+      'adressHeadingFundation  adressHeadingConference '
+      'adresTextFundation  adressTextConference';
   }
   .adressContainer {
     max-height: 129px;
   }
 
   .adressHeading {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .adressHeadingFundation {
@@ -293,18 +294,17 @@
   }
 
   .adressLine {
+    display: block;
     position: relative;
-    grid-area: aadressLine;
     transform: rotate(90deg);
-    margin-top: 0;
-    margin-bottom: 0;
+    bottom: 250px;
+    left: 70%;
     width: 140px;
-    top: 70px;
   }
 
   .map {
-    min-width: 586px;
-    height: 386px;
+    min-width: 400px;
+    height: 486px;
     position: relative;
     bottom: 180px;
   }
@@ -312,5 +312,11 @@
   .logo {
     margin-top: 40px;
     width: 13%;
+  }
+
+  @media screen and (min-width: 1300px) {
+    .adressHeading {
+      font-size: 1.2rem;
+    }
   }
 }
