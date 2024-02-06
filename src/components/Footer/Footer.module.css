@@ -54,18 +54,18 @@
   fill: var(--light-brand-color);
 }
 
-.adressHeading {
+.addressHeading {
   font-size: 1.25rem;
   font-weight: 700;
 }
 
-.adressText {
+.addressText {
   margin-top: 12px;
   font-size: 1.25rem;
   font-weight: 500;
 }
 
-.adressLine {
+.addressLine {
   margin-top: 20px;
   margin-bottom: 20px;
   border-bottom: 1px solid #1d1d1d;
@@ -164,27 +164,27 @@
     margin-right: 12px;
   }
 
-  .adressContainer {
+  .addressContainer {
     display: grid;
-    grid-template-areas: 'adress map';
+    grid-template-areas: 'address map';
   }
 
-  .adress {
+  .address {
     font-size: 16px;
     max-width: 237px;
     display: inline;
-    grid-area: adress;
+    grid-area: address;
   }
 
-  .adressHeading {
+  .addressHeading {
     font-size: 1rem;
   }
 
-  .adressText {
+  .addressText {
     font-size: 1rem;
   }
 
-  .adressLine {
+  .addressLine {
     margin-top: 33px;
     margin-bottom: 19px;
   }
@@ -255,45 +255,45 @@
     height: 40px;
   }
 
-  .adress {
+  .address {
     display: grid;
     max-width: none;
     grid-template-rows: 40px;
     column-gap: 10%;
     grid-template-areas:
-      'adressHeadingFundation  adressHeadingConference '
-      'adresTextFundation  adressTextConference';
+      'addressHeadingFundation  addressHeadingConference '
+      'adresTextFundation  addressTextConference';
   }
-  .adressContainer {
+  .addressContainer {
     max-height: 129px;
   }
 
-  .adressHeading {
+  .addressHeading {
     font-size: 1rem;
   }
 
-  .adressHeadingFundation {
-    grid-area: adressHeadingFundation;
+  .addressHeadingFundation {
+    grid-area: addressHeadingFundation;
   }
 
-  .adressHeadingConference {
-    grid-area: adressHeadingConference;
+  .addressHeadingConference {
+    grid-area: addressHeadingConference;
   }
 
-  .adressText {
+  .addressText {
     margin-top: 0;
     font-size: 1rem;
   }
 
-  .adressTextFundation {
+  .addressTextFundation {
     grid-area: adresTextFundation;
   }
 
-  .adressTextConference {
-    grid-area: adressTextConference;
+  .addressTextConference {
+    grid-area: addressTextConference;
   }
 
-  .adressLine {
+  .addressLine {
     display: block;
     position: relative;
     transform: rotate(90deg);
@@ -315,7 +315,7 @@
   }
 
   @media screen and (min-width: 1300px) {
-    .adressHeading {
+    .addressHeading {
       font-size: 1.2rem;
     }
   }

@@ -28,23 +28,23 @@ const Footer = ({text}) => {
             konferencja@uwagasmartfon.pl
           </a>
         </div>
-        <div className={css.adressContainer}>
-          <div className={css.adress}>
+        <div className={css.addressContainer}>
+          <div className={css.address}>
             <h3
-              className={`${css.adressHeading} ${css.adressHeadingFundation}`}
+              className={`${css.addressHeading} ${css.addressHeadingFundation}`}
             >
               {t('footer.adres1')}
             </h3>
-            <p className={`${css.adressText} ${css.adressTextFundation}`}>
+            <p className={`${css.addressText} ${css.addressTextFundation}`}>
               Zabłocie 23/1 <br /> 30-701 Kraków <br /> tel. 732 550 480
             </p>
-            <hr className={css.adressLine}></hr>
+            <hr className={css.addressLine}></hr>
             <h3
-              className={`${css.adressHeading} ${css.adressHeadingConference}`}
+              className={`${css.addressHeading} ${css.addressHeadingConference}`}
             >
               {t('footer.adres2')}
             </h3>
-            <p className={`${css.adressText} ${css.adressTextConference}`}>
+            <p className={`${css.addressText} ${css.addressTextConference}`}>
               Centrum Konferencyjne <br />
               Fabryczna CKF_13 <br />
               ul. Fabryczna 13
