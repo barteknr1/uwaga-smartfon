@@ -2,19 +2,13 @@ import React from 'react'
 import {NavLink} from 'react-router-dom'
 import PropTypes from 'prop-types'
 
+import {scrollToTop} from '../Scroll'
 import navigationRoutes from '../Nav/index'
 
 import icon from '../../assets/svg/sprite.svg'
 import css from './Dropdown.module.css'
 
 const Dropdown = ({setNavIsOpen, setDropIsOpen}) => {
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    })
-  }
-
   const handleDropdownLinkClick = () => {
     setNavIsOpen(false)
     setDropIsOpen(false)

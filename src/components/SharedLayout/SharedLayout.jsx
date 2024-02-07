@@ -3,6 +3,7 @@ import {NavLink, Outlet, useLocation} from 'react-router-dom'
 import {Spin as Hamburger} from 'hamburger-react'
 import {useTranslation} from 'react-i18next'
 
+import {scrollToTop} from '../Scroll'
 import Nav from '../Nav/Nav'
 import Footer from '../Footer/Footer'
 import NavTablet from '../NavTablet/NavTablet'
@@ -27,7 +28,7 @@ const SharedLayout = () => {
       if (
         navIsOpen &&
         !isHamburgerMenuClick &&
-        containerRef.current && // Check if containerRef.current is not null
+        containerRef.current &&
         !containerRef.current.contains(event.target) &&
         !isNavClick
       ) {
@@ -52,13 +53,6 @@ const SharedLayout = () => {
     } else {
       setShowScroll(false)
     }
-  }
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    })
   }
 
   return (

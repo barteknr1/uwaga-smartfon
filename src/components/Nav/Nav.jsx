@@ -1,13 +1,13 @@
 //@ts-nocheck
 import {useState, useEffect, useRef} from 'react'
 import {NavLink, useLocation} from 'react-router-dom'
-import PropTypes from 'prop-types'
 import {useTranslation} from 'react-i18next'
+import PropTypes from 'prop-types'
 
+import {scrollToAnchor, scrollToTop} from '../Scroll'
 import Support from '../Support/Support'
 import Dropdown from '../Dropdown/Dropdown'
-
-import navigationRoutes from './index'
+import navigationRoutes from './'
 
 import icon from '../../assets/svg/sprite.svg'
 import css from './Nav.module.css'
@@ -39,23 +39,6 @@ const Nav = ({setNavIsOpen}) => {
 
   const handleDropdownToggle = () => {
     setDropIsOpen(!isDropOpen)
-  }
-
-  const scrollToAnchor = (anchorId) => {
-    if (!anchorId) return
-    const anchorElement = document.getElementById(anchorId)
-    if (anchorElement) {
-      setTimeout(() => {
-        anchorElement.scrollIntoView({behavior: 'smooth'})
-      }, 200)
-    }
-  }
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    })
   }
 
   useEffect(() => {
@@ -111,7 +94,11 @@ const Nav = ({setNavIsOpen}) => {
               to={href}
               onClick={() => {
                 handleNavLinkClick()
-                scrollToAnchor(href.substring(1))
+                if (href === '/volunteering') {
+                  scrollToTop()
+                } else {
+                  scrollToAnchor(href.substring(1))
+                }
               }}
             >
               {t(`${title}`)}
