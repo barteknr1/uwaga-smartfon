@@ -12,6 +12,9 @@ import Sara from '../../assets/images/volunteers/Sara.png'
 import Ewelina from '../../assets/images/volunteers/Ewelina.png'
 import Vincent from '../../assets/images/volunteers/Vincent.png'
 import Dagmara from '../../assets/images/volunteers/Dagmara.png'
+import Kasia from '../../assets/images/volunteers/Kasia.png'
+import Iwona from '../../assets/images/volunteers/Iwona.png'
+import Diana from '../../assets/images/volunteers/Diana.jpg'
 
 const OurVolunteers = () => {
   const dataVolunteer = [
@@ -52,6 +55,18 @@ const OurVolunteers = () => {
       linkedinUrl: 'https://www.linkedin.com/in/wiktoria-kaim-14b4ba26a/',
       images: Wiktoria,
     },
+    {
+      name: 'Diana Kołodziejczyk',
+      teamRole: ['Social Media Specialist'],
+      linkedinUrl: 'https://www.linkedin.com/in/dianakolodziejczyk/',
+      images: Diana,
+    },
+    {
+      name: 'Iwona Kozioł',
+      teamRole: ['QA Engineer'],
+      linkedinUrl: 'https://www.linkedin.com/in/iwona-koziol/',
+      images: Iwona,
+    },
 
     {
       name: 'Joanna Regulska',
@@ -66,6 +81,12 @@ const OurVolunteers = () => {
       images: Sara,
     },
     {
+      name: 'Dagmara Sobczak',
+      teamRole: ['Developer'],
+      linkedinUrl: 'https://www.linkedin.com/in/dagmara-sobczak-746076279/',
+      images: Dagmara,
+    },
+    {
       name: 'Ewelina Suszczyńska',
       teamRole: ['Social Media Specialist'],
       linkedinUrl: 'https://www.linkedin.com/in/ewelina-suszczy%C5%84ska/',
@@ -78,10 +99,10 @@ const OurVolunteers = () => {
       images: Vincent,
     },
     {
-      name: 'Dagmara Sobczak',
-      teamRole: ['Developer'],
-      linkedinUrl: 'https://www.linkedin.com/in/dagmara-sobczak-746076279/',
-      images: Dagmara,
+      name: 'Kasia Kołodziejska',
+      teamRole: ['QA Engineer'],
+      linkedinUrl: 'https://www.linkedin.com/in/katarzyna-kolodziejska1985/',
+      images: Kasia,
     },
   ]
 
