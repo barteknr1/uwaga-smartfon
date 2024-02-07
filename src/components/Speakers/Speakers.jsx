@@ -1,7 +1,7 @@
 import {useEffect, useState} from 'react'
 import {useTranslation} from 'react-i18next'
 import {Swiper, SwiperSlide} from 'swiper/react'
-import {Pagination} from 'swiper/modules'
+import {Navigation, Pagination} from 'swiper/modules'
 import 'swiper/css/bundle'
 import Section from '../Section/Section'
 import speakersData from './SpeakersList'
@@ -73,7 +73,8 @@ const Speakers = () => {
           slidesPerView={'auto'}
           loop={true}
           pagination={false}
-          modules={[Pagination]}
+          navigation={true}
+          modules={[Pagination, Navigation]}
           className="swiperSpeakers"
         >
           {speakersData.map((speaker) => (
