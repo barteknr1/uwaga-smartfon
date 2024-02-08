@@ -11,13 +11,13 @@ const Footer = ({text}) => {
   return (
     <footer className={css.footer}>
       <h2 className={css.heading}>{text}</h2>
-      <address className={css.contact}>
+      <div className={css.contact}>
         <h2 className={css.contactHeading}>
           {t('footer.title1')}
           <br />
           {t('footer.title2')}
         </h2>
-        <div className={css.contactMail}>
+        <address className={css.contactMail}>
           <a
             className={css.contactMailAdress}
             href="mailto:konferencja@uwagasmartfon.pl"
@@ -27,9 +27,9 @@ const Footer = ({text}) => {
             </svg>
             konferencja@uwagasmartfon.pl
           </a>
-        </div>
+        </address>
         <div className={css.addressContainer}>
-          <div className={css.address}>
+          <address className={css.address}>
             <h3
               className={`${css.addressHeading} ${css.addressHeadingFundation}`}
             >
@@ -50,7 +50,7 @@ const Footer = ({text}) => {
               ul. Fabryczna 13
               <br /> 31-553 Kraków
             </p>
-          </div>
+          </address>
 
           <iframe
             className={css.map}
@@ -129,7 +129,7 @@ const Footer = ({text}) => {
             © 2023 Fundacja ProjektPL. All rights reserved
           </p>
         </div>
-      </address>
+      </div>
       <script
         type="text/javascript"
         src="https://embedmaps.com/google-maps-authorization/script.js?id=6b87c2c524390684a6c28d38c29058170ed7c9f9"
