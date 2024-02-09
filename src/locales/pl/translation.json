@@ -241,7 +241,9 @@
     "area": "Obszar działania, który chcesz wesprzeć",
     "agreement": "Wyrażam zgodę na przetwarzanie moich danych osobowych.",
     "error": "Uzupełnij wszystkie dane i zaznacz zgodę na przetwarzanie danych osobowych, aby przesłać formularz.",
-    "button": "Wyślij formularz"
+    "button": "Wyślij formularz",
+    "modalHeader": "Dziękujemy za przesłanie formularza zapisu do wolontariatu! Twoje zaangażowanie ma dla nas ogromne znaczenie.",
+    "modalParagraph": "Skontaktujemy się z Tobą w ciągu najbliższych dni, aby omówić szczegóły. Czekaj na naszą wiadomość i do usłyszenia!"
   },
   "program": {
     "title": "Program"
