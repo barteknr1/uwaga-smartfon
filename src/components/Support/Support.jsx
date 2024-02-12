@@ -1,11 +1,13 @@
-import css from './Support.module.css'
-import Button from '../Button/Button'
-import {useModal} from '../Modal/ModalProvider'
 import {useTranslation} from 'react-i18next'
+
+import {useModal} from '../Modal/ModalProvider'
+import Button from '../Button/Button'
+import VolunteerThanksModal from '../VolunteerThanksModal/VolunteerThanksModal'
+
+import css from './Support.module.css'
 
 const Support = () => {
   const {t} = useTranslation()
-
   const {isModalVisible, setIsModalVisible, setModalContent} = useModal()
 
   const openModal = () => {
@@ -32,7 +34,7 @@ const Support = () => {
           ____zł
         </button>
       </div>
-      <Button type="submit" content={t('support.button')} variant="primary" />
+      <VolunteerThanksModal />
     </div>
   )
 
