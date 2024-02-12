@@ -27,7 +27,7 @@ const VolunteerThanksModal = () => {
     <Button
       type="button"
       variant="primary"
-      content={'volunteerThanks.button'}
+      content={t('volunteerThanks.button')}
       onClick={() => openModal()}
     />
   )

@@ -276,6 +276,7 @@
   },
   "volunteerThanks": {
     "title": "Dziękujemy za przesłanie formularza zapisu do wolontariatu! Twoje zaangażowanie ma dla nas ogromne znaczenie.",
-    "text": "Skontaktujemy się z Tobą w ciągu najbliższych dni, aby omówić szczegóły. Czekaj na naszą wiadomość i do usłyszenia!"
+    "text": "Skontaktujemy się z Tobą w ciągu najbliższych dni, aby omówić szczegóły. Czekaj na naszą wiadomość i do usłyszenia!",
+    "button": "Wesprzyj"
   }
 }

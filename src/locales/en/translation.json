@@ -274,6 +274,7 @@
   },
   "volunteerThanks": {
     "title": "Thank you for submitting the volunteer sign-up form! Your commitment is of great importance to us.",
-    "text": "We will contact you in the next few days to discuss the details. Look forward to hearing from us and hearing from you!"
+    "text": "We will contact you in the next few days to discuss the details. Look forward to hearing from us and hearing from you!",
+    "button": "Support"
   }
 }
