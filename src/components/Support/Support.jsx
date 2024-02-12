@@ -2,7 +2,6 @@ import {useTranslation} from 'react-i18next'
 
 import {useModal} from '../Modal/ModalProvider'
 import Button from '../Button/Button'
-import VolunteerThanksModal from '../VolunteerThanksModal/VolunteerThanksModal'
 
 import css from './Support.module.css'
 
@@ -34,7 +33,7 @@ const Support = () => {
           ____zł
         </button>
       </div>
-      <VolunteerThanksModal />
+      <Button type="submit" content="Wesprzyj" variant="primary" />
     </div>
   )
 
