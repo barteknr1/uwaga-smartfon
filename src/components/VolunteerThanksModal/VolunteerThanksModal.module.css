@@ -1,3 +1,48 @@
-.example {
-  background-color: black;
+.volunteerThanksContainer {
+  display: flex;
+  flex-direction: column;
+}
+.volunteerThanksHeader {
+  font-family: var(--decoraction-font);
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  color: var(--dark-text-color);
+  align-self: center;
+  margin-bottom: 16px;
+}
+.volunteerThanksText {
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 1.2;
+}
+
+.supportButton {
+  font-family: var(--placeholder-font);
+  font-size: 29px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: var(--deep-purple-color);
+  border: 3px solid var(--light-brand-color);
+  border-radius: 5px;
+  padding: 16px 0;
+}
+@media screen and (min-width: 765px) {
+  .volunteerThanksHeader {
+    font-weight: 400;
+    font-size: 2.44rem;
+    align-self: flex-start;
+  }
+
+  .volunteerThanksText {
+    font-weight: 500;
+    font-size: 1.25rem;
+  }
+  .volunteerThanksText:first-of-type {
+    margin-bottom: 40px;
+  }
+
+  .volunteerThanksContainer > button:last-of-type {
+    margin: 0 auto;
+  }
 }
