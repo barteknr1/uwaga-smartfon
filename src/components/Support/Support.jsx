@@ -1,11 +1,10 @@
-import css from './Support.module.css'
-import Button from '../Button/Button'
-import {useModal} from '../Modal/ModalProvider'
 import {useTranslation} from 'react-i18next'
+import {useModal} from '../Modal/ModalProvider'
+import Button from '../Button/Button'
+import css from './Support.module.css'
 
 const Support = () => {
   const {t} = useTranslation()
-
   const {isModalVisible, setIsModalVisible, setModalContent} = useModal()
 
   const openModal = () => {

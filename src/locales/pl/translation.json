@@ -273,5 +273,10 @@
     "text1": "Dołącz do nas i przekaż darowiznę — tylko z Twoją pomocą może nam się to udać!",
     "text2": "Wybierz kwotę darowizny, którą chcesz przekazać:",
     "button": "Wesprzyj"
+  },
+  "volunteerThanks": {
+    "title": "Dziękujemy za przesłanie formularza zapisu do wolontariatu! Twoje zaangażowanie ma dla nas ogromne znaczenie.",
+    "text": "Skontaktujemy się z Tobą w ciągu najbliższych dni, aby omówić szczegóły. Czekaj na naszą wiadomość i do usłyszenia!",
+    "button": "Wesprzyj"
   }
 }

@@ -271,5 +271,10 @@
     "text1": "Join us and make a donation — only with your help can we make it happen!",
     "text2": "Choose the amount of the donation you would like to contribute:",
     "button": "Support"
+  },
+  "volunteerThanks": {
+    "title": "Thank you for submitting the volunteer sign-up form! Your commitment is of great importance to us.",
+    "text": "We will contact you in the next few days to discuss the details. Look forward to hearing from us and hearing from you!",
+    "button": "Support"
   }
 }
