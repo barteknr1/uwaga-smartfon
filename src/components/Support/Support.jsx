@@ -1,8 +1,6 @@
 import {useTranslation} from 'react-i18next'
-
 import {useModal} from '../Modal/ModalProvider'
 import Button from '../Button/Button'
-
 import css from './Support.module.css'
 
 const Support = () => {
