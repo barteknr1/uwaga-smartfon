@@ -33,7 +33,7 @@ const Support = () => {
           ____zł
         </button>
       </div>
-      <Button type="submit" content="Wesprzyj" variant="primary" />
+      <Button type="submit" content={t('support.button')} variant="primary" />
     </div>
   )
 
