@@ -34,7 +34,7 @@ const CheckboxComponent = ({value, onChange, errors, error}) => {
         }`}
         htmlFor="formCheckbox"
       >
-        {t(`checkbox.label`)}
+        {t(`checkboxComponent.label`)}
       </label>
     </div>
   )

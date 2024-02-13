@@ -18,7 +18,7 @@ const WorkshopsForm = () => {
       <Button
         type="button"
         variant="primary"
-        content="Zapisz się na warsztat"
+        content={t('workshopsForm.buttonSign')}
         onClick={handleOpenModal}
       />
     </>

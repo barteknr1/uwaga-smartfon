@@ -37,7 +37,7 @@ const RadioComponent = ({error, value, onChange, options, errors}) => {
             }`}
             htmlFor={option}
           >
-            {t(`radio.${option}`)}
+            {t(`radioComponent.${option}`)}
           </label>
         </div>
       ))}

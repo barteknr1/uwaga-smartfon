@@ -276,5 +276,36 @@
     "title": "Thank you for submitting the volunteer sign-up form! Your commitment is of great importance to us.",
     "text": "We will contact you in the next few days to discuss the details. Look forward to hearing from us and hearing from you!",
     "button": "Support"
+  },
+  "textComponent": {
+    "name": "Name and Surname",
+    "email": "Email Address",
+    "customRole": "Role",
+    "customRolePlaceholder": "I am participating in the conference as..."
+  },
+  "selectComponent": {
+    "Przedstawiciel organizacji": "Organization Representative",
+    "Nauczyciel": "Teacher",
+    "Rodzic": "Parent",
+    "Uczeń": "Student",
+    "Inne": "Other",
+    "label": "Role",
+    "placeholder": "I am participating in the conference as..."
+  },
+  "radioComponent": {
+    "Warsztat 1": "Workshop 1",
+    "Warsztat 2": "Workshop 2",
+    "Warsztat 3": "Workshop 3",
+    "Warsztat 4": "Workshop 4"
+  },
+  "checkboxComponent": {
+    "label": "I consent to the processing of my personal data."
+  },
+  "workshopsForm": {
+    "header": "Workshops Registration Form",
+    "paragraph": "Each participant of the event Uwaga! Smartfone during the conference has the opportunity to participate in one selected workshop. Please familiarize yourself with the program and choose one of the workshops below. Thank you.",
+    "error": "Please fill in all the data and check the consent for processing personal data to submit the form.",
+    "buttonSign": "Sign up for workshop",
+    "button": "Register"
   }
 }

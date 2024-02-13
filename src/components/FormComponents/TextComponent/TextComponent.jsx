@@ -3,7 +3,15 @@ import PropTypes from 'prop-types'
 import css from './TextComponent.module.css'
 import sprite from '../../../assets/svg/sprite.svg'
 
-const TextComponent = ({label, value, type, onChange, onClear, errors}) => {
+const TextComponent = ({
+  label,
+  placeholder,
+  value,
+  type,
+  onChange,
+  onClear,
+  errors,
+}) => {
   const {t} = useTranslation()
 
   return (
@@ -20,7 +28,7 @@ const TextComponent = ({label, value, type, onChange, onClear, errors}) => {
       </label>
       <input
         className={css.FormInput}
-        placeholder={t(`textComponent.${label}`)}
+        placeholder={t(`textComponent.${placeholder}`)}
         id={label}
         type={type}
         value={value}
@@ -43,6 +51,7 @@ const TextComponent = ({label, value, type, onChange, onClear, errors}) => {
 
 TextComponent.propTypes = {
   label: PropTypes.string,
+  placeholder: PropTypes.string,
   value: PropTypes.string,
   type: PropTypes.string,
   errors: PropTypes.arrayOf(PropTypes.string),

@@ -103,11 +103,12 @@ const ModalContent = () => {
           : css.workshopsFormContainer
       }
     >
-      <h4 className={css.workshopsFormHeader}>Formularz zapisu na warsztaty</h4>
+      <h4 className={css.workshopsFormHeader}>{t('workshopsForm.header')}</h4>
       <form className={css.workshopsForm} onSubmit={handleSubmit}>
         <fieldset className={css.workshopsFormFieldset}>
           <TextComponent
             label="name"
+            placeholder="name"
             value={formData.name}
             type="text"
             errors={errors}
@@ -116,6 +117,7 @@ const ModalContent = () => {
           />
           <TextComponent
             label="email"
+            placeholder="email"
             value={formData.email}
             type="email"
             errors={errors}
@@ -133,6 +135,7 @@ const ModalContent = () => {
           {formData.role === 'Inne' && (
             <TextComponent
               label="customRole"
+              placeholder="customRolePlaceholder"
               value={formData.customRole}
               type="text"
               errors={errors}
@@ -140,12 +143,7 @@ const ModalContent = () => {
               onClear={() => handleClearInput('customRole')}
             />
           )}
-          <p>
-            Każdy uczestnik wydarzenia Uwaga! Smartfon podczas konferencji ma
-            możliwość uczestnictwa w jednym wybranym warsztacie. Prosimy o
-            zapoznanie się z programem i wybór jednego z poniższych warsztatów.
-            Dziękujemy.
-          </p>
+          <p>{t('workshopsForm.paragraph')}</p>
           <RadioComponent
             error="workshop"
             value={formData.workshop}
@@ -161,14 +159,11 @@ const ModalContent = () => {
           />
         </fieldset>
         {errors.length > 0 && (
-          <p className={css.errorText}>
-            Uzupełnij wszystkie dane i zaznacz zgodę na przetwarzanie danych
-            osobowych, aby przesłać formularz.
-          </p>
+          <p className={css.errorText}>{t('workshopsForm.error')}</p>
         )}
         <Button
           type="submit"
-          content="Zapisuję się"
+          content={t('workshopsForm.button')}
           variant="secondary"
           onClick={handleSubmit}
         />
