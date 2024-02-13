@@ -143,7 +143,9 @@ const ModalContent = () => {
               onClear={() => handleClearInput('customRole')}
             />
           )}
-          <p>{t('workshopsForm.paragraph')}</p>
+          <p className={css.workshopsParagraph}>
+            {t('workshopsForm.paragraph')}
+          </p>
           <RadioComponent
             error="workshop"
             value={formData.workshop}
