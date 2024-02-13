@@ -239,7 +239,9 @@
     "area": "Area of expertise you want to support",
     "agreement": "I consent to the processing of my personal data.",
     "error": "Please fill in all the details and check the consent for processing personal data to submit the form.",
-    "button": "Send Form"
+    "button": "Send Form",
+    "modalHeader": "Thank you for submitting the volunteer registration form! Your commitment is greatly appreciated.",
+    "modalParagraph": "We will contact you within the next few days to discuss the details. Please wait for our message and talk to you soon!"
   },
   "program": {
     "title": "Program"
@@ -268,6 +270,11 @@
     "title": "Support Our Initiative",
     "text1": "Join us and make a donation — only with your help can we make it happen!",
     "text2": "Choose the amount of the donation you would like to contribute:",
+    "button": "Support"
+  },
+  "volunteerThanks": {
+    "title": "Thank you for submitting the volunteer sign-up form! Your commitment is of great importance to us.",
+    "text": "We will contact you in the next few days to discuss the details. Look forward to hearing from us and hearing from you!",
     "button": "Support"
   }
 }
