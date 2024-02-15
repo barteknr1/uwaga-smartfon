@@ -278,5 +278,36 @@
     "title": "Dziękujemy za przesłanie formularza zapisu do wolontariatu! Twoje zaangażowanie ma dla nas ogromne znaczenie.",
     "text": "Skontaktujemy się z Tobą w ciągu najbliższych dni, aby omówić szczegóły. Czekaj na naszą wiadomość i do usłyszenia!",
     "button": "Wesprzyj"
+  },
+  "textComponent": {
+    "name": "Imię i nazwisko",
+    "email": "Adres e-mail",
+    "customRole": "Rola",
+    "customRolePlaceholder": "W konferencji uczestniczę jako..."
+  },
+  "selectComponent": {
+    "Przedstawiciel organizacji": "Przedstawiciel organizacji",
+    "Nauczyciel": "Nauczyciel",
+    "Rodzic": "Rodzic",
+    "Uczeń": "Uczeń",
+    "Inne": "Inne",
+    "label": "Rola",
+    "placeholder": "W konferencji uczestniczę jako..."
+  },
+  "radioComponent": {
+    "Warsztat 1": "Warsztat 1",
+    "Warsztat 2": "Warsztat 2",
+    "Warsztat 3": "Warsztat 3",
+    "Warsztat 4": "Warsztat 4"
+  },
+  "checkboxComponent": {
+    "label": "Wyrażam zgodę na przetwarzanie moich danych osobowych."
+  },
+  "workshopsForm": {
+    "header": "Formularz zapisu na warsztaty",
+    "paragraph": "Każdy uczestnik wydarzenia Uwaga! Smartfon podczas konferencji ma możliwość uczestnictwa w jednym wybranym warsztacie. Prosimy o zapoznanie się z programem i wybór jednego z poniższych warsztatów. Dziękujemy.",
+    "error": "Uzupełnij wszystkie dane i zaznacz zgodę na przetwarzanie danych osobowych, aby przesłać formularz.",
+    "buttonSign": "Zapisz się na warsztat",
+    "button": "Zapisuję się"
   }
 }
