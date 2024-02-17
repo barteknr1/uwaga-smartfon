@@ -6,6 +6,12 @@
   justify-content: center;
 }
 
+/* backdrop */
+.workshopsModalIsOpen ~ div {
+  overflow-y: auto;
+  align-items: flex-start;
+}
+
 .workshops button {
   margin-top: 64px;
 }

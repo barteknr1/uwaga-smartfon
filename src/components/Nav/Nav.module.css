@@ -2,7 +2,6 @@
   background-color: var(--primary-background-color);
   display: flex;
   flex-direction: column;
-
   font-size: 1.25rem;
   padding: 60px 16px 100px 16px;
   border-radius: 12px 0px 12px 12px;

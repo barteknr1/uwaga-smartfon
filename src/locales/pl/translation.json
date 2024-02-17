@@ -241,7 +241,9 @@
     "area": "Obszar działania, który chcesz wesprzeć",
     "agreement": "Wyrażam zgodę na przetwarzanie moich danych osobowych.",
     "error": "Uzupełnij wszystkie dane i zaznacz zgodę na przetwarzanie danych osobowych, aby przesłać formularz.",
-    "button": "Wyślij formularz"
+    "button": "Wyślij formularz",
+    "modalHeader": "Dziękujemy za przesłanie formularza zapisu do wolontariatu! Twoje zaangażowanie ma dla nas ogromne znaczenie.",
+    "modalParagraph": "Skontaktujemy się z Tobą w ciągu najbliższych dni, aby omówić szczegóły. Czekaj na naszą wiadomość i do usłyszenia!"
   },
   "program": {
     "title": "Program"
@@ -259,6 +261,53 @@
     "aboutEvent": "O wydarzeniu",
     "program": "Program",
     "speakers": "Prelegenci",
-    "buttonSupport": "Wesprzyj"
+    "buttonSupport": "Wesprzyj",
+    "aboutVolunteer": "O wolontariace",
+    "volunteeringAreas": "Obszary działania",
+    "volunteerForm": "Formularz zgłoszeniowy",
+    "ourVolunteers": "Nasi wolonatriusze",
+    "dearVolunteers": "Podziękowania"
+  },
+  "support": {
+    "title": "Wesprzyj naszą inicjatywę",
+    "text1": "Dołącz do nas i przekaż darowiznę — tylko z Twoją pomocą może nam się to udać!",
+    "text2": "Wybierz kwotę darowizny, którą chcesz przekazać:",
+    "button": "Wesprzyj"
+  },
+  "volunteerThanks": {
+    "title": "Dziękujemy za przesłanie formularza zapisu do wolontariatu! Twoje zaangażowanie ma dla nas ogromne znaczenie.",
+    "text": "Skontaktujemy się z Tobą w ciągu najbliższych dni, aby omówić szczegóły. Czekaj na naszą wiadomość i do usłyszenia!",
+    "button": "Wesprzyj"
+  },
+  "textComponent": {
+    "name": "Imię i nazwisko",
+    "email": "Adres e-mail",
+    "customRole": "Rola",
+    "customRolePlaceholder": "W konferencji uczestniczę jako..."
+  },
+  "selectComponent": {
+    "Przedstawiciel organizacji": "Przedstawiciel organizacji",
+    "Nauczyciel": "Nauczyciel",
+    "Rodzic": "Rodzic",
+    "Uczeń": "Uczeń",
+    "Inne": "Inne",
+    "label": "Rola",
+    "placeholder": "W konferencji uczestniczę jako..."
+  },
+  "radioComponent": {
+    "Warsztat 1": "Warsztat 1",
+    "Warsztat 2": "Warsztat 2",
+    "Warsztat 3": "Warsztat 3",
+    "Warsztat 4": "Warsztat 4"
+  },
+  "checkboxComponent": {
+    "label": "Wyrażam zgodę na przetwarzanie moich danych osobowych."
+  },
+  "workshopsForm": {
+    "header": "Formularz zapisu na warsztaty",
+    "paragraph": "Każdy uczestnik wydarzenia Uwaga! Smartfon podczas konferencji ma możliwość uczestnictwa w jednym wybranym warsztacie. Prosimy o zapoznanie się z programem i wybór jednego z poniższych warsztatów. Dziękujemy.",
+    "error": "Uzupełnij wszystkie dane i zaznacz zgodę na przetwarzanie danych osobowych, aby przesłać formularz.",
+    "buttonSign": "Zapisz się na warsztat",
+    "button": "Zapisuję się"
   }
 }

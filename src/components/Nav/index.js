@@ -51,23 +51,23 @@ const landingPageRoutes = [
 
 const volunteeringPageRoutes = [
   {
-    title: 'O wolontariace',
+    title: 'navigation.aboutVolunteer',
     href: '#about_volunteering',
   },
   {
-    title: 'Obszary działania',
+    title: 'navigation.volunteeringAreas',
     href: '#volunteering_areas',
   },
   {
-    title: 'Formularz zgłoszeniowy',
+    title: 'navigation.volunteerForm',
     href: '#volunteer_form',
   },
   {
-    title: 'Nasi wolontariusze',
+    title: 'navigation.ourVolunteers',
     href: '#our_volunteers',
   },
   {
-    title: 'Podziękowania',
+    title: 'navigation.dearVolunteers',
     href: '#dear_volunteers',
   },
 ]

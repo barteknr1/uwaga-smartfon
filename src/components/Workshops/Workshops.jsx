@@ -1,14 +1,20 @@
 import {useTranslation} from 'react-i18next'
+import WorkshopsForm from '../WorkshopsForm/WorkshopsForm'
 import Button from '../Button/Button'
 import Section from '../Section/Section'
 import css from './Workshops.module.css'
+import {useModal} from '../Modal/ModalProvider'
 
 const Workshops = () => {
   const {t} = useTranslation()
-
+  const {isModalVisible} = useModal()
   return (
     <Section
-      sectionClass={css.workshops}
+      sectionClass={
+        isModalVisible
+          ? `${css.workshops} ${css.workshopsModalIsOpen}`
+          : css.workshops
+      }
       titleClass={css.workshopsTitle}
       title={t('workshops.title')}
     >
@@ -39,7 +45,7 @@ const Workshops = () => {
           </ul>
         </div>
       </div>
-      <Button variant="primary" content={t('workshops.button')} />
+      <WorkshopsForm />
     </Section>
   )
 }

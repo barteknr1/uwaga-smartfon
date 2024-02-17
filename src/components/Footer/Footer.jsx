@@ -11,13 +11,13 @@ const Footer = ({text}) => {
   return (
     <footer className={css.footer}>
       <h2 className={css.heading}>{text}</h2>
-      <address className={css.contact}>
+      <div className={css.contact}>
         <h2 className={css.contactHeading}>
           {t('footer.title1')}
           <br />
           {t('footer.title2')}
         </h2>
-        <div className={css.contactMail}>
+        <address className={css.contactMail}>
           <a
             className={css.contactMailAdress}
             href="mailto:konferencja@uwagasmartfon.pl"
@@ -27,30 +27,30 @@ const Footer = ({text}) => {
             </svg>
             konferencja@uwagasmartfon.pl
           </a>
-        </div>
-        <div className={css.adressContainer}>
-          <div className={css.adress}>
+        </address>
+        <div className={css.addressContainer}>
+          <address className={css.address}>
             <h3
-              className={`${css.adressHeading} ${css.adressHeadingFundation}`}
+              className={`${css.addressHeading} ${css.addressHeadingFundation}`}
             >
               {t('footer.adres1')}
             </h3>
-            <p className={`${css.adressText} ${css.adressTextFundation}`}>
+            <p className={`${css.addressText} ${css.addressTextFundation}`}>
               Zabłocie 23/1 <br /> 30-701 Kraków <br /> tel. 732 550 480
             </p>
-            <hr className={css.adressLine}></hr>
+            <hr className={css.addressLine}></hr>
             <h3
-              className={`${css.adressHeading} ${css.adressHeadingConference}`}
+              className={`${css.addressHeading} ${css.addressHeadingConference}`}
             >
               {t('footer.adres2')}
             </h3>
-            <p className={`${css.adressText} ${css.adressTextConference}`}>
+            <p className={`${css.addressText} ${css.addressTextConference}`}>
               Centrum Konferencyjne <br />
               Fabryczna CKF_13 <br />
               ul. Fabryczna 13
               <br /> 31-553 Kraków
             </p>
-          </div>
+          </address>
 
           <iframe
             className={css.map}
@@ -62,7 +62,11 @@ const Footer = ({text}) => {
             src="https://maps.google.com/maps?&amp;hl=en&amp;q=ckf%2013%20Krak%C3%B3w+()&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
           ></iframe>
         </div>
-        <a href="https://projektpl.org/">
+        <a
+          href="https://projektpl.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img
             className={css.logo}
             src={logo}
@@ -125,7 +129,7 @@ const Footer = ({text}) => {
             © 2023 Fundacja ProjektPL. All rights reserved
           </p>
         </div>
-      </address>
+      </div>
       <script
         type="text/javascript"
         src="https://embedmaps.com/google-maps-authorization/script.js?id=6b87c2c524390684a6c28d38c29058170ed7c9f9"

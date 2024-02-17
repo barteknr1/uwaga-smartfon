@@ -217,6 +217,28 @@
   transform: rotate(45deg);
 }
 
+.speakersModalContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 16px;
+  padding: 12px 0;
+}
+
+.speakersModalHeader {
+  font-family: var(--decoraction-font);
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.speakersModalParagraph {
+  font-family: var(--main-font);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: normal;
+}
+
 @media screen and (min-width: 765px) {
   .volunteerForm {
     padding-left: 40px;
