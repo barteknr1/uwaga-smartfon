@@ -7,7 +7,7 @@
 }
 .commentsTitle {
   align-self: flex-start;
-  font-family: var(--decoraction-font);
+  font-family: var(--decoration-font);
   color: var(--light-text-color);
   font-size: 1.9375rem;
   line-height: normal;

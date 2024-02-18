@@ -19,7 +19,7 @@
 }
 .sliderTitle {
   color: var(--light-text-color);
-  font-family: var(--decoraction-font);
+  font-family: var(--decoration-font);
   align-self: flex-start;
   font-size: 1.9375rem;
   font-style: normal;
