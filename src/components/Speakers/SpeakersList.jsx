@@ -4,7 +4,6 @@ import lukaszCichocki from '../../assets/images/Speakers/dr-lukasz-cichocki.png'
 import tomaszLewandowski from '../../assets/images/Speakers/tomasz-lewandowski.png'
 import monikaPrzybysz from '../../assets/images/Speakers/monika-przybysz.png'
 import paulaArguelles from '../../assets/images/Speakers/paula-arguelles.png'
-import catherineLEcuyer from '../../assets/images/Speakers/no-photo.jpg'
 import sylwiaJaskulska from '../../assets/images/Speakers/sylwia-jaskulska.png'
 
 const speakersData = [
@@ -94,7 +93,6 @@ const speakersData = [
   },
   {
     id: 7,
-    img: catherineLEcuyer,
     name: 'Catherine L’Ecuyer',
     title: 'Specjalista',
     about: [
@@ -123,6 +121,69 @@ const speakersData = [
       'Prowadzącą webinaria, szkolenia i spotkania autorskie dla Diet & Training by Ann (Anna Lewandowska), Nowej Ery, Librusa, Fundacji Szkoła Bez Ocen, Macmillan Polska, Wydawnictwa Znak.',
       'Ambasadorka akcji Rok Relacji w Edukacji, członkini Rady Programowej Ośrodka Koordynacyjno - Programowego Kształcenia Nauczycieli UAM w  Poznaniu, zastępczyni redaktor naczelnej "Rocznika Pedagogicznego".',
       'Magister pedagogiki specjalnej, doktor nauk społecznych w zakresie pedagogiki, mama dwóch nastolatków.',
+    ],
+  },
+  {
+    id: 9,
+    img: '',
+    name: 'dr Andrzej Kobiałka',
+    title: 'Specjalista',
+    about: [
+      'Doktor nauk społecznych, adiunkt w Instytucie Spraw Społecznych i Zdrowia Publicznego Uniwersytetu Pedagogicznego im. Komisji Edukacji Narodowej w Krakowie. Prowadzi badania z zakresu bezpieczeństwa społecznego, zagrożeń w środowiskach lokalnych, profilaktyki społecznej oraz świadomości problematyki społecznej świata realnego i wirtualnego. Pełni również ważne funkcje społeczne tj., członkiem Gminnej Komisji ds. Rozwiązywania Problemów Alkoholowych oraz certyfikowanym przez PARPA specjalistą d/s profilaktyki i rozwiązywania problemów alkoholowych w lokalnych środowiskach. Jako profilaktyk, pedagog, trener pracuje nadto z dziećmi, młodzieżą oraz dorosłymi. Jest certyfikowanym realizatorem rekomendowanych programów profilaktycznych Instytutu Psychiatrii i Neurologii w Warszawie. Aktywnie uczestniczył jako członek w Zespole Projektowym Centrum Usług Społecznych, którego zadaniem było koordynowanie, dokumentowanie i nadzór merytoryczny nad prawidłową realizacją projektu ,,Centrum Usług Społecznych w Myślenicach”. W roku 2020 był członkiem/ekspertem grupy roboczej ds. Bezpieczeństwa Dzieci i Młodzieży w Internecie w Ministerstwie Cyfryzacji w Warszawie. Członek Zarządu Głównego Polskiego Towarzystwa Pedagogicznego w Warszawie. W roku 2020 odznaczony Medalem Edukacji Narodowej za szczególne zasługi dla oświaty i wychowania.',
+    ],
+  },
+  {
+    id: 10,
+    img: '',
+    name: 'Dariusz Cupiał',
+    title: 'Specjalista',
+    about: [
+      `Założyciel Fundacji Cyryla i Metodego, inicjator Tato.Net, trener. Absolwent KUL, stypendysta Institute For Ecumenical and Cultural Research, Saint John's University w Collegeville w USA, należy do Stowarzyszenia Innowatorów Społecznych ASHOKA i Stowarzyszenia Diakonia Światło-Życie. Bierze udział w pracach Rady Rodziny przy Ministrze Rodziny, Pracy i Polityki Społecznej oraz Narodowej Rady Rozwoju - Rady do spraw Rodziny, Edukacji i Wychowania przy Prezydencie Rzeczypospolitej Polskiej. Jako trener przeprowadził ponad 2000 godzin szkoleniowych dla ojców, w tym dla ponad 250 osadzonych w zakładach karnych i aresztach śledczych. Autor wielu artykułów oraz książek: Na drodze ewangelizacji i ekumenii i Kolumbowie naszego pokolenia, współredaktor monografii Czas na Tatę (trzeci tom serii ABC. Analizy Badania Cele). Pasjonat kajakarstwa, jazdy konnej i gór. Ojciec trojga dorosłych dzieci, dziadek pięciorga wnucząt.`,
+    ],
+  },
+  {
+    id: 11,
+    img: '',
+    name: 'Dorota Bojemska',
+    title: 'Specjalista',
+    about: [
+      `Członek Krajowej Rady Związku Dużych Rodzin 3+. Rzeczniczka i inicjatorka szerokiej współpracy z organizacjami pozarządowymi na rzecz postawienia rodziny w centrum zainteresowania Państwa oraz wspólnoty lokalnej. Współpracowała z Pełnomocnikiem Rządu ds. Polityki Demograficznej w tworzeniu Strategii Demograficznej 2040. Żona, mama trzech córek i pięciu synów.`,
+    ],
+  },
+  {
+    id: 12,
+    img: '',
+    name: 'dr Ewa Krupnik',
+    title: 'Specjalista',
+    about: [
+      `Trenerka, Coach ACC ICF, specjalistka ds. public relations. Od kilkunastu lat związana z pracą w sektorze społecznym. Fundatorka Fundacji LIS. Ekspertka i wykładowca PR w NGO na Uniwersytecie Jagiellońskim. Prowadzi szkolenia w firmach, organizacjach pozarządowych jak i instytucjach publicznych. Przygotowuje analizy i kompleksowe strategie rozwoju, komunikacji dla organizacji pozarządowych a także innych podmiotów. Obecnie współpracuje z Fundacją Sela, gdzie prowadzi podcast pt. Sens Działania. Pomysłodawczyni i inicjatorka O.Coaching! - portalu gdzie każdy może dołączyć do coachingowych podróżników. Ma misję, by pokazać jak coaching może pomagać w osiąganiu celów. Na co dzień pracuje także jako coach dla klientów indywidualnych, instytucji publicznych i biznesowych.`,
+    ],
+  },
+  {
+    id: 13,
+    img: '',
+    name: 'Michał Kot',
+    title: 'Specjalista',
+    about: [
+      `socjolog, autor wielu publikacji i raportów na temat demografii i polityki rodzinnej, ekspert ds rynku telekomunikacyjnego i nowych technologii.`,
+    ],
+  },
+  {
+    id: 14,
+    img: '',
+    name: 'Monika Borkowska-Żebrowska',
+    title: 'Specjalista',
+    about: [
+      `Socjolożka,  absolwentka Uniwersytetu Jagiellońskiego, socjoterapeutka, trenerka, specjalistka terapii uzależnień. Kieruje Działem Profilaktyki w Miejskim Centrum Profilaktyki Uzależnień w Krakowie. Posiada doświadczenie w pracy w obszarze profilaktyki i terapii uzależnień oraz w pracy z rodzinami wieloproblemowymi.`,
+    ],
+  },
+  {
+    id: 15,
+    img: '',
+    name: 'Stanisław Kowal',
+    title: 'Specjalista',
+    about: [
+      `Pedagog, od wielu lat zajmuje się kształceniem nauczycieli - aktualnie w Uniwersytecie Jagiellońskim. Organizuje i prowadzi placówki edukacji spersonalizowanej. Ekspert Instytutu „Educare”. Główny obszar zainteresowań badawczych to pedeutologia i koncepcja edukacji spersonalizowanej.`,
     ],
   },
 ]

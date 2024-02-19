@@ -133,7 +133,7 @@
   "speakers": {
     "title": "Prelegenci",
     "about": {
-      "1": [
+      "dr Roman Solecki": [
         "Roman Solecki",
         "Pedagog, profilaktyk, certyfikowany logoterapeuta; psychoterapeuta uzależnień, mediator;",
         "Doktor w dziedzinie nauk społecznych poświęcony Aktywności młodzieży w cyberprzestrzeni. Studia licencjackie z zakresu Poradnictwa Rodzinnego i Mediacji. Bazowy kurs Mediacji w Stowarzyszeniu \"Mediatorzy Polscy\". Ukończył Małopolski Ośrodek Szkolenia Terapeutów Uzależnień przy Szpitalu Klinicznym im dr. Józefa Babińskiego w Krakowie.",
@@ -141,7 +141,7 @@
         "Prowadzi badania nad aktywnością młodzieży w cyberprzestrzeni, profilaktyką i terapią uzależnień od mediów, depresją i poczuciem sensu życia wśród młodzieży.",
         "Od 2020 roku koordynuje prace Krakowskiego Instytutu Logoterapii."
       ],
-      "2": [
+      "Piotr Czubaty": [
         "Piotr Czubaty",
         "Ekspert ds. bezpieczeństwa informacji, audytor wiodący SZBI wg normy ISO/IEC 27001, inspektor ochrony danych, specjalista w obszarze compliance.",
         "Trener, wykładowca i publicysta. Autor książki: „RODO: obowiązki pracodawcy. Praktyczny poradnik ze wzorami”.",
@@ -149,7 +149,7 @@
         "Na co dzień pracuje z jednostkami administracji publicznej, przedsiębiorcami i trzecim sektorem, podnosząc standardy wewnętrzne i poziom bezpieczeństwa w obliczu wyzwań cyfrowych oraz wymogów prawa międzynarodowego.",
         "Po godzinach inicjuje działania edukacyjne, realizując misję szerzenia wiedzy o zagrożeniach płynących z nadużywania lub nieumiejętnego korzystania z nowych technologii”."
       ],
-      "3": [
+      "dr Łukasz Cichocki": [
         "Łukasz Cichocki",
         "Doktor nauk medycznych, psychiatra, psychoterapeuta, nauczyciel akademicki z ponad dwudziestoletnim doświadczeniem.",
         "Dyrektor medyczny Szpitala Klinicznego im. J. Babińskiego w Krakowie.",
@@ -157,7 +157,7 @@
         "Działacz społeczny, prezes Instytutu Rozwoju Inicjatyw Społecznych.",
         "Prywatnie: mąż, ojciec czwórki dzieci, w wolnym czasie lubi spać, spacerować, czytać - zwłaszcza Sapkowskiego a ostatnio także Wegnera"
       ],
-      "4": [
+      "Tomasz Lewandowski": [
         "Tomasz Lewandowski",
         "Zajmuje się prawem międzynarodowym publicznym, prawem ochrony danych osobowych, międzynarodowym prawem humanitarnym konfliktów zbrojnych oraz filozofią prawa międzynarodowego.",
         "Interesują go: wolność ekspresji artystycznej, suwerenność zarówno w prawie międzynarodowym, jak i krajowym, relacja pomiędzy prawem a psychologią.",
@@ -168,7 +168,7 @@
         "Laureat Stypendium Funduszu im. Rodziny Kulczyków oraz Fundacji Uniwersytetu im. Adama Mickiewicza w Poznaniu.",
         "W 2017 r. otrzymał nagrodę specjalną w konkursie Rising Stars Prawnicy – liderzy jutra 2017 organizowanym przez Dziennik Gazetę Prawną i Wolters Kluwer Polska, którego celem jest wyłonienie młodych prawników, wyróżniających się w pracy zawodowej i postawą społeczną."
       ],
-      "5": [
+      "Prof. Monika Przybysz": [
         "prof. Monika Przybysz",
         "Specjalista ds. public relations, crisis management, mediów społecznościowych, medioznawca, wykładowca w Instytucie Edukacji Medialnej i Dziennikarstwa UKSW w Warszawie.",
         "Trener w zakresie komunikacji kryzysowej, kreowania wizerunku, mediów społecznościowych, komunikacji w internecie. Od 3 lat prowadzi warsztaty dla uczniów, rodziców, nauczycieli, pedagogów i wychowawców dotyczące komunikacji za pośrednictwem smartfonów. Przeszkoliła w tym zakresie już ponad 10 tysięcy osób w kilkudziesięciu szkołach.",
@@ -180,8 +180,8 @@
         "Od 2018 r. członek Grupy Roboczej ds. Społecznej Odpowiedzialności Uczelni w Ministerstwie Rozwoju Regionalnego.",
         "Od 2019 r. do 2022 r. przedstawiciel Rzeczypospolitej Polskiej w zespole roboczym Social Dimension w pracach Bologna Follow-Up Group w ramach Bologna Process."
       ],
-      "6": ["Paula Arguelles", "Lorem ipsum "],
-      "7": [
+      "Paula Arguelles": ["Paula Arguelles", "Biografia pojawi się wkrótce"],
+      "Catherine L’Ecuyer": [
         "Catherine L'Ecuyer",
         "Kanadyjka, obecnie mieszkająca w Barcelonie z czwórką dzieci.",
         "Posiada tytuł MBA z IESE Business School, oficjalny tytuł European Master of Research oraz doktorat z edukacji i psychologii.",
@@ -194,13 +194,70 @@
         "Obecnie współpracuje z Mind-Brain Group na Uniwersytecie Nawarry i jest felietonistką w różnych serwisach informacyjnych, w tym El País, La Vanguardia i El Mundo w języku hiszpańskim oraz The Huffington Post w języku francuskim.",
         "Jest założycielką i dyrektorem Fundación CLE, organizacji non-profit zajmującej się promowaniem edukacji klasycznej."
       ],
-      "8": [
+      "Sylwia Jaskulska": [
         "dr hab. Sylwia Jaskulska prof. UAM",
         "Profesora w Pracowni Pedagogiki Szkolnej na Wydziale Studiów Edukacyjnych Uniwersytetu im. Adama Mickiewicza w Poznaniu.",
         "Autorka i współautorką kilkudziesięciu tekstów naukowych i popularno-naukowych oraz kilku książek. Zaangażowana społecznie w tematyce edukacyjnej za pośrednictwem wielu kanałów, m.in. TVN24, Radiu Zet, Newsweeku Psychologia Dziecka, WTK, Radiu Poznań, TVP3, Wysokich Obcasach Extra.",
         "Prowadzącą webinaria, szkolenia i spotkania autorskie dla Diet & Training by Ann (Anna Lewandowska), Nowej Ery, Librusa, Fundacji Szkoła Bez Ocen, Macmillan Polska, Wydawnictwa Znak.",
         "Ambasadorka akcji Rok Relacji w Edukacji, członkini Rady Programowej Ośrodka Koordynacyjno - Programowego Kształcenia Nauczycieli UAM w  Poznaniu, zastępczyni redaktor naczelnej \"Rocznika Pedagogicznego\".",
         "Magister pedagogiki specjalnej, doktor nauk społecznych w zakresie pedagogiki, mama dwóch nastolatków."
+      ],
+      "dr Andrzej Kobiałka": [
+        "dr Andrzej Kobiałka",
+        "Doktor nauk społecznych, adiunkt w Instytucie Spraw Społecznych i Zdrowia Publicznego Uniwersytetu Pedagogicznego im. Komisji Edukacji Narodowej w Krakowie.",
+        "Prowadzi badania z zakresu bezpieczeństwa społecznego, zagrożeń w środowiskach lokalnych, profilaktyki społecznej oraz świadomości problematyki społecznej świata realnego i wirtualnego.",
+        "Pełni również ważne funkcje społeczne tj., członkiem Gminnej Komisji ds. Rozwiązywania Problemów Alkoholowych oraz certyfikowanym przez PARPA specjalistą d/s profilaktyki i rozwiązywania problemów alkoholowych w lokalnych środowiskach.",
+        "Jako profilaktyk, pedagog, trener pracuje nadto z dziećmi, młodzieżą oraz dorosłymi.",
+        "Jest certyfikowanym realizatorem rekomendowanych programów profilaktycznych Instytutu Psychiatrii i Neurologii w Warszawie.",
+        "Aktywnie uczestniczył jako członek w Zespole Projektowym Centrum Usług Społecznych, którego zadaniem było koordynowanie, dokumentowanie i nadzór merytoryczny nad prawidłową realizacją projektu ,,Centrum Usług Społecznych w Myślenicach”.",
+        "W roku 2020 był członkiem/ekspertem grupy roboczej ds. Bezpieczeństwa Dzieci i Młodzieży w Internecie w Ministerstwie Cyfryzacji w Warszawie.",
+        ",Członek Zarządu Głównego Polskiego Towarzystwa Pedagogicznego w Warszawie.",
+        "W roku 2020 odznaczony Medalem Edukacji Narodowej za szczególne zasługi dla oświaty i wychowania."
+      ],
+      "Dariusz Cupiał": [
+        "Dariusz Cupiał",
+        "Założyciel Fundacji Cyryla i Metodego, inicjator Tato.Net, trener.",
+        "Absolwent KUL, stypendysta Institute For Ecumenical and Cultural Research, Saint John's University w Collegeville w USA, należy do Stowarzyszenia Innowatorów Społecznych ASHOKA i Stowarzyszenia Diakonia Światło-Życie.",
+        "Bierze udział w pracach Rady Rodziny przy Ministrze Rodziny, Pracy i Polityki Społecznej oraz Narodowej Rady Rozwoju - Rady do spraw Rodziny, Edukacji i Wychowania przy Prezydencie Rzeczypospolitej Polskiej.",
+        "Jako trener przeprowadził ponad 2000 godzin szkoleniowych dla ojców, w tym dla ponad 250 osadzonych w zakładach karnych i aresztach śledczych.",
+        "Autor wielu artykułów oraz książek: Na drodze ewangelizacji i ekumenii i Kolumbowie naszego pokolenia, współredaktor monografii Czas na Tatę (trzeci tom serii ABC. Analizy Badania Cele).",
+        "Pasjonat kajakarstwa, jazdy konnej i gór. Ojciec trojga dorosłych dzieci, dziadek pięciorga wnucząt."
+      ],
+      "Dorota Bojemska": [
+        "Dorota Bojemska",
+        "Członek Krajowej Rady Związku Dużych Rodzin 3+.",
+        "Rzeczniczka i inicjatorka szerokiej współpracy z organizacjami pozarządowymi na rzecz postawienia rodziny w centrum zainteresowania Państwa oraz wspólnoty lokalnej.",
+        "Współpracowała z Pełnomocnikiem Rządu ds. Polityki Demograficznej w tworzeniu Strategii Demograficznej 2040.",
+        "Żona, mama trzech córek i pięciu synów."
+      ],
+      "dr Ewa Krupnik": [
+        "dr Ewa Krupnik",
+        "Trenerka, Coach ACC ICF, specjalistka ds. public relations.",
+        "Od kilkunastu lat związana z pracą w sektorze społecznym.",
+        "Fundatorka Fundacji LIS. Ekspertka i wykładowca PR w NGO na Uniwersytecie Jagiellońskim.",
+        "Prowadzi szkolenia w firmach, organizacjach pozarządowych jak i instytucjach publicznych.",
+        "Przygotowuje analizy i kompleksowe strategie rozwoju, komunikacji dla organizacji pozarządowych a także innych podmiotów.",
+        "Obecnie współpracuje z Fundacją Sela, gdzie prowadzi podcast pt. Sens Działania.",
+        "Pomysłodawczyni i inicjatorka O.Coaching! - portalu gdzie każdy może dołączyć do coachingowych podróżników.",
+        "Ma misję, by pokazać jak coaching może pomagać w osiąganiu celów.",
+        "Na co dzień pracuje także jako coach dla klientów indywidualnych, instytucji publicznych i biznesowych."
+      ],
+      "Michał Kot": [
+        "Michał Kot",
+        "Socjolog, autor wielu publikacji i raportów na temat demografii i polityki rodzinnej, ekspert ds rynku telekomunikacyjnego i nowych technologii."
+      ],
+      "Monika Borkowska-Żebrowska": [
+        "Monika Borkowska-Żebrowska",
+        "Socjolożka, absolwentka Uniwersytetu Jagiellońskiego, socjoterapeutka, trenerka, specjalistka terapii uzależnień.",
+        "Kieruje Działem Profilaktyki w Miejskim Centrum Profilaktyki Uzależnień w Krakowie.",
+        "Posiada doświadczenie w pracy w obszarze profilaktyki i terapii uzależnień oraz w pracy z rodzinami wieloproblemowymi."
+      ],
+      "Stanisław Kowal": [
+        "Stanisław Kowal",
+        "Pedagog, od wielu lat zajmuje się kształceniem nauczycieli - aktualnie w Uniwersytecie Jagiellońskim.",
+        "Organizuje i prowadzi placówki edukacji spersonalizowanej.",
+        "Ekspert Instytutu „Educare”.",
+        "Główny obszar zainteresowań badawczych to pedeutologia i koncepcja edukacji spersonalizowanej."
       ]
     }
   },
