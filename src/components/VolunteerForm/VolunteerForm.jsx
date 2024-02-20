@@ -37,11 +37,11 @@ const VolunteerForm = () => {
     setErrors(newErrors)
     if (newErrors.length === 0) {
       setModalContent(
-        <div className={css.speakersModalContainer}>
-          <h2 className={css.speakersModalHeader}>
+        <div className={css.volunteerModalContainer}>
+          <h2 className={css.volunteerModalHeader}>
             {t('volunteerForm.modalHeader')}
           </h2>
-          <p className={css.speakersModalParagraph}>
+          <p className={css.volunteerModalParagraph}>
             {t('volunteerForm.modalParagraph')}
           </p>
         </div>

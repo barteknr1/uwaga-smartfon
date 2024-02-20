@@ -217,26 +217,26 @@
   transform: rotate(45deg);
 }
 
-.speakersModalContainer {
+.volunteerModalContainer {
   display: flex;
   flex-direction: column;
   text-align: center;
-  gap: 16px;
-  padding: 12px 0;
 }
 
-.speakersModalHeader {
+.volunteerModalHeader {
   font-family: var(--decoraction-font);
-  font-size: 1.25rem;
   font-weight: 500;
-  line-height: normal;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  color: var(--dark-text-color);
+  align-self: center;
+  margin-bottom: 16px;
 }
 
-.speakersModalParagraph {
-  font-family: var(--main-font);
-  font-size: 1rem;
+.volunteerModalParagraph {
   font-weight: 500;
-  line-height: normal;
+  font-size: 1rem;
+  letter-spacing: 1.2;
 }
 
 @media screen and (min-width: 765px) {
@@ -322,6 +322,21 @@
   .checkboxBox .checkMark:after {
     width: 6px;
     height: 11px;
+  }
+
+  .volunteerModalHeader {
+    font-weight: 400;
+    font-size: 2.44rem;
+    align-self: flex-start;
+  }
+
+  .volunteerModalParagraph {
+    font-weight: 500;
+    font-size: 1.25rem;
+  }
+
+  .volunteerModalContainer > button:last-of-type {
+    margin: 0 auto;
   }
 }
 
