@@ -15,28 +15,18 @@ const Support = () => {
   const handleSubmit = () => {
     setModalContent(
       <div className={css.supportModalContainer}>
-        <h2 className={css.supportModalHeader}>
-          Dziękujemy za okazane wsparcie! Tylko z Waszą pomocą możemy rozwijać i
-          udoskonalać wydarzenie Uwaga! Smartfon.
-        </h2>
-        <p className={css.supportModalParagraph}>
-          Zapraszamy także wszystkich chętnych do udziału w wolontariacie.
-          Wypełnij formularz zgłoszeniowy i dołącz do naszego zespołu
-          wolontariuszy!
-        </p>
+        <h2 className={css.supportModalHeader}>{t('support.titleModal')}</h2>
+        <p className={css.supportModalParagraph}>{t('support.textModal1')}</p>
         <Button
           type="button"
           variant="secondary"
-          content={`Zostań wolontariuszem`}
+          content={t('support.buttonModal1')}
         />
-        <p className={css.supportModalParagraph}>
-          Przypominamy również o możliwości zapisania się do naszego newslettera
-          i śledzenia na bieżąco wydarzenia w social mediach.
-        </p>
+        <p className={css.supportModalParagraph}>{t('support.textModal2')}</p>
         <Button
           type="button"
           variant="secondary"
-          content={`Zapisz się do newslettera`}
+          content={t('support.buttonModal2')}
         />
       </div>
     )
