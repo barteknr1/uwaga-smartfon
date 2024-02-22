@@ -66,7 +66,10 @@ const Support = () => {
         type="submit"
         content={t('support.button')}
         variant="primary"
-        onClick={() => handleSubmit()}
+        onClick={(e) => {
+          handleSubmit()
+          e.target.blur()
+        }}
       />
     </div>
   )
