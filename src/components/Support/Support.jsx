@@ -26,7 +26,7 @@ const Support = () => {
         </p>
         <Button
           type="button"
-          variant="primary"
+          variant="secondary"
           content={`Zostań wolontariuszem`}
         />
         <p>
@@ -35,7 +35,7 @@ const Support = () => {
         </p>
         <Button
           type="button"
-          variant="primary"
+          variant="secondary"
           content={`Zapisz się do newslettera`}
         />
       </div>
