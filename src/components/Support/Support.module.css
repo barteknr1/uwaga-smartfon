@@ -44,7 +44,6 @@
   font-family: var(--decoraction-font);
   font-weight: 500;
   font-size: 1.25rem;
-  line-height: 1.25;
   color: var(--dark-text-color);
   align-self: center;
 }
@@ -52,7 +51,6 @@
 .supportModalParagraph {
   font-weight: 500;
   font-size: 1rem;
-  letter-spacing: 1.2;
   margin: 16px 0 16px 0;
 }
 
