@@ -131,32 +131,29 @@
   "speakers": {
     "title": "Speakers",
     "about": {
-      "1": [
-        "Roman Solecki",
+      "noBio": "Biography will be available soon",
+      "dr Roman Solecki": [
         "Educator, prevention specialist, certified logotherapist; addiction psychotherapist, mediator;",
         "Ph.D. in social sciences dedicated to Youth Activity in cyberspace. Bachelor's degree in Family Counseling and Mediation. Basic Mediation Course in the Polish Mediators Association. Completed the Małopolski Center for Addiction Therapists Training at the Dr. Józef Babiński Clinical Hospital in Krakow.",
         "Implementer of the preventive program \"Sapper - how to defuse aggression among young people\"; preventive-educational program \"Archezja\" and \"Cuder\". Since 2006, collaborates with the Archezja Problem Prevention Center as an implementer of preventive-educational activities for children and youth.",
         "Conducts research on youth activity in cyberspace, prevention and therapy of media addiction, depression, and the sense of life among young people.",
         "Since 2020, coordinates the work of the Krakow Institute of Logotherapy."
       ],
-      "2": [
-        "Piotr Czubaty",
+      "Piotr Czubaty": [
         "Information security expert, lead auditor for ISMS according to ISO/IEC 27001, data protection inspector, compliance specialist.",
         "Trainer, lecturer, and author of the book: \"GDPR: employer's duties. Practical guide with templates\".",
         "Founder and president of the Foundation for Privacy and Digital Security \"SIECI\", whose statutory goals include combating digital addiction.",
         "Works daily with public administration units, entrepreneurs, and the third sector, raising internal standards and the level of security in the face of digital challenges and international law requirements.",
         "After hours, initiates educational activities, fulfilling the mission of spreading knowledge about the dangers of misuse or improper use of new technologies."
       ],
-      "3": [
-        "Łukasz Cichocki",
+      "dr Łukasz Cichocki": [
         "Doctor of Medical Sciences, psychiatrist, psychotherapist, academic teacher with over twenty years of experience.",
         "Medical Director of the J. Babiński Clinical Hospital in Krakow.",
         "Author of many scientific papers, popularizer of knowledge in the field of mental health. Long-time president of the Polish-German Society of Mental Health.",
         "Social activist, president of the Institute for the Development of Social Initiatives.",
         "Privately: husband, father of four, in his free time likes to sleep, walk, read - especially Sapkowski and lately Wegner."
       ],
-      "4": [
-        "Tomasz Lewandowski",
+      "Tomasz Lewandowski": [
         "Deals with public international law, personal data protection law, international humanitarian law of armed conflicts, and the philosophy of international law.",
         "Interested in: freedom of artistic expression, sovereignty both in international and national law, the relationship between law and psychology.",
         "Author of several publications in the field of constitutional law, human rights protection, public international law, and personal data protection.",
@@ -166,8 +163,7 @@
         "Recipient of the Scholarship of the Kulczyk Family Fund and the Foundation of the University of Adam Mickiewicz in Poznań.",
         "In 2017, received a special award in the Rising Stars Lawyers - Leaders of Tomorrow 2017 competition organized by Dziennik Gazeta Prawna and Wolters Kluwer Polska, aimed at selecting young lawyers distinguished in professional work and social attitudes."
       ],
-      "5": [
-        "Prof. Monika Przybysz",
+      "Prof. Monika Przybysz": [
         "PR specialist, crisis management, social media, media researcher, lecturer at the Institute of Media Education and Journalism at UKSW in Warsaw.",
         "Trainer in crisis communication, image creation, social media, internet communication. For 3 years, she has been conducting workshops for students, parents, teachers, educators, and caregivers on communication through smartphones. She has trained over 10,000 people in dozens of schools in this area.",
         "Awarded by the Prime Minister of the Republic of Poland for her doctorate in 2008. Graduated with a Golden Badge from postgraduate studies at the University of Warsaw in public relations. She defended her doctorate in 2007 in the field of crisis communication management, and her habilitation in 2014 in the field of press spokespersonship.",
@@ -178,9 +174,8 @@
         "Since 2018, a member of the Working Group on the Social Responsibility of Universities at the Ministry of Regional Development.",
         "Since 2019, until 2022, a representative of the Republic of Poland in the working group Social Dimension in the work of the Bologna Follow-Up Group within the Bologna Process."
       ],
-      "6": ["Paula Arguelles", "Lorem ipsum "],
-      "7": [
-        "Catherine L'Ecuyer",
+      "Paula Arguelles": [],
+      "Catherine L’Ecuyer": [
         "Canadian, currently residing in Barcelona with four children.",
         "She holds an MBA from IESE Business School, an official title of European Master of Research, and a doctorate in education and psychology.",
         "Her article \"The Wonder Approach to Learning\" was published in the Swiss journal Frontiers in Human Neuroscience, which made her master's thesis a new hypothesis/theory of learning.",
@@ -192,14 +187,71 @@
         "Currently, she collaborates with the Mind-Brain Group at the University of Navarra and is a columnist in various news outlets, including El País, La Vanguardia, and El Mundo in Spanish, as well as The Huffington Post in French.",
         "She is the founder and director of Fundación CLE, a non-profit organization dedicated to promoting classical education."
       ],
-      "8": [
-        "Dr. hab. Sylwia Jaskulska, Prof. UAM",
+      "Sylwia Jaskulska": [
         "Professor in the School Pedagogy Workshop at the Faculty of Educational Studies, Adam Mickiewicz University in Poznań.",
         "Author and co-author of dozens of scientific and popular science texts, as well as several books. Socially engaged in educational topics through various channels, including TVN24, Radio Zet, Newsweek Psychology of Child, WTK, Radio Poznań, TVP3, Wysokie Obcasy Extra.",
         "Conducting webinars, training, and author's meetings for Diet & Training by Ann (Anna Lewandowska), Nowa Era, Librus, the School Without Grades Foundation, Macmillan Polska, and Znak Publishing House.",
         "Ambassador of the Year of Relations in Education campaign, a member of the Program Council of the UAM Coordination and Program Center for Teacher Education in Poznań, deputy editor-in-chief of the \"Pedagogical Yearbook\".",
         "Master of special pedagogy, doctor of social sciences in the field of pedagogy, mother of two teenagers."
-      ]
+      ],
+
+      "dr Andrzej Kobiałka": [
+        "PhD in Social Sciences, adjunct at the Institute of Social Affairs and Public Health at the Pedagogical University of the Commission of National Education in Krakow.",
+        "Conducts research in the field of social security, threats in local environments, social prevention, and awareness of social issues in the real and virtual world.",
+        "Also holds important social functions such as being a member of the Municipal Commission for Solving Alcohol Problems and certified by PARPA as a specialist in alcohol prevention and problem-solving in local communities.",
+        "As a prevention specialist, educator, trainer, he works with children, youth, and adults.",
+        "He is a certified implementer of recommended prevention programs of the Institute of Psychiatry and Neurology in Warsaw.",
+        "Actively participated as a member of the Project Team of the Social Services Center, whose task was to coordinate, document, and supervise the substantive supervision of the proper implementation of the project ,,Centrum Usług Społecznych w Myślenicach”.",
+        "In 2020, he was a member/expert of the working group on Child and Youth Internet Safety at the Ministry of Digitization in Warsaw.",
+        "Member of the Board of the Polish Pedagogical Society in Warsaw.",
+        "In 2020, he was awarded the Medal of National Education for his special merits for education and upbringing."
+      ],
+      "Dariusz Cupiał": [
+        "Founder of the Cyril and Methodius Foundation, initiator of Tato.Net, trainer.",
+        "A graduate of KUL, a scholarship holder of the Institute For Ecumenical and Cultural Research, Saint John's University in Collegeville, USA, he belongs to the Association of Social Innovators ASHOKA and the Association of Diaconia Light-Life.",
+        "He participates in the work of the Family Council at the Minister of Family, Labour, and Social Policy, and the National Development Council - the Family, Education, and Upbringing Council at the President of the Republic of Poland.",
+        "As a trainer, he conducted over 2000 training hours for fathers, including over 250 in correctional facilities and remand centers.",
+        "Author of many articles and books: Na drodze ewangelizacji i ekumenii i Kolumbowie naszego pokolenia, co-editor of the monograph Czas na Tatę (trzeci tom serii ABC. Analizy Badania Cele).",
+        "Passionate about kayaking, horse riding, and mountains. Father of three adult children, grandfather of five grandchildren."
+      ],
+      "Dorota Bojemska": [
+        "Member of the National Council of the Association of Large Families 3+.",
+        "Spokesperson and initiator of wide cooperation with non-governmental organizations to put the family at the center of the state's interest and the local community.",
+        "She collaborated with the Government Plenipotentiary for Demographic Policy in creating the Demographic Strategy 2040.",
+        "Wife, mother of three daughters and five sons."
+      ],
+      "dr Ewa Krupnik": [
+        "Trainer, Coach ACC ICF, public relations specialist.",
+        "For several years, she has been associated with work in the social sector.",
+        "Founder of the LIS Foundation. Expert and lecturer in PR in NGOs at the Jagiellonian University.",
+        "She conducts training in companies, non-governmental organizations, and public institutions.",
+        "She prepares analyzes and comprehensive development and communication strategies for non-governmental organizations and other entities.",
+        "She currently collaborates with the Sela Foundation, where she hosts a podcast entitled Sens Działania.",
+        "The originator and initiator of O.Coaching! - a portal where everyone can join coaching travelers.",
+        "She has a mission to show how coaching can help achieve goals.",
+        "She also works as a coach for individual clients, public institutions, and businesses on a daily basis."
+      ],
+      "Michał Kot": [
+        "Sociologist, author of many publications and reports on demography and family policy, expert in the telecommunications market and new technologies."
+      ],
+      "Monika Borkowska-Żebrowska": [
+        "Sociologist, graduate of the Jagiellonian University, sociotherapist, trainer, addiction therapy specialist.",
+        "She heads the Prevention Department at the Municipal Center for Addiction Prevention in Krakow.",
+        "She has experience in the field of addiction prevention and therapy as well as working with multi-problem families."
+      ],
+      "Stanisław Kowal": [
+        "Educator, for many years involved in training teachers - currently at the Jagiellonian University.",
+        "Organizes and runs personalized education institutions.",
+        "Expert at the Institute of 'Educare'.",
+        "The main area of research interests is pedeutology and the concept of personalized education."
+      ],
+      "dr Andrzej Lejczak": [],
+      "dr Jan Ledóchowski": [],
+      "Livia Halkman": [],
+      "Łukasz Korzeniowski": [],
+      "Łukasz Salwarowski": [],
+      "dr Maciej Dębski": [],
+      "Peter Stevkov": []
     }
   },
   "areas": {

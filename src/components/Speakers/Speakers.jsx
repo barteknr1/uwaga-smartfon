@@ -6,6 +6,7 @@ import 'swiper/css/bundle'
 import Section from '../Section/Section'
 import speakersData from './SpeakersList'
 import sprite from '../../assets/svg/sprite.svg'
+import noPhoto from '../../assets/images/Speakers/no-photo.png'
 
 import css from './Speakers.module.css'
 import './styles.css'
@@ -21,19 +22,26 @@ const Speakers = () => {
     setModalContent(
       <div className={css.speakersModalContainer}>
         <div className={css.speakerImgBox}>
-          <img className={css.speakerModalImg} src={speaker.img} />
+          <img className={css.speakerModalImg} src={speaker.img || noPhoto} />
           <svg className={css.speakerSvg}>
             <use href={sprite + '#speakersSvg'} />
           </svg>
         </div>
         <div className={css.speakerAboutBox}>
-          {t(`speakers.about.${speaker.id}`, {
+          <h4 className={css.speakerAboutName}>{speaker.name}</h4>
+          {t(`speakers.about.${speaker.name}`, {
             returnObjects: true,
-          }).map((paragraph, index) => (
-            <p className={css.speakerAboutText} key={index}>
-              {paragraph}
-            </p>
-          ))}
+          }).length > 0 ? (
+            t(`speakers.about.${speaker.name}`, {
+              returnObjects: true,
+            }).map((paragraph, index) => (
+              <p className={css.speakerAboutText} key={index}>
+                {paragraph}
+              </p>
+            ))
+          ) : (
+            <p className={css.speakerAboutText}>{t('speakers.about.noBio')}</p>
+          )}
         </div>
       </div>
     )
@@ -85,7 +93,7 @@ const Speakers = () => {
               <div className={css.speakersBox}>
                 <img
                   className={css.speakerImg}
-                  src={speaker.img}
+                  src={speaker.img || noPhoto}
                   alt={speaker.name}
                 />
                 <div className={css.speakerText}>

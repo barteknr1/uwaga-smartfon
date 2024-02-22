@@ -35,6 +35,15 @@
   z-index: 999;
 }
 
+.speakerAboutName {
+  color: var(--dark-brand-color);
+  font-family: var(--decoraction-font);
+  font-size: 2.4375rem;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 16px;
+}
+
 .speakerAboutText {
   font-family: var(--main-font);
   font-size: 1rem;
@@ -42,15 +51,6 @@
   line-height: 1.5rem; /* 150% */
   letter-spacing: 0.00119rem;
   margin-bottom: 32px;
-}
-
-.speakerAboutText:nth-child(1) {
-  color: var(--dark-brand-color);
-  font-family: var(--decoraction-font);
-  font-size: 2.4375rem;
-  font-weight: 400;
-  line-height: normal;
-  margin-bottom: 16px;
 }
 
 .speakerImgBox {
@@ -87,7 +87,8 @@
 }
 
 .speakerImg {
-  object-fit: cover;
+  object-fit: contain;
+  object-position: bottom;
   border-radius: 12px;
   background-color: var(--light-brand-color);
   width: 100%;
