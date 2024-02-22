@@ -32,6 +32,30 @@
   border-radius: 5px;
   padding: 16px 0;
 }
+
+.supportModalContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.supportModalHeader {
+  font-family: var(--decoraction-font);
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  color: var(--dark-text-color);
+  align-self: center;
+}
+
+.supportModalParagraph {
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 1.2;
+  margin: 16px 0 16px 0;
+}
+
 @media screen and (min-width: 765px) {
   .supportHeader {
     font-weight: 400;
@@ -54,6 +78,21 @@
     width: 145px;
   }
   .supportContainer > button:last-of-type {
+    margin: 0 auto;
+  }
+
+  .supportModalHeader {
+    font-weight: 400;
+    font-size: 2.44rem;
+    align-self: flex-start;
+  }
+
+  .supportModalParagraph {
+    font-weight: 500;
+    font-size: 1.25rem;
+  }
+
+  .supportModalContainer > button:last-of-type {
     margin: 0 auto;
   }
 }

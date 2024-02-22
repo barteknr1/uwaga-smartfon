@@ -14,12 +14,12 @@ const Support = () => {
 
   const handleSubmit = (event) => {
     setModalContent(
-      <div>
-        <h2>
+      <div className={css.supportModalContainer}>
+        <h2 className={css.supportModalHeader}>
           Dziękujemy za okazane wsparcie! Tylko z Waszą pomocą możemy rozwijać i
           udoskonalać wydarzenie Uwaga! Smartfon.
         </h2>
-        <p>
+        <p className={css.supportModalParagraph}>
           Zapraszamy także wszystkich chętnych do udziału w wolontariacie.
           Wypełnij formularz zgłoszeniowy i dołącz do naszego zespołu
           wolontariuszy!
@@ -29,7 +29,7 @@ const Support = () => {
           variant="secondary"
           content={`Zostań wolontariuszem`}
         />
-        <p>
+        <p className={css.supportModalParagraph}>
           Przypominamy również o możliwości zapisania się do naszego newslettera
           i śledzenia na bieżąco wydarzenia w social mediach.
         </p>
