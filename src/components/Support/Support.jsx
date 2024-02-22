@@ -1,6 +1,9 @@
 import {useTranslation} from 'react-i18next'
 import {useModal} from '../Modal/ModalProvider'
+
 import Button from '../Button/Button'
+import {scrollToAnchor} from '../Scroll'
+
 import css from './Support.module.css'
 
 const Support = () => {
@@ -21,12 +24,20 @@ const Support = () => {
           type="button"
           variant="secondary"
           content={t('support.buttonModal1')}
-        />
+          onClick={() => {
+            scrollToAnchor('be_a_volunteer')
+            setIsModalVisible(false)
+          }}
+        ></Button>
         <p className={css.supportModalParagraph}>{t('support.textModal2')}</p>
         <Button
           type="button"
           variant="secondary"
           content={t('support.buttonModal2')}
+          onClick={() => {
+            scrollToAnchor('newsletter')
+            setIsModalVisible(false)
+          }}
         />
       </div>
     )
