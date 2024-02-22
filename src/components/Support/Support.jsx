@@ -11,6 +11,9 @@ const Support = () => {
     setIsModalVisible(true)
     setModalContent(modalContent)
   }
+  const onInput = (e) => {
+    console.log(e.target.value)
+  }
 
   const modalContent = (
     <div className={css.supportContainer}>
@@ -27,9 +30,13 @@ const Support = () => {
         <button className={css.supportButton} type="button">
           100 zł
         </button>
-        <button className={css.supportButton} type="button">
-          ____zł
-        </button>
+        <input
+          className={css.supportInput}
+          type="number"
+          placeholder="___zł"
+          onChange={onInput}
+          min="5"
+        />
       </div>
       <Button type="submit" content={t('support.button')} variant="primary" />
     </div>

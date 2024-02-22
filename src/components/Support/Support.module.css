@@ -32,6 +32,24 @@
   border-radius: 5px;
   padding: 16px 0;
 }
+.supportButton:hover {
+  background-color: var(--light-background-color);
+}
+.supportButton:focus {
+  background-color: var(--secondary-background-color);
+}
+.supportInput {
+  font-family: var(--placeholder-font);
+  font-size: 29px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: var(--deep-purple-color);
+  border: 3px solid var(--light-brand-color);
+  border-radius: 5px;
+  width: 25%;
+  display: flex;
+  text-align: center;
+}
 @media screen and (min-width: 765px) {
   .supportHeader {
     font-weight: 400;
