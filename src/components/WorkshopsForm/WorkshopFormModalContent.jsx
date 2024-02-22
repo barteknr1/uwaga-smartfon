@@ -158,6 +158,7 @@ const ModalContent = () => {
             onChange={(e) => handleChange(e, 'isChecked')}
             error="checkbox"
             errors={errors}
+            variant="consent"
           />
         </fieldset>
         {errors.length > 0 && (

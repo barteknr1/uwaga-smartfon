@@ -282,6 +282,7 @@
   "textComponent": {
     "name": "Imię i nazwisko",
     "email": "Adres e-mail",
+    "city": "Miejscowość",
     "customRole": "Rola",
     "customRolePlaceholder": "W konferencji uczestniczę jako..."
   },
@@ -298,10 +299,14 @@
     "Warsztat 1": "Warsztat 1",
     "Warsztat 2": "Warsztat 2",
     "Warsztat 3": "Warsztat 3",
-    "Warsztat 4": "Warsztat 4"
+    "Warsztat 4": "Warsztat 4",
+    "traditional": "Menu tradycyjne",
+    "vegetarian": "Menu wegetariańskie"
+
   },
   "checkboxComponent": {
-    "label": "Wyrażam zgodę na przetwarzanie moich danych osobowych."
+    "certificate": "Chcę otrzymać certyfikat uczestnictwa w konferencji Uwaga! Smartfon.",
+    "consent": "Wyrażam zgodę na przetwarzanie moich danych osobowych."
   },
   "workshopsForm": {
     "header": "Formularz zapisu na warsztaty",
@@ -309,5 +314,9 @@
     "error": "Uzupełnij wszystkie dane i zaznacz zgodę na przetwarzanie danych osobowych, aby przesłać formularz.",
     "buttonSign": "Zapisz się na warsztat",
     "button": "Zapisuję się"
+  },
+  "applicationForm": {
+    "menu": "Podczas konferencji będzie zagwarantowany ciepły posiłek. Prosimy o wybór menu zgodnie z preferencjami. Dziękujemy.",
+    "button": "Wyślij formularz zgłoszeniowy"
   }
 }
