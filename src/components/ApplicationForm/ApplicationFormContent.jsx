@@ -1,6 +1,5 @@
 import css from './ApplicationForm.module.css'
 import Button from '../Button/Button'
-import sprite from '../../assets/svg/sprite.svg'
 import {useState, useEffect} from 'react'
 import {useModal} from '../Modal/ModalProvider'
 import {useTranslation} from 'react-i18next'
@@ -11,7 +10,7 @@ import CheckboxComponent from '../FormComponents/CheckboxComponent/CheckboxCompo
 
 const ApplicationFormContent = () => {
   const {t} = useTranslation()
-  const {openModal, isModalVisible, setModalContent} = useModal()
+  const {isModalVisible} = useModal()
   const [inputs, setInputs] = useState({
     name: '',
     email: '',
@@ -33,11 +32,6 @@ const ApplicationFormContent = () => {
   ]
   const radioOptions = ['traditional', 'vegetarian']
 
-  const handleOpenModal = () => {
-    setModalContent(modalContent)
-    openModal()
-  }
-
   useEffect(() => {
     if (!isModalVisible) {
       setInputs({
@@ -56,41 +50,33 @@ const ApplicationFormContent = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    const {
-      email,
-      name,
-      city,
-      role,
-      customRole,
-      certificate,
-      permission,
-      menu,
-      isChecked,
-    } = inputs
+    const {email, name, city, role, customRole, permission} = inputs
     const newErrors = []
 
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) newErrors.push('email')
     if (!name.trim() || !/\s/.test(name)) newErrors.push('name')
-    // if (!isChecked) newErrors.push('checkbox')
+    if (!city.trim()) newErrors.push('city')
     if (role === '') newErrors.push('role')
     if (role === 'Inne' && !customRole.trim()) newErrors.push('customRole')
     if (permission === false) newErrors.push('permission')
     setErrors(newErrors)
     console.log('newErrors', newErrors)
-    console.log(inputs)
+    if (newErrors.length === 0) return
+    //dalszy kod
   }
 
   const handleChange = (event, inputType) => {
     const value =
-      inputType === 'isChecked' ? event.target.checked : event.target.value
+      inputType === 'certificate' || inputType === 'permission'
+        ? event.target.checked
+        : event.target.value
     setInputs((prevData) => ({
       ...prevData,
       [inputType]: value,
     }))
-    console.log('inputType:', inputType, 'value:', value, 'Inputs:', inputs)
   }
+
   const handleClearInput = (inputType) => {
-    console.log(inputType)
     setInputs((prevData) => ({...prevData, [inputType]: ''}))
     setErrors((prevErrors) => prevErrors.filter((error) => error !== inputType))
   }
