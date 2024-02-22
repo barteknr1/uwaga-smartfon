@@ -12,7 +12,7 @@ const Support = () => {
     setModalContent(modalContent)
   }
 
-  const handleSubmit = (event) => {
+  const handleSubmit = () => {
     setModalContent(
       <div className={css.supportModalContainer}>
         <h2 className={css.supportModalHeader}>
