@@ -58,11 +58,13 @@ const ApplicationFormContent = () => {
     if (!city.trim()) newErrors.push('city')
     if (role === '') newErrors.push('role')
     if (role === 'Inne' && !customRole.trim()) newErrors.push('customRole')
-    if (permission === false) newErrors.push('permission')
+    if (!permission) newErrors.push('permission')
     setErrors(newErrors)
     console.log('newErrors', newErrors)
-    if (newErrors.length === 0) return
-    //dalszy kod
+    console.log(inputs.permission)
+    if (newErrors.length === 0) {
+      console.log(inputs)
+    }
   }
 
   const handleChange = (event, inputType) => {
@@ -132,8 +134,6 @@ const ApplicationFormContent = () => {
               onClear={() => handleClearInput('customRole')}
             />
           )}
-        </fieldset>
-        <div className={css.bottomArea}>
           <CheckboxComponent
             value={inputs.certificate}
             onChange={(e) => handleChange(e, 'certificate')}
@@ -158,7 +158,10 @@ const ApplicationFormContent = () => {
               errors={errors}
             />
           </div>
-        </div>
+        </fieldset>
+        {errors.length > 0 && (
+          <p className={css.errorText}>{t('applicationForm.error')}</p>
+        )}
         <Button
           type="submit"
           content={t('applicationForm.button')}

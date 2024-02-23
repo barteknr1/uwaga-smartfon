@@ -371,6 +371,7 @@
   "applicationForm": {
     "header": "Formularz zgłoszeniowy",
     "menu": "Podczas konferencji będzie zagwarantowany ciepły posiłek. Prosimy o wybór menu zgodnie z preferencjami. Dziękujemy.",
-    "button": "Wyślij formularz zgłoszeniowy"
+    "button": "Wyślij formularz zgłoszeniowy",
+    "error": "Uzupełnij wszystkie dane i zaznacz zgodę na przetwarzanie danych osobowych, aby przesłać formularz."
   }
 }
