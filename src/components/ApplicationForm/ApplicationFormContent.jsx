@@ -82,8 +82,8 @@ const ApplicationFormContent = () => {
   }
 
   return (
-    <div>
-      <h4 className={css.formHeader}>Formularz zgłoszeniowy</h4>
+    <div className={css.formWrapper}>
+      <h4 className={css.formHeader}>{t('applicationForm.header')}</h4>
       <form className={css.form} onSubmit={handleSubmit}>
         <fieldset className={css.fieldset}>
           <TextComponent

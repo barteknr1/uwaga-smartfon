@@ -365,6 +365,7 @@
     "button": "Register"
   },
   "applicationForm": {
+    "header": "Application form",
     "menu": "During the conference, a hot meal will be provided. Please choose a menu according to your preferences. Thank you.",
     "button": "Submit the application form"
   }
