@@ -137,14 +137,13 @@ const ApplicationFormContent = () => {
           <CheckboxComponent
             value={inputs.certificate}
             onChange={(e) => handleChange(e, 'certificate')}
-            error="checkbox"
             errors={errors}
             variant="certificate"
           />
           <CheckboxComponent
             value={inputs.permission}
             onChange={(e) => handleChange(e, 'permission')}
-            error="checkbox"
+            error="permission"
             errors={errors}
             variant="consent"
           />
