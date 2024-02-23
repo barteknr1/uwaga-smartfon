@@ -60,6 +60,7 @@ const Program = () => {
       sectionClass={css.program}
       titleClass={css.programTitle}
       title={t('program.title')}
+      id="program"
     >
       <div className={css.container}>
         <div className={css.titleContainer}>

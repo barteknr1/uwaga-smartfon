@@ -59,7 +59,7 @@ const ModalContent = () => {
             variant="secondary"
             content={t('workshopsForm.buttonModal1')}
             onClick={() => {
-              scrollToAnchor('be_a_volunteer')
+              scrollToAnchor('program')
               setIsModalVisible(false)
             }}
           />
@@ -71,7 +71,7 @@ const ModalContent = () => {
             variant="secondary"
             content={t('workshopsForm.buttonModal2')}
             onClick={() => {
-              scrollToAnchor('be_a_volunteer')
+              scrollToAnchor('newsletter')
               setIsModalVisible(false)
             }}
           />
