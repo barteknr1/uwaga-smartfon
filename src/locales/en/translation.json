@@ -285,11 +285,6 @@
   },
   "volunteerForm": {
     "title": "Fill out the form and become part of the volunteer team!",
-    "name": "Full Name",
-    "email": "Email Address",
-    "position": "Position",
-    "area": "Area of expertise you want to support",
-    "agreement": "I consent to the processing of my personal data.",
     "error": "Please fill in all the details and check the consent for processing personal data to submit the form.",
     "button": "Send Form",
     "modalHeader": "Thank you for submitting the volunteer registration form! Your commitment is greatly appreciated.",
@@ -338,7 +333,9 @@
     "name": "Name and Surname",
     "email": "Email Address",
     "customRole": "Role",
-    "customRolePlaceholder": "I am participating in the conference as..."
+    "customRolePlaceholder": "I am participating in the conference as...",
+    "position": "Position",
+    "area": "Area of expertise you want to support"
   },
   "selectComponent": {
     "Przedstawiciel organizacji": "Organization Representative",

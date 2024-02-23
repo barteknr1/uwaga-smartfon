@@ -2,9 +2,10 @@ import {useEffect, useState} from 'react'
 import {useTranslation} from 'react-i18next'
 import Section from '../Section/Section'
 import Button from '../Button/Button'
-import sprite from '../../assets/svg/sprite.svg'
 import css from './VolunteerForm.module.css'
 import {useModal} from '../Modal/ModalProvider'
+import TextComponent from '../FormComponents/TextComponent/TextComponent'
+import CheckboxComponent from '../FormComponents/CheckboxComponent/CheckboxComponent'
 
 const VolunteerForm = () => {
   const {t} = useTranslation()
@@ -17,6 +18,15 @@ const VolunteerForm = () => {
   })
   const [errors, setErrors] = useState([])
   const {openModal, setModalContent, isModalVisible} = useModal()
+
+  const handleChange = (event, inputType) => {
+    const value =
+      inputType === 'isChecked' ? event.target.checked : event.target.value
+    setFormData((prevData) => ({
+      ...prevData,
+      [inputType]: value,
+    }))
+  }
 
   const handleClearInput = (inputType) => {
     setFormData((prevData) => ({...prevData, [inputType]: ''}))
@@ -74,82 +84,24 @@ const VolunteerForm = () => {
       <form className={css.volunteerFormContainer} onSubmit={handleSubmit}>
         <fieldset className={css.volunteerFormInputContainer}>
           {['name', 'email', 'position', 'area'].map((inputType) => (
-            <div
+            <TextComponent
               key={inputType}
-              className={`${css.volunteerFormBox} ${
-                errors.includes(inputType) && css.volunteerFormBoxError
-              }`}
-            >
-              <label
-                className={`${css.textbox} ${
-                  errors.includes(inputType) && css.textboxError
-                }`}
-                htmlFor={inputType}
-              >
-                {t(`volunteerForm.${inputType}`)}
-              </label>
-              <input
-                placeholder={t(`volunteerForm.${inputType}`)}
-                className={css.volunteerFormInput}
-                id={inputType}
-                type={inputType === 'email' ? 'email' : 'text'}
-                value={formData[inputType]}
-                onChange={(event) =>
-                  setFormData((prevData) => ({
-                    ...prevData,
-                    [inputType]: event.target.value,
-                  }))
-                }
-              />
-              <button
-                type="button"
-                className={css.svgTextButton}
-                onClick={() => handleClearInput(inputType)}
-              >
-                {!errors.includes(inputType) ? (
-                  <svg className={css.svgTextIcon}>
-                    <use href={sprite + '#icon-close'} />
-                  </svg>
-                ) : (
-                  <svg className={css.svgTextIcon}>
-                    <use href={sprite + '#error-icon'} />
-                  </svg>
-                )}
-              </button>
-            </div>
+              label={inputType}
+              placeholder={inputType}
+              value={formData[inputType]}
+              type={inputType === 'email' ? 'email' : 'text'}
+              errors={errors}
+              onChange={(e) => handleChange(e, inputType)}
+              onClear={() => handleClearInput(inputType)}
+            />
           ))}
         </fieldset>
-        <div className={css.checkboxBox}>
-          <input
-            className={css.checkbox}
-            id="checkbox"
-            type="checkbox"
-            checked={formData.isChecked}
-            onChange={() =>
-              setFormData((prevData) => ({
-                ...prevData,
-                isChecked: !prevData.isChecked,
-              }))
-            }
-          />
-          <div className={css.checkMarkBox}>
-            <span
-              className={`${css.checkMark} ${
-                errors.includes('checkbox') && css.checkMarkError
-              }`}
-            ></span>
-          </div>
-          <label
-            className={`${css.checkboxText} ${
-              errors.includes('checkbox') &&
-              !formData.isChecked &&
-              css.checkboxTextError
-            }`}
-            htmlFor="checkbox"
-          >
-            {t('volunteerForm.agreement')}
-          </label>
-        </div>
+        <CheckboxComponent
+          value={formData.isChecked}
+          onChange={(e) => handleChange(e, 'isChecked')}
+          error="checkbox"
+          errors={errors}
+        />
         {errors.length > 0 && (
           <p className={css.errorText}>{t('volunteerForm.error')}</p>
         )}
