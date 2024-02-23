@@ -361,6 +361,11 @@
     "paragraph": "Każdy uczestnik wydarzenia Uwaga! Smartfon podczas konferencji ma możliwość uczestnictwa w jednym wybranym warsztacie. Prosimy o zapoznanie się z programem i wybór jednego z poniższych warsztatów. Dziękujemy.",
     "error": "Uzupełnij wszystkie dane i zaznacz zgodę na przetwarzanie danych osobowych, aby przesłać formularz.",
     "buttonSign": "Zapisz się na warsztat",
-    "button": "Zapisuję się"
+    "button": "Zapisuję się",
+    "titleModal": "Formularz zapisu na warsztaty został wysłany! Dziękujemy za aktywne dołączenie do wydarzenia Uwaga! Smartfon.",
+    "textModal1": "Zapraszamy do zapoznania się z programem konferencji.",
+    "textModal2": "Przypominamy także o możliwości zapisania się do naszego newslettera i śledzenia na bieżąco wydarzenia w social mediach.",
+    "buttonModal1": "Zobacz program",
+    "buttonModal2": "Zapisz się do newslettera"
   }
 }

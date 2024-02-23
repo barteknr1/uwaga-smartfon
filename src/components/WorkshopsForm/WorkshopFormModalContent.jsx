@@ -49,29 +49,27 @@ const ModalContent = () => {
       setModalContent(
         <div className={css.workshopsSuccessModalContainer}>
           <h2 className={css.workshopsSuccessModalHeader}>
-            Formularz zapisu na warsztaty został wysłany! Dziękujemy za aktywne
-            dołączenie do wydarzenia Uwaga! Smartfon.
+            {t('workshopsForm.titleModal')}
           </h2>
           <p className={css.workshopsSuccessModalParagraph}>
-            Zapraszamy do zapoznania się z programem konferencji.
+            {t('workshopsForm.textModal1')}
           </p>
           <Button
             type="button"
             variant="secondary"
-            content={t('workshops.buttonModal1')}
+            content={t('workshopsForm.buttonModal1')}
             onClick={() => {
               scrollToAnchor('be_a_volunteer')
               setIsModalVisible(false)
             }}
           />
           <p className={css.workshopsSuccessModalParagraph}>
-            Przypominamy także o możliwości zapisania się do naszego newslettera
-            i śledzenia na bieżąco wydarzenia w social mediach.
+            {t('workshopsForm.textModal2')}
           </p>
           <Button
             type="button"
             variant="secondary"
-            content={t('workshops.buttonModal2')}
+            content={t('workshopsForm.buttonModal2')}
             onClick={() => {
               scrollToAnchor('be_a_volunteer')
               setIsModalVisible(false)
