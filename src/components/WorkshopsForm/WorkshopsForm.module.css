@@ -46,3 +46,41 @@
   margin-top: 16px;
   margin-bottom: 16px;
 }
+
+.workshopsSuccessModalContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.workshopsSuccessModalHeader {
+  font-family: var(--decoraction-font);
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: var(--dark-text-color);
+  align-self: center;
+}
+
+.workshopsSuccessModalParagraph {
+  font-weight: 500;
+  font-size: 1rem;
+  margin: 16px 0 16px 0;
+}
+
+@media screen and (min-width: 765px) {
+  .workshopsSuccessModalHeader {
+    font-weight: 400;
+    font-size: 2.44rem;
+    align-self: flex-start;
+  }
+
+  .workshopsSuccessModalParagraph {
+    font-weight: 500;
+    font-size: 1.25rem;
+  }
+
+  .workshopsSuccessModalContainer > button:last-of-type {
+    margin: 0 auto;
+  }
+}
