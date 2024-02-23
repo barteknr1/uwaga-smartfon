@@ -286,11 +286,6 @@
   },
   "volunteerForm": {
     "title": "Wypełnij formularz i zostań częścią zespołu wolontariuszy!",
-    "name": "Imię i nazwisko",
-    "email": "Adres e-mail",
-    "position": "Stanowisko",
-    "area": "Obszar działania, który chcesz wesprzeć",
-    "agreement": "Wyrażam zgodę na przetwarzanie moich danych osobowych.",
     "error": "Uzupełnij wszystkie dane i zaznacz zgodę na przetwarzanie danych osobowych, aby przesłać formularz.",
     "button": "Wyślij formularz",
     "modalHeader": "Dziękujemy za przesłanie formularza zapisu do wolontariatu! Twoje zaangażowanie ma dla nas ogromne znaczenie.",
@@ -323,7 +318,12 @@
     "title": "Wesprzyj naszą inicjatywę",
     "text1": "Dołącz do nas i przekaż darowiznę — tylko z Twoją pomocą może nam się to udać!",
     "text2": "Wybierz kwotę darowizny, którą chcesz przekazać:",
-    "button": "Wesprzyj"
+    "button": "Wesprzyj",
+    "titleModal": "Dziękujemy za okazane wsparcie! Tylko z Waszą pomocą możemy rozwijać i udoskonalać wydarzenie Uwaga! Smartfon.",
+    "textModal1": "Zapraszamy także wszystkich chętnych do udziału w wolontariacie.Wypełnij formularz zgłoszeniowy i dołącz do naszego zespołu wolontariuszy!",
+    "textModal2": "Przypominamy również o możliwości zapisania się do naszego newslettera i śledzenia na bieżąco wydarzenia w social mediach.",
+    "buttonModal1": "Zostań wolontariuszem",
+    "buttonModal2": "Zapisz się do newslettera"
   },
   "volunteerThanks": {
     "title": "Dziękujemy za przesłanie formularza zapisu do wolontariatu! Twoje zaangażowanie ma dla nas ogromne znaczenie.",
@@ -335,7 +335,9 @@
     "email": "Adres e-mail",
     "city": "Miejscowość",
     "customRole": "Rola",
-    "customRolePlaceholder": "W konferencji uczestniczę jako..."
+    "customRolePlaceholder": "W konferencji uczestniczę jako...",
+    "position": "Stanowisko",
+    "area": "Obszar działania, który chcesz wesprzeć"
   },
   "selectComponent": {
     "Przedstawiciel organizacji": "Przedstawiciel organizacji",

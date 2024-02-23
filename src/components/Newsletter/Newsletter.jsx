@@ -4,32 +4,63 @@ import Section from '../Section/Section'
 import css from './Newsletter.module.css'
 import sprite from '../../assets/svg/sprite.svg'
 import Button from '../Button/Button'
+import {useModal} from '../Modal/ModalProvider'
+import TextComponent from '../FormComponents/TextComponent/TextComponent'
+import CheckboxComponent from '../FormComponents/CheckboxComponent/CheckboxComponent'
 
 const Newsletter = () => {
   const {t} = useTranslation()
-  const [email, setEmail] = useState('')
-  const [isEmailValid, setIsEmailValid] = useState(true)
-  const [isChecked, setIsChecked] = useState(false)
-  const [error, setError] = useState(false)
+  const {openModal, setModalContent} = useModal()
+  const [formData, setFormData] = useState({
+    email: '',
+    isChecked: false,
+  })
+  const [errors, setErrors] = useState([])
 
-  const handleClearInput = () => {
-    setEmail('')
-    setIsEmailValid(true)
-    setError(false)
+  const handleChange = (event, inputType) => {
+    const value =
+      inputType === 'isChecked' ? event.target.checked : event.target.value
+    setFormData((prevData) => ({
+      ...prevData,
+      [inputType]: value,
+    }))
+  }
+
+  const handleClearInput = (inputType) => {
+    setFormData((prevData) => ({...prevData, [inputType]: ''}))
+    setErrors((prevErrors) => prevErrors.filter((error) => error !== inputType))
   }
 
   const handleSubmit = (event) => {
     event.preventDefault()
-    const emailContain = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-    if (emailContain.test(email)) {
-      setIsEmailValid(true)
-      setError(false)
-    } else {
-      setIsEmailValid(false)
-      setError(true)
-    }
-    if (!isChecked) {
-      setError(true)
+    const {email, isChecked} = formData
+    const newErrors = []
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) newErrors.push('email')
+    if (!isChecked) newErrors.push('checkbox')
+    setErrors(newErrors)
+    if (newErrors.length === 0) {
+      setModalContent(
+        <div className={css.workshopsSuccessModalContainer}>
+          <h2 className={css.workshopsSuccessModalHeader}>
+            Formularz zapisu do newslettera został wysłany! Dziękujemy za
+            aktywne dołączenie do wydarzenia Uwaga! Smartfon.
+          </h2>
+          <p className={css.workshopsSuccessModalParagraph}>
+            Zapraszamy do zapoznania się z programem konferencji.
+          </p>
+          <button>Zobacz program</button>
+        </div>
+      )
+      openModal()
+      setFormData({
+        name: '',
+        email: '',
+        role: '',
+        customRole: '',
+        workshop: '',
+        isChecked: false,
+      })
+      setErrors([])
     }
   }
   return (
@@ -49,71 +80,33 @@ const Newsletter = () => {
             <span className={css.bold}>{t('newsletter.bold2')}</span>{' '}
             {t('newsletter.text4')}
           </p>
-          <div
-            className={`${css.textboxBox} ${
-              !isEmailValid && css.textboxBoxError
-            }`}
-          >
-            <label
-              className={`${css.textbox} ${!isEmailValid && css.textboxError}`}
-              htmlFor="textbox"
-            >
-              Adres e-mail:
-            </label>
-            <input
-              placeholder="Adres e-mail"
-              className={css.inputText}
-              id="textbox"
+          <div className={css.textboxBox}>
+            <TextComponent
+              label="email"
+              placeholder="email"
+              value={formData.email}
               type="email"
-              value={email}
-              onChange={(event) => setEmail(event.target.value)}
+              errors={errors}
+              onChange={(e) => handleChange(e, 'email')}
+              onClear={() => handleClearInput('email')}
             />
-            <button
-              className={css.svgTextButton}
-              type="button"
-              onClick={handleClearInput}
-            >
-              {isEmailValid ? (
-                <svg className={css.svgTextIcon}>
-                  <use href={sprite + '#icon-close'} />
-                </svg>
-              ) : (
-                <svg className={css.svgTextIcon}>
-                  <use href={sprite + '#error-icon'} />
-                </svg>
-              )}
-            </button>
           </div>
           <div className={css.checkboxBox}>
-            <input
-              className={css.checkbox}
-              id="checkbox"
-              type="checkbox"
-              checked={isChecked}
-              onChange={() => setIsChecked(!isChecked)}
+            <CheckboxComponent
+              value={formData.isChecked}
+              onChange={(e) => handleChange(e, 'isChecked')}
+              error="checkbox"
+              errors={errors}
             />
-            <div className={css.checkMarkBox}>
-              <span
-                className={`${css.checkMark} ${
-                  error && !isChecked && css.checkMarkError
-                }`}
-              ></span>
-            </div>
-            <label
-              className={`${css.checkboxText} ${
-                error && !isChecked && css.checkboxTextError
-              }`}
-              htmlFor="checkbox"
-            >
-              {t('newsletter.agreement')}
-            </label>
           </div>
-          {error && <p className={css.errorText}>{t('newsletter.error')}</p>}
+          {errors.length > 0 && (
+            <p className={css.errorText}>{t('newsletter.error')}</p>
+          )}
           <Button
             variant="secondary"
             content={t('newsletter.title')}
             type="submit"
-            disabled={!isChecked}
+            disabled={!formData.isChecked}
           />
         </div>
         <div className={`${css.newsletterBox} ${css.svgBox}`}>

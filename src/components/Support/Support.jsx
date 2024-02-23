@@ -1,6 +1,9 @@
 import {useTranslation} from 'react-i18next'
 import {useModal} from '../Modal/ModalProvider'
+
 import Button from '../Button/Button'
+import {scrollToAnchor} from '../Scroll'
+
 import css from './Support.module.css'
 
 const Support = () => {
@@ -13,6 +16,34 @@ const Support = () => {
   }
   const onInput = (e) => {
     console.log(e.target.value)
+  }
+
+  const handleSubmit = () => {
+    setModalContent(
+      <div className={css.supportModalContainer}>
+        <h2 className={css.supportModalHeader}>{t('support.titleModal')}</h2>
+        <p className={css.supportModalParagraph}>{t('support.textModal1')}</p>
+        <Button
+          type="button"
+          variant="secondary"
+          content={t('support.buttonModal1')}
+          onClick={() => {
+            scrollToAnchor('be_a_volunteer')
+            setIsModalVisible(false)
+          }}
+        ></Button>
+        <p className={css.supportModalParagraph}>{t('support.textModal2')}</p>
+        <Button
+          type="button"
+          variant="secondary"
+          content={t('support.buttonModal2')}
+          onClick={() => {
+            scrollToAnchor('newsletter')
+            setIsModalVisible(false)
+          }}
+        />
+      </div>
+    )
   }
 
   const modalContent = (
@@ -38,7 +69,15 @@ const Support = () => {
           min="5"
         />
       </div>
-      <Button type="submit" content={t('support.button')} variant="primary" />
+      <Button
+        type="submit"
+        content={t('support.button')}
+        variant="primary"
+        onClick={(e) => {
+          handleSubmit()
+          e.target.blur()
+        }}
+      />
     </div>
   )
 

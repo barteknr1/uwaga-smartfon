@@ -41,7 +41,7 @@ const ModalContent = () => {
     if (role === 'Inne' && !customRole.trim()) newErrors.push('customRole')
     if (workshop === '') newErrors.push('workshop')
     setErrors(newErrors)
-    console.log('newErrors', newErrors)
+
     if (newErrors.length === 0) {
       setModalContent(
         <div className={css.workshopsSuccessModalContainer}>
@@ -67,7 +67,6 @@ const ModalContent = () => {
   const handleChange = (event, inputType) => {
     const value =
       inputType === 'isChecked' ? event.target.checked : event.target.value
-    console.log('inputType:', inputType, 'value:', value, 'formData:', formData)
     setFormData((prevData) => ({
       ...prevData,
       [inputType]: value,
@@ -89,7 +88,6 @@ const ModalContent = () => {
   }, [isModalVisible, setFormData])
 
   const handleClearInput = (inputType) => {
-    console.log(inputType)
     setFormData((prevData) => ({...prevData, [inputType]: ''}))
     setErrors((prevErrors) => prevErrors.filter((error) => error !== inputType))
   }

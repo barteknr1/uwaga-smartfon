@@ -285,11 +285,6 @@
   },
   "volunteerForm": {
     "title": "Fill out the form and become part of the volunteer team!",
-    "name": "Full Name",
-    "email": "Email Address",
-    "position": "Position",
-    "area": "Area of expertise you want to support",
-    "agreement": "I consent to the processing of my personal data.",
     "error": "Please fill in all the details and check the consent for processing personal data to submit the form.",
     "button": "Send Form",
     "modalHeader": "Thank you for submitting the volunteer registration form! Your commitment is greatly appreciated.",
@@ -322,7 +317,12 @@
     "title": "Support Our Initiative",
     "text1": "Join us and make a donation — only with your help can we make it happen!",
     "text2": "Choose the amount of the donation you would like to contribute:",
-    "button": "Support"
+    "button": "Support",
+    "titleModal": "Thank you for your support! Only with your help can we develop and improve the Uwaga! Smartfon event.",
+    "textModal1": "We also welcome anyone willing to volunteer. Fill out the application form and join our team of volunteers!",
+    "textModal2": "We also remind you to sign up for our newsletter and keep up to date with the event on social media.",
+    "buttonModal1": "Become a Volunteer",
+    "buttonModal2": "Subscribe to the Newsletter"
   },
   "volunteerThanks": {
     "title": "Thank you for submitting the volunteer sign-up form! Your commitment is of great importance to us.",
@@ -334,7 +334,9 @@
     "email": "Email Address",
     "city": "City",
     "customRole": "Role",
-    "customRolePlaceholder": "I am participating in the conference as..."
+    "customRolePlaceholder": "I am participating in the conference as...",
+    "position": "Position",
+    "area": "Area of expertise you want to support"
   },
   "selectComponent": {
     "Przedstawiciel organizacji": "Organization Representative",
