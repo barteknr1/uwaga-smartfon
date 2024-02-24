@@ -3,9 +3,11 @@ import Section from '../Section/Section'
 import css from './BeAVolunteer.module.css'
 import Button from '../Button/Button'
 import sprite from '../../assets/svg/sprite.svg'
+import {useNavigate} from 'react-router-dom'
 
 const BeAVolunteer = () => {
   const {t} = useTranslation()
+  const navigate = useNavigate()
 
   return (
     <Section
@@ -26,6 +28,7 @@ const BeAVolunteer = () => {
           </div>
         </div>
         <Button
+          onClick={() => navigate('../volunteering')}
           type="button"
           variant="secondary"
           content={t('beAVolunteer.buttonText')}
