@@ -66,9 +66,9 @@ const ApplicationForm = () => {
     if (newErrors.length === 0) {
       console.log(inputs)
       setModalContent(
-        <div>
-          <h2>header</h2>
-          <p>paragraf1</p>
+        <div className={css.successModalContainer}>
+          <h2 className={css.successModalHeader}>header</h2>
+          <p className={css.successModalParagraph}>paragraf1</p>
           <Button
             type="button"
             variant="secondary"
@@ -78,7 +78,7 @@ const ApplicationForm = () => {
               closeModal(false)
             }}
           />
-          <p>paragraf 2</p>
+          <p className={css.successModalParagraph}>paragraf 2</p>
           <Button
             type="button"
             variant="secondary"
