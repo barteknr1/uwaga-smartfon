@@ -7,10 +7,11 @@ import TextComponent from '../FormComponents/TextComponent/TextComponent'
 import SelectComponent from '../FormComponents/SelectComponent.jsx/SelectComponent'
 import RadioComponent from '../FormComponents/RadioComponent/RadioComponent'
 import CheckboxComponent from '../FormComponents/CheckboxComponent/CheckboxComponent'
+import {scrollToAnchor} from '../Scroll'
 
 const ApplicationForm = () => {
   const {t} = useTranslation()
-  const {isModalVisible} = useModal()
+  const {isModalVisible, setModalContent, closeModal, openModal} = useModal()
   const [inputs, setInputs] = useState({
     name: '',
     email: '',
@@ -64,6 +65,32 @@ const ApplicationForm = () => {
     console.log(inputs.permission)
     if (newErrors.length === 0) {
       console.log(inputs)
+      setModalContent(
+        <div>
+          <h2>header</h2>
+          <p>paragraf1</p>
+          <Button
+            type="button"
+            variant="secondary"
+            content={'button1'}
+            onClick={() => {
+              scrollToAnchor('program')
+              closeModal(false)
+            }}
+          />
+          <p>paragraf 2</p>
+          <Button
+            type="button"
+            variant="secondary"
+            content={'button2'}
+            onClick={() => {
+              scrollToAnchor('newsletter')
+              closeModal(false)
+            }}
+          />
+        </div>
+      )
+      openModal()
     }
   }
 
