@@ -7,10 +7,11 @@ import Button from '../Button/Button'
 import {useModal} from '../Modal/ModalProvider'
 import TextComponent from '../FormComponents/TextComponent/TextComponent'
 import CheckboxComponent from '../FormComponents/CheckboxComponent/CheckboxComponent'
+import {scrollToAnchor} from '../Scroll'
 
 const Newsletter = () => {
   const {t} = useTranslation()
-  const {openModal, setModalContent} = useModal()
+  const {openModal, setModalContent, closeModal} = useModal()
   const [formData, setFormData] = useState({
     email: '',
     isChecked: false,
@@ -40,15 +41,18 @@ const Newsletter = () => {
     setErrors(newErrors)
     if (newErrors.length === 0) {
       setModalContent(
-        <div className={css.workshopsSuccessModalContainer}>
-          <h2 className={css.workshopsSuccessModalHeader}>
-            Formularz zapisu do newslettera został wysłany! Dziękujemy za
-            aktywne dołączenie do wydarzenia Uwaga! Smartfon.
-          </h2>
-          <p className={css.workshopsSuccessModalParagraph}>
-            Zapraszamy do zapoznania się z programem konferencji.
-          </p>
-          <button>Zobacz program</button>
+        <div>
+          <h2>header</h2>
+          <p>paragraf</p>
+          <Button
+            type="button"
+            variant="secondary"
+            content={'button1'}
+            onClick={() => {
+              scrollToAnchor('newsletter')
+              closeModal(false)
+            }}
+          />
         </div>
       )
       openModal()
