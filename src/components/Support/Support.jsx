@@ -1,15 +1,16 @@
+import {useNavigate} from 'react-router-dom'
 import {useTranslation} from 'react-i18next'
-import {useModal} from '../Modal/ModalProvider'
 
-import Button from '../Button/Button'
+import {useModal} from '../Modal/ModalProvider'
 import {scrollToAnchor} from '../Scroll'
+import Button from '../Button/Button'
 
 import css from './Support.module.css'
 
 const Support = () => {
   const {t} = useTranslation()
   const {isModalVisible, setIsModalVisible, setModalContent} = useModal()
-
+  const navigate = useNavigate()
   const openModal = () => {
     setIsModalVisible(true)
     setModalContent(modalContent)
@@ -25,7 +26,8 @@ const Support = () => {
           variant="secondary"
           content={t('support.buttonModal1')}
           onClick={() => {
-            scrollToAnchor('be_a_volunteer')
+            navigate('/volunteering')
+            setTimeout(() => scrollToAnchor('volunteer_form'), 1)
             setIsModalVisible(false)
           }}
         ></Button>
