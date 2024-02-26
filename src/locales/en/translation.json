@@ -119,7 +119,10 @@
     "bold2": "Regulations for the Use of Digital Media in School,",
     "text4": "prepared by Dr. Tomasz Lewandowski, a doctor of law.",
     "agreement": "I agree to the processing of my personal data.",
-    "error": "Complete all fields and check the consent for personal data processing to submit the form."
+    "error": "Complete all fields and check the consent for personal data processing to submit the form.",
+    "titleModal": "The newsletter sign-up form has been sent! Thank you for actively joining the Uwaga! Smartfon event.",
+    "textModal": "Take a look at the conference agenda.",
+    "buttonModal": "View the program"
   },
   "patrons": {
     "title": "Partners & Patrons",
