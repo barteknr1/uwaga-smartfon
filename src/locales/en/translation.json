@@ -370,6 +370,11 @@
     "header": "Application form",
     "menu": "During the conference, a hot meal will be provided. Please choose a menu according to your preferences. Thank you.",
     "button": "Submit",
-    "error": "Please fill in all the details and check the consent for processing personal data to submit the form."
+    "error": "Please fill in all the details and check the consent for processing personal data to submit the form.",
+    "titleModal": "The registration form has been sent! Thank you for joining the Uwaga! Smartfon event.",
+    "textModal1": "Take a look at the conference agenda.",
+    "textModal2": "We also remind you that you can sign up for our newsletter and keep up to date with the event on social media.",
+    "buttonModal1": "Show the program",
+    "buttonModal2": "Subscribe to our newsletter"
   }
 }
