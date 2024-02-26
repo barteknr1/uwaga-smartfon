@@ -1,3 +1,4 @@
+import {useNavigate} from 'react-router-dom'
 import {useTranslation} from 'react-i18next'
 import {useState} from 'react'
 import Section from '../Section/Section'
@@ -7,10 +8,12 @@ import Button from '../Button/Button'
 import {useModal} from '../Modal/ModalProvider'
 import TextComponent from '../FormComponents/TextComponent/TextComponent'
 import CheckboxComponent from '../FormComponents/CheckboxComponent/CheckboxComponent'
+import {scrollToAnchor} from '../Scroll'
 
 const Newsletter = () => {
   const {t} = useTranslation()
-  const {openModal, setModalContent} = useModal()
+  const navigate = useNavigate()
+  const {openModal, setModalContent, closeModal} = useModal()
   const [formData, setFormData] = useState({
     email: '',
     isChecked: false,
@@ -40,15 +43,23 @@ const Newsletter = () => {
     setErrors(newErrors)
     if (newErrors.length === 0) {
       setModalContent(
-        <div className={css.workshopsSuccessModalContainer}>
-          <h2 className={css.workshopsSuccessModalHeader}>
-            Formularz zapisu do newslettera został wysłany! Dziękujemy za
-            aktywne dołączenie do wydarzenia Uwaga! Smartfon.
+        <div className={css.newsletterSuccessModalContainer}>
+          <h2 className={css.newsletterSuccessModalHeader}>
+            {t('newsletter.titleModal')}
           </h2>
-          <p className={css.workshopsSuccessModalParagraph}>
-            Zapraszamy do zapoznania się z programem konferencji.
+          <p className={css.newsletterSuccessModalParagraph}>
+            {t('newsletter.textModal')}
           </p>
-          <button>Zobacz program</button>
+          <Button
+            type="button"
+            variant="secondary"
+            content={t('newsletter.buttonModal')}
+            onClick={() => {
+              closeModal(false)
+              navigate('/landing-page')
+              setTimeout(() => scrollToAnchor('program'), 1)
+            }}
+          />
         </div>
       )
       openModal()
