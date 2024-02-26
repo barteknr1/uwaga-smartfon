@@ -42,12 +42,16 @@ const Newsletter = () => {
     if (newErrors.length === 0) {
       setModalContent(
         <div className={css.newsletterSuccessModalContainer}>
-          <h2 className={css.newsletterSuccessModalHeader}>header</h2>
-          <p className={css.newsletterSuccessModalParagraph}>paragraf</p>
+          <h2 className={css.newsletterSuccessModalHeader}>
+            {t('newsletter.titleModal')}
+          </h2>
+          <p className={css.newsletterSuccessModalParagraph}>
+            {t('newsletter.textModal')}
+          </p>
           <Button
             type="button"
             variant="secondary"
-            content={'button1'}
+            content={t('newsletter.buttonModal')}
             onClick={() => {
               scrollToAnchor('program')
               closeModal(false)
