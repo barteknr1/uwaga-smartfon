@@ -4,11 +4,10 @@
   padding-top: 64px;
   padding-bottom: 64px;
   margin: 0;
-  background-color: var(--primary-background-color);
 }
 .patronsTitle {
   color: var(--dark-text-color);
-  font-family: var(--decoraction-font);
+  font-family: var(--decoration-font);
   align-self: flex-start;
   font-size: 1.9375rem;
   font-weight: 400;
