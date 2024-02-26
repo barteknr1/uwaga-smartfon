@@ -1,3 +1,4 @@
+import {useNavigate} from 'react-router-dom'
 import css from './ApplicationForm.module.css'
 import Button from '../Button/Button'
 import {useState, useEffect} from 'react'
@@ -12,6 +13,7 @@ import {scrollToAnchor} from '../Scroll'
 const ApplicationForm = () => {
   const {t} = useTranslation()
   const {isModalVisible, setModalContent, closeModal, openModal} = useModal()
+  const navigate = useNavigate()
   const [inputs, setInputs] = useState({
     name: '',
     email: '',
@@ -78,7 +80,8 @@ const ApplicationForm = () => {
             variant="secondary"
             content={t('applicationForm.buttonModal1')}
             onClick={() => {
-              scrollToAnchor('program')
+              navigate('/landing-page')
+              setTimeout(() => scrollToAnchor('program'), 1)
               closeModal(false)
             }}
           />
@@ -90,7 +93,8 @@ const ApplicationForm = () => {
             variant="secondary"
             content={t('applicationForm.buttonModal2')}
             onClick={() => {
-              scrollToAnchor('newsletter')
+              navigate('/')
+              setTimeout(() => scrollToAnchor('newsletter'), 1)
               closeModal(false)
             }}
           />
