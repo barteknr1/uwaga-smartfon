@@ -37,7 +37,8 @@ const Support = () => {
           variant="secondary"
           content={t('support.buttonModal2')}
           onClick={() => {
-            scrollToAnchor('newsletter')
+            navigate('/')
+            setTimeout(() => scrollToAnchor('newsletter'), 1)
             setIsModalVisible(false)
           }}
         />
