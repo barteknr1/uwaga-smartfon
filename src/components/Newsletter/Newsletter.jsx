@@ -1,3 +1,4 @@
+import {useNavigate} from 'react-router-dom'
 import {useTranslation} from 'react-i18next'
 import {useState} from 'react'
 import Section from '../Section/Section'
@@ -11,6 +12,7 @@ import {scrollToAnchor} from '../Scroll'
 
 const Newsletter = () => {
   const {t} = useTranslation()
+  const navigate = useNavigate()
   const {openModal, setModalContent, closeModal} = useModal()
   const [formData, setFormData] = useState({
     email: '',
@@ -53,8 +55,9 @@ const Newsletter = () => {
             variant="secondary"
             content={t('newsletter.buttonModal')}
             onClick={() => {
-              scrollToAnchor('program')
               closeModal(false)
+              navigate('/landing-page')
+              setTimeout(() => scrollToAnchor('program'), 1)
             }}
           />
         </div>
