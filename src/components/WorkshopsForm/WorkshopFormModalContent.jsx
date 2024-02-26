@@ -20,8 +20,7 @@ const ModalContent = () => {
     'Inne',
   ]
   const radioOptions = ['Warsztat 1', 'Warsztat 2', 'Warsztat 3', 'Warsztat 4']
-  const {openModal, isModalVisible, setModalContent, setIsModalVisible} =
-    useModal()
+  const {openModal, isModalVisible, setModalContent, closeModal} = useModal()
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -60,7 +59,7 @@ const ModalContent = () => {
             content={t('workshopsForm.buttonModal1')}
             onClick={() => {
               scrollToAnchor('program')
-              setIsModalVisible(false)
+              closeModal(false)
             }}
           />
           <p className={css.workshopsSuccessModalParagraph}>
@@ -72,7 +71,7 @@ const ModalContent = () => {
             content={t('workshopsForm.buttonModal2')}
             onClick={() => {
               scrollToAnchor('newsletter')
-              setIsModalVisible(false)
+              closeModal(false)
             }}
           />
         </div>
