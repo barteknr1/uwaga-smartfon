@@ -2,6 +2,7 @@ import {useState, useEffect, useRef} from 'react'
 import {useTranslation} from 'react-i18next'
 import {useModal} from '../Modal/ModalProvider'
 import Button from '../Button/Button'
+import {scrollToAnchor} from '../Scroll'
 import css from './WorkshopsForm.module.css'
 import sprite from '../../assets/svg/sprite.svg'
 import TextComponent from '../FormComponents/TextComponent/TextComponent'
@@ -19,7 +20,7 @@ const ModalContent = () => {
     'Inne',
   ]
   const radioOptions = ['Warsztat 1', 'Warsztat 2', 'Warsztat 3', 'Warsztat 4']
-  const {openModal, isModalVisible, setModalContent} = useModal()
+  const {openModal, isModalVisible, setModalContent, closeModal} = useModal()
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -47,18 +48,32 @@ const ModalContent = () => {
       setModalContent(
         <div className={css.workshopsSuccessModalContainer}>
           <h2 className={css.workshopsSuccessModalHeader}>
-            Formularz zapisu na warsztaty został wysłany! Dziękujemy za aktywne
-            dołączenie do wydarzenia Uwaga! Smartfon.
+            {t('workshopsForm.titleModal')}
           </h2>
           <p className={css.workshopsSuccessModalParagraph}>
-            Zapraszamy do zapoznania się z programem konferencji.
+            {t('workshopsForm.textModal1')}
           </p>
-          <button>Zobacz program</button>
+          <Button
+            type="button"
+            variant="secondary"
+            content={t('workshopsForm.buttonModal1')}
+            onClick={() => {
+              scrollToAnchor('program')
+              closeModal(false)
+            }}
+          />
           <p className={css.workshopsSuccessModalParagraph}>
-            Przypominamy także o możliwości zapisania się do naszego newslettera
-            i śledzenia na bieżąco wydarzenia w social mediach.
+            {t('workshopsForm.textModal2')}
           </p>
-          <button>Zapisz się do newslettera</button>
+          <Button
+            type="button"
+            variant="secondary"
+            content={t('workshopsForm.buttonModal2')}
+            onClick={() => {
+              scrollToAnchor('newsletter')
+              closeModal(false)
+            }}
+          />
         </div>
       )
       openModal()

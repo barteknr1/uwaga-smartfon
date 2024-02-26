@@ -9,7 +9,7 @@ const NoProgram = () => {
       sectionClass={css.noProgram}
       titleClass={css.noProgramTitle}
       title={t('noProgram.title')}
-      i
+      id="program"
     >
       <p className={css.text}>{t('noProgram.paragraph')}</p>
     </Section>
