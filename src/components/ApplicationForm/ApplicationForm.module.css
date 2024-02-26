@@ -51,7 +51,7 @@ form > button {
   font-family: var(--placeholder-font);
   font-size: 0.75rem;
   font-weight: 400;
-  line-height: 0.77306rem; /* 150% */
+  line-height: 0.77306rem;
   letter-spacing: 0.00063rem;
   margin-top: 10px;
 }
@@ -70,7 +70,7 @@ form > button {
   }
   .errorText {
     font-size: 1rem;
-    line-height: 1.5rem; /* 150% */
+    line-height: 1.5rem;
     letter-spacing: 0.00119rem;
   }
 }

@@ -3,8 +3,7 @@ import {useRef} from 'react'
 import {Swiper, SwiperSlide} from 'swiper/react'
 import {Autoplay} from 'swiper/modules'
 import Section from '../Section/Section'
-import Support from '../Support/Support'
-import Button from '../Button/Button'
+import SupportButton from '../Support/SupportButton'
 import 'swiper/css/bundle'
 import css from './Patrons.module.css'
 import {
@@ -201,7 +200,7 @@ const Patrons = () => {
             ))}
           </Swiper>
         </div>
-        <Support />
+        <SupportButton />
       </div>
     </Section>
   )
