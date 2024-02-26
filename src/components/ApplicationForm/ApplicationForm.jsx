@@ -67,22 +67,28 @@ const ApplicationForm = () => {
       console.log(inputs)
       setModalContent(
         <div className={css.successModalContainer}>
-          <h2 className={css.successModalHeader}>header</h2>
-          <p className={css.successModalParagraph}>paragraf1</p>
+          <h2 className={css.successModalHeader}>
+            {t('applicationForm.titleModal')}
+          </h2>
+          <p className={css.successModalParagraph}>
+            {t('applicationForm.textModal1')}
+          </p>
           <Button
             type="button"
             variant="secondary"
-            content={'button1'}
+            content={t('applicationForm.buttonModal1')}
             onClick={() => {
               scrollToAnchor('program')
               closeModal(false)
             }}
           />
-          <p className={css.successModalParagraph}>paragraf 2</p>
+          <p className={css.successModalParagraph}>
+            {t('applicationForm.textModal2')}
+          </p>
           <Button
             type="button"
             variant="secondary"
-            content={'button2'}
+            content={t('applicationForm.buttonModal2')}
             onClick={() => {
               scrollToAnchor('newsletter')
               closeModal(false)
