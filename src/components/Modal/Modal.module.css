@@ -3,7 +3,7 @@
   max-height: 90%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   position: relative;
   padding: 28px;
@@ -12,6 +12,7 @@
   border-radius: 16px;
   background-color: var(--primary-background-color);
   margin: 5px;
+  overflow: auto;
   @media screen and (min-width: 766px) {
     max-height: 100%;
     padding: 68px;
