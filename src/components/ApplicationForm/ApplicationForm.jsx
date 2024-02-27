@@ -1,3 +1,4 @@
+import {useNavigate} from 'react-router-dom'
 import css from './ApplicationForm.module.css'
 import Button from '../Button/Button'
 import {useState, useEffect} from 'react'
@@ -7,10 +8,12 @@ import TextComponent from '../FormComponents/TextComponent/TextComponent'
 import SelectComponent from '../FormComponents/SelectComponent.jsx/SelectComponent'
 import RadioComponent from '../FormComponents/RadioComponent/RadioComponent'
 import CheckboxComponent from '../FormComponents/CheckboxComponent/CheckboxComponent'
+import {scrollToAnchor} from '../Scroll'
 
 const ApplicationForm = () => {
   const {t} = useTranslation()
-  const {isModalVisible} = useModal()
+  const {isModalVisible, setModalContent, closeModal, openModal} = useModal()
+  const navigate = useNavigate()
   const [inputs, setInputs] = useState({
     name: '',
     email: '',
@@ -64,6 +67,40 @@ const ApplicationForm = () => {
     console.log(inputs.permission)
     if (newErrors.length === 0) {
       console.log(inputs)
+      setModalContent(
+        <div className={css.successModalContainer}>
+          <h2 className={css.successModalHeader}>
+            {t('applicationForm.titleModal')}
+          </h2>
+          <p className={css.successModalParagraph}>
+            {t('applicationForm.textModal1')}
+          </p>
+          <Button
+            type="button"
+            variant="secondary"
+            content={t('applicationForm.buttonModal1')}
+            onClick={() => {
+              navigate('/landing-page')
+              setTimeout(() => scrollToAnchor('program'), 1)
+              closeModal(false)
+            }}
+          />
+          <p className={css.successModalParagraph}>
+            {t('applicationForm.textModal2')}
+          </p>
+          <Button
+            type="button"
+            variant="secondary"
+            content={t('applicationForm.buttonModal2')}
+            onClick={() => {
+              navigate('/')
+              setTimeout(() => scrollToAnchor('newsletter'), 1)
+              closeModal(false)
+            }}
+          />
+        </div>
+      )
+      openModal()
     }
   }
 

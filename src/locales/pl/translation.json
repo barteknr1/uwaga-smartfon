@@ -355,7 +355,6 @@
     "Warsztat 4": "Warsztat 4",
     "traditional": "Menu tradycyjne",
     "vegetarian": "Menu wegetariańskie"
-
   },
   "checkboxComponent": {
     "certificate": "Chcę otrzymać certyfikat uczestnictwa w konferencji Uwaga! Smartfon.",
@@ -372,6 +371,11 @@
     "header": "Formularz zgłoszeniowy",
     "menu": "Podczas konferencji będzie zagwarantowany ciepły posiłek. Prosimy o wybór menu zgodnie z preferencjami. Dziękujemy.",
     "button": "Wyślij formularz zgłoszeniowy",
-    "error": "Uzupełnij wszystkie dane i zaznacz zgodę na przetwarzanie danych osobowych, aby przesłać formularz."
+    "error": "Uzupełnij wszystkie dane i zaznacz zgodę na przetwarzanie danych osobowych, aby przesłać formularz.",
+    "titleModal": "Formularz zgłoszeniowy został wysłany! Dziękujemy za dołączenie do wydarzenia Uwaga! Smartfon.",
+    "textModal1": "Zapraszamy do zapoznania się z programem konferencji.",
+    "textModal2": "Przypominamy także o możliwości zapisania się do naszego newslettera i śledzenia na bieżąco wydarzenia w social mediach.",
+    "buttonModal1": "Zobacz program",
+    "buttonModal2": "Zapisz się do newslettera"
   }
 }

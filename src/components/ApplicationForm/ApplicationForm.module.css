@@ -56,6 +56,27 @@ form > button {
   margin-top: 10px;
 }
 
+.successModalContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.successModalHeader {
+  font-family: var(--decoraction-font);
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: var(--dark-text-color);
+  align-self: center;
+}
+
+.successModalParagraph {
+  font-weight: 500;
+  font-size: 1rem;
+  margin: 16px 0 16px 0;
+}
+
 @media screen and (min-width: 765px) {
   .formHeader {
     font-size: 2.44rem;
@@ -72,5 +93,20 @@ form > button {
     font-size: 1rem;
     line-height: 1.5rem;
     letter-spacing: 0.00119rem;
+  }
+
+  .successModalHeader {
+    font-weight: 400;
+    font-size: 2.44rem;
+    align-self: flex-start;
+  }
+
+  .successModalParagraph {
+    font-weight: 500;
+    font-size: 1.25rem;
+  }
+
+  .successModalContainer > button:last-of-type {
+    margin: 0 auto;
   }
 }
