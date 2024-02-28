@@ -42,70 +42,239 @@ const Patrons = () => {
     }
   }
   const patronOne = [
-    bgk,
-    nask,
-    pokolenia,
-    krakow,
-    bonumHumanum,
-    silnaWola,
-    iris,
+    {
+      img: bgk,
+      site: 'https://www.bgk.pl/',
+    },
+    {
+      img: nask,
+      site: 'https://www.nask.pl/',
+    },
+    {
+      img: pokolenia,
+      site: 'https://instytutpokolenia.pl/',
+    },
+    {
+      img: krakow,
+      site: 'https://www.krakow.pl/',
+    },
+    {
+      img: bonumHumanum,
+      site: 'https://bonumhumanum.pl/',
+    },
+    {
+      img: silnaWola,
+      site: 'https://silnawola.pl/',
+    },
+    {
+      img: iris,
+      site: 'https://iris.edu.pl/',
+    },
+
     // DUBEL 1
-    bgk,
-    nask,
-    pokolenia,
-    krakow,
-    bonumHumanum,
-    silnaWola,
-    iris,
+    {
+      img: bgk,
+      site: 'https://www.bgk.pl/',
+    },
+    {
+      img: nask,
+      site: 'https://www.nask.pl/',
+    },
+    {
+      img: pokolenia,
+      site: 'https://instytutpokolenia.pl/',
+    },
+    {
+      img: krakow,
+      site: 'https://www.krakow.pl/',
+    },
+    {
+      img: bonumHumanum,
+      site: 'https://bonumhumanum.pl/',
+    },
+    {
+      img: silnaWola,
+      site: 'https://silnawola.pl/',
+    },
+    {
+      img: iris,
+      site: 'https://iris.edu.pl/',
+    },
     // DUBEL 2
-    bgk,
-    nask,
-    pokolenia,
-    krakow,
-    bonumHumanum,
-    silnaWola,
-    iris,
+    {
+      img: bgk,
+      site: 'https://www.bgk.pl/',
+    },
+    {
+      img: nask,
+      site: 'https://www.nask.pl/',
+    },
+    {
+      img: pokolenia,
+      site: 'https://instytutpokolenia.pl/',
+    },
+    {
+      img: krakow,
+      site: 'https://www.krakow.pl/',
+    },
+    {
+      img: bonumHumanum,
+      site: 'https://bonumhumanum.pl/',
+    },
+    {
+      img: silnaWola,
+      site: 'https://silnawola.pl/',
+    },
+    {
+      img: iris,
+      site: 'https://iris.edu.pl/',
+    },
     // DUBEL 3
-    bgk,
-    nask,
-    pokolenia,
-    krakow,
-    bonumHumanum,
-    silnaWola,
-    iris,
+    {
+      img: bgk,
+      site: 'https://www.bgk.pl/',
+    },
+    {
+      img: nask,
+      site: 'https://www.nask.pl/',
+    },
+    {
+      img: pokolenia,
+      site: 'https://instytutpokolenia.pl/',
+    },
+    {
+      img: krakow,
+      site: 'https://www.krakow.pl/',
+    },
+    {
+      img: bonumHumanum,
+      site: 'https://bonumhumanum.pl/',
+    },
+    {
+      img: silnaWola,
+      site: 'https://silnawola.pl/',
+    },
+    {
+      img: iris,
+      site: 'https://iris.edu.pl/',
+    },
   ]
   const patronTwo = [
-    iworis,
-    cps,
-    oaza,
-    pti,
-    pktsKrzywe,
-    szpitalBabinskiego,
-    tarczaPFR,
+    {
+      img: iworis,
+      site: 'https://iworis.pl/',
+    },
+    {
+      img: cps,
+      site: 'https://cps.edu.pl/',
+    },
+    {
+      img: oaza,
+      site: '',
+    },
+    {
+      img: pti,
+      site: 'https://portal.pti.org.pl/',
+    },
+    {
+      img: pktsKrzywe,
+      site: 'https://www.ptks.pl/',
+    },
+    {
+      img: szpitalBabinskiego,
+      site: 'https://stara.babinski.pl/',
+    },
+    {
+      img: tarczaPFR,
+      site: 'https://polskieforumrodzicow.pl/',
+    },
     // DUBEL 1
-    iworis,
-    cps,
-    oaza,
-    pti,
-    pktsKrzywe,
-    szpitalBabinskiego,
-    tarczaPFR,
+    {
+      img: iworis,
+      site: 'https://iworis.pl/',
+    },
+    {
+      img: cps,
+      site: 'https://cps.edu.pl/',
+    },
+    {
+      img: oaza,
+      site: '',
+    },
+    {
+      img: pti,
+      site: 'https://portal.pti.org.pl/',
+    },
+    {
+      img: pktsKrzywe,
+      site: 'https://www.ptks.pl/',
+    },
+    {
+      img: szpitalBabinskiego,
+      site: 'https://stara.babinski.pl/',
+    },
+    {
+      img: tarczaPFR,
+      site: 'https://polskieforumrodzicow.pl/',
+    },
     // DUBEL 2
-    iworis,
-    cps,
-    oaza,
-    pti,
-    pktsKrzywe,
-    szpitalBabinskiego,
-    tarczaPFR,
+    {
+      img: iworis,
+      site: 'https://iworis.pl/',
+    },
+    {
+      img: cps,
+      site: 'https://cps.edu.pl/',
+    },
+    {
+      img: oaza,
+      site: '',
+    },
+    {
+      img: pti,
+      site: 'https://portal.pti.org.pl/',
+    },
+    {
+      img: pktsKrzywe,
+      site: 'https://www.ptks.pl/',
+    },
+    {
+      img: szpitalBabinskiego,
+      site: 'https://stara.babinski.pl/',
+    },
+    {
+      img: tarczaPFR,
+      site: 'https://polskieforumrodzicow.pl/',
+    },
     // DUBEL 3
-    iworis,
-    cps,
-    oaza,
-    pti,
-    pktsKrzywe,
-    szpitalBabinskiego,
-    tarczaPFR,
+    {
+      img: iworis,
+      site: 'https://iworis.pl/',
+    },
+    {
+      img: cps,
+      site: 'https://cps.edu.pl/',
+    },
+    {
+      img: oaza,
+      site: '',
+    },
+    {
+      img: pti,
+      site: 'https://portal.pti.org.pl/',
+    },
+    {
+      img: pktsKrzywe,
+      site: 'https://www.ptks.pl/',
+    },
+    {
+      img: szpitalBabinskiego,
+      site: 'https://stara.babinski.pl/',
+    },
+    {
+      img: tarczaPFR,
+      site: 'https://polskieforumrodzicow.pl/',
+    },
   ]
 
   return (
@@ -149,11 +318,21 @@ const Patrons = () => {
           >
             {patronTwo.map((slider, index) => (
               <SwiperSlide key={index}>
-                <img
-                  className={css.patronsImg}
-                  src={slider}
-                  alt={`patron logo ${index + 1}`}
-                />
+                {slider.site ? (
+                  <a href={slider.site} rel="noreferrer" target="_blank">
+                    <img
+                      className={css.patronsImg}
+                      src={slider.img}
+                      alt={`patron logo ${index + 1}`}
+                    />
+                  </a>
+                ) : (
+                  <img
+                    className={css.patronsImg}
+                    src={slider.img}
+                    alt={`patron logo ${index + 1}`}
+                  />
+                )}
               </SwiperSlide>
             ))}
           </Swiper>
@@ -192,11 +371,21 @@ const Patrons = () => {
           >
             {patronOne.map((slider, index) => (
               <SwiperSlide key={index}>
-                <img
-                  className={css.patronsImg}
-                  src={slider}
-                  alt={`patron logo ${index + 1}`}
-                />
+                {slider.site ? (
+                  <a href={slider.site} rel="noreferrer" target="_blank">
+                    <img
+                      className={css.patronsImg}
+                      src={slider.img}
+                      alt={`patron logo ${index + 1}`}
+                    />
+                  </a>
+                ) : (
+                  <img
+                    className={css.patronsImg}
+                    src={slider.img}
+                    alt={`patron logo ${index + 1}`}
+                  />
+                )}
               </SwiperSlide>
             ))}
           </Swiper>
