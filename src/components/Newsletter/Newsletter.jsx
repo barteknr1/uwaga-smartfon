@@ -9,6 +9,8 @@ import {useModal} from '../Modal/ModalProvider'
 import TextComponent from '../FormComponents/TextComponent/TextComponent'
 import CheckboxComponent from '../FormComponents/CheckboxComponent/CheckboxComponent'
 import {scrollToAnchor} from '../Scroll'
+import axios from 'axios'
+import Loader from '../Loader/Loader'
 
 const Newsletter = () => {
   const {t} = useTranslation()
@@ -19,6 +21,7 @@ const Newsletter = () => {
     isChecked: false,
   })
   const [errors, setErrors] = useState([])
+  const [isLoading, setIsLoading] = useState(false)
 
   const handleChange = (event, inputType) => {
     const value =
@@ -34,44 +37,72 @@ const Newsletter = () => {
     setErrors((prevErrors) => prevErrors.filter((error) => error !== inputType))
   }
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault()
-    const {email, isChecked} = formData
+    const newsletterUrl = import.meta.env.VITE_NEWSLETTER
+    const {email} = formData
     const newErrors = []
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) newErrors.push('email')
-    if (!isChecked) newErrors.push('checkbox')
+    if (!formData.isChecked) newErrors.push('checkbox')
+
     setErrors(newErrors)
+
     if (newErrors.length === 0) {
-      setModalContent(
-        <div className={css.newsletterSuccessModalContainer}>
-          <h2 className={css.newsletterSuccessModalHeader}>
-            {t('newsletter.titleModal')}
-          </h2>
-          <p className={css.newsletterSuccessModalParagraph}>
-            {t('newsletter.textModal')}
-          </p>
-          <Button
-            type="button"
-            variant="secondary"
-            content={t('newsletter.buttonModal')}
-            onClick={() => {
-              closeModal(false)
-              navigate('/landing-page')
-              setTimeout(() => scrollToAnchor('program'), 1)
-            }}
-          />
-        </div>
-      )
-      openModal()
-      setFormData({
-        name: '',
-        email: '',
-        role: '',
-        customRole: '',
-        workshop: '',
-        isChecked: false,
-      })
-      setErrors([])
+      setIsLoading(true)
+      try {
+        const response = await axios.post(newsletterUrl, formData, {
+          headers: {
+            'Content-Type': 'multipart/form-data',
+          },
+          redirect: 'follow',
+          timeout: 10000, // Timeout after 10 seconds
+        })
+
+        if (response.status === 200) {
+          setIsLoading(false)
+          setModalContent(
+            <div className={css.newsletterSuccessModalContainer}>
+              <h2 className={css.newsletterSuccessModalHeader}>
+                {t('newsletter.titleModal')}
+              </h2>
+              <p className={css.newsletterSuccessModalParagraph}>
+                {t('newsletter.textModal')}
+              </p>
+              <Button
+                type="button"
+                variant="secondary"
+                content={t('newsletter.buttonModal')}
+                onClick={() => {
+                  closeModal(false)
+                  navigate('/landing-page')
+                  setTimeout(() => scrollToAnchor('program'), 1)
+                }}
+              />
+            </div>
+          )
+          openModal()
+          setFormData({
+            email: '',
+            isChecked: false,
+          })
+          setErrors([])
+        } else {
+          throw new Error('Network response was not ok.')
+        }
+      } catch (error) {
+        setIsLoading(false)
+        setModalContent(
+          <div className={css.newsletterSuccessModalContainer}>
+            <h2 className={css.newsletterSuccessModalHeader}>
+              {t('newsletter.titleError')}
+            </h2>
+            <p className={css.newsletterSuccessModalParagraph}>
+              {t('newsletter.textError')}
+            </p>
+          </div>
+        )
+        openModal()
+      }
     }
   }
   return (
@@ -81,6 +112,7 @@ const Newsletter = () => {
       title={t('newsletter.title')}
       id="newsletter"
     >
+      <Loader isLoading={isLoading} />
       <form className={css.newsletterContainer} onSubmit={handleSubmit}>
         <div className={`${css.newsletterBox} ${css.letterBox}`}>
           <p className={css.firstText}>{t('newsletter.text1')}</p>
@@ -94,6 +126,7 @@ const Newsletter = () => {
           <div className={css.textboxBox}>
             <TextComponent
               label="email"
+              name="email"
               placeholder="email"
               value={formData.email}
               type="email"

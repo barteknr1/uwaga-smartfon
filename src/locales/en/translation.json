@@ -122,7 +122,9 @@
     "error": "Complete all fields and check the consent for personal data processing to submit the form.",
     "titleModal": "The newsletter sign-up form has been sent! Thank you for actively joining the Uwaga! Smartfon event.",
     "textModal": "Take a look at the conference agenda.",
-    "buttonModal": "View the program"
+    "buttonModal": "View the program",
+    "titleError": "Oops, something went wrong",
+    "textError": "Please try again later"
   },
   "patrons": {
     "title": "Partners & Patrons",
