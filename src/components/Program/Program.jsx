@@ -54,7 +54,6 @@ const Program = () => {
     },
   ]
 
-  console.log(SingleSchedule)
   return (
     <Section
       sectionClass={css.program}
