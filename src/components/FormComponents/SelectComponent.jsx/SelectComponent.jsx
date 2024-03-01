@@ -10,6 +10,7 @@ const SelectComponent = ({
   error,
   errors,
   condition,
+  name,
 }) => {
   const {t} = useTranslation()
   const [isActive, setIsActive] = useState(false)
@@ -104,7 +105,7 @@ const SelectComponent = ({
               type="radio"
               value={option}
               id={option}
-              name={option}
+              name={name}
               checked={value === option}
               onChange={onChange}
               onClick={() => handleOptionSelect()}
@@ -128,6 +129,7 @@ const SelectComponent = ({
 
 SelectComponent.propTypes = {
   value: PropTypes.string,
+  name: PropTypes.string,
   onChange: PropTypes.func,
   options: PropTypes.arrayOf(PropTypes.string),
   error: PropTypes.string,

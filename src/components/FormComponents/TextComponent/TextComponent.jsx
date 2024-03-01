@@ -11,6 +11,7 @@ const TextComponent = ({
   onChange,
   onClear,
   errors,
+  name,
 }) => {
   const {t} = useTranslation()
 
@@ -30,6 +31,7 @@ const TextComponent = ({
         className={css.FormInput}
         placeholder={t(`textComponent.${placeholder}`)}
         id={label}
+        name={name}
         type={type}
         value={value}
         onChange={onChange}
@@ -51,6 +53,7 @@ const TextComponent = ({
 
 TextComponent.propTypes = {
   label: PropTypes.string,
+  name: PropTypes.string,
   placeholder: PropTypes.string,
   value: PropTypes.string,
   type: PropTypes.string,

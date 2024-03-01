@@ -6,6 +6,8 @@ import css from './VolunteerForm.module.css'
 import {useModal} from '../Modal/ModalProvider'
 import TextComponent from '../FormComponents/TextComponent/TextComponent'
 import CheckboxComponent from '../FormComponents/CheckboxComponent/CheckboxComponent'
+import axios from 'axios'
+import Loader from '../Loader/Loader'
 
 const VolunteerForm = () => {
   const {t} = useTranslation()
@@ -18,6 +20,7 @@ const VolunteerForm = () => {
   })
   const [errors, setErrors] = useState([])
   const {openModal, setModalContent, isModalVisible} = useModal()
+  const [isLoading, setIsLoading] = useState(false)
 
   const handleChange = (event, inputType) => {
     const value =
@@ -33,30 +36,62 @@ const VolunteerForm = () => {
     setErrors((prevErrors) => prevErrors.filter((error) => error !== inputType))
   }
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault()
-    const {email, name, area, position, isChecked} = formData
+    const volunteerUrl = import.meta.env.VITE_VOLUNTEER
+    const {email, name, area, position} = formData
     const newErrors = []
 
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) newErrors.push('email')
     if (!name.trim() || !/\s/.test(name)) newErrors.push('name')
     if (!area.trim()) newErrors.push('area')
     if (!position.trim()) newErrors.push('position')
-    if (!isChecked) newErrors.push('checkbox')
+    if (!formData.isChecked) newErrors.push('checkbox')
 
     setErrors(newErrors)
+
     if (newErrors.length === 0) {
-      setModalContent(
-        <div className={css.volunteerModalContainer}>
-          <h2 className={css.volunteerModalHeader}>
-            {t('volunteerForm.modalHeader')}
-          </h2>
-          <p className={css.volunteerModalParagraph}>
-            {t('volunteerForm.modalParagraph')}
-          </p>
-        </div>
-      )
-      openModal()
+      setIsLoading(true)
+
+      try {
+        const response = await axios.post(volunteerUrl, formData, {
+          headers: {
+            'Content-Type': 'multipart/form-data',
+          },
+          redirect: 'follow',
+          timeout: 10000, // Timeout after 10 seconds
+        })
+
+        if (response.status === 200) {
+          setIsLoading(false)
+          setModalContent(
+            <div className={css.volunteerModalContainer}>
+              <h2 className={css.volunteerModalHeader}>
+                {t('volunteerForm.modalHeader')}
+              </h2>
+              <p className={css.volunteerModalParagraph}>
+                {t('volunteerForm.modalParagraph')}
+              </p>
+            </div>
+          )
+          openModal()
+        } else {
+          throw new Error('Network response was not ok.')
+        }
+      } catch (error) {
+        setIsLoading(false)
+        setModalContent(
+          <div className={css.volunteerModalContainer}>
+            <h2 className={css.volunteerModalHeader}>
+              {t('newsletter.titleError')}
+            </h2>
+            <p className={css.volunteerModalParagraph}>
+              {t('newsletter.textError')}
+            </p>
+          </div>
+        )
+        openModal()
+      }
     }
   }
 
@@ -80,12 +115,14 @@ const VolunteerForm = () => {
       title={t('volunteerForm.title')}
       id="volunteer_form"
     >
+      <Loader isLoading={isLoading} />
       <div className={css.ellipse}></div>
       <form className={css.volunteerFormContainer} onSubmit={handleSubmit}>
         <fieldset className={css.volunteerFormInputContainer}>
           {['name', 'email', 'position', 'area'].map((inputType) => (
             <TextComponent
               key={inputType}
+              name={inputType}
               label={inputType}
               placeholder={inputType}
               value={formData[inputType]}

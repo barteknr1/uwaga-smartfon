@@ -1,14 +1,15 @@
-import {useState, useEffect, useRef} from 'react'
+import {useState, useEffect} from 'react'
 import {useTranslation} from 'react-i18next'
 import {useModal} from '../Modal/ModalProvider'
 import Button from '../Button/Button'
 import {scrollToAnchor} from '../Scroll'
 import css from './WorkshopsForm.module.css'
-import sprite from '../../assets/svg/sprite.svg'
 import TextComponent from '../FormComponents/TextComponent/TextComponent'
 import SelectComponent from '../FormComponents/SelectComponent.jsx/SelectComponent'
 import RadioComponent from '../FormComponents/RadioComponent/RadioComponent'
 import CheckboxComponent from '../FormComponents/CheckboxComponent/CheckboxComponent'
+import axios from 'axios'
+import Loader from '../Loader/Loader'
 
 const ModalContent = () => {
   const {t} = useTranslation()
@@ -30,53 +31,86 @@ const ModalContent = () => {
     isChecked: false,
   })
   const [errors, setErrors] = useState([])
+  const [isLoading, setIsLoading] = useState(false)
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    const {email, name, role, workshop, isChecked, customRole} = formData
+    const workshopUrl = import.meta.env.VITE_WORKSHOP
+    const {email, name, role, workshop, customRole} = formData
     const newErrors = []
 
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) newErrors.push('email')
     if (!name.trim() || !/\s/.test(name)) newErrors.push('name')
-    if (!isChecked) newErrors.push('checkbox')
+    if (!formData.isChecked) newErrors.push('checkbox')
     if (role === '') newErrors.push('role')
     if (role === 'Inne' && !customRole.trim()) newErrors.push('customRole')
     if (workshop === '') newErrors.push('workshop')
+
     setErrors(newErrors)
 
     if (newErrors.length === 0) {
-      setModalContent(
-        <div className={css.workshopsSuccessModalContainer}>
-          <h2 className={css.workshopsSuccessModalHeader}>
-            {t('workshopsForm.titleModal')}
-          </h2>
-          <p className={css.workshopsSuccessModalParagraph}>
-            {t('workshopsForm.textModal1')}
-          </p>
-          <Button
-            type="button"
-            variant="secondary"
-            content={t('workshopsForm.buttonModal1')}
-            onClick={() => {
-              scrollToAnchor('program')
-              closeModal(false)
-            }}
-          />
-          <p className={css.workshopsSuccessModalParagraph}>
-            {t('workshopsForm.textModal2')}
-          </p>
-          <Button
-            type="button"
-            variant="secondary"
-            content={t('workshopsForm.buttonModal2')}
-            onClick={() => {
-              scrollToAnchor('newsletter')
-              closeModal(false)
-            }}
-          />
-        </div>
-      )
-      openModal()
+      setIsLoading(true)
+
+      try {
+        const response = await axios.post(workshopUrl, formData, {
+          headers: {
+            'Content-Type': 'multipart/form-data',
+          },
+          redirect: 'follow',
+          timeout: 10000, // Timeout after 10 seconds
+        })
+
+        if (response.status === 200) {
+          setIsLoading(false)
+          setModalContent(
+            <div className={css.workshopsSuccessModalContainer}>
+              <h2 className={css.workshopsSuccessModalHeader}>
+                {t('workshopsForm.titleModal')}
+              </h2>
+              <p className={css.workshopsSuccessModalParagraph}>
+                {t('workshopsForm.textModal1')}
+              </p>
+              <Button
+                type="button"
+                variant="secondary"
+                content={t('workshopsForm.buttonModal1')}
+                onClick={() => {
+                  scrollToAnchor('program')
+                  closeModal(false)
+                }}
+              />
+              <p className={css.workshopsSuccessModalParagraph}>
+                {t('workshopsForm.textModal2')}
+              </p>
+              <Button
+                type="button"
+                variant="secondary"
+                content={t('workshopsForm.buttonModal2')}
+                onClick={() => {
+                  scrollToAnchor('newsletter')
+                  closeModal(false)
+                }}
+              />
+            </div>
+          )
+          openModal()
+        } else {
+          throw new Error('Network response was not ok.')
+        }
+      } catch (error) {
+        setIsLoading(false)
+        setModalContent(
+          <div className={css.workshopsSuccessModalContainer}>
+            <h2 className={css.workshopsSuccessModalHeader}>
+              {t('newsletter.titleError')}
+            </h2>
+            <p className={css.workshopsSuccessModalParagraph}>
+              {t('newsletter.textError')}
+            </p>
+          </div>
+        )
+        openModal()
+      }
     }
   }
 
@@ -116,12 +150,14 @@ const ModalContent = () => {
           : css.workshopsFormContainer
       }
     >
+      <Loader isLoading={isLoading} />
       <h4 className={css.workshopsFormHeader}>{t('workshopsForm.header')}</h4>
       <form className={css.workshopsForm} onSubmit={handleSubmit}>
         <fieldset className={css.workshopsFormFieldset}>
           <TextComponent
             label="name"
             placeholder="name"
+            name="name"
             value={formData.name}
             type="text"
             errors={errors}
@@ -130,6 +166,7 @@ const ModalContent = () => {
           />
           <TextComponent
             label="email"
+            name="email"
             placeholder="email"
             value={formData.email}
             type="email"
@@ -139,6 +176,7 @@ const ModalContent = () => {
           />
           <SelectComponent
             value={formData.role}
+            name="role"
             onChange={(e) => handleChange(e, 'role')}
             options={selectOptions}
             error="role"
@@ -148,6 +186,7 @@ const ModalContent = () => {
           {formData.role === 'Inne' && (
             <TextComponent
               label="customRole"
+              name="customRole"
               placeholder="customRolePlaceholder"
               value={formData.customRole}
               type="text"
@@ -161,6 +200,7 @@ const ModalContent = () => {
           </p>
           <RadioComponent
             error="workshop"
+            name="workshop"
             value={formData.workshop}
             options={radioOptions}
             onChange={(e) => handleChange(e, 'workshop')}
