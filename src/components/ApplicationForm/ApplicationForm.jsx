@@ -22,7 +22,7 @@ const ApplicationForm = () => {
     customRole: '',
     certificate: false,
     permission: false,
-    menu: '',
+    menu: 'traditional',
   })
   const [errors, setErrors] = useState([])
 
