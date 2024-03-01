@@ -3,14 +3,29 @@ import {useModal} from '../Modal/ModalProvider'
 import css from './Support.module.css'
 import Button from '../Button/Button'
 import {scrollToAnchor} from '../Scroll'
+import {useState, useEffect} from 'react'
 
 const SupportContent = () => {
   const {t} = useTranslation()
   const {setIsModalVisible, setModalContent} = useModal()
+  const [amount, setAmount] = useState('')
+  const [isOther, setIsOther] = useState(false)
 
-  const onInput = (e) => {
-    console.log(e.target.value)
+  const onChange = (e) => {
+    if (e.target.value === 'other') {
+      setIsOther(true)
+      setAmount('0')
+    }
+    if (e.target.value !== 'other') {
+      setIsOther(false)
+      setAmount(e.target.value)
+    }
   }
+
+  useEffect(() => {
+    console.log(amount)
+    console.log(isOther)
+  }, [amount, isOther])
 
   const handleSubmit = () => {
     setModalContent(
@@ -42,37 +57,72 @@ const SupportContent = () => {
 
   return (
     <>
-      <div className={css.supportContainer}>
+      <div>
         <h4 className={css.supportHeader}>{t('support.title')}</h4>
         <p className={css.supportText}>{t('support.text1')}</p>
         <p className={css.supportText}>{t('support.text2')}</p>
-        <div className={css.supportButtons}>
-          <button className={css.supportButton} type="button">
-            35 zł
-          </button>
-          <button className={css.supportButton} type="button">
-            45 zł
-          </button>
-          <button className={css.supportButton} type="button">
-            100 zł
-          </button>
-          <input
-            className={css.supportInput}
-            type="number"
-            placeholder="___zł"
-            onChange={onInput}
-            min="5"
+        <form className={css.supportForm}>
+          <fieldset className={css.supportFieldset}>
+            <input
+              className={css.supportInput}
+              type="radio"
+              name="value"
+              id="35"
+              value="35"
+              onChange={onChange}
+            />
+            <label className={css.supportLabel} htmlFor="35">
+              35zł
+            </label>
+            <input
+              className={css.supportInput}
+              type="radio"
+              name="value"
+              id="45"
+              value="45"
+              onChange={onChange}
+            />
+            <label className={css.supportLabel} htmlFor="45">
+              45zł
+            </label>
+            <input
+              className={css.supportInput}
+              type="radio"
+              name="value"
+              id="100"
+              value="100"
+              onChange={onChange}
+            />
+            <label className={css.supportLabel} htmlFor="100">
+              100zł
+            </label>
+            <input
+              className={css.supportInput}
+              type="radio"
+              name="value"
+              id="other"
+              value="other"
+              onChange={onChange}
+            />
+            <label className={css.supportLabel} htmlFor="other">
+              Inna
+            </label>
+            {isOther && (
+              <>
+                <input type="number" name="value" id="custom" min="10" />
+              </>
+            )}
+          </fieldset>
+          <Button
+            type="submit"
+            content={t('support.button')}
+            variant="primary"
+            onClick={(e) => {
+              handleSubmit()
+              e.target.blur()
+            }}
           />
-        </div>
-        <Button
-          type="submit"
-          content={t('support.button')}
-          variant="primary"
-          onClick={(e) => {
-            handleSubmit()
-            e.target.blur()
-          }}
-        />
+        </form>
       </div>
     </>
   )

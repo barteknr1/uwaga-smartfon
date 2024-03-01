@@ -1,7 +1,3 @@
-.supportContainer {
-  display: flex;
-  flex-direction: column;
-}
 .supportHeader {
   font-family: var(--decoraction-font);
   font-weight: 500;
@@ -16,39 +12,42 @@
   font-size: 1rem;
   letter-spacing: 1.2;
 }
-.supportButtons {
+.supportForm {
   display: flex;
   flex-direction: column;
-  margin: 16px 0;
-  gap: 14.6px;
+  margin-top: 16px;
 }
-.supportButton {
+.supportFieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 13px;
+}
+.supportLabel {
   font-family: var(--placeholder-font);
   font-size: 29px;
   line-height: 1.2;
   font-weight: 700;
   color: var(--deep-purple-color);
   border: 3px solid var(--light-brand-color);
-  border-radius: 5px;
+  border-radius: 12px;
   padding: 16px 0;
+  width: 100%;
+  max-width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
-.supportButton:hover {
+.supportLabel:hover {
   background-color: var(--light-background-color);
 }
-.supportButton:focus {
+.supportInput[type='radio']:checked + .supportLabel {
   background-color: var(--secondary-background-color);
 }
 .supportInput {
-  font-family: var(--placeholder-font);
-  font-size: 29px;
-  line-height: 1.2;
-  font-weight: 700;
-  color: var(--deep-purple-color);
-  border: 3px solid var(--light-brand-color);
-  border-radius: 5px;
-  width: 25%;
-  display: flex;
-  text-align: center;
+  display: none;
 }
 
 .supportModalContainer {
@@ -78,11 +77,6 @@
     font-size: 2.44rem;
     align-self: flex-start;
   }
-  .supportButtons {
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin: 32px 0;
-  }
   .supportText {
     font-weight: 500;
     font-size: 1.25rem;
@@ -90,11 +84,14 @@
   .supportText:first-of-type {
     margin-bottom: 40px;
   }
-  .supportButton {
-    width: 145px;
-  }
-  .supportContainer > button:last-of-type {
+
+  .supportForm > button:last-of-type {
     margin: 0 auto;
+    margin-top: 50px;
+  }
+  .supportFieldset {
+    flex-direction: row;
+    gap: 54px;
   }
 
   .supportModalHeader {
