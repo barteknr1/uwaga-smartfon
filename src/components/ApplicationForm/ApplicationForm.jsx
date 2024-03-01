@@ -63,10 +63,7 @@ const ApplicationForm = () => {
     if (role === 'Inne' && !customRole.trim()) newErrors.push('customRole')
     if (!permission) newErrors.push('permission')
     setErrors(newErrors)
-    console.log('newErrors', newErrors)
-    console.log(inputs.permission)
     if (newErrors.length === 0) {
-      console.log(inputs)
       setModalContent(
         <div className={css.successModalContainer}>
           <h2 className={css.successModalHeader}>
