@@ -138,6 +138,8 @@ const VolunteerForm = () => {
           onChange={(e) => handleChange(e, 'isChecked')}
           error="checkbox"
           errors={errors}
+          variant="consent"
+          name="volunteerConsent"
         />
         {errors.length > 0 && (
           <p className={css.errorText}>{t('volunteerForm.error')}</p>

@@ -3,13 +3,13 @@ import PropTypes from 'prop-types'
 import css from './CheckboxComponent.module.css'
 import sprite from '../../../assets/svg/sprite.svg'
 
-const CheckboxComponent = ({value, onChange, errors, error, variant}) => {
+const CheckboxComponent = ({value, onChange, errors, error, variant, name}) => {
   const {t} = useTranslation()
   return (
     <div className={css.checkboxWrapper}>
       <input
         className={css.formCheckbox}
-        id="formCheckbox"
+        id={name}
         type="checkbox"
         value={value}
         checked={value}
@@ -32,7 +32,7 @@ const CheckboxComponent = ({value, onChange, errors, error, variant}) => {
         className={`${css.formCheckboxText} ${
           errors.includes(error) && !value && css.checkboxTextError
         }`}
-        htmlFor="formCheckbox"
+        htmlFor={name}
       >
         {t(`checkboxComponent.${variant}`)}
       </label>
@@ -45,6 +45,8 @@ CheckboxComponent.propTypes = {
   onChange: PropTypes.func,
   errors: PropTypes.arrayOf(PropTypes.string),
   error: PropTypes.string,
+  variant: PropTypes.string,
+  name: PropTypes.string,
 }
 
 export default CheckboxComponent
