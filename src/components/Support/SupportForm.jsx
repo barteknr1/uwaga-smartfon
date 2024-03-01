@@ -1,4 +1,5 @@
 import {useTranslation} from 'react-i18next'
+import {useNavigate} from 'react-router-dom'
 import {useModal} from '../Modal/ModalProvider'
 import css from './Support.module.css'
 import Button from '../Button/Button'
@@ -7,25 +8,23 @@ import {useState, useEffect} from 'react'
 
 const SupportContent = () => {
   const {t} = useTranslation()
-  const {setIsModalVisible, setModalContent} = useModal()
+  const {closeModal, setModalContent} = useModal()
   const [amount, setAmount] = useState('')
   const [isOther, setIsOther] = useState(false)
+  const navigate = useNavigate()
 
   const onChange = (e) => {
-    if (e.target.value === 'other') {
+    if (e.target.value === 'other' && e.target.type === 'radio') {
       setIsOther(true)
-      setAmount('0')
     }
-    if (e.target.value !== 'other') {
+    if (e.target.type === 'number') {
+      setAmount(e.target.value)
+    }
+    if (e.target.value !== 'other' && e.target.type !== 'number') {
       setIsOther(false)
       setAmount(e.target.value)
     }
   }
-
-  useEffect(() => {
-    console.log(amount)
-    console.log(isOther)
-  }, [amount, isOther])
 
   const handleSubmit = () => {
     setModalContent(
@@ -37,8 +36,9 @@ const SupportContent = () => {
           variant="secondary"
           content={t('support.buttonModal1')}
           onClick={() => {
-            scrollToAnchor('be_a_volunteer')
-            setIsModalVisible(false)
+            navigate('/volunteering')
+            setTimeout(() => scrollToAnchor('volunteer_form'), 1)
+            closeModal()
           }}
         ></Button>
         <p className={css.supportModalParagraph}>{t('support.textModal2')}</p>
@@ -47,8 +47,9 @@ const SupportContent = () => {
           variant="secondary"
           content={t('support.buttonModal2')}
           onClick={() => {
-            scrollToAnchor('newsletter')
-            setIsModalVisible(false)
+            navigate('/')
+            setTimeout(() => scrollToAnchor('newsletter'), 1)
+            closeModal()
           }}
         />
       </div>
@@ -96,20 +97,32 @@ const SupportContent = () => {
             <label className={css.supportLabel} htmlFor="100">
               100zł
             </label>
-            <input
-              className={css.supportInput}
-              type="radio"
-              name="value"
-              id="other"
-              value="other"
-              onChange={onChange}
-            />
-            <label className={css.supportLabel} htmlFor="other">
-              Inna
-            </label>
+            {!isOther && (
+              <>
+                <input
+                  className={css.supportInput}
+                  type="radio"
+                  name="value"
+                  id="other"
+                  value="other"
+                  onChange={onChange}
+                />
+                <label className={css.supportLabel} htmlFor="other">
+                  Inna
+                </label>
+              </>
+            )}
             {isOther && (
               <>
-                <input type="number" name="value" id="custom" min="10" />
+                <input
+                  className={css.supportCustom}
+                  type="number"
+                  name="value"
+                  min="10"
+                  step="5"
+                  autoComplete="off"
+                  onChange={onChange}
+                />
               </>
             )}
           </fieldset>

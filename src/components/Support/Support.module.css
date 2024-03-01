@@ -46,6 +46,20 @@
 .supportInput[type='radio']:checked + .supportLabel {
   background-color: var(--secondary-background-color);
 }
+.supportCustom {
+  font-family: var(--placeholder-font);
+  font-size: 29px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: var(--deep-purple-color);
+  border: 3px solid var(--light-brand-color);
+  border-radius: 12px;
+  padding: 16px 0;
+  width: 100%;
+  max-width: 60%;
+  text-align: center;
+}
+
 .supportInput {
   display: none;
 }
