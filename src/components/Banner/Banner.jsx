@@ -3,11 +3,13 @@ import {useTranslation} from 'react-i18next'
 import Section from '../Section/Section'
 import CountdownTimer from '../Counter/Counter'
 import css from './Banner.module.css'
-import ApplicationForm from '../ApplicationForm/ApplicationForm'
-import { useLocation } from 'react-router-dom'
+import ApplicationFormButton from '../ApplicationForm/ApplicationFormButton'
+import Button from '../Button/Button'
+import {useLocation} from 'react-router-dom'
+import {scrollToAnchor} from '../Scroll'
 
 const Banner = ({page, title}) => {
-  const { t } = useTranslation()
+  const {t} = useTranslation()
   const location = useLocation()
 
   return (
@@ -26,7 +28,16 @@ const Banner = ({page, title}) => {
           <CountdownTimer />
         </div>
       )}
-      {location.pathname.startsWith('/volunteering') ? `inny formularz :)` : <ApplicationForm/>}
+      {location.pathname.startsWith('/volunteering') ? (
+        <Button
+          type="button"
+          variant="primary"
+          content={t('banner.buttonVolunteer')}
+          onClick={() => scrollToAnchor(`#volunteer_form`.substring(1))}
+        />
+      ) : (
+        <ApplicationFormButton />
+      )}
     </Section>
   )
 }

@@ -81,11 +81,17 @@ const AboutConference = () => {
             </svg>
           </div>
         </div>
-        <Button
-          type="button"
-          variant="secondary"
-          content={t('aboutConference.buttonText')}
-        />
+        <a
+          href="https://projektpl.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button
+            type="button"
+            variant="secondary"
+            content={t('aboutConference.buttonText')}
+          />
+        </a>
       </div>
     </Section>
   )

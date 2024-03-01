@@ -28,13 +28,20 @@ const Speakers = () => {
           </svg>
         </div>
         <div className={css.speakerAboutBox}>
+          <h4 className={css.speakerAboutName}>{speaker.name}</h4>
           {t(`speakers.about.${speaker.name}`, {
             returnObjects: true,
-          }).map((paragraph, index) => (
-            <p className={css.speakerAboutText} key={index}>
-              {paragraph}
-            </p>
-          ))}
+          }).length > 0 ? (
+            t(`speakers.about.${speaker.name}`, {
+              returnObjects: true,
+            }).map((paragraph, index) => (
+              <p className={css.speakerAboutText} key={index}>
+                {paragraph}
+              </p>
+            ))
+          ) : (
+            <p className={css.speakerAboutText}>{t('speakers.about.noBio')}</p>
+          )}
         </div>
       </div>
     )

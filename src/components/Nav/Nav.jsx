@@ -3,9 +3,8 @@ import {useState, useEffect, useRef} from 'react'
 import {NavLink, useLocation} from 'react-router-dom'
 import {useTranslation} from 'react-i18next'
 import PropTypes from 'prop-types'
-
 import {scrollToAnchor, scrollToTop} from '../Scroll'
-import Support from '../Support/Support'
+import SupportButton from '../Support/SupportButton'
 import Dropdown from '../Dropdown/Dropdown'
 import navigationRoutes from './'
 
@@ -105,7 +104,7 @@ const Nav = ({setNavIsOpen}) => {
             </NavLink>
           )
         )}
-        <Support />
+        <SupportButton />
       </nav>
       <div className={css.navLang}>
         <button onClick={() => changeLanguage('pl')} className={css.navLangBtn}>

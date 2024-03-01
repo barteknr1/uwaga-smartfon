@@ -1,234 +1,207 @@
+import {useNavigate} from 'react-router-dom'
 import css from './ApplicationForm.module.css'
 import Button from '../Button/Button'
-import sprite from '../../assets/svg/sprite.svg'
 import {useState, useEffect} from 'react'
 import {useModal} from '../Modal/ModalProvider'
 import {useTranslation} from 'react-i18next'
+import TextComponent from '../FormComponents/TextComponent/TextComponent'
+import SelectComponent from '../FormComponents/SelectComponent.jsx/SelectComponent'
+import RadioComponent from '../FormComponents/RadioComponent/RadioComponent'
+import CheckboxComponent from '../FormComponents/CheckboxComponent/CheckboxComponent'
+import {scrollToAnchor} from '../Scroll'
 
 const ApplicationForm = () => {
   const {t} = useTranslation()
-
-  const {setIsModalVisible, setModalContent} = useModal()
-
+  const {isModalVisible, setModalContent, closeModal, openModal} = useModal()
+  const navigate = useNavigate()
   const [inputs, setInputs] = useState({
     name: '',
     email: '',
     city: '',
     role: '',
+    customRole: '',
     certificate: false,
     permission: false,
     menu: 'traditional',
   })
+  const [errors, setErrors] = useState([])
+
+  const selectOptions = [
+    'Przedstawiciel organizacji',
+    'Nauczyciel',
+    'Rodzic',
+    'Uczeń',
+    'Inne',
+  ]
+  const radioOptions = ['traditional', 'vegetarian']
+
+  useEffect(() => {
+    if (!isModalVisible) {
+      setInputs({
+        name: '',
+        email: '',
+        city: '',
+        role: '',
+        customRole: '',
+        certificate: false,
+        permission: false,
+        menu: 'traditional',
+      })
+      setErrors([])
+    }
+  }, [isModalVisible, setInputs])
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    const form = e.target
-    const email = form.elements.email.value.trim()
-    const name = form.elements.name.value.trim()
-    const city = form.elements.city.value.trim()
-    const role = form.role.value
-    const certificate = form.elements.certificate.checked
-    const permission = form.elements.permission.checked
-    const menu = form.elements.menu.value
-    // console.log(`name: ` + name);
-    // console.log(`email: ` + email);
-    // console.log(`city: ` + city);
-    // console.log(`role: ` + role);
-    // console.log(`certificate: ` + certificate);
-    // console.log(`permission: ` + permission);
-    // console.log(`menu: ` + menu);
+    const {email, name, city, role, customRole, permission} = inputs
+    const newErrors = []
+
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) newErrors.push('email')
+    if (!name.trim() || !/\s/.test(name)) newErrors.push('name')
+    if (!city.trim()) newErrors.push('city')
+    if (role === '') newErrors.push('role')
+    if (role === 'Inne' && !customRole.trim()) newErrors.push('customRole')
+    if (!permission) newErrors.push('permission')
+    setErrors(newErrors)
+    if (newErrors.length === 0) {
+      setModalContent(
+        <div className={css.successModalContainer}>
+          <h2 className={css.successModalHeader}>
+            {t('applicationForm.titleModal')}
+          </h2>
+          <p className={css.successModalParagraph}>
+            {t('applicationForm.textModal1')}
+          </p>
+          <Button
+            type="button"
+            variant="secondary"
+            content={t('applicationForm.buttonModal1')}
+            onClick={() => {
+              navigate('/landing-page')
+              setTimeout(() => scrollToAnchor('program'), 1)
+              closeModal(false)
+            }}
+          />
+          <p className={css.successModalParagraph}>
+            {t('applicationForm.textModal2')}
+          </p>
+          <Button
+            type="button"
+            variant="secondary"
+            content={t('applicationForm.buttonModal2')}
+            onClick={() => {
+              navigate('/')
+              setTimeout(() => scrollToAnchor('newsletter'), 1)
+              closeModal(false)
+            }}
+          />
+        </div>
+      )
+      openModal()
+    }
   }
 
-  const handleChange = (e) => {
-    e.persist()
-    const {name, value, type, checked} = e.currentTarget
-    const inputValue = type === 'checkbox' ? checked : value
-    const isRadio = type === 'radio'
-    setInputs((prevInputs) => ({
-      ...prevInputs,
-      [name]: isRadio ? value : inputValue,
+  const handleChange = (event, inputType) => {
+    const value =
+      inputType === 'certificate' || inputType === 'permission'
+        ? event.target.checked
+        : event.target.value
+    setInputs((prevData) => ({
+      ...prevData,
+      [inputType]: value,
     }))
   }
 
-  const handleClearInput = (e) => {
-    console.log(e.currentTarget)
-    // if (inputType === 'name') {
-    //   setNameInput('')
-    // }
-    // if (inputType === 'email') {
-    //   setEmailInput('')
-    // }
-    // if (inputType === 'position') {
-    //   setPositionInput('')
-    // }
-    // if (inputType === 'area') {
-    //   setAreaInput('')
-    // }
-  }
-  // useEffect(() => {
-  //   console.log(inputs);
-  // }, [inputs])
-
-  const openModal = () => {
-    setIsModalVisible(true)
-    setModalContent(modalContent)
+  const handleClearInput = (inputType) => {
+    setInputs((prevData) => ({...prevData, [inputType]: ''}))
+    setErrors((prevErrors) => prevErrors.filter((error) => error !== inputType))
   }
 
-  const modalContent = (
-    <div>
-      <h4 className={css.formHeader}>Formularz zgłoszeniowy</h4>
+  return (
+    <div className={css.formWrapper}>
+      <h4 className={css.formHeader}>{t('applicationForm.header')}</h4>
       <form className={css.form} onSubmit={handleSubmit}>
         <fieldset className={css.fieldset}>
-          <div className={css.inputWrapper}>
-            <label htmlFor="name" className={css.label}>
-              Imię i nazwisko
-            </label>
-            <input
-              className={`${css.input} ${css.formText}`}
+          <TextComponent
+            label="name"
+            placeholder="name"
+            value={inputs.name}
+            type="text"
+            errors={errors}
+            onChange={(e) => handleChange(e, 'name')}
+            onClear={() => handleClearInput('name')}
+          />
+          <TextComponent
+            label="email"
+            placeholder="email"
+            value={inputs.email}
+            type="email"
+            errors={errors}
+            onChange={(e) => handleChange(e, 'email')}
+            onClear={() => handleClearInput('email')}
+          />
+          <TextComponent
+            label="city"
+            placeholder="city"
+            value={inputs.city}
+            type="text"
+            errors={errors}
+            onChange={(e) => handleChange(e, 'city')}
+            onClear={() => handleClearInput('city')}
+          />
+          <SelectComponent
+            value={inputs.role}
+            onChange={(e) => handleChange(e, 'role')}
+            options={selectOptions}
+            error="role"
+            errors={errors}
+            condition={inputs.role === 'Inne'}
+          />
+          {inputs.role === 'Inne' && (
+            <TextComponent
+              label="customRole"
+              placeholder="customRolePlaceholder"
+              value={inputs.customRole}
               type="text"
-              name="name"
-              id="name"
-              placeholder="Imię i nazwisko"
-              onChange={handleChange}
-              autoComplete="true"
-              required
+              errors={errors}
+              onChange={(e) => handleChange(e, 'customRole')}
+              onClear={() => handleClearInput('customRole')}
             />
-            <button
-              type="button"
-              className={css.svgTextButton}
-              onClick={handleClearInput}
-            >
-              <svg className={css.svgTextIcon}>
-                <use href={sprite + '#icon-close'} />
-              </svg>
-            </button>
-          </div>
-          <div className={css.inputWrapper}>
-            <label htmlFor="email" className={css.label}>
-              Adres e-mail
-            </label>
-            <input
-              className={`${css.input} ${css.formText}`}
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Adres e-mail"
-              onChange={handleChange}
-              autoComplete="true"
-              required
+          )}
+          <CheckboxComponent
+            value={inputs.certificate}
+            onChange={(e) => handleChange(e, 'certificate')}
+            errors={errors}
+            variant="certificate"
+          />
+          <CheckboxComponent
+            value={inputs.permission}
+            onChange={(e) => handleChange(e, 'permission')}
+            error="permission"
+            errors={errors}
+            variant="consent"
+          />
+          <p className={css.formText}>{t('applicationForm.menu')}</p>
+          <div className={css.menuWrapper}>
+            <RadioComponent
+              error="menu"
+              value={inputs.menu}
+              options={radioOptions}
+              onChange={(e) => handleChange(e, 'menu')}
+              errors={errors}
             />
-            <button
-              type="button"
-              className={css.svgTextButton}
-              onClick={() => handleClearInput()}
-            >
-              <svg className={css.svgTextIcon}>
-                <use href={sprite + '#icon-close'} />
-              </svg>
-            </button>
-          </div>
-          <div className={css.inputWrapper}>
-            <label htmlFor="city" className={css.label}>
-              Miejscowość
-            </label>
-            <input
-              className={`${css.input} ${css.formText}`}
-              type="text"
-              name="city"
-              id="city"
-              placeholder="Miejscowość"
-              onChange={handleChange}
-              required
-            />
-            <button
-              type="button"
-              className={css.svgTextButton}
-              onClick={() => handleClearInput()}
-            >
-              <svg className={css.svgTextIcon}>
-                <use href={sprite + '#icon-close'} />
-              </svg>
-            </button>
-          </div>
-          <div className={css.inputWrapper}>
-            <label htmlFor="role" className={css.label}>
-              Rola
-            </label>
-            <select
-              className={`${css.input} ${css.formText}`}
-              name="role"
-              id="role"
-              onChange={handleChange}
-              required
-            >
-              <option value="" hidden>
-                W konferencji uczestniczę jako
-              </option>
-              <option value="representative">Przedstawiciel organizacji</option>
-              <option value="teacher">Nauczyciel</option>
-              <option value="parent">Rodzic</option>
-              <option value="student">Uczeń</option>
-              <option value="other">Inne</option>
-            </select>
           </div>
         </fieldset>
-        <div className={css.bottomArea}>
-          <label className={`${css.checkbox} ${css.formText}`}>
-            <input type="checkbox" name="certificate" onChange={handleChange} />
-            Chcę otrzymać certyfikat uczestnictwa w konferencji Uwaga! Smartfon.
-          </label>
-          <label className={`${css.checkbox} ${css.formText}`}>
-            <input
-              type="checkbox"
-              name="permission"
-              onChange={handleChange}
-              required
-            />
-            Wyrażam zgodę na przetwarzanie moich danych osobowych.
-          </label>
-          <p className={css.formText}>
-            Podczas konferencji będzie zagwarantowany ciepły posiłek. Prosimy o
-            wybór menu zgodnie z preferencjami. Dziękujemy.
-          </p>
-          <div className={css.menuWrapper}>
-            <label className={`${css.radio} ${css.formText}`}>
-              <input
-                type="radio"
-                name="menu"
-                value="traditional"
-                onChange={handleChange}
-              />
-              Menu tradycyjne
-            </label>
-            <label className={`${css.radio} ${css.formText}`}>
-              <input
-                type="radio"
-                name="menu"
-                value="vegetarian"
-                onChange={handleChange}
-              />
-              Menu wegetariańskie
-            </label>
-          </div>
-        </div>
+        {errors.length > 0 && (
+          <p className={css.errorText}>{t('applicationForm.error')}</p>
+        )}
         <Button
           type="submit"
-          content="Wyślij formularz zgłoszeniowy"
+          content={t('applicationForm.button')}
           variant="secondary"
         />
       </form>
     </div>
-  )
-
-  return (
-    <>
-      <Button
-        type="button"
-        variant="primary"
-        content={t('banner.button')}
-        onClick={() => openModal()}
-      />
-    </>
   )
 }
 

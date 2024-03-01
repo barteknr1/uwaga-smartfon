@@ -5,6 +5,20 @@ import tomaszLewandowski from '../../assets/images/Speakers/tomasz-lewandowski.p
 import monikaPrzybysz from '../../assets/images/Speakers/monika-przybysz.png'
 import paulaArguelles from '../../assets/images/Speakers/paula-arguelles.png'
 import sylwiaJaskulska from '../../assets/images/Speakers/sylwia-jaskulska.png'
+import AndrzejKobialka from '../../assets/images/Speakers/Andrzej_Kobiałka.png'
+import DariuszCupiał from '../../assets/images/Speakers/Dariusz_Cupiał.png'
+import DorotaBojemska from '../../assets/images/Speakers/Dorota_Bojemska.png'
+import EwaKrupnik from '../../assets/images/Speakers/Ewa_Krupnik.png'
+import MichałKot from '../../assets/images/Speakers/Michal_Kot.png'
+import MonikaBorkowska from '../../assets/images/Speakers/Monika_Borkowska-Żebrowska.png'
+import StanisławKowal from '../../assets/images/Speakers/Stanisław_Kowal.png'
+import AndrzejLejczak from '../../assets/images/Speakers/Andrzej_Lejczak.png'
+import JanLedóchowski from '../../assets/images/Speakers/Jan_Ledóchowski.png'
+import LiviaHalkman from '../../assets/images/Speakers/Livia_Halkman.png'
+import ŁukaszKorzeniowski from '../../assets/images/Speakers/Łukasz_Korzeniowski.png'
+import ŁukaszSalwarowski from '../../assets/images/Speakers/Łukasz_Salwarowski.png'
+import MaciejDębski from '../../assets/images/Speakers/Maciej_Dębski.png'
+import PeterStevkov from '../../assets/images/Speakers/Peter_Stevkov.png'
 
 const speakersData = [
   {
@@ -125,7 +139,7 @@ const speakersData = [
   },
   {
     id: 9,
-    img: '',
+    img: AndrzejKobialka,
     name: 'dr Andrzej Kobiałka',
     title: 'Specjalista',
     about: [
@@ -134,7 +148,7 @@ const speakersData = [
   },
   {
     id: 10,
-    img: '',
+    img: DariuszCupiał,
     name: 'Dariusz Cupiał',
     title: 'Specjalista',
     about: [
@@ -143,7 +157,7 @@ const speakersData = [
   },
   {
     id: 11,
-    img: '',
+    img: DorotaBojemska,
     name: 'Dorota Bojemska',
     title: 'Specjalista',
     about: [
@@ -152,7 +166,7 @@ const speakersData = [
   },
   {
     id: 12,
-    img: '',
+    img: EwaKrupnik,
     name: 'dr Ewa Krupnik',
     title: 'Specjalista',
     about: [
@@ -161,7 +175,7 @@ const speakersData = [
   },
   {
     id: 13,
-    img: '',
+    img: MichałKot,
     name: 'Michał Kot',
     title: 'Specjalista',
     about: [
@@ -170,7 +184,7 @@ const speakersData = [
   },
   {
     id: 14,
-    img: '',
+    img: MonikaBorkowska,
     name: 'Monika Borkowska-Żebrowska',
     title: 'Specjalista',
     about: [
@@ -179,12 +193,61 @@ const speakersData = [
   },
   {
     id: 15,
-    img: '',
+    img: StanisławKowal,
     name: 'Stanisław Kowal',
     title: 'Specjalista',
     about: [
       `Pedagog, od wielu lat zajmuje się kształceniem nauczycieli - aktualnie w Uniwersytecie Jagiellońskim. Organizuje i prowadzi placówki edukacji spersonalizowanej. Ekspert Instytutu „Educare”. Główny obszar zainteresowań badawczych to pedeutologia i koncepcja edukacji spersonalizowanej.`,
     ],
+  },
+  {
+    id: 16,
+    img: AndrzejLejczak,
+    name: 'dr Andrzej Lejczak',
+    title: 'Specjalista',
+    about: [],
+  },
+  {
+    id: 17,
+    img: JanLedóchowski,
+    name: 'dr Jan Ledóchowski',
+    title: 'Specjalista',
+    about: [],
+  },
+  {
+    id: 18,
+    img: LiviaHalkman,
+    name: 'Livia Halkman',
+    title: 'Specjalista',
+    about: [],
+  },
+  {
+    id: 19,
+    img: ŁukaszKorzeniowski,
+    name: 'Łukasz Korzeniowski',
+    title: 'Specjalista',
+    about: [],
+  },
+  {
+    id: 20,
+    img: ŁukaszSalwarowski,
+    name: 'Łukasz Salwarowski',
+    title: 'Specjalista',
+    about: [],
+  },
+  {
+    id: 21,
+    img: MaciejDębski,
+    name: 'dr Maciej Dębski',
+    title: 'Specjalista',
+    about: [],
+  },
+  {
+    id: 22,
+    img: PeterStevkov,
+    name: 'Peter Stevkov',
+    title: 'Specjalista',
+    about: [],
   },
 ]
 
