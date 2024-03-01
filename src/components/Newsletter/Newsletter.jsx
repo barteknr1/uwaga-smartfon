@@ -141,6 +141,8 @@ const Newsletter = () => {
               onChange={(e) => handleChange(e, 'isChecked')}
               error="checkbox"
               errors={errors}
+              variant="consent"
+              name="newsletterConsent"
             />
           </div>
           {errors.length > 0 && (
