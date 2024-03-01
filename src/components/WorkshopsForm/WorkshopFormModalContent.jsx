@@ -212,6 +212,7 @@ const ModalContent = () => {
             error="checkbox"
             errors={errors}
             variant="consent"
+            name="workshopConsent"
           />
         </fieldset>
         {errors.length > 0 && (
