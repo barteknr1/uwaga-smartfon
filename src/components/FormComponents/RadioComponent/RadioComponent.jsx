@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import css from './RadioComponent.module.css'
 import sprite from '../../../assets/svg/sprite.svg'
 
-const RadioComponent = ({error, value, onChange, options, errors}) => {
+const RadioComponent = ({error, value, onChange, options, errors, name}) => {
   const {t} = useTranslation()
 
   return (
@@ -14,6 +14,7 @@ const RadioComponent = ({error, value, onChange, options, errors}) => {
             className={css.radioInput}
             type="radio"
             value={option}
+            name={name}
             id={option}
             checked={value === option}
             onChange={onChange}
@@ -51,6 +52,7 @@ RadioComponent.propTypes = {
   onChange: PropTypes.func,
   options: PropTypes.arrayOf(PropTypes.string),
   errors: PropTypes.arrayOf(PropTypes.string),
+  name: PropTypes.string,
 }
 
 export default RadioComponent

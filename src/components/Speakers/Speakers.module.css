@@ -6,7 +6,7 @@
 
 .speakersTitle {
   margin-left: 20px;
-  font-family: var(--decoraction-font);
+  font-family: var(--decoration-font);
   font-size: 1.9375rem;
   font-weight: 400;
   line-height: normal;
@@ -51,6 +51,15 @@
   line-height: 1.5rem; /* 150% */
   letter-spacing: 0.00119rem;
   margin-bottom: 32px;
+}
+
+.speakerAboutText:nth-child(1) {
+  color: var(--dark-brand-color);
+  font-family: var(--decoration-font);
+  font-size: 2.4375rem;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 16px;
 }
 
 .speakerImgBox {

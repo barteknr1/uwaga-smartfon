@@ -19,14 +19,14 @@
 }
 .programTitle {
   color: var(--light-text-color);
-  font-family: var(--decoraction-font);
+  font-family: var(--decoration-font);
   font-size: 1.9375rem;
   line-height: 2.421875rem;
   margin-bottom: 64px;
 }
 .programSubTitle {
   color: var(--light-text-color);
-  font-family: var(--decoraction-font);
+  font-family: var(--decoration-font);
   font-size: 1.25rem;
   line-height: 1.5625rem;
 }
@@ -55,7 +55,7 @@
 
 .scheduleTime {
   color: var(--dark-text-color);
-  font-family: var(--decoraction-font);
+  font-family: var(--decoration-font);
   font-size: 1.25rem;
   line-height: 1.5625rem;
   font-weight: 500;

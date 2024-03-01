@@ -10,7 +10,7 @@
 }
 .noProgramTitle {
   color: var(--light-text-color);
-  font-family: var(--decoraction-font);
+  font-family: var(--decoration-font);
   font-size: 1.9375rem;
   line-height: 2.421875rem;
 }
