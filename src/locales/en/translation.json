@@ -337,6 +337,7 @@
   "textComponent": {
     "name": "Name and Surname",
     "email": "Email Address",
+    "city": "City",
     "customRole": "Role",
     "customRolePlaceholder": "I am participating in the conference as...",
     "position": "Position",
@@ -355,18 +356,27 @@
     "Warsztat 1": "Workshop 1",
     "Warsztat 2": "Workshop 2",
     "Warsztat 3": "Workshop 3",
-    "Warsztat 4": "Workshop 4"
+    "Warsztat 4": "Workshop 4",
+    "traditional": "Traditional menu",
+    "vegetarian": "Vegetarian menu"
   },
   "checkboxComponent": {
-    "label": "I consent to the processing of my personal data."
+    "certificate": "I would like to receive a certificate of participation in the Attention! Smartphone conference.",
+    "consent": "I consent to the processing of my personal data."
   },
   "workshopsForm": {
     "header": "Workshops Registration Form",
-    "paragraph": "Each participant of the event Uwaga! Smartfone during the conference has the opportunity to participate in one selected workshop. Please familiarize yourself with the program and choose one of the workshops below. Thank you.",
+    "paragraph": "Each participant of the event Attention! Smartphone during the conference has the opportunity to participate in one selected workshop. Please familiarize yourself with the program and choose one of the workshops below. Thank you.",
     "error": "Please fill in all the data and check the consent for processing personal data to submit the form.",
     "buttonSign": "Sign up for workshop",
-    "button": "Register",
-    "titleModal": "The workshop registration form has been sent! Thank you for actively joining the Uwaga! Smartfon event.",
+    "button": "Register"
+  },
+  "applicationForm": {
+    "header": "Application form",
+    "menu": "During the conference, a hot meal will be provided. Please choose a menu according to your preferences. Thank you.",
+    "button": "Submit",
+    "error": "Please fill in all the details and check the consent for processing personal data to submit the form.",
+    "titleModal": "The registration form has been sent! Thank you for joining the Uwaga! Smartfon event.",
     "textModal1": "Take a look at the conference agenda.",
     "textModal2": "We also remind you that you can sign up for our newsletter and keep up to date with the event on social media.",
     "buttonModal1": "Show the program",

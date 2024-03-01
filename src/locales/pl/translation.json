@@ -338,6 +338,7 @@
   "textComponent": {
     "name": "Imię i nazwisko",
     "email": "Adres e-mail",
+    "city": "Miejscowość",
     "customRole": "Rola",
     "customRolePlaceholder": "W konferencji uczestniczę jako...",
     "position": "Stanowisko",
@@ -356,18 +357,27 @@
     "Warsztat 1": "Warsztat 1",
     "Warsztat 2": "Warsztat 2",
     "Warsztat 3": "Warsztat 3",
-    "Warsztat 4": "Warsztat 4"
+    "Warsztat 4": "Warsztat 4",
+    "traditional": "Menu tradycyjne",
+    "vegetarian": "Menu wegetariańskie"
   },
   "checkboxComponent": {
-    "label": "Wyrażam zgodę na przetwarzanie moich danych osobowych."
+    "certificate": "Chcę otrzymać certyfikat uczestnictwa w konferencji Uwaga! Smartfon.",
+    "consent": "Wyrażam zgodę na przetwarzanie moich danych osobowych."
   },
   "workshopsForm": {
     "header": "Formularz zapisu na warsztaty",
     "paragraph": "Każdy uczestnik wydarzenia Uwaga! Smartfon podczas konferencji ma możliwość uczestnictwa w jednym wybranym warsztacie. Prosimy o zapoznanie się z programem i wybór jednego z poniższych warsztatów. Dziękujemy.",
     "error": "Uzupełnij wszystkie dane i zaznacz zgodę na przetwarzanie danych osobowych, aby przesłać formularz.",
     "buttonSign": "Zapisz się na warsztat",
-    "button": "Zapisuję się",
-    "titleModal": "Formularz zapisu na warsztaty został wysłany! Dziękujemy za aktywne dołączenie do wydarzenia Uwaga! Smartfon.",
+    "button": "Zapisuję się"
+  },
+  "applicationForm": {
+    "header": "Formularz zgłoszeniowy",
+    "menu": "Podczas konferencji będzie zagwarantowany ciepły posiłek. Prosimy o wybór menu zgodnie z preferencjami. Dziękujemy.",
+    "button": "Wyślij formularz zgłoszeniowy",
+    "error": "Uzupełnij wszystkie dane i zaznacz zgodę na przetwarzanie danych osobowych, aby przesłać formularz.",
+    "titleModal": "Formularz zgłoszeniowy został wysłany! Dziękujemy za dołączenie do wydarzenia Uwaga! Smartfon.",
     "textModal1": "Zapraszamy do zapoznania się z programem konferencji.",
     "textModal2": "Przypominamy także o możliwości zapisania się do naszego newslettera i śledzenia na bieżąco wydarzenia w social mediach.",
     "buttonModal1": "Zobacz program",

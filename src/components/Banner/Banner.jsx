@@ -3,7 +3,7 @@ import {useTranslation} from 'react-i18next'
 import Section from '../Section/Section'
 import CountdownTimer from '../Counter/Counter'
 import css from './Banner.module.css'
-import ApplicationForm from '../ApplicationForm/ApplicationForm'
+import ApplicationFormButton from '../ApplicationForm/ApplicationFormButton'
 import Button from '../Button/Button'
 import {useLocation} from 'react-router-dom'
 import {scrollToAnchor} from '../Scroll'
@@ -36,7 +36,7 @@ const Banner = ({page, title}) => {
           onClick={() => scrollToAnchor(`#volunteer_form`.substring(1))}
         />
       ) : (
-        <ApplicationForm />
+        <ApplicationFormButton />
       )}
     </Section>
   )

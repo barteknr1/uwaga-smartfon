@@ -1,10 +1,15 @@
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 form > button {
   margin: 0 auto;
+  margin-top: 16px;
 }
 .formText {
   font-family: var(--placeholder-font);
@@ -19,6 +24,7 @@ form > button {
   font-size: 1.25rem;
   line-height: 1.25;
   color: var(--dark-text-color);
+  margin-bottom: 16px;
 }
 .fieldset {
   display: flex;
@@ -34,103 +40,73 @@ form > button {
   margin-top: 32px;
   margin-bottom: 32px;
 }
-.inputWrapper {
+.menuWrapper > div {
   display: flex;
-  align-items: center;
-  position: relative;
-  height: 56px;
-}
-.label {
-  font-family: var(--form-font);
-  font-size: 0.75rem;
-  line-height: 1rem;
-  font-weight: 400;
-  color: #49454f;
-  background-color: #fef7ff;
-  position: absolute;
-  padding: 4px;
-  top: -11px;
-  left: 15px;
-}
-.input {
-  border: 1px solid #79747e;
-  border-radius: 4px;
-  padding-left: 16px;
-  width: 100%;
-  height: 56px;
-  background-color: var(--primary-background-color);
-}
-.input::placeholder {
-  font-family: var(--placeholder-font);
-  font-size: 1rem;
-  line-height: 1.5rem;
-  font-weight: 400;
-  letter-spacing: 0.03rem;
-  color: rgba(60, 60, 67, 0.6);
-}
-.input:focus {
-  background-color: white;
-}
-.menuWrapper {
-  display: flex;
-  flex-direction: row;
-
+  flex-direction: column;
   gap: 24px;
 }
-.menuText {
+.errorText {
+  color: var(--error-color);
+  text-align: center;
   font-family: var(--placeholder-font);
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 0.75rem;
   font-weight: 400;
-  letter-spacing: 0.03rem;
+  line-height: 0.77306rem;
+  letter-spacing: 0.00063rem;
+  margin-top: 10px;
 }
-.checkbox {
+
+.successModalContainer {
   display: flex;
-  gap: 16px;
-}
-.radio {
-  display: flex;
-  gap: 12px;
-}
-.svgTextButton {
-  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: 24px;
-  height: 24px;
-  position: absolute;
-  right: 4px;
-  border-radius: 50%;
-  z-index: 5;
-  transition: 500ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: background-color;
+  text-align: center;
 }
 
-.svgTextButton:hover {
-  background-color: #49454f25;
+.successModalHeader {
+  font-family: var(--decoraction-font);
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: var(--dark-text-color);
+  align-self: center;
 }
 
-.svgTextIcon {
-  width: 12px;
-  height: 12px;
+.successModalParagraph {
+  font-weight: 500;
+  font-size: 1rem;
+  margin: 16px 0 16px 0;
 }
 
 @media screen and (min-width: 765px) {
   .formHeader {
     font-size: 2.44rem;
     font-weight: 400;
+    margin-bottom: 40px;
   }
-  .menuWrapper {
+  .menuWrapper > div {
     flex-direction: row;
   }
-  .svgTextButton {
-    width: 48px;
-    height: 48px;
+  form > button {
+    margin-top: 40px;
+  }
+  .errorText {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.00119rem;
   }
 
-  .svgTextIcon {
-    width: 24px;
-    height: 24px;
+  .successModalHeader {
+    font-weight: 400;
+    font-size: 2.44rem;
+    align-self: flex-start;
+  }
+
+  .successModalParagraph {
+    font-weight: 500;
+    font-size: 1.25rem;
+  }
+
+  .successModalContainer > button:last-of-type {
+    margin: 0 auto;
   }
 }

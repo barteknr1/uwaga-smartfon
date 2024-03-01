@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import css from './CheckboxComponent.module.css'
 import sprite from '../../../assets/svg/sprite.svg'
 
-const CheckboxComponent = ({value, onChange, errors, error}) => {
+const CheckboxComponent = ({value, onChange, errors, error, variant}) => {
   const {t} = useTranslation()
   return (
     <div className={css.checkboxWrapper}>
@@ -34,7 +34,7 @@ const CheckboxComponent = ({value, onChange, errors, error}) => {
         }`}
         htmlFor="formCheckbox"
       >
-        {t(`checkboxComponent.label`)}
+        {t(`checkboxComponent.${variant}`)}
       </label>
     </div>
   )
