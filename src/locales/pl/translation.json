@@ -18,11 +18,11 @@
       },
       "item2": {
         "bold": "pomóc w dotarciu do szerokiego grona odbiorców",
-        "text": "wydarzenia"
+        "text": "wydarzenia,"
       },
       "item3": {
         "bold": "wesprzeć swoją aktywnością organizację konferencji",
-        "text": "“Uwaga! Smartfon”"
+        "text": "“Uwaga! Smartfon”."
       },
       "p": "Jeśli TAK, to poszukujemy właśnie CIEBIE!"
     },
@@ -59,7 +59,7 @@
       },
       "item4": {
         "text1": "Jako wolontariusz",
-        "bold1": "masz szansę osobiście poznać ekspertów,",
+        "bold1": "masz szansę osobiście poznać ekspertów, ",
         "text2": "psychologów oraz profesorów, a także",
         "bold2": "zdobyć wiedzę",
         "text3": ", która może być wartościowa zarówno dla Ciebie, jak i dla Twojej społeczności."
@@ -104,7 +104,7 @@
   },
   "footer": {
     "title1": "Masz pytania?",
-    "title2": "Zapraszamy do kontaktu",
+    "title2": "Zapraszamy do kontaktu:",
     "adres1": "Fundacja Projekt PL",
     "adres2": "Konferencja Uwaga! Smartfon",
     "heading1": "Z głębi serca dziękujemy!",
@@ -119,7 +119,7 @@
     "bold1": "Bezpiecznego Statutu Szkoły",
     "text3": "oraz",
     "bold2": "Regulaminu Korzystania z Mediów Cyfrowych w Szkole,",
-    "text4": "które zostały przygotowane przez doktora nauk prawnych Tomasza Lewandowskiego",
+    "text4": "które zostały przygotowane przez doktora nauk prawnych Tomasza Lewandowskiego.",
     "agreement": "Wyrażam zgodę na przetwarzanie moich danych osobowych.",
     "error": "Uzupełnij wszystkie dane i zaznacz zgodę na przetwarzanie danych osobowych, aby przesłać formularz.",
     "titleModal": "Formularz zapisu do newslettera został wysłany! Dziękujemy za aktywne dołączenie do wydarzenia Uwaga! Smartfon.",
@@ -313,7 +313,7 @@
     "program": "Program",
     "speakers": "Prelegenci",
     "buttonSupport": "Wesprzyj",
-    "aboutVolunteer": "O wolontariace",
+    "aboutVolunteer": "O wolontariacie",
     "volunteeringAreas": "Obszary działania",
     "volunteerForm": "Formularz zgłoszeniowy",
     "ourVolunteers": "Nasi wolonatriusze",
@@ -325,7 +325,7 @@
     "text2": "Wybierz kwotę darowizny, którą chcesz przekazać:",
     "button": "Wesprzyj",
     "titleModal": "Dziękujemy za okazane wsparcie! Tylko z Waszą pomocą możemy rozwijać i udoskonalać wydarzenie Uwaga! Smartfon.",
-    "textModal1": "Zapraszamy także wszystkich chętnych do udziału w wolontariacie.Wypełnij formularz zgłoszeniowy i dołącz do naszego zespołu wolontariuszy!",
+    "textModal1": "Zapraszamy także wszystkich chętnych do udziału w wolontariacie. Wypełnij formularz zgłoszeniowy i dołącz do naszego zespołu wolontariuszy!",
     "textModal2": "Przypominamy również o możliwości zapisania się do naszego newslettera i śledzenia na bieżąco wydarzenia w social mediach.",
     "buttonModal1": "Zostań wolontariuszem",
     "buttonModal2": "Zapisz się do newslettera"
