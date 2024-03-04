@@ -18,11 +18,11 @@
       },
       "item2": {
         "bold": "pomóc w dotarciu do szerokiego grona odbiorców",
-        "text": "wydarzenia"
+        "text": "wydarzenia,"
       },
       "item3": {
         "bold": "wesprzeć swoją aktywnością organizację konferencji",
-        "text": "“Uwaga! Smartfon”"
+        "text": "“Uwaga! Smartfon”."
       },
       "p": "Jeśli TAK, to poszukujemy właśnie CIEBIE!"
     },
@@ -59,7 +59,7 @@
       },
       "item4": {
         "text1": "Jako wolontariusz",
-        "bold1": "masz szansę osobiście poznać ekspertów,",
+        "bold1": "masz szansę osobiście poznać ekspertów, ",
         "text2": "psychologów oraz profesorów, a także",
         "bold2": "zdobyć wiedzę",
         "text3": ", która może być wartościowa zarówno dla Ciebie, jak i dla Twojej społeczności."
@@ -104,7 +104,7 @@
   },
   "footer": {
     "title1": "Masz pytania?",
-    "title2": "Zapraszamy do kontaktu",
+    "title2": "Zapraszamy do kontaktu:",
     "adres1": "Fundacja Projekt PL",
     "adres2": "Konferencja Uwaga! Smartfon",
     "heading1": "Z głębi serca dziękujemy!",
