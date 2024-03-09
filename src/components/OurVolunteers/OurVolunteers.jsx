@@ -110,7 +110,7 @@ const OurVolunteers = () => {
     <Section
       sectionClass={css.ourVolunteers}
       titleClass={css.ourVolunteersTitle}
-      title="Nasi Wolontariusze"
+      title="Nasi wolontariusze"
       id="our_volunteers"
     >
       <div className={css.ourVolunteersContainer}>
