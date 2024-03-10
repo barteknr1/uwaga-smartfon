@@ -83,7 +83,6 @@
   height: 227px;
 }
 .aboutVolunteerSvg2 {
-  left: 50px;
   width: 254px;
   height: 250px;
 }
@@ -129,7 +128,6 @@
   }
   .aboutVolunteerSvg2 {
     position: relative;
-    left: 0;
     width: 244px;
     height: 230px;
   }

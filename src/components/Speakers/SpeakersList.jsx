@@ -3,21 +3,21 @@ import piotrCzubaty from '../../assets/images/Speakers/piotr-czubaty.png'
 import lukaszCichocki from '../../assets/images/Speakers/dr-lukasz-cichocki.png'
 import tomaszLewandowski from '../../assets/images/Speakers/tomasz-lewandowski.png'
 import monikaPrzybysz from '../../assets/images/Speakers/monika-przybysz.png'
-import paulaArguelles from '../../assets/images/Speakers/paula-arguelles.png'
+import CatherineEcuyer from '../../assets/images/Speakers/catherine_ecuyer.png'
 import sylwiaJaskulska from '../../assets/images/Speakers/sylwia-jaskulska.png'
-import AndrzejKobialka from '../../assets/images/Speakers/Andrzej_Kobiałka.png'
-import DariuszCupiał from '../../assets/images/Speakers/Dariusz_Cupiał.png'
+import AndrzejKobialka from '../../assets/images/Speakers/Andrzej_Kobialka.png'
+import DariuszCupiał from '../../assets/images/Speakers/Dariusz_Cupial.png'
 import DorotaBojemska from '../../assets/images/Speakers/Dorota_Bojemska.png'
 import EwaKrupnik from '../../assets/images/Speakers/Ewa_Krupnik.png'
 import MichałKot from '../../assets/images/Speakers/Michal_Kot.png'
-import MonikaBorkowska from '../../assets/images/Speakers/Monika_Borkowska-Żebrowska.png'
-import StanisławKowal from '../../assets/images/Speakers/Stanisław_Kowal.png'
+import MonikaBorkowska from '../../assets/images/Speakers/Monika_Borkowska-Zebrowska.png'
+import StanisławKowal from '../../assets/images/Speakers/Stanislaw_Kowal.png'
 import AndrzejLejczak from '../../assets/images/Speakers/Andrzej_Lejczak.png'
-import JanLedóchowski from '../../assets/images/Speakers/Jan_Ledóchowski.png'
+import JanLedóchowski from '../../assets/images/Speakers/Jan_Ledochowski.png'
 import LiviaHalkman from '../../assets/images/Speakers/Livia_Halkman.png'
-import ŁukaszKorzeniowski from '../../assets/images/Speakers/Łukasz_Korzeniowski.png'
-import ŁukaszSalwarowski from '../../assets/images/Speakers/Łukasz_Salwarowski.png'
-import MaciejDębski from '../../assets/images/Speakers/Maciej_Dębski.png'
+import ŁukaszKorzeniowski from '../../assets/images/Speakers/Lukasz_Korzeniowski.png'
+import ŁukaszSalwarowski from '../../assets/images/Speakers/Lukasz_Salwarowski.png'
+import MaciejDębski from '../../assets/images/Speakers/Maciej_Debski.png'
 import PeterStevkov from '../../assets/images/Speakers/Peter_Stevkov.png'
 
 const speakersData = [
@@ -98,15 +98,10 @@ const speakersData = [
       'Od 2019 r. do 2022 r. przedstawiciel Rzeczypospolitej Polskiej w zespole roboczym Social Dimension w pracach Bologna Follow-Up Group w ramach Bologna Process.',
     ],
   },
+
   {
     id: 6,
-    img: paulaArguelles,
-    name: 'Paula Arguelles',
-    title: 'Specjalista',
-    about: ['Paula Arguelles', 'Lorem ipsum '],
-  },
-  {
-    id: 7,
+    img: CatherineEcuyer,
     name: 'Catherine L’Ecuyer',
     title: 'Specjalista',
     about: [
@@ -124,7 +119,7 @@ const speakersData = [
     ],
   },
   {
-    id: 8,
+    id: 7,
     img: sylwiaJaskulska,
     name: 'Sylwia Jaskulska',
     title: 'Specjalista',
@@ -138,7 +133,7 @@ const speakersData = [
     ],
   },
   {
-    id: 9,
+    id: 8,
     img: AndrzejKobialka,
     name: 'dr Andrzej Kobiałka',
     title: 'Specjalista',
@@ -147,7 +142,7 @@ const speakersData = [
     ],
   },
   {
-    id: 10,
+    id: 9,
     img: DariuszCupiał,
     name: 'Dariusz Cupiał',
     title: 'Specjalista',
@@ -156,7 +151,7 @@ const speakersData = [
     ],
   },
   {
-    id: 11,
+    id: 10,
     img: DorotaBojemska,
     name: 'Dorota Bojemska',
     title: 'Specjalista',
@@ -165,7 +160,7 @@ const speakersData = [
     ],
   },
   {
-    id: 12,
+    id: 11,
     img: EwaKrupnik,
     name: 'dr Ewa Krupnik',
     title: 'Specjalista',
@@ -174,7 +169,7 @@ const speakersData = [
     ],
   },
   {
-    id: 13,
+    id: 12,
     img: MichałKot,
     name: 'Michał Kot',
     title: 'Specjalista',
@@ -183,7 +178,7 @@ const speakersData = [
     ],
   },
   {
-    id: 14,
+    id: 13,
     img: MonikaBorkowska,
     name: 'Monika Borkowska-Żebrowska',
     title: 'Specjalista',
@@ -192,7 +187,7 @@ const speakersData = [
     ],
   },
   {
-    id: 15,
+    id: 14,
     img: StanisławKowal,
     name: 'Stanisław Kowal',
     title: 'Specjalista',
@@ -201,49 +196,53 @@ const speakersData = [
     ],
   },
   {
-    id: 16,
+    id: 15,
     img: AndrzejLejczak,
     name: 'dr Andrzej Lejczak',
     title: 'Specjalista',
     about: [],
   },
   {
-    id: 17,
+    id: 16,
     img: JanLedóchowski,
     name: 'dr Jan Ledóchowski',
     title: 'Specjalista',
     about: [],
   },
   {
-    id: 18,
+    id: 17,
     img: LiviaHalkman,
     name: 'Livia Halkman',
     title: 'Specjalista',
-    about: [],
+    about: [
+      'Dyrektor organizacji pozarządowej o nazwie „Pressure Pot” (pressurepot.org). Lívia tworzy i prowadzi programy prewencyjne w szkołach na tematy takie jak małżeństwo, nieplanowana ciąża i uzależnienie od pornografii. W rzeczywistości, prowadzenie programów prewencyjnych na temat uzależnienia od pornografii to coś, co zapoczątkowała w swoim kraju kilka lat temu, a jej programy prewencyjne cieszą się obecnie dużym zainteresowaniem. Prowadzi również seminaria i warsztaty na temat pornografii dla nauczycieli i rodziców. Jej pracę napędza pragnienie, aby uczniowie dorastali w dorosłych, którzy potrafią i chcą tworzyć trwałe związki, takie jak małżeństwo, i cieszyć się seksualnością jak najdłużej. Lívia jest również autorką książki „Love Lives Offline”, w której opisuje swoje doświadczenia, mówiąc o pornografii dzieciom czy dorosłym.',
+    ],
   },
   {
-    id: 19,
+    id: 18,
     img: ŁukaszKorzeniowski,
     name: 'Łukasz Korzeniowski',
     title: 'Specjalista',
     about: [],
   },
   {
-    id: 20,
+    id: 19,
     img: ŁukaszSalwarowski,
     name: 'Łukasz Salwarowski',
     title: 'Specjalista',
-    about: [],
+    about: [
+      'Prezes Stowarzyszenia MANKO, Prezes Międzynarodowego Instytutu Rozwoju Społecznego, Redaktor Naczelny Głosu Seniora, ekonomista, socjolog, działacz społeczny, dziennikarz i wydawca mediów. Inicjator Programu Gmina Przyjazna Seniorom, Ogólnopolska Karta Seniora oraz już dziesięciu edycji Międzynarodowych Senioraliów w Krakowie. Zasiadał w Radzie Organizacji Pacjentów przy Rzeczniku Praw Pacjenta, w Radzie Dostępności przy Ministerstwie Funduszy i Polityki Regionalnej oraz Radzie ds. Polityki Senioralnej przy Ministerstwie Rodziny i Polityki Społecznej.',
+    ],
   },
   {
-    id: 21,
+    id: 20,
     img: MaciejDębski,
     name: 'dr Maciej Dębski',
     title: 'Specjalista',
     about: [],
   },
   {
-    id: 22,
+    id: 21,
     img: PeterStevkov,
     name: 'Peter Stevkov',
     title: 'Specjalista',

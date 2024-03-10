@@ -86,7 +86,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 32px 20px;
-    justify-content: flex-start;
+    justify-content: space-evenly;
   }
 
   .areasText {
@@ -123,7 +123,6 @@
   }
 
   .listContainer {
-    justify-content: center;
     align-items: flex-start;
   }
 

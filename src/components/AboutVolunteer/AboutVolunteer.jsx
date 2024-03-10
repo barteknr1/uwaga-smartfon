@@ -96,7 +96,7 @@ const AboutVolunteer = () => {
               alt="wolontariuszki Uwaga Smartfon"
             />
             <svg
-              className={`${css.aboutVolunteerSvg} ${css.aboutVolunteerSvg2}   `}
+              className={`${css.aboutVolunteerSvg} ${css.aboutVolunteerSvg2}`}
             >
               <use href={sprite + '#aboutViolet'} />
             </svg>
@@ -151,7 +151,7 @@ const AboutVolunteer = () => {
               alt="wolontariuszki"
             />
             <svg
-              className={`${css.aboutVolunteerSvg} ${css.aboutVolunteerSvg3}   `}
+              className={`${css.aboutVolunteerSvg} ${css.aboutVolunteerSvg3}`}
             >
               <use href={sprite + '#aboutPink'} />
             </svg>
