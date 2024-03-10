@@ -107,6 +107,9 @@
     gap: 0px;
     align-items: flex-end;
   }
+  .volunteerIcon {
+    margin-left: 4px;
+  }
 }
 @media screen and (min-width: 1280px) {
   .ourVolunteers {
