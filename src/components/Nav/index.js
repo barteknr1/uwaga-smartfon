@@ -7,8 +7,8 @@ const routes = [
     title: 'navigation.editions',
 
     el: [
-      {elTitle: '2022', elHref: '/edycja2022'},
-      {elTitle: '2023', elHref: '/edycja2023'},
+      {elTitle: '2022', elHref: 'https://uwagasmartfon.pl/edycja2022'},
+      {elTitle: '2023', elHref: 'https://uwagasmartfon.pl/edycja2023'},
       {elTitle: '2024', elHref: '/landing-page'},
     ],
   },
