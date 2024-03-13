@@ -18,11 +18,11 @@
       },
       "item2": {
         "bold": "pomóc w dotarciu do szerokiego grona odbiorców",
-        "text": "wydarzenia"
+        "text": "wydarzenia,"
       },
       "item3": {
         "bold": "wesprzeć swoją aktywnością organizację konferencji",
-        "text": "“Uwaga! Smartfon”"
+        "text": "“Uwaga! Smartfon”."
       },
       "p": "Jeśli TAK, to poszukujemy właśnie CIEBIE!"
     },
@@ -59,7 +59,7 @@
       },
       "item4": {
         "text1": "Jako wolontariusz",
-        "bold1": "masz szansę osobiście poznać ekspertów,",
+        "bold1": "masz szansę osobiście poznać ekspertów, ",
         "text2": "psychologów oraz profesorów, a także",
         "bold2": "zdobyć wiedzę",
         "text3": ", która może być wartościowa zarówno dla Ciebie, jak i dla Twojej społeczności."
@@ -69,7 +69,7 @@
     }
   },
   "beAVolunteer": {
-    "title": "Zostań wolonatriuszem Fundacji Projekt PL",
+    "title": "Zostań wolontariuszem Fundacji Projekt PL",
     "text1": "Jeśli chcesz być częścią inspirującej inicjatywy, która przyczynia się do edukacji i świadomości w ważnej kwestii uzależnienia dzieci i młodzieży od ekranów, chcesz pomóc w dotarciu do szerokiego grona odbiorców wydarzenia, chcesz wesprzeć swoją aktywnością organizację konferencji “Uwaga! Smartfon”,",
     "text2": "Jeśli TAK, to zostań Wolontariuszem i dołącz do Naszego zespołu! Zdobędziesz cenne doświadczenie, poznasz inspirujących ludzi i zainwestujesz w swój rozwój osobisty.",
     "text3": "Wypełnij formularz zgłoszeniowy i razem z Nami zorganizuj niezapomniane wydarzenie “Uwaga! Smartfon”.",
@@ -104,7 +104,7 @@
   },
   "footer": {
     "title1": "Masz pytania?",
-    "title2": "Zapraszamy do kontaktu",
+    "title2": "Zapraszamy do kontaktu:",
     "adres1": "Fundacja Projekt PL",
     "adres2": "Konferencja Uwaga! Smartfon",
     "heading1": "Z głębi serca dziękujemy!",
@@ -119,7 +119,7 @@
     "bold1": "Bezpiecznego Statutu Szkoły",
     "text3": "oraz",
     "bold2": "Regulaminu Korzystania z Mediów Cyfrowych w Szkole,",
-    "text4": "które zostały przygotowane przez doktora nauk prawnych Tomasza Lewandowskiego",
+    "text4": "które zostały przygotowane przez doktora nauk prawnych Tomasza Lewandowskiego.",
     "agreement": "Wyrażam zgodę na przetwarzanie moich danych osobowych.",
     "error": "Uzupełnij wszystkie dane i zaznacz zgodę na przetwarzanie danych osobowych, aby przesłać formularz.",
     "titleModal": "Formularz zapisu do newslettera został wysłany! Dziękujemy za aktywne dołączenie do wydarzenia Uwaga! Smartfon.",
@@ -181,7 +181,6 @@
         "Od 2018 r. członek Grupy Roboczej ds. Społecznej Odpowiedzialności Uczelni w Ministerstwie Rozwoju Regionalnego.",
         "Od 2019 r. do 2022 r. przedstawiciel Rzeczypospolitej Polskiej w zespole roboczym Social Dimension w pracach Bologna Follow-Up Group w ramach Bologna Process."
       ],
-      "Paula Arguelles": [],
       "Catherine L’Ecuyer": [
         "Kanadyjka, obecnie mieszkająca w Barcelonie z czwórką dzieci.",
         "Posiada tytuł MBA z IESE Business School, oficjalny tytuł European Master of Research oraz doktorat z edukacji i psychologii.",
@@ -253,9 +252,20 @@
       ],
       "dr Andrzej Lejczak": [],
       "dr Jan Ledóchowski": [],
-      "Livia Halkman": [],
+      "Livia Halkman": [
+        "Dyrektor organizacji pozarządowej o nazwie „Pressure Pot” (pressurepot.org).",
+        "Livia tworzy i prowadzi programy prewencyjne w szkołach na tematy takie jak małżeństwo, nieplanowana ciąża i uzależnienie od pornografii.",
+        "W rzeczywistości, prowadzenie programów prewencyjnych na temat uzależnienia od pornografii to coś, co zapoczątkowała w swoim kraju kilka lat temu, a jej programy prewencyjne cieszą się obecnie dużym zainteresowaniem.",
+        "Prowadzi również seminaria i warsztaty na temat pornografii dla nauczycieli i rodziców.",
+        "Jej pracę napędza pragnienie, aby uczniowie dorastali w dorosłych, którzy potrafią i chcą tworzyć trwałe związki, takie jak małżeństwo, i cieszyć się seksualnością jak najdłużej.",
+        "Livia jest również autorką książki „Love Lives Offline”, w której opisuje swoje doświadczenia, mówiąc o pornografii dzieciom czy dorosłym."
+      ],
       "Łukasz Korzeniowski": [],
-      "Łukasz Salwarowski": [],
+      "Łukasz Salwarowski": [
+        "Prezes Stowarzyszenia MANKO, Prezes Międzynarodowego Instytutu Rozwoju Społecznego, Redaktor Naczelny Głosu Seniora, ekonomista, socjolog, działacz społeczny, dziennikarz i wydawca mediów.",
+        "Inicjator Programu Gmina Przyjazna Seniorom, Ogólnopolska Karta Seniora oraz już dziesięciu edycji Międzynarodowych Senioraliów w Krakowie.",
+        "Zasiadał w Radzie Organizacji Pacjentów przy Rzeczniku Praw Pacjenta, w Radzie Dostępności przy Ministerstwie Funduszy i Polityki Regionalnej oraz Radzie ds. Polityki Senioralnej przy Ministerstwie Rodziny i Polityki Społecznej."
+      ],
       "dr Maciej Dębski": [],
       "Peter Stevkov": []
     }
@@ -313,10 +323,10 @@
     "program": "Program",
     "speakers": "Prelegenci",
     "buttonSupport": "Wesprzyj",
-    "aboutVolunteer": "O wolontariace",
+    "aboutVolunteer": "O wolontariacie",
     "volunteeringAreas": "Obszary działania",
     "volunteerForm": "Formularz zgłoszeniowy",
-    "ourVolunteers": "Nasi wolonatriusze",
+    "ourVolunteers": "Nasi wolontariusze",
     "dearVolunteers": "Podziękowania"
   },
   "support": {
@@ -325,7 +335,7 @@
     "text2": "Wybierz kwotę darowizny, którą chcesz przekazać:",
     "button": "Wesprzyj",
     "titleModal": "Dziękujemy za okazane wsparcie! Tylko z Waszą pomocą możemy rozwijać i udoskonalać wydarzenie Uwaga! Smartfon.",
-    "textModal1": "Zapraszamy także wszystkich chętnych do udziału w wolontariacie.Wypełnij formularz zgłoszeniowy i dołącz do naszego zespołu wolontariuszy!",
+    "textModal1": "Zapraszamy także wszystkich chętnych do udziału w wolontariacie. Wypełnij formularz zgłoszeniowy i dołącz do naszego zespołu wolontariuszy!",
     "textModal2": "Przypominamy również o możliwości zapisania się do naszego newslettera i śledzenia na bieżąco wydarzenia w social mediach.",
     "buttonModal1": "Zostań wolontariuszem",
     "buttonModal2": "Zapisz się do newslettera"

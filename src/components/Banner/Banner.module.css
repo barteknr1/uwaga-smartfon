@@ -12,19 +12,19 @@
   align-self: center;
 }
 .bannerHome {
-  background-image: url(../../assets/images/banner/heroBannerHomeMob.png);
+  background-image: url(../../assets/images/banner/banner-home-mob.png);
   background-size: cover;
   background-position-x: 30%;
 }
 
 .bannerLanding {
-  background-image: url(../../assets/images/banner/heroBannerLandingMob.png);
+  background-image: url(../../assets/images/banner/banner-landing-mob.png);
   background-size: cover;
   background-position-x: 30%;
 }
 
 .bannerVolunteering {
-  background-image: url(../../assets/images/banner/heroBannerVolunteeringMob.png);
+  background-image: url(../../assets/images/banner/banner-volunteering-mob.png);
   background-size: cover;
   background-position-x: center, -300px;
   padding-top: 64px;
@@ -116,13 +116,13 @@
     padding-left: 128px;
   }
   .bannerHome {
-    background-image: url(../../assets/images/banner/heroBannerHome.png);
+    background-image: url(../../assets/images/banner/banner-home.png);
   }
   .bannerLanding {
-    background-image: url(../../assets/images/banner/heroBannerLanding.png);
+    background-image: url(../../assets/images/banner/banner-landing.png);
   }
   .bannerVolunteering {
-    background-image: url(../../assets/images/banner/heroBannerVolunteer.png);
+    background-image: url(../../assets/images/banner/banner-volunteer.png);
   }
   .bannerTitle {
     margin-right: 40%;

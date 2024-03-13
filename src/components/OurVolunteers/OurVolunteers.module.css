@@ -15,7 +15,7 @@
   flex-direction: row;
   row-gap: 20px;
   column-gap: 50px;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
 }
 .volunteerWrapper {
@@ -33,6 +33,7 @@
 }
 .volunteerImg {
   width: 149px;
+  border-radius: 15px;
 }
 .volunteerName {
   font-family: var(--main-font);
@@ -106,6 +107,9 @@
     flex-direction: row;
     gap: 0px;
     align-items: flex-end;
+  }
+  .volunteerIcon {
+    margin-left: 4px;
   }
 }
 @media screen and (min-width: 1280px) {
