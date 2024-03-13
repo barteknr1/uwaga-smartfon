@@ -33,6 +33,7 @@
 }
 .volunteerImg {
   width: 149px;
+  border-radius: 15px;
 }
 .volunteerName {
   font-family: var(--main-font);
