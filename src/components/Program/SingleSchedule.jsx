@@ -16,8 +16,12 @@ const SingleSchedule = ({
         <div className={css.scheduleContent}>
           <span className={css.scheduleText}>
             {scheduleText}
-            {expandedDetails && (
-              <p className={css.additionalText}>{additionalText}</p>
+            {expandedDetails && additionalText && (
+              <div className={css.additionalText}>
+                {additionalText.split('\n').map((line, index) => (
+                  <p key={index}>{line}</p>
+                ))}
+              </div>
             )}
           </span>
         </div>
@@ -34,7 +38,7 @@ const SingleSchedule = ({
 SingleSchedule.propTypes = {
   scheduleTime: PropTypes.string.isRequired,
   scheduleText: PropTypes.string.isRequired,
-  additionalText: PropTypes.string.isRequired,
+  additionalText: PropTypes.string,
   expandedDetails: PropTypes.bool,
   onToggleDetails: PropTypes.func.isRequired,
 }
