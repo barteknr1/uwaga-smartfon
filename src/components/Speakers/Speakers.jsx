@@ -6,7 +6,7 @@ import 'swiper/css/bundle'
 import Section from '../Section/Section'
 import speakersData from './SpeakersList'
 import sprite from '../../assets/svg/sprite.svg'
-import noPhoto from '../../assets/images/Speakers/no-photo.png'
+import noPhoto from '../../assets/images/speakers/no-photo.png'
 
 import css from './Speakers.module.css'
 import './styles.css'
