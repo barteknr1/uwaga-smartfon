@@ -139,7 +139,7 @@
     "title": "Prelegenci",
     "about": {
       "noBio": "Biografia pojawi się wkrótce",
-      "dr Roman Solecki": [
+      "Roman Solecki": [
         "Pedagog, profilaktyk, certyfikowany logoterapeuta; psychoterapeuta uzależnień, mediator;",
         "Doktor w dziedzinie nauk społecznych poświęcony Aktywności młodzieży w cyberprzestrzeni. Studia licencjackie z zakresu Poradnictwa Rodzinnego i Mediacji. Bazowy kurs Mediacji w Stowarzyszeniu \"Mediatorzy Polscy\". Ukończył Małopolski Ośrodek Szkolenia Terapeutów Uzależnień przy Szpitalu Klinicznym im dr. Józefa Babińskiego w Krakowie.",
         "Realizator programu profilaktycznego „Saper – jak rozminować agresję wśród młodzieży\"; programu profilaktyczno-wychowawczego „Archezja\" i „Cuder\". Od 2006 współpracuje z Ośrodkiem Profilaktyki Problemowej „Archezja\" jako realizator zajęć profilaktyczno-wychowawczych dla dzieci i młodzieży.",
@@ -153,7 +153,7 @@
         "Na co dzień pracuje z jednostkami administracji publicznej, przedsiębiorcami i trzecim sektorem, podnosząc standardy wewnętrzne i poziom bezpieczeństwa w obliczu wyzwań cyfrowych oraz wymogów prawa międzynarodowego.",
         "Po godzinach inicjuje działania edukacyjne, realizując misję szerzenia wiedzy o zagrożeniach płynących z nadużywania lub nieumiejętnego korzystania z nowych technologii”."
       ],
-      "dr Łukasz Cichocki": [
+      "Łukasz Cichocki": [
         "Doktor nauk medycznych, psychiatra, psychoterapeuta, nauczyciel akademicki z ponad dwudziestoletnim doświadczeniem.",
         "Dyrektor medyczny Szpitala Klinicznego im. J. Babińskiego w Krakowie.",
         "Autor wielu prac naukowych, popularyzator wiedzy z zakresu zdrowia psychicznego. Wieloletni prezes Polsko - Niemieckiego Towarzystwa Zdrowia Psychicznego.",
@@ -170,7 +170,7 @@
         "Laureat Stypendium Funduszu im. Rodziny Kulczyków oraz Fundacji Uniwersytetu im. Adama Mickiewicza w Poznaniu.",
         "W 2017 r. otrzymał nagrodę specjalną w konkursie Rising Stars Prawnicy – liderzy jutra 2017 organizowanym przez Dziennik Gazetę Prawną i Wolters Kluwer Polska, którego celem jest wyłonienie młodych prawników, wyróżniających się w pracy zawodowej i postawą społeczną."
       ],
-      "Prof. Monika Przybysz": [
+      "Monika Przybysz": [
         "Specjalista ds. public relations, crisis management, mediów społecznościowych, medioznawca, wykładowca w Instytucie Edukacji Medialnej i Dziennikarstwa UKSW w Warszawie.",
         "Trener w zakresie komunikacji kryzysowej, kreowania wizerunku, mediów społecznościowych, komunikacji w internecie. Od 3 lat prowadzi warsztaty dla uczniów, rodziców, nauczycieli, pedagogów i wychowawców dotyczące komunikacji za pośrednictwem smartfonów. Przeszkoliła w tym zakresie już ponad 10 tysięcy osób w kilkudziesięciu szkołach.",
         "Nagrodzona przez Prezesa Rady Ministrów RP za doktorat w 2008 r. Ukończyła ze Złotą Odznaką studia podyplomowe w Uniwersytecie Warszawskim z public relations. Doktorat obroniła w 2007 z zakresu zarządzania komunikacją w kryzysie, a habilitację w 2014 roku z zakresu rzecznictwa prasowego.",
@@ -200,7 +200,7 @@
         "Ambasadorka akcji Rok Relacji w Edukacji, członkini Rady Programowej Ośrodka Koordynacyjno - Programowego Kształcenia Nauczycieli UAM w  Poznaniu, zastępczyni redaktor naczelnej \"Rocznika Pedagogicznego\".",
         "Magister pedagogiki specjalnej, doktor nauk społecznych w zakresie pedagogiki, mama dwóch nastolatków."
       ],
-      "dr Andrzej Kobiałka": [
+      "Andrzej Kobiałka": [
         "Doktor nauk społecznych, adiunkt w Instytucie Spraw Społecznych i Zdrowia Publicznego Uniwersytetu Pedagogicznego im. Komisji Edukacji Narodowej w Krakowie.",
         "Prowadzi badania z zakresu bezpieczeństwa społecznego, zagrożeń w środowiskach lokalnych, profilaktyki społecznej oraz świadomości problematyki społecznej świata realnego i wirtualnego.",
         "Pełni również ważne funkcje społeczne tj., członkiem Gminnej Komisji ds. Rozwiązywania Problemów Alkoholowych oraz certyfikowanym przez PARPA specjalistą d/s profilaktyki i rozwiązywania problemów alkoholowych w lokalnych środowiskach.",
@@ -225,7 +225,7 @@
         "Współpracowała z Pełnomocnikiem Rządu ds. Polityki Demograficznej w tworzeniu Strategii Demograficznej 2040.",
         "Żona, mama trzech córek i pięciu synów."
       ],
-      "dr Ewa Krupnik": [
+      "Ewa Krupnik": [
         "Trenerka, Coach ACC ICF, specjalistka ds. public relations.",
         "Od kilkunastu lat związana z pracą w sektorze społecznym.",
         "Fundatorka Fundacji LIS. Ekspertka i wykładowca PR w NGO na Uniwersytecie Jagiellońskim.",
@@ -250,8 +250,8 @@
         "Ekspert Instytutu „Educare”.",
         "Główny obszar zainteresowań badawczych to pedeutologia i koncepcja edukacji spersonalizowanej."
       ],
-      "dr Andrzej Lejczak": [],
-      "dr Jan Ledóchowski": [],
+      "Andrzej Lejczak": [],
+      "Jan Ledóchowski": [],
       "Livia Halkman": [
         "Dyrektor organizacji pozarządowej o nazwie „Pressure Pot” (pressurepot.org).",
         "Livia tworzy i prowadzi programy prewencyjne w szkołach na tematy takie jak małżeństwo, nieplanowana ciąża i uzależnienie od pornografii.",
@@ -266,7 +266,7 @@
         "Inicjator Programu Gmina Przyjazna Seniorom, Ogólnopolska Karta Seniora oraz już dziesięciu edycji Międzynarodowych Senioraliów w Krakowie.",
         "Zasiadał w Radzie Organizacji Pacjentów przy Rzeczniku Praw Pacjenta, w Radzie Dostępności przy Ministerstwie Funduszy i Polityki Regionalnej oraz Radzie ds. Polityki Senioralnej przy Ministerstwie Rodziny i Polityki Społecznej."
       ],
-      "dr Maciej Dębski": [],
+      "Maciej Dębski": [],
       "Peter Stevkov": []
     }
   },

@@ -24,7 +24,7 @@ const speakersData = [
   {
     id: 1,
     img: romanSolecki,
-    name: 'dr Roman Solecki',
+    name: 'Roman Solecki',
     title: 'Ekspert',
     about: [
       'Roman Solecki',
@@ -52,7 +52,7 @@ const speakersData = [
   {
     id: 3,
     img: lukaszCichocki,
-    name: 'dr Łukasz Cichocki',
+    name: 'Łukasz Cichocki',
     title: 'Specjalista',
     about: [
       'Łukasz Cichocki',
@@ -83,7 +83,7 @@ const speakersData = [
   {
     id: 5,
     img: monikaPrzybysz,
-    name: 'Prof. Monika Przybysz',
+    name: 'Monika Przybysz',
     title: 'Specjalista',
     about: [
       'prof. Monika Przybysz',
@@ -135,7 +135,7 @@ const speakersData = [
   {
     id: 8,
     img: AndrzejKobialka,
-    name: 'dr Andrzej Kobiałka',
+    name: 'Andrzej Kobiałka',
     title: 'Specjalista',
     about: [
       'Doktor nauk społecznych, adiunkt w Instytucie Spraw Społecznych i Zdrowia Publicznego Uniwersytetu Pedagogicznego im. Komisji Edukacji Narodowej w Krakowie. Prowadzi badania z zakresu bezpieczeństwa społecznego, zagrożeń w środowiskach lokalnych, profilaktyki społecznej oraz świadomości problematyki społecznej świata realnego i wirtualnego. Pełni również ważne funkcje społeczne tj., członkiem Gminnej Komisji ds. Rozwiązywania Problemów Alkoholowych oraz certyfikowanym przez PARPA specjalistą d/s profilaktyki i rozwiązywania problemów alkoholowych w lokalnych środowiskach. Jako profilaktyk, pedagog, trener pracuje nadto z dziećmi, młodzieżą oraz dorosłymi. Jest certyfikowanym realizatorem rekomendowanych programów profilaktycznych Instytutu Psychiatrii i Neurologii w Warszawie. Aktywnie uczestniczył jako członek w Zespole Projektowym Centrum Usług Społecznych, którego zadaniem było koordynowanie, dokumentowanie i nadzór merytoryczny nad prawidłową realizacją projektu ,,Centrum Usług Społecznych w Myślenicach”. W roku 2020 był członkiem/ekspertem grupy roboczej ds. Bezpieczeństwa Dzieci i Młodzieży w Internecie w Ministerstwie Cyfryzacji w Warszawie. Członek Zarządu Głównego Polskiego Towarzystwa Pedagogicznego w Warszawie. W roku 2020 odznaczony Medalem Edukacji Narodowej za szczególne zasługi dla oświaty i wychowania.',
@@ -162,7 +162,7 @@ const speakersData = [
   {
     id: 11,
     img: EwaKrupnik,
-    name: 'dr Ewa Krupnik',
+    name: 'Ewa Krupnik',
     title: 'Specjalista',
     about: [
       `Trenerka, Coach ACC ICF, specjalistka ds. public relations. Od kilkunastu lat związana z pracą w sektorze społecznym. Fundatorka Fundacji LIS. Ekspertka i wykładowca PR w NGO na Uniwersytecie Jagiellońskim. Prowadzi szkolenia w firmach, organizacjach pozarządowych jak i instytucjach publicznych. Przygotowuje analizy i kompleksowe strategie rozwoju, komunikacji dla organizacji pozarządowych a także innych podmiotów. Obecnie współpracuje z Fundacją Sela, gdzie prowadzi podcast pt. Sens Działania. Pomysłodawczyni i inicjatorka O.Coaching! - portalu gdzie każdy może dołączyć do coachingowych podróżników. Ma misję, by pokazać jak coaching może pomagać w osiąganiu celów. Na co dzień pracuje także jako coach dla klientów indywidualnych, instytucji publicznych i biznesowych.`,
@@ -198,14 +198,14 @@ const speakersData = [
   {
     id: 15,
     img: AndrzejLejczak,
-    name: 'dr Andrzej Lejczak',
+    name: 'Andrzej Lejczak',
     title: 'Specjalista',
     about: [],
   },
   {
     id: 16,
     img: JanLedóchowski,
-    name: 'dr Jan Ledóchowski',
+    name: 'Jan Ledóchowski',
     title: 'Specjalista',
     about: [],
   },
@@ -237,7 +237,7 @@ const speakersData = [
   {
     id: 20,
     img: MaciejDębski,
-    name: 'dr Maciej Dębski',
+    name: 'Maciej Dębski',
     title: 'Specjalista',
     about: [],
   },
