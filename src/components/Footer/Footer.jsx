@@ -54,6 +54,7 @@ const Footer = ({text}) => {
 
           <iframe
             title="conferenceLocalizationMap"
+            loading="lazy"
             className={css.map}
             frameBorder="0"
             scrolling="no"
