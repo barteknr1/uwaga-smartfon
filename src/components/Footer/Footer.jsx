@@ -53,6 +53,8 @@ const Footer = ({text}) => {
           </address>
 
           <iframe
+            title="conferenceLocalizationMap"
+            loading="lazy"
             className={css.map}
             frameBorder="0"
             scrolling="no"
@@ -130,10 +132,6 @@ const Footer = ({text}) => {
           </p>
         </div>
       </div>
-      <script
-        type="text/javascript"
-        src="https://embedmaps.com/google-maps-authorization/script.js?id=6b87c2c524390684a6c28d38c29058170ed7c9f9"
-      ></script>
     </footer>
   )
 }
