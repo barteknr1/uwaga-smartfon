@@ -1,7 +1,7 @@
 .noProgram {
   display: flex;
   flex-direction: column;
-  background-image: url(../../assets/bgImages/noprogram.png);
+  background-image: url(../../assets/bgImages/noprogram.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
