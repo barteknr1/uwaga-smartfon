@@ -1,0 +1,45 @@
+.modal {
+  max-width: 768px;
+  max-height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  padding: 28px;
+  z-index: 3;
+  border: 3px solid var(--light-brand-color);
+  border-radius: 16px;
+  background-color: var(--primary-background-color);
+  margin: 5px;
+  overflow: auto;
+  @media screen and (min-width: 766px) {
+    max-height: 100%;
+    padding: 68px;
+  }
+}
+.closeModal {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  height: 24px;
+}
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.15s ease-in-out, opacity 0.15s ease-in-out;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+}
+.isHidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(1.5);
+}

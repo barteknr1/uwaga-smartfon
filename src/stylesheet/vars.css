@@ -1,0 +1,29 @@
+:root {
+  /*background-colors*/
+  --primary-background-color: #f9f8f9;
+  --secondary-background-color: #9a5fbd;
+  --third-background-color: #521b9a;
+  --light-background-color: #c8a4de;
+
+  /*text colors*/
+  --dark-text-color: #1d1d1d;
+  --light-text-color: #f9f8f9;
+  --brand-text-color: #521b9a;
+  --placeholder-color: #3c3c4399;
+
+  /*brand colors*/
+  --dark-brand-color: #521b9a;
+  --light-brand-color: #9a5fbd;
+
+  /*colors*/
+  --red-color: #e30613;
+  --magenta-color: #ca0c7a;
+  --error-color: #b3261e;
+  --deep-purple-color: #521b9a;
+
+  /*fonts*/
+  --main-font: 'Raleway', sans-serif;
+  --decoration-font: 'STIX Two Text', serif;
+  --placeholder-font: 'Montserrat', sans-serif;
+  --form-font: 'Roboto', sans-serif;
+}

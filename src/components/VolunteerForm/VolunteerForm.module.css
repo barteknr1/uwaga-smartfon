@@ -1,0 +1,178 @@
+.volunteerForm {
+  padding: 64px 20px;
+}
+
+.ellipse,
+.ellipse2 {
+  display: none;
+}
+
+.volunteerFormTitle {
+  font-family: var(--decoration-font);
+  font-size: 1.9375rem;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 30px;
+}
+
+.volunteerFormContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  border-radius: 6.184px;
+  border: 1.546px solid var(--light-brand-color);
+  padding: 41px 14px 15px;
+}
+
+.volunteerFormContainer > div {
+  margin: 32px 0;
+}
+.errorText {
+  color: var(--error-color);
+  text-align: center;
+  font-family: var(--placeholder-font);
+  font-size: 0.51538rem;
+  font-weight: 400;
+  line-height: 0.77306rem; /* 150% */
+  letter-spacing: 0.00063rem;
+  margin-bottom: 16px;
+}
+
+.volunteerFormContainer > button {
+  align-self: center;
+}
+
+.volunteerFormInputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border: none;
+}
+
+.volunteerModalContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.speakersModalHeader {
+  font-family: var(--decoration-font);
+  font-size: 1.25rem;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  color: var(--dark-text-color);
+  align-self: center;
+  margin-bottom: 16px;
+}
+
+.volunteerModalParagraph {
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 1.2;
+}
+
+@media screen and (min-width: 765px) {
+  .volunteerForm {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .errorText {
+    font-size: 1rem;
+    line-height: 1.5rem; /* 150% */
+    letter-spacing: 0.00119rem;
+    margin-bottom: 32px;
+  }
+
+  .volunteerFormTitle {
+    font-size: 2.4375rem;
+    margin-bottom: 64px;
+  }
+
+  .volunteerFormContainer {
+    padding: 80px 61px;
+  }
+
+  .volunteerFormInputContainer {
+    gap: 16px;
+  }
+
+  .svgTextButton {
+    width: 48px;
+    height: 48px;
+  }
+
+  .svgTextIcon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .volunteerModalHeader {
+    font-weight: 400;
+    font-size: 2.44rem;
+    align-self: flex-start;
+  }
+
+  .volunteerModalParagraph {
+    font-weight: 500;
+    font-size: 1.25rem;
+  }
+
+  .volunteerModalContainer > button:last-of-type {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .volunteerForm {
+    overflow: hidden;
+    position: relative;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .ellipse {
+    left: -95px;
+    top: 0;
+    display: block;
+    width: 395px;
+    height: 395px;
+    border-radius: 395px;
+    background: linear-gradient(
+      180deg,
+      rgba(173, 0, 255, 0.15) 0%,
+      rgba(250, 0, 255, 0.15) 100%
+    );
+    filter: blur(65.3499984741211px);
+    position: absolute;
+  }
+  .ellipse2 {
+    bottom: 242px;
+    right: -141px;
+    display: block;
+    width: 395px;
+    height: 395px;
+    border-radius: 395px;
+    background: linear-gradient(
+      180deg,
+      rgba(173, 0, 255, 0.15) 0%,
+      rgba(250, 0, 255, 0.15) 100%
+    );
+    filter: blur(65.3499984741211px);
+    position: absolute;
+  }
+
+  .volunteerFormTitle {
+    font-size: 3.0625rem;
+    margin-bottom: 100px;
+    width: 57%;
+  }
+
+  .volunteerFormContainer {
+    margin-left: 217px;
+    margin-right: 217px;
+    padding: 80px 107px;
+  }
+}

@@ -1,0 +1,12 @@
+.swiper-wrapper:hover {
+  transition-timing-function: linear;
+}
+
+.swiperPatrons .swiper-slide {
+  width: auto;
+  height: auto;
+}
+
+.swiperPatrons {
+  overflow: visible;
+}

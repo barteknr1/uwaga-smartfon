@@ -1,0 +1,236 @@
+.aboutVolunteer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px 20px;
+}
+
+.ellipse,
+.ellipse2 {
+  display: none;
+}
+
+.aboutVolunteerBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+.aboutVolunteerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 40px;
+}
+.aboutVolunteerTitle {
+  font-family: var(--decoration-font);
+  font-size: 1.9375rem;
+  line-height: normal;
+  margin-bottom: 16px;
+}
+
+.aboutVolunteerList {
+  list-style: disc;
+  padding-left: 25px;
+  margin-bottom: 30px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.aboutVolunteerItem {
+  font-family: var(--main-font);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0.00119rem;
+}
+
+.aboutVolunteerText {
+  font-family: var(--main-font);
+  font-size: 1rem;
+  line-height: 1.5rem; /* 150% */
+  letter-spacing: 0.00119rem;
+  margin-left: 25px;
+}
+
+.aboutVolunteerImgBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutVolunteerImg {
+  border-radius: 10px;
+  object-fit: cover;
+  width: 240px;
+  height: 217px;
+  z-index: 2;
+}
+
+.aboutVolunteerSvg {
+  position: absolute;
+  z-index: 1;
+  overflow: visible;
+}
+.aboutVolunteerSvg1 {
+  transform: rotate(167.429deg);
+  width: 331px;
+  height: 227px;
+}
+.aboutVolunteerSvg2 {
+  width: 254px;
+  height: 250px;
+}
+.aboutVolunteerSvg3 {
+  transform: rotate(66.401deg);
+  width: 285px;
+  height: 289px;
+}
+
+@media screen and (min-width: 765px) {
+  .aboutVolunteer {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .aboutVolunteerContainer {
+    flex-direction: row;
+  }
+
+  .aboutVolunteerContainer:nth-child(2n + 2) {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 60px;
+    position: relative;
+  }
+
+  .aboutVolunteerWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .aboutVolunteerImg {
+    position: absolute;
+    width: 237px;
+    height: 188px;
+  }
+  .aboutVolunteerSvg1 {
+    position: relative;
+    width: 309px;
+    height: 212px;
+    transform: rotate(-10.674deg);
+  }
+  .aboutVolunteerSvg2 {
+    position: relative;
+    width: 244px;
+    height: 230px;
+  }
+  .aboutVolunteerSvg3 {
+    position: relative;
+    width: 248px;
+    height: 232px;
+    transform: rotate(0deg);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .ellipse {
+    left: -95px;
+    display: block;
+    width: 395px;
+    height: 395px;
+    border-radius: 395px;
+    background: linear-gradient(
+      180deg,
+      rgba(173, 0, 255, 0.15) 0%,
+      rgba(250, 0, 255, 0.15) 100%
+    );
+    filter: blur(65.3499984741211px);
+    position: absolute;
+  }
+  .ellipse2 {
+    bottom: -168px;
+    left: 223px;
+    display: block;
+    width: 395px;
+    height: 395px;
+    border-radius: 395px;
+    background: linear-gradient(
+      180deg,
+      rgba(173, 0, 255, 0.15) 0%,
+      rgba(250, 0, 255, 0.15) 100%
+    );
+    filter: blur(65.3499984741211px);
+    position: absolute;
+  }
+  .aboutVolunteer {
+    position: relative;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  .ellipseSvg {
+    display: block;
+    width: 395px;
+    height: 395px;
+    position: absolute;
+  }
+  .aboutVolunteerBox {
+    padding-left: 108px;
+    padding-right: 108px;
+  }
+  .aboutVolunteerContainer {
+    gap: 95px;
+  }
+  .aboutVolunteerContainer:nth-child(2) {
+    gap: 95px;
+  }
+  .aboutVolunteerContainer:nth-child(2) .aboutVolunteerWrapper {
+    margin-left: 60px;
+  }
+  .aboutVolunteerContainer:nth-child(3) .aboutVolunteerWrapper {
+    margin-right: 60px;
+  }
+  .aboutVolunteerTitle {
+    font-size: 2.4375rem;
+    margin-bottom: 20px;
+  }
+
+  .aboutVolunteerImgBox {
+    justify-content: flex-end;
+  }
+  .aboutVolunteerContainer:nth-child(2) .aboutVolunteerImgBox {
+    width: 414px;
+    height: 324px;
+    justify-content: flex-start;
+  }
+
+  .aboutVolunteerImg {
+    width: 414px;
+    height: 324px;
+  }
+
+  .aboutVolunteerSvg1 {
+    transform: rotate(0deg);
+    right: -40px;
+    top: 40px;
+    width: 468px;
+    height: 317px;
+  }
+
+  .aboutVolunteerSvg2 {
+    left: -65px;
+    width: 375px;
+    height: 370px;
+  }
+  .aboutVolunteerSvg3 {
+    right: -28px;
+    width: 346px;
+    height: 370px;
+  }
+}

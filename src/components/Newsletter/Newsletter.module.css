@@ -1,0 +1,257 @@
+.newsletter {
+  padding: 64px 20px;
+}
+.newsletterTitle {
+  font-family: var(--decoration-font);
+  font-size: 1.9375rem;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 30px;
+}
+.newsletterContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsletterBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.firstText {
+  font-family: var(--main-font);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.25rem; /* 125% */
+  letter-spacing: 0.00119rem;
+  margin-bottom: 25px;
+}
+
+.secondText {
+  font-family: var(--main-font);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem; /* 150% */
+  letter-spacing: 0.00119rem;
+  margin-bottom: 24px;
+}
+.bold {
+  font-weight: 600;
+}
+
+.textboxBox {
+  align-self: stretch;
+  margin-bottom: 12px;
+}
+
+.errorText {
+  color: var(--error-color);
+  text-align: center;
+  font-family: var(--placeholder-font);
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.25rem; /* 166.667% */
+  letter-spacing: 0.00088rem;
+  margin-bottom: 16px;
+}
+
+.checkboxBox {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+}
+
+.newsletterSvg {
+  position: sticky;
+  width: 186px;
+  height: 198px;
+  margin-top: 32px;
+}
+.svgLetter {
+  position: absolute;
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+}
+.svgPurple {
+  width: 232.18px;
+  height: 157.63px;
+  transform: rotate(-53.55deg);
+  position: absolute;
+  top: 45px;
+  left: 40px;
+  z-index: 2;
+}
+.svgPink {
+  width: 159px;
+  height: 170px;
+  position: absolute;
+  right: 90px;
+  top: -10px;
+  transform: rotate(-86.62deg);
+}
+
+.newsletterSuccessModalContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.newsletterSuccessModalHeader {
+  font-family: var(--decoration-font);
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: var(--dark-text-color);
+  align-self: center;
+}
+.newsletterSuccessModalParagraph {
+  font-weight: 500;
+  font-size: 1rem;
+  margin: 16px 0 16px 0;
+}
+
+@media screen and (min-width: 765px) {
+  .newsletter {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 0px;
+  }
+  .newsletterTitle {
+    font-size: 2.4375rem;
+    margin-bottom: 32px;
+  }
+  .newsletterContainer {
+    flex-direction: row;
+  }
+
+  .firstText {
+    margin-bottom: 16px;
+    font-size: 1.5rem;
+    line-height: 2.25rem; /* 150% */
+    letter-spacing: 0.00181rem;
+  }
+
+  .secondText {
+    margin-bottom: 32px;
+  }
+
+  .errorText {
+    margin-bottom: 32px;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem; /* 150% */
+    letter-spacing: 0.00119rem;
+  }
+
+  .checkboxBox {
+    margin-bottom: 32px;
+  }
+
+  .svgBox {
+    align-self: flex-start;
+  }
+
+  .newsletterSvg {
+    width: 221px;
+    height: 129px;
+    margin-top: 29px;
+  }
+
+  .svgPurple {
+    width: 141.935px;
+    height: 96.012px;
+    transform: rotate(-154.729deg);
+    top: 40px;
+    left: 5px;
+  }
+  .svgPink {
+    width: 86.843px;
+    height: 93.457px;
+    right: 15px;
+    top: -10px;
+    transform: rotate(0deg);
+  }
+
+  .newsletterBox > button {
+    margin-bottom: 64px;
+  }
+
+  .newsletterSuccessModalHeader {
+    font-weight: 400;
+    font-size: 2.44rem;
+    align-self: flex-start;
+  }
+
+  .newsletterSuccessModalParagraph {
+    font-weight: 500;
+    font-size: 1.25rem;
+  }
+
+  .newsletterSuccessModalContainer > button:last-of-type {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .newsletter {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 64px;
+  }
+
+  .newsletterTitle {
+    font-size: 3.0625rem;
+  }
+
+  .newsletterContainer {
+    flex-direction: row-reverse;
+  }
+
+  .svgBox {
+    margin: 0 60px;
+  }
+
+  .newsletterSvg {
+    height: 250px;
+    width: 395px;
+  }
+
+  .newsletterBox > button {
+    align-self: start;
+  }
+
+  .textboxBox {
+    margin-bottom: 24px;
+    margin-right: 106px;
+  }
+
+  .checkboxBox {
+    margin-bottom: 16px;
+  }
+
+  .svgPink {
+    width: 159.085px;
+    height: 170px;
+    right: 20px;
+    top: 20px;
+    transform: rotate(0deg);
+  }
+
+  .svgPurple {
+    width: 299.131px;
+    height: 203.02px;
+    transform: rotate(-154.803deg);
+    top: 75px;
+    left: -25px;
+  }
+
+  .letterBox {
+    align-items: flex-start;
+  }
+}

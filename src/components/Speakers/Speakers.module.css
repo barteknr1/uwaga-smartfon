@@ -1,0 +1,212 @@
+.speakers {
+  display: flex;
+  flex-direction: column;
+  padding: 64px 0;
+}
+
+.speakersTitle {
+  margin-left: 20px;
+  font-family: var(--decoration-font);
+  font-size: 1.9375rem;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 32px;
+}
+
+.speakersContainer {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* backdrop */
+.speakersModalIsOpen ~ div {
+  overflow-y: auto;
+  align-items: flex-start;
+}
+/* modal */
+.speakersModalIsOpen ~ div > div {
+  position: absolute;
+  padding: 20px;
+  max-width: 357px;
+}
+/*modal button close */
+.speakersModalIsOpen ~ div > div > button {
+  z-index: 999;
+}
+
+.speakerAboutName {
+  color: var(--dark-brand-color);
+  font-family: var(--decoraction-font);
+  font-size: 2.4375rem;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 16px;
+}
+
+.speakerAboutText {
+  font-family: var(--main-font);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem; /* 150% */
+  letter-spacing: 0.00119rem;
+  margin-bottom: 32px;
+}
+
+.speakerAboutText:nth-child(1) {
+  color: var(--dark-brand-color);
+  font-family: var(--decoration-font);
+  font-size: 2.4375rem;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 16px;
+}
+
+.speakerImgBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.speakerModalImg {
+  z-index: 1;
+  background-color: lightgray;
+  object-fit: cover;
+  width: 234px;
+  height: 326px;
+  border-radius: 12px;
+}
+
+.speakerSvg {
+  position: absolute;
+  width: 317px;
+  height: 361px;
+}
+
+.speakersBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.speakerImg {
+  object-fit: contain;
+  object-position: bottom;
+  border-radius: 12px;
+  background-color: var(--light-brand-color);
+  width: 100%;
+  height: 260px;
+  transition: transform 0.3s ease;
+}
+
+.speakerImg:hover {
+  background-color: var(--dark-brand-color);
+  transform: scale(1.1);
+  transition-duration: 0ms;
+  transition-delay: 0ms;
+}
+
+.speakerText {
+  text-align: center;
+}
+
+.speakerName {
+  font-family: var(--main-font);
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.speakerTitle {
+  font-family: var(--main-font);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media screen and (min-width: 765px) {
+  .speakersTitle {
+    font-size: 2.4375rem;
+  }
+  .speakerImg {
+    height: 238px;
+  }
+
+  .speakerModalImg {
+    top: 20px;
+    position: absolute;
+    width: 272px;
+    height: 379px;
+  }
+
+  .speakerSvg {
+    position: relative;
+    width: 368px;
+    height: 420px;
+  }
+
+  .speakersModalContainer {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .speakerImgBox {
+    padding-top: 0;
+    justify-content: flex-start;
+  }
+
+  .speakerAboutBox {
+    padding-top: 20px;
+  }
+
+  /* modal */
+  .speakersModalIsOpen ~ div > div {
+    padding-left: 0;
+    max-width: 757px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .speakersTitle {
+    font-size: 3.0625rem;
+    margin-bottom: 64px;
+  }
+
+  .speakersBox {
+    gap: 12px;
+  }
+
+  .speakerImg {
+    height: 300px;
+  }
+
+  /* modal */
+  .speakersModalIsOpen ~ div > div {
+    max-width: 1285px;
+  }
+
+  .speakerSvg {
+    width: 621px;
+    height: 729px;
+  }
+
+  .speakerModalImg {
+    width: 459px;
+    height: 640px;
+  }
+
+  .speakerAboutText:nth-child(1) {
+    margin-bottom: 32px;
+  }
+
+  .speakerAboutBox {
+    padding: 50px 75px 0 50px;
+  }
+}

@@ -1,0 +1,53 @@
+.noProgram {
+  display: flex;
+  flex-direction: column;
+  background-image: url(../../assets/bgImages/noprogram.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  gap: 50px;
+  padding: 32px 20px 85px 20px;
+}
+.noProgramTitle {
+  color: var(--light-text-color);
+  font-family: var(--decoration-font);
+  font-size: 1.9375rem;
+  line-height: 2.421875rem;
+}
+
+.text {
+  color: var(--light-text-color);
+  font-family: var(--main-font);
+  font-size: 1.25rem;
+  line-height: 1.4675rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 765px) {
+  .noProgram {
+    padding: 32px 40px 128px 40px;
+  }
+  .noProgramTitle {
+    font-size: 2.4375rem;
+    line-height: 3.046875rem;
+  }
+  .text {
+    font-size: 1.9375rem;
+    line-height: 2.421875rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .noProgram {
+    padding: 64px 80px 208px 80px;
+  }
+
+  .noProgramTitle {
+    font-size: 3.0625rem;
+    line-height: 3.828125rem;
+  }
+  .text {
+    font-size: 2.4375rem;
+    line-height: 3.046875rem;
+  }
+}

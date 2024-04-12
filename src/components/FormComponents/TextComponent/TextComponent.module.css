@@ -1,0 +1,81 @@
+.FormBox {
+  position: relative;
+  display: flex;
+  padding: 4px 0px 4px 8px;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid #79747e;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: border-color, fill;
+}
+
+.FormBox:focus-within {
+  border-color: var(--dark-brand-color);
+  fill: var(--dark-brand-color);
+}
+
+.FormBoxError {
+  border: 2px solid var(--error-color);
+}
+
+.textbox {
+  position: absolute;
+  padding: 0 2px;
+  top: -8px;
+  left: 6px;
+  color: #49454f;
+  background-color: var(--primary-background-color);
+  font-family: var(--form-font);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.textboxError {
+  color: var(--error-color);
+}
+
+.textboxBox:focus-within .textbox {
+  color: var(--dark-brand-color);
+}
+
+.FormInput {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  width: 95%;
+  font-family: var(--placeholder-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
+
+.FormInput:focus-within {
+  outline: none;
+}
+
+.svgTextButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  transition: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color;
+}
+
+.svgTextButton:hover {
+  background-color: #49454f25;
+}
+
+.svgTextIcon {
+  width: 24px;
+  height: 24px;
+}

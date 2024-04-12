@@ -1,0 +1,68 @@
+.TimeRemaining_Box {
+  background: linear-gradient(
+    0deg,
+    rgba(202, 12, 122, 1) 0%,
+    rgba(70, 44, 62, 1) 100%
+  );
+  color: var(--light-text-color);
+  font-family: var(--placeholder-font);
+  border-radius: 0px 43px;
+  max-width: 353px;
+  padding: 5px 68px 0 68px;
+}
+.TimeRemaining_InfoBox {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+}
+
+.TimeRemaining_NumBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.TimeRemaining_Info {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: normal;
+}
+.TimeRemaining_Num {
+  text-align: center;
+  font-size: 3.0625rem;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.dots {
+  text-align: center;
+  font-family: Lato;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media screen and (min-width: 765px) {
+  .TimeRemaining_Box {
+    position: absolute;
+    width: 370px;
+    right: 40px;
+    bottom: 40px;
+  }
+  .dots {
+    font-size: 2.875rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .TimeRemaining_Box {
+    padding: 7px 108px 19px 109px;
+    width: 522px;
+    right: 80px;
+    bottom: 80px;
+  }
+}

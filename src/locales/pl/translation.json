@@ -1,0 +1,396 @@
+{
+  "aboutConference": {
+    "title1": "O konferencji",
+    "text1": "Konferencja „Uwaga! Smartfon” to unikatowe w skali całej Europy wydarzenie poświęcone zagadnieniom cyfryzacji i nadmiernemu korzystaniu z urządzeń ekranowych przez dzieci i młodzież. Spotykamy się w gronie wybitnych specjalistów z dziedziny pedagogiki, psychologii i psychiatrii oraz ekspertów i popularyzatorów wiedzy o cyfrowych zagrożeniach i cyfrowej higienie. Dyskutujemy m.in. o „uzależnieniu od ekranów”, cyfryzacji edukacji, kwestii smartfonów w szkołach i roli nowoczesnych technologii w życiu społecznym.",
+    "title2": "Co chcemy osiągnąć?",
+    "text2": "Celem konferencji jest ukazanie zagrożeń związanych z nadużywaniem smartfonów przez dzieci i młodzież szkolną oraz zaproponowanie alternatywnych form spędzania przez nich wolnego czasu. W ramach „Uwaga! Smartfon” odbywają się wykłady, warsztaty, panele dyskusyjne i integracja międzysektorowa.",
+    "title3": "Kogo chcemy zaangażować?",
+    "text3": "„Uwaga! Smartfon” jest przestrzenią spotkania dla ekspertów, naukowców, specjalistów i praktyków z różnych obszarów i dziedzin funkcjonujących wokół cyfryzacji. Rdzeniem tematycznym jest przeciwdziałanie uzależnieniom i negatywne następstwa nadużywania smartfonów. Udział w konferencji był i zawsze pozostanie bezpłatny, a jej głównymi odbiorcami są nauczyciele, rodzice, specjaliści i aktywiści.",
+    "buttonText": "Więcej"
+  },
+  "aboutVolunteer": {
+    "title1": "Jeśli:",
+    "text": "chcesz",
+    "list1": {
+      "item1": {
+        "bold": "być częścią inspirującej inicjatywy,",
+        "text": "która przyczynia się do edukacji i świadomości w ważnej kwestii uzależnienia dzieci i młodzieży od ekranów,"
+      },
+      "item2": {
+        "bold": "pomóc w dotarciu do szerokiego grona odbiorców",
+        "text": "wydarzenia,"
+      },
+      "item3": {
+        "bold": "wesprzeć swoją aktywnością organizację konferencji",
+        "text": "“Uwaga! Smartfon”."
+      },
+      "p": "Jeśli TAK, to poszukujemy właśnie CIEBIE!"
+    },
+    "title2": "Aby zostać wolontariuszem",
+    "list2": {
+      "item1": {
+        "bold": "Przeczytaj dostępne informacje na temat konferencji",
+        "text": "i celów, które chcemy osiągnąć."
+      },
+      "item2": {
+        "text": "Zorientuj się, jakie zadania będą wymagały wsparcia wolontariuszy i",
+        "bold": "wybierz interesujący Cię obszar działania."
+      },
+      "item3": {
+        "bold": "Wypełnij formularz zgłoszeniowy",
+        "text": "lub skontaktuj się z nami mailowo."
+      },
+      "p": "Zapraszamy serdecznie!"
+    },
+    "title3": "Dlaczego warto do nas dołączyć?",
+    "list3": {
+      "item1": {
+        "text": "Poznasz ciekawych i inspirujących ludzi, z którymi",
+        "bold": "zbudujesz wartościowe relacje."
+      },
+      "item2": {
+        "bold": "Zyskasz doświadczenie",
+        "text": "przy organizacji konferencji o ważnym społecznym znaczeniu."
+      },
+      "item3": {
+        "text1": "Dołączając do wolontariatu,",
+        "bold": "zdobędziesz praktyczne umiejętności pracy zespołowej,",
+        "text2": "a także cenne doświadczenie zawodowe."
+      },
+      "item4": {
+        "text1": "Jako wolontariusz",
+        "bold1": "masz szansę osobiście poznać ekspertów, ",
+        "text2": "psychologów oraz profesorów, a także",
+        "bold2": "zdobyć wiedzę",
+        "text3": ", która może być wartościowa zarówno dla Ciebie, jak i dla Twojej społeczności."
+      },
+      "p": "Zostań ambasadorem wydarzenia “Uwaga! Smartfon”, podziel się swoimi umiejętnościami i wiedzą, aby wesprzeć ważny cel, a tym samym zainwestuj w swój rozwój osobisty.",
+      "bold": "Twoje zaangażowanie może pomóc w edukacji oraz wsparciu dzieci i młodzieży."
+    }
+  },
+  "beAVolunteer": {
+    "title": "Zostań wolontariuszem Fundacji Projekt PL",
+    "text1": "Jeśli chcesz być częścią inspirującej inicjatywy, która przyczynia się do edukacji i świadomości w ważnej kwestii uzależnienia dzieci i młodzieży od ekranów, chcesz pomóc w dotarciu do szerokiego grona odbiorców wydarzenia, chcesz wesprzeć swoją aktywnością organizację konferencji “Uwaga! Smartfon”,",
+    "text2": "Jeśli TAK, to zostań Wolontariuszem i dołącz do Naszego zespołu! Zdobędziesz cenne doświadczenie, poznasz inspirujących ludzi i zainwestujesz w swój rozwój osobisty.",
+    "text3": "Wypełnij formularz zgłoszeniowy i razem z Nami zorganizuj niezapomniane wydarzenie “Uwaga! Smartfon”.",
+    "buttonText": "Zostań Wolontariuszem"
+  },
+  "comments": {
+    "title": "Opinie uczestników",
+    "quote1": "“To było niezwykłe doświadczenie słuchania na żywo ekspertów, którzy poruszali sprawy, mające wpływ na wychowanie dzieci. Dla mnie jako rodzica było to niezwykle ubogacające. Cieszę się, że konferencji mogłem słuchać razem z moją żoną.”",
+    "quote2": "“Bardzo serdecznie wam dziękuję, bo byłam przerażona tym tematem, a teraz mam konkretną wiedzę i umiem odróżnić przynajmniej w podstawowym zakresie nawyk od uzależnienia. I wiem, co robić, w końcu wiem, co robić!”"
+  },
+
+  "banner": {
+    "title": "KONFERENCJA",
+    "titleVolunteer": "ZOSTAŃ WOLONTARIUSZEM WYDARZENIA",
+    "button": "Zapisz się na konferencję",
+    "buttonVolunteer": "Dołącz do wolontariatu",
+    "date": "04 kwietnia 2024"
+  },
+
+  "counter": {
+    "days": "Dni",
+    "hours": "Godzin",
+    "minutes": "Minut"
+  },
+  "dearVolunteer": {
+    "title": "Szanowni wolontariusze!",
+    "text1": "Chcielibyśmy wyrazić ogromną wdzięczność za Waszą nieocenioną pracę na rzecz Konferencji \"Uwaga! Smartfon\". Wasze poświęcenie, entuzjazm i profesjonalizm wniosły niezwykły wkład w sukces tego wydarzenia. Dzięki Waszej gotowości do działania kolejna edycja wydarzenia zapowiada się profesjonalnie, z mnóstwem inspiracji i pozytywnej energii.",
+    "text2": "Serdeczne podziękowania kierujemy także do współautorów Home Page oraz Landing Page dla wydarzenia \"Uwaga! Smartfon\".",
+    "text3": "Zespół projektowy, który stworzył wirtualne miejsce spotkań uczestników, prelegentów i wolontariuszy, a także zbiór informacji na temat Konferencji \"Uwaga! Smartfon\" składający się z UX/UI Designerów oraz Developerów, dołożył swoją cegiełkę do propagowania świadomości i edukacji na rzecz uzależnienia dzieci i młodzieży od ekranów.",
+    "text4": "Niech ta wspólna przygoda zostawi w Was pozytywne wspomnienia oraz przyniesie cenne doświadczenia. Dziękujemy za każdą godzinę, każdy uśmiech i pomocną dłoń, którą podaliście.",
+    "text5": "Mamy nadzieję, że zechcecie do nas dołączyć również przy kolejnych wydarzeniach. Wasza praca jest dla nas bezcenna, a Wasze zaangażowanie - niezapomniane."
+  },
+  "footer": {
+    "title1": "Masz pytania?",
+    "title2": "Zapraszamy do kontaktu:",
+    "adres1": "Fundacja Projekt PL",
+    "adres2": "Konferencja Uwaga! Smartfon",
+    "heading1": "Z głębi serca dziękujemy!",
+    "heading2": "Strona została stworzona dzięki pracy Wolontariuszy.",
+    "privatePolicy": "Polityka prywatności",
+    "regulamin": "Regulamin"
+  },
+  "newsletter": {
+    "title": "Zapisz się do newslettera",
+    "text1": "Subskrybuj nasz newsletter, aby być na bieżąco z naszymi działaniami i otrzymywać wartościowe treści!",
+    "text2": "Osoby, które zapiszą się do newslettera, otrzymają między innymi możliwość bezpłatnego pobrania",
+    "bold1": "Bezpiecznego Statutu Szkoły",
+    "text3": "oraz",
+    "bold2": "Regulaminu Korzystania z Mediów Cyfrowych w Szkole,",
+    "text4": "które zostały przygotowane przez doktora nauk prawnych Tomasza Lewandowskiego.",
+    "agreement": "Wyrażam zgodę na przetwarzanie moich danych osobowych.",
+    "error": "Uzupełnij wszystkie dane i zaznacz zgodę na przetwarzanie danych osobowych, aby przesłać formularz.",
+    "titleModal": "Formularz zapisu do newslettera został wysłany! Dziękujemy za aktywne dołączenie do wydarzenia Uwaga! Smartfon.",
+    "textModal": "Zapraszamy do zapoznania się z programem konferencji.",
+    "buttonModal": "Zobacz program",
+    "titleError": "Ups, coś poszło nie tak",
+    "textError": "Spróbuj ponownie pózniej"
+  },
+  "patrons": {
+    "title": "Partnerzy & Patroni",
+    "buttonText": "Wesprzyj"
+  },
+  "previousEdition": {
+    "title": "Poprzednie Edycje"
+  },
+  "speakers": {
+    "title": "Prelegenci",
+    "about": {
+      "noBio": "Biografia pojawi się wkrótce",
+      "Roman Solecki": [
+        "Pedagog, profilaktyk, certyfikowany logoterapeuta; psychoterapeuta uzależnień, mediator;",
+        "Doktor w dziedzinie nauk społecznych poświęcony Aktywności młodzieży w cyberprzestrzeni. Studia licencjackie z zakresu Poradnictwa Rodzinnego i Mediacji. Bazowy kurs Mediacji w Stowarzyszeniu \"Mediatorzy Polscy\". Ukończył Małopolski Ośrodek Szkolenia Terapeutów Uzależnień przy Szpitalu Klinicznym im dr. Józefa Babińskiego w Krakowie.",
+        "Realizator programu profilaktycznego „Saper – jak rozminować agresję wśród młodzieży\"; programu profilaktyczno-wychowawczego „Archezja\" i „Cuder\". Od 2006 współpracuje z Ośrodkiem Profilaktyki Problemowej „Archezja\" jako realizator zajęć profilaktyczno-wychowawczych dla dzieci i młodzieży.",
+        "Prowadzi badania nad aktywnością młodzieży w cyberprzestrzeni, profilaktyką i terapią uzależnień od mediów, depresją i poczuciem sensu życia wśród młodzieży.",
+        "Od 2020 roku koordynuje prace Krakowskiego Instytutu Logoterapii."
+      ],
+      "Piotr Czubaty": [
+        "Ekspert ds. bezpieczeństwa informacji, audytor wiodący SZBI wg normy ISO/IEC 27001, inspektor ochrony danych, specjalista w obszarze compliance.",
+        "Trener, wykładowca i publicysta. Autor książki: „RODO: obowiązki pracodawcy. Praktyczny poradnik ze wzorami”.",
+        "Założyciel i prezes Fundacji na rzecz ochrony prywatności i bezpieczeństwa cyfrowego „SIECI”, której jednym z celów statutowych jest walka z uzależnieniem cyfrowym.",
+        "Na co dzień pracuje z jednostkami administracji publicznej, przedsiębiorcami i trzecim sektorem, podnosząc standardy wewnętrzne i poziom bezpieczeństwa w obliczu wyzwań cyfrowych oraz wymogów prawa międzynarodowego.",
+        "Po godzinach inicjuje działania edukacyjne, realizując misję szerzenia wiedzy o zagrożeniach płynących z nadużywania lub nieumiejętnego korzystania z nowych technologii”."
+      ],
+      "Łukasz Cichocki": [
+        "Doktor nauk medycznych, psychiatra, psychoterapeuta, nauczyciel akademicki z ponad dwudziestoletnim doświadczeniem.",
+        "Dyrektor medyczny Szpitala Klinicznego im. J. Babińskiego w Krakowie.",
+        "Autor wielu prac naukowych, popularyzator wiedzy z zakresu zdrowia psychicznego. Wieloletni prezes Polsko - Niemieckiego Towarzystwa Zdrowia Psychicznego.",
+        "Działacz społeczny, prezes Instytutu Rozwoju Inicjatyw Społecznych.",
+        "Prywatnie: mąż, ojciec czwórki dzieci, w wolnym czasie lubi spać, spacerować, czytać - zwłaszcza Sapkowskiego a ostatnio także Wegnera"
+      ],
+      "Tomasz Lewandowski": [
+        "Zajmuje się prawem międzynarodowym publicznym, prawem ochrony danych osobowych, międzynarodowym prawem humanitarnym konfliktów zbrojnych oraz filozofią prawa międzynarodowego.",
+        "Interesują go: wolność ekspresji artystycznej, suwerenność zarówno w prawie międzynarodowym, jak i krajowym, relacja pomiędzy prawem a psychologią.",
+        "Autor kilkunastu publikacji z zakresu prawa konstytucyjnego, ochrony praw człowieka, prawa międzynarodowego publicznego oraz ochrony danych osobowych.",
+        "Prelegent międzynarodowych i krajowych konferencji naukowych.",
+        "Sędzia prestiżowego Philip C. Jessup International Law Moot Court Competition. Trener drużyn studenckich uczestniczących w konkursach typu moot court.",
+        "Realizuje projekty naukowe finansowane przez Narodowe Centrum Nauki oraz Komisję Europejską, często współpracuje z zagranicznymi ośrodkami naukowymi.",
+        "Laureat Stypendium Funduszu im. Rodziny Kulczyków oraz Fundacji Uniwersytetu im. Adama Mickiewicza w Poznaniu.",
+        "W 2017 r. otrzymał nagrodę specjalną w konkursie Rising Stars Prawnicy – liderzy jutra 2017 organizowanym przez Dziennik Gazetę Prawną i Wolters Kluwer Polska, którego celem jest wyłonienie młodych prawników, wyróżniających się w pracy zawodowej i postawą społeczną."
+      ],
+      "Monika Przybysz": [
+        "Specjalista ds. public relations, crisis management, mediów społecznościowych, medioznawca, wykładowca w Instytucie Edukacji Medialnej i Dziennikarstwa UKSW w Warszawie.",
+        "Trener w zakresie komunikacji kryzysowej, kreowania wizerunku, mediów społecznościowych, komunikacji w internecie. Od 3 lat prowadzi warsztaty dla uczniów, rodziców, nauczycieli, pedagogów i wychowawców dotyczące komunikacji za pośrednictwem smartfonów. Przeszkoliła w tym zakresie już ponad 10 tysięcy osób w kilkudziesięciu szkołach.",
+        "Nagrodzona przez Prezesa Rady Ministrów RP za doktorat w 2008 r. Ukończyła ze Złotą Odznaką studia podyplomowe w Uniwersytecie Warszawskim z public relations. Doktorat obroniła w 2007 z zakresu zarządzania komunikacją w kryzysie, a habilitację w 2014 roku z zakresu rzecznictwa prasowego.",
+        "Kierownik sekcji public relations w Polskim Towarzystwie Komunikacji Społecznej. Współorganizator corocznych warsztatów dla rzeczników prasowych zakonnych i diecezjalnych od 2008 roku.",
+        "Laureatka nagrody branży public relations „PRoton 2013”.",
+        "Autorka książek i artykułów naukowych z dziedziny komunikacji społecznej i mediów w zakresie: public relations, rzecznictwa prasowego, komunikacji kryzysowej, komunikacji w mediach społecznościowych, komunikacji internetowej, reklamy, społecznej odpowiedzialności biznesu i zrównoważonego rozwoju.",
+        "Od 2016 roku członek Grupy Roboczej ds. etyki i standardów odpowiedzialnego prowadzenia biznesu w Ministerstwie Inwestycji i Rozwoju;",
+        "Od 2018 r. członek Grupy Roboczej ds. Społecznej Odpowiedzialności Uczelni w Ministerstwie Rozwoju Regionalnego.",
+        "Od 2019 r. do 2022 r. przedstawiciel Rzeczypospolitej Polskiej w zespole roboczym Social Dimension w pracach Bologna Follow-Up Group w ramach Bologna Process."
+      ],
+      "Catherine L’Ecuyer": [
+        "Kanadyjka, obecnie mieszkająca w Barcelonie z czwórką dzieci.",
+        "Posiada tytuł MBA z IESE Business School, oficjalny tytuł European Master of Research oraz doktorat z edukacji i psychologii.",
+        "W szwajcarskim czasopiśmie Frontiers in Human Neuroscience opublikowano jej artykuł \"The Wonder Approach to Learning\", który uczynił jej pracę dyplomową nową hipotezą/teorią uczenia się.",
+        "W 2015 r. otrzymała nagrodę Pajarita od Hiszpańskiego Stowarzyszenia Producentów Zabawek za promowanie kultury zabawy w mediach, a w 2020 r. została honorowym członkiem Hiszpańskiego Stowarzyszenia Montessori (Association Montessori Española).",
+        "Została zaproszona do wystąpienia przed Komisją Edukacji Kongresu Deputowanych Hiszpanii oraz na Drugi Szczyt Edukacyjny organizowany przez Komisję Europejską.",
+        "Była konsultantem rządu stanu Puebla w Meksyku w zakresie reformy przedszkolnej, była częścią grupy zadaniowej dla rządu hiszpańskiego w sprawie korzystania z technologii cyfrowych przez nieletnich oraz uczestniczyła w raporcie dla CERLALC (UNESCO) na temat korzystania z mediów cyfrowych w dzieciństwie.",
+        "Jest badaczką i autorką wielu publikacji naukowych na temat edukacji Montessori, a także kilku książek i artykułów na temat edukacji w ogóle, w tym It Looks Better in 3D, na temat wykorzystania technologii cyfrowych w dzieciństwie i okresie dojrzewania oraz The Wonder Approach, opublikowanych w ośmiu językach i 60 krajach.",
+        "W 2021 r. Editorial Espasa opublikowało jej książkę Conversaciones con mi maestra [Rozmowy z moją nauczycielką], esej w formie sokratejskiego dialogu na temat pochodzenia metod, które można dziś znaleźć w klasach.",
+        "Obecnie współpracuje z Mind-Brain Group na Uniwersytecie Nawarry i jest felietonistką w różnych serwisach informacyjnych, w tym El País, La Vanguardia i El Mundo w języku hiszpańskim oraz The Huffington Post w języku francuskim.",
+        "Jest założycielką i dyrektorem Fundación CLE, organizacji non-profit zajmującej się promowaniem edukacji klasycznej."
+      ],
+      "Sylwia Jaskulska": [
+        "Profesora w Pracowni Pedagogiki Szkolnej na Wydziale Studiów Edukacyjnych Uniwersytetu im. Adama Mickiewicza w Poznaniu.",
+        "Autorka i współautorką kilkudziesięciu tekstów naukowych i popularno-naukowych oraz kilku książek. Zaangażowana społecznie w tematyce edukacyjnej za pośrednictwem wielu kanałów, m.in. TVN24, Radiu Zet, Newsweeku Psychologia Dziecka, WTK, Radiu Poznań, TVP3, Wysokich Obcasach Extra.",
+        "Prowadzącą webinaria, szkolenia i spotkania autorskie dla Diet & Training by Ann (Anna Lewandowska), Nowej Ery, Librusa, Fundacji Szkoła Bez Ocen, Macmillan Polska, Wydawnictwa Znak.",
+        "Ambasadorka akcji Rok Relacji w Edukacji, członkini Rady Programowej Ośrodka Koordynacyjno - Programowego Kształcenia Nauczycieli UAM w  Poznaniu, zastępczyni redaktor naczelnej \"Rocznika Pedagogicznego\".",
+        "Magister pedagogiki specjalnej, doktor nauk społecznych w zakresie pedagogiki, mama dwóch nastolatków."
+      ],
+      "Andrzej Kobiałka": [
+        "Doktor nauk społecznych, adiunkt w Instytucie Spraw Społecznych i Zdrowia Publicznego Uniwersytetu Pedagogicznego im. Komisji Edukacji Narodowej w Krakowie.",
+        "Prowadzi badania z zakresu bezpieczeństwa społecznego, zagrożeń w środowiskach lokalnych, profilaktyki społecznej oraz świadomości problematyki społecznej świata realnego i wirtualnego.",
+        "Pełni również ważne funkcje społeczne tj., członkiem Gminnej Komisji ds. Rozwiązywania Problemów Alkoholowych oraz certyfikowanym przez PARPA specjalistą d/s profilaktyki i rozwiązywania problemów alkoholowych w lokalnych środowiskach.",
+        "Jako profilaktyk, pedagog, trener pracuje nadto z dziećmi, młodzieżą oraz dorosłymi.",
+        "Jest certyfikowanym realizatorem rekomendowanych programów profilaktycznych Instytutu Psychiatrii i Neurologii w Warszawie.",
+        "Aktywnie uczestniczył jako członek w Zespole Projektowym Centrum Usług Społecznych, którego zadaniem było koordynowanie, dokumentowanie i nadzór merytoryczny nad prawidłową realizacją projektu ,,Centrum Usług Społecznych w Myślenicach”.",
+        "W roku 2020 był członkiem/ekspertem grupy roboczej ds. Bezpieczeństwa Dzieci i Młodzieży w Internecie w Ministerstwie Cyfryzacji w Warszawie.",
+        ",Członek Zarządu Głównego Polskiego Towarzystwa Pedagogicznego w Warszawie.",
+        "W roku 2020 odznaczony Medalem Edukacji Narodowej za szczególne zasługi dla oświaty i wychowania."
+      ],
+      "Dariusz Cupiał": [
+        "Założyciel Fundacji Cyryla i Metodego, inicjator Tato.Net, trener.",
+        "Absolwent KUL, stypendysta Institute For Ecumenical and Cultural Research, Saint John's University w Collegeville w USA, należy do Stowarzyszenia Innowatorów Społecznych ASHOKA i Stowarzyszenia Diakonia Światło-Życie.",
+        "Bierze udział w pracach Rady Rodziny przy Ministrze Rodziny, Pracy i Polityki Społecznej oraz Narodowej Rady Rozwoju - Rady do spraw Rodziny, Edukacji i Wychowania przy Prezydencie Rzeczypospolitej Polskiej.",
+        "Jako trener przeprowadził ponad 2000 godzin szkoleniowych dla ojców, w tym dla ponad 250 osadzonych w zakładach karnych i aresztach śledczych.",
+        "Autor wielu artykułów oraz książek: Na drodze ewangelizacji i ekumenii i Kolumbowie naszego pokolenia, współredaktor monografii Czas na Tatę (trzeci tom serii ABC. Analizy Badania Cele).",
+        "Pasjonat kajakarstwa, jazdy konnej i gór. Ojciec trojga dorosłych dzieci, dziadek pięciorga wnucząt."
+      ],
+      "Dorota Bojemska": [
+        "Członek Krajowej Rady Związku Dużych Rodzin 3+.",
+        "Rzeczniczka i inicjatorka szerokiej współpracy z organizacjami pozarządowymi na rzecz postawienia rodziny w centrum zainteresowania Państwa oraz wspólnoty lokalnej.",
+        "Współpracowała z Pełnomocnikiem Rządu ds. Polityki Demograficznej w tworzeniu Strategii Demograficznej 2040.",
+        "Żona, mama trzech córek i pięciu synów."
+      ],
+      "Ewa Krupnik": [
+        "Trenerka, Coach ACC ICF, specjalistka ds. public relations.",
+        "Od kilkunastu lat związana z pracą w sektorze społecznym.",
+        "Fundatorka Fundacji LIS. Ekspertka i wykładowca PR w NGO na Uniwersytecie Jagiellońskim.",
+        "Prowadzi szkolenia w firmach, organizacjach pozarządowych jak i instytucjach publicznych.",
+        "Przygotowuje analizy i kompleksowe strategie rozwoju, komunikacji dla organizacji pozarządowych a także innych podmiotów.",
+        "Obecnie współpracuje z Fundacją Sela, gdzie prowadzi podcast pt. Sens Działania.",
+        "Pomysłodawczyni i inicjatorka O.Coaching! - portalu gdzie każdy może dołączyć do coachingowych podróżników.",
+        "Ma misję, by pokazać jak coaching może pomagać w osiąganiu celów.",
+        "Na co dzień pracuje także jako coach dla klientów indywidualnych, instytucji publicznych i biznesowych."
+      ],
+      "Michał Kot": [
+        "Socjolog, autor wielu publikacji i raportów na temat demografii i polityki rodzinnej, ekspert ds rynku telekomunikacyjnego i nowych technologii."
+      ],
+      "Monika Borkowska-Żebrowska": [
+        "Socjolożka, absolwentka Uniwersytetu Jagiellońskiego, socjoterapeutka, trenerka, specjalistka terapii uzależnień.",
+        "Kieruje Działem Profilaktyki w Miejskim Centrum Profilaktyki Uzależnień w Krakowie.",
+        "Posiada doświadczenie w pracy w obszarze profilaktyki i terapii uzależnień oraz w pracy z rodzinami wieloproblemowymi."
+      ],
+      "Stanisław Kowal": [
+        "Pedagog, od wielu lat zajmuje się kształceniem nauczycieli - aktualnie w Uniwersytecie Jagiellońskim.",
+        "Organizuje i prowadzi placówki edukacji spersonalizowanej.",
+        "Ekspert Instytutu „Educare”.",
+        "Główny obszar zainteresowań badawczych to pedeutologia i koncepcja edukacji spersonalizowanej."
+      ],
+      "Andrzej Lejczak": [],
+      "Jan Ledóchowski": [],
+      "Livia Halkman": [
+        "Dyrektor organizacji pozarządowej o nazwie „Pressure Pot” (pressurepot.org).",
+        "Livia tworzy i prowadzi programy prewencyjne w szkołach na tematy takie jak małżeństwo, nieplanowana ciąża i uzależnienie od pornografii.",
+        "W rzeczywistości, prowadzenie programów prewencyjnych na temat uzależnienia od pornografii to coś, co zapoczątkowała w swoim kraju kilka lat temu, a jej programy prewencyjne cieszą się obecnie dużym zainteresowaniem.",
+        "Prowadzi również seminaria i warsztaty na temat pornografii dla nauczycieli i rodziców.",
+        "Jej pracę napędza pragnienie, aby uczniowie dorastali w dorosłych, którzy potrafią i chcą tworzyć trwałe związki, takie jak małżeństwo, i cieszyć się seksualnością jak najdłużej.",
+        "Livia jest również autorką książki „Love Lives Offline”, w której opisuje swoje doświadczenia, mówiąc o pornografii dzieciom czy dorosłym."
+      ],
+      "Łukasz Korzeniowski": [],
+      "Łukasz Salwarowski": [
+        "Prezes Stowarzyszenia MANKO, Prezes Międzynarodowego Instytutu Rozwoju Społecznego, Redaktor Naczelny Głosu Seniora, ekonomista, socjolog, działacz społeczny, dziennikarz i wydawca mediów.",
+        "Inicjator Programu Gmina Przyjazna Seniorom, Ogólnopolska Karta Seniora oraz już dziesięciu edycji Międzynarodowych Senioraliów w Krakowie.",
+        "Zasiadał w Radzie Organizacji Pacjentów przy Rzeczniku Praw Pacjenta, w Radzie Dostępności przy Ministerstwie Funduszy i Polityki Regionalnej oraz Radzie ds. Polityki Senioralnej przy Ministerstwie Rodziny i Polityki Społecznej."
+      ],
+      "Maciej Dębski": [],
+      "Peter Stevkov": []
+    }
+  },
+  "areas": {
+    "title": "Obszary działania wolontariatu",
+    "text": "Oraz wiele innych, o których teraz nawet nie pomyśleliśmy.",
+    "list": {
+      "strategySocialMedia": "Współtworzenie strategii działań na platformach społecznościowych.",
+      "createContent": "Tworzenie treści (w szczególności na Facebooku, LinkedIn, X, YouTube).",
+      "moderationMedia": "Moderowanie kanałów fundacji w mediach społecznościowych.",
+      "foundationOfficeWork": "Współtworzenie pracy biura fundacji.",
+      "organizeEvent": "Praca przy organizowaniu wydarzenia “Uwaga! Smartfon”.",
+      "promoteEvent": "Propagowanie wydarzenia w swojej społeczności lokalnej, w obrębie szkoły, w kołach zainteresowań.",
+      "actionsDuringConference": "Działania podczas konferencji, takie jak: przyjmowanie uczestników i dbanie o komunikację między gośćmi konferencji.",
+      "assistResearch": " Pomoc w przeprowadzaniu badań oraz tworzeniu raportów na temat uzależnienia młodzieży od smartfonów."
+    }
+  },
+  "workshops": {
+    "title": "Warsztaty",
+    "text1": "Podczas konferencji będą odbywały się",
+    "bold1": "warsztaty z ekspertami,",
+    "text2": "na które serdecznie zapraszamy. Każdy z uczestników konferencji będzie miał możliwość uczestnictwa w jednym wybranym wykładzie. Warunkiem uczestnictwa jest",
+    "bold2": "wysłanie formularza, w którym należy wybrać jeden z podanych tematów.",
+    "text3": "Tematy warsztatów, które pojawią się podczas wydarzenia \"Uwaga! Smartfon\":",
+    "list": {
+      "item1": "Warsztat 1",
+      "item2": "Warsztat 2",
+      "item3": "Warsztat 3",
+      "item4": "Warsztat 4"
+    },
+    "button": "Zapisz się na warsztat"
+  },
+  "volunteerForm": {
+    "title": "Wypełnij formularz i zostań częścią zespołu wolontariuszy!",
+    "error": "Uzupełnij wszystkie dane i zaznacz zgodę na przetwarzanie danych osobowych, aby przesłać formularz.",
+    "button": "Wyślij formularz",
+    "modalHeader": "Dziękujemy za przesłanie formularza zapisu do wolontariatu! Twoje zaangażowanie ma dla nas ogromne znaczenie.",
+    "modalParagraph": "Skontaktujemy się z Tobą w ciągu najbliższych dni, aby omówić szczegóły. Czekaj na naszą wiadomość i do usłyszenia!"
+  },
+  "program": {
+    "title": "Program"
+  },
+  "noProgram": {
+    "title": "Program",
+    "paragraph": "Program pojawi się już wkrótce!"
+  },
+  "navigation": {
+    "aboutConference": "O konferencji",
+    "editions": "Edycje",
+    "volunteering": "Wolontariat",
+    "newsletter": "Newsletter",
+    "patrons": "Partnerzy i Patroni",
+    "aboutEvent": "O wydarzeniu",
+    "program": "Program",
+    "speakers": "Prelegenci",
+    "buttonSupport": "Wesprzyj",
+    "aboutVolunteer": "O wolontariacie",
+    "volunteeringAreas": "Obszary działania",
+    "volunteerForm": "Formularz zgłoszeniowy",
+    "ourVolunteers": "Nasi wolontariusze",
+    "dearVolunteers": "Podziękowania"
+  },
+  "support": {
+    "title": "Wesprzyj naszą inicjatywę",
+    "text1": "Dołącz do nas i przekaż darowiznę — tylko z Twoją pomocą może nam się to udać!",
+    "text2": "Wybierz kwotę darowizny, którą chcesz przekazać:",
+    "button": "Wesprzyj",
+    "titleModal": "Dziękujemy za okazane wsparcie! Tylko z Waszą pomocą możemy rozwijać i udoskonalać wydarzenie Uwaga! Smartfon.",
+    "textModal1": "Zapraszamy także wszystkich chętnych do udziału w wolontariacie. Wypełnij formularz zgłoszeniowy i dołącz do naszego zespołu wolontariuszy!",
+    "textModal2": "Przypominamy również o możliwości zapisania się do naszego newslettera i śledzenia na bieżąco wydarzenia w social mediach.",
+    "buttonModal1": "Zostań wolontariuszem",
+    "buttonModal2": "Zapisz się do newslettera"
+  },
+  "volunteerThanks": {
+    "title": "Dziękujemy za przesłanie formularza zapisu do wolontariatu! Twoje zaangażowanie ma dla nas ogromne znaczenie.",
+    "text": "Skontaktujemy się z Tobą w ciągu najbliższych dni, aby omówić szczegóły. Czekaj na naszą wiadomość i do usłyszenia!",
+    "button": "Wesprzyj"
+  },
+  "textComponent": {
+    "name": "Imię i nazwisko",
+    "email": "Adres e-mail",
+    "city": "Miejscowość",
+    "customRole": "Rola",
+    "customRolePlaceholder": "W konferencji uczestniczę jako...",
+    "position": "Stanowisko",
+    "area": "Obszar działania, który chcesz wesprzeć"
+  },
+  "selectComponent": {
+    "Przedstawiciel organizacji": "Przedstawiciel organizacji",
+    "Nauczyciel": "Nauczyciel",
+    "Rodzic": "Rodzic",
+    "Uczeń": "Uczeń",
+    "Inne": "Inne",
+    "label": "Rola",
+    "placeholder": "W konferencji uczestniczę jako..."
+  },
+  "radioComponent": {
+    "Warsztat 1": "Warsztat 1",
+    "Warsztat 2": "Warsztat 2",
+    "Warsztat 3": "Warsztat 3",
+    "Warsztat 4": "Warsztat 4",
+    "traditional": "Menu tradycyjne",
+    "vegetarian": "Menu wegetariańskie"
+  },
+  "checkboxComponent": {
+    "certificate": "Chcę otrzymać certyfikat uczestnictwa w konferencji Uwaga! Smartfon.",
+    "consent": "Wyrażam zgodę na przetwarzanie moich danych osobowych."
+  },
+  "workshopsForm": {
+    "header": "Formularz zapisu na warsztaty",
+    "paragraph": "Każdy uczestnik wydarzenia Uwaga! Smartfon podczas konferencji ma możliwość uczestnictwa w jednym wybranym warsztacie. Prosimy o zapoznanie się z programem i wybór jednego z poniższych warsztatów. Dziękujemy.",
+    "error": "Uzupełnij wszystkie dane i zaznacz zgodę na przetwarzanie danych osobowych, aby przesłać formularz.",
+    "buttonSign": "Zapisz się na warsztat",
+    "button": "Zapisuję się"
+  },
+  "applicationForm": {
+    "header": "Formularz zgłoszeniowy",
+    "menu": "Podczas konferencji będzie zagwarantowany ciepły posiłek. Prosimy o wybór menu zgodnie z preferencjami. Dziękujemy.",
+    "button": "Wyślij formularz zgłoszeniowy",
+    "error": "Uzupełnij wszystkie dane i zaznacz zgodę na przetwarzanie danych osobowych, aby przesłać formularz.",
+    "titleModal": "Formularz zgłoszeniowy został wysłany! Dziękujemy za dołączenie do wydarzenia Uwaga! Smartfon.",
+    "textModal1": "Zapraszamy do zapoznania się z programem konferencji.",
+    "textModal2": "Przypominamy także o możliwości zapisania się do naszego newslettera i śledzenia na bieżąco wydarzenia w social mediach.",
+    "buttonModal1": "Zobacz program",
+    "buttonModal2": "Zapisz się do newslettera"
+  }
+}

@@ -1,0 +1,38 @@
+.navTablet {
+  display: none;
+}
+
+@media screen and (min-width: 765px) {
+  .navTablet {
+    height: 81px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 69px 16px 32px;
+    position: fixed;
+    background-color: var(--primary-background-color);
+    z-index: 999;
+  }
+
+  .navTablet button {
+    font-size: 1rem;
+    height: 35px;
+    width: 134px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navLogo {
+    width: 124px;
+    height: 49px;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .navTablet {
+    display: none;
+  }
+}
