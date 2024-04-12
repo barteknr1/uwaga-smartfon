@@ -1,9 +1,9 @@
 {
-  "name": "uwaga-smartfon",
+  "name": "terapia",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://barteknr1.github.io/uwaga-smartfon/",
+  "homepage": "https://github.com/DagmaraSobczak/terapia",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -11,7 +11,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
     "axios": "^1.6.7",
+    "esm": "^3.2.25",
     "hamburger-react": "^2.5.0",
     "i18next": "^23.7.18",
     "i18next-browser-languagedetector": "^7.2.0",
@@ -27,6 +29,9 @@
     "swiper": "^11.0.5"
   },
   "devDependencies": {
+    "@babel/core": "^7.24.4",
+    "@babel/node": "^7.23.9",
+    "@babel/preset-env": "^7.24.4",
     "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.17",
     "@vitejs/plugin-react-swc": "^3.5.0",
@@ -34,6 +39,6 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
-    "vite": "^5.0.8"
+    "vite": "^5.2.8"
   }
 }

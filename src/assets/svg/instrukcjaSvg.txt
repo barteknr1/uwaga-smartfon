@@ -1,9 +1,0 @@
-żeby móc dodawać svg wystarczy że :D
-
-1. importujesz w componencie:
-import sprite from '../../assets/svg/sprite.svg'
-
-2. dodajesz svg w componencie i dodajesz określone id np
-<svg>
-    <use href={sprite + '#icon-Arrow-back'} />
-</svg>

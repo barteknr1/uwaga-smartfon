@@ -1,1 +1,0 @@
-# UWAGA! SMARTFON

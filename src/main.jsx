@@ -1,19 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import App from './App.jsx'
+import './index.css'
 import {BrowserRouter} from 'react-router-dom'
 
-import App from './App.jsx'
-import { ModalProvider } from './components/Modal/ModalProvider.jsx'
-
-import './stylesheet/vars.css'
-import './stylesheet/common.css'
-import './i18n'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter basename="uwaga-smartfon">
-      <ModalProvider>
-        <App />
-      </ModalProvider>
+    <BrowserRouter basename="/terapia">
+      <App />
     </BrowserRouter>
   </React.StrictMode>
 )
