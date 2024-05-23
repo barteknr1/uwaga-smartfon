@@ -1,3 +1,3 @@
-import logo from './projektpl.png'
+import logo from './projektpl.webp'
 
 export {logo}

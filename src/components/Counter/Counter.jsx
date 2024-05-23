@@ -10,11 +10,15 @@ const CountdownTimer = () => {
     const currentDate = new Date()
     const difference = targetDate - currentDate
 
-    const days = Math.floor(difference / (1000 * 60 * 60 * 24))
-    const hours = Math.floor(
-      (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    const days = Math.max(Math.floor(difference / (1000 * 60 * 60 * 24)), 0)
+    const hours = Math.max(
+      Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+      0
     )
-    const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60))
+    const minutes = Math.max(
+      Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
+      0
+    )
 
     return {days, hours, minutes}
   }
@@ -25,12 +29,28 @@ const CountdownTimer = () => {
   )
 
   useEffect(() => {
-    const intervalId = setInterval(() => {
-      setTimeRemaining(calculateTimeRemaining(eventDate))
-    }, 1000 * 60) // Update every minute
+    const updateTimer = () => {
+      const remainingTime = calculateTimeRemaining(eventDate)
+      setTimeRemaining(remainingTime)
+
+      // If the event has already taken place, stop the countdown by setting the remaining time to 0
+      if (
+        remainingTime.days === 0 &&
+        remainingTime.hours === 0 &&
+        remainingTime.minutes === 0
+      ) {
+        clearInterval(intervalId)
+        setTimeRemaining({days: 0, hours: 0, minutes: 0})
+      }
+    }
+
+    const intervalId = setInterval(updateTimer, 1000)
+
+    // Call the function that updates the timer on startup to avoid delay
+    updateTimer()
 
     return () => clearInterval(intervalId)
-  }, [eventDate])
+  }, []) // An empty dependency table means that the useEffect hook will only be called once, on the first rendering
 
   return (
     <div className={css.TimeRemaining_Box}>

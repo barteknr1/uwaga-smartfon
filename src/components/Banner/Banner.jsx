@@ -25,7 +25,7 @@ const Banner = ({page, title}) => {
             <p className={css.bannerText}>{t('banner.date')}</p>
             <p className={css.bannerText}>CKF_13 Kraków</p>
           </div>
-          {/* <CountdownTimer /> */}
+          <CountdownTimer />
         </div>
       )}
       {location.pathname.startsWith('/volunteering') ? (

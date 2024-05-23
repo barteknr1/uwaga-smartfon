@@ -1,3 +1,3 @@
-import mobileLogo from './mobileLogo.png'
+import mobileLogo from './mobileLogo.webp'
 
 export {mobileLogo}
